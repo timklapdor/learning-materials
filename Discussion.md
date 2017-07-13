@@ -16,11 +16,13 @@
 - [ ] Dashboard Modules
     - Too many? Do we need to rationalise?
     - Display things differently?
-- [ ] Icons vs Labels
-  - Would it be more useful to look at developing a style to label learning activities rather than use generic icon sets?
-  - Wondering about "learning activities" and if these are adequately visualised using current or available icon sets.
-  - Would a style to identify and label activities be better?
-  - Icon libraries - [Material](https://material.io/icons/), [FontAwesome](https://fontawesome.com)
+- [ ] Learning activities
+  - Do we have a standard vocabulary for these - and should we have one?
+  - Icons vs Labels
+    - Would it be more useful to look at developing a style to label learning activities rather than use generic icon sets?
+    - Wondering about "learning activities" and if these are adequately visualised using current or available icon sets.
+    - Would a style to identify and label activities be better?
+    - Icon libraries - [Material](https://material.io/icons/), [FontAwesome](https://fontawesome.com)
 - [ ] Cards, Tiles and Panels - Creating Visual Hierarchies
   - **Tiles** display an individual content group, usually visual - eg image + text,
   - A **Card** is a collection of content & action items within a section - eg. image + heading + text + action
