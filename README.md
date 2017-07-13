@@ -2,6 +2,27 @@
 
 This work is centred on developing a flexible and reusable Style Guide for Learning Materials, Resources and other Teaching and Learning content at Charles Sturt University.
 
+## Workshop
+
+[Report put together from the Design Thinking](https://app.box.com/s/9ujleq2tqqakcjtq08gpdfc73njx0bnh) workshop. Starting point for discussions.
+
+## Influences on Style
+
+### CSU Sites
+
+- [Student.csu](http://student.csu.edu.au)
+- [Innovate.csu](http://innovate.csu.edu.au)
+- [Staff.csu](http://staff.csu.edu.au)
+
+### Material Design
+
+Forms the basis of new CSU websites
+
+- [Material Design](https://material.io)
+- Inspired frameworks with examples:
+  - [Materialize CSS](http://materializecss.com)
+  - [Material Design Lite](https://getmdl.io/index.html)
+
 ## Tips for Testing
 
 1. Open Chrome and install [Styler](https://chrome.google.com/webstore/detail/styler/bogdgcfoocbajfkjjolkmcdcnnellpkb)
@@ -36,7 +57,6 @@ body, span[style] {font-family: 'Merriweather' !important;}
 body, span[style] {font-family: 'Source Serif Pro' !important;}
 
 ```
-
 
 ### Interact2 Devel Hacks
 

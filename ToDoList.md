@@ -1,6 +1,12 @@
 ## To Do List
 
+- [ ] Font Choices
+- [ ] Define Colour Palette(s)
 - [ ] Need to add print.css
+- [ ] Padding and Margins to add more "whitespace"
+- [ ] Explore use of Retina Images in existing context?
+  - in particular icons & logo
+  - look at SVG?
 - [ ] Need to add css for My Blackboard pages to app_nav.css file
 - [ ] Explore use of Institutional Roles
   - Can be used to expose different modules
