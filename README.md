@@ -6,8 +6,9 @@ This work is centred on developing a flexible and reusable Style Guide for Learn
 
 1. Open Chrome and install [Styler](https://chrome.google.com/webstore/detail/styler/bogdgcfoocbajfkjjolkmcdcnnellpkb)
 2. Go to the web page you wish to test on - Interact2 for example
-3. Past in CSS and see changes
-4. Revert to original by deleting CSS
+3. Click on Styler to open up the CSS & JS windows
+3. Past in CSS and click off the window to see changes
+4. Styler will store your CSS for that website so to revert to the original you need to delete the CSS
 
 ### Font Testing
 

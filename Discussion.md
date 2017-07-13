@@ -13,20 +13,20 @@
   - Responsive Typography
     - https://zellwk.com/blog/responsive-typography/
     - https://www.smashingmagazine.com/2016/05/fluid-typography/
+- [ ] Dashboard Modules
+    - Too many? Do we need to rationalise?
+    - Display things differently?
 - [ ] Icons vs Labels
   - Would it be more useful to look at developing a style to label learning activities rather than use generic icon sets?
   - Wondering about "learning activities" and if these are adequately visualised using current or available icon sets.
   - Would a style to identify and label activities be better?
   - Icon libraries - [Material](https://material.io/icons/), [FontAwesome](https://fontawesome.com)
 - [ ] Cards, Tiles and Panels - Creating Visual Hierarchies
-  - **Tiles** display an individual content group
-  - A **Card** is a collection of content & action items within a section
+  - **Tiles** display an individual content group, usually visual - eg image + text,
+  - A **Card** is a collection of content & action items within a section - eg. image + heading + text + action
   - **Panels** are backgrounds to create visual separation of sections
   - Material Design talks about "Sheets" - better metaphor than panels? Or sheets as in the background of the "page"?
-- [ ]Grids and Measurements?
+- [ ] Grids and Measurements?
   - Use of the [8 Point Grid](https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632) to define sizes
   - Use of Flexbox to keep flow of items & some responsiveness
     - Use flex on a div and then define item width by class
-- [ ] Dashboard Modules
-  - Too many? Do we need to rationalise?
-  - Display things differently?
