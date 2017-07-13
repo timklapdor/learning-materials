@@ -20,25 +20,21 @@ This work is centred on developing a flexible and reusable Style Guide for Learn
 View different fonts by changing the body/span selector
 
 ```css
-body, span[style] {font-family: 'Source Sans Pro' !important;}```
+body, span[style] {font-family: 'Source Sans Pro' !important;}
 
-```css
-body, span[style] {font-family: 'Arimo' !important;}```
+body, span[style] {font-family: 'Arimo' !important;}
 
-```css
-  body, span[style] {font-family: 'Archivo Narrow' !important;}```
+body, span[style] {font-family: 'Archivo Narrow' !important;}
 
-```css
-  body, span[style] {font-family: 'Roboto' !important;}```
+body, span[style] {font-family: 'Roboto' !important;}
 
-```css
-  body, span[style] {font-family: 'Lora' !important;}```
+body, span[style] {font-family: 'Lora' !important;}
 
-```css
-  body, span[style] {font-family: 'Merriweather' !important;}```
+body, span[style] {font-family: 'Merriweather' !important;}
 
-```css
-  body, span[style] {font-family: 'Source Serif Pro' !important;}```
+body, span[style] {font-family: 'Source Serif Pro' !important;}
+
+```
 
 
 ### Interact2 Devel Hacks
