@@ -1,0 +1,419 @@
+/*OUTCOMES*/
+
+/* @group PAGE HEADERS */
+
+/*  Outcomes page header styles -- Temporary fix */
+h1.pageTitle,
+.caliperTitle,
+.discoverTitle {
+    margin: -16px 0 5px 0;
+    padding-top: 0;
+}
+
+.unitHomePageTitle {
+    margin: -60px -30px 5px
+}
+
+.caliperTitle h1 {
+    padding: 0;
+    float: none;
+}
+
+.unitHomePageTitle h1 {
+    padding: 0;
+    margin: 0;
+    float: none;
+}
+
+.discoverTitle h1 {
+    padding: 0 12px
+}
+
+.unitHomePageTitle a.browse,
+.caliperTitle a.browse {
+    float: right;
+    font-size: 55%;
+    font-weight: normal;
+    margin: 4px 0 0 6px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+}
+
+.unitHomePageTitle a.browseNoImg {
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+
+/* @end PAGE HEADERS*/
+
+
+/* @group REPORTS
+ ----------------------------------------------- */
+ 
+.reports { 
+	background: #f0f0f0; 
+	min-width: 810px;
+}
+
+.reports .navigationPane,
+.reports .locationPane,
+.reports .contentPaneWide,
+.reports .container {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
+.reports #dataCollectionContainer { margin: 0; }
+
+.reports div[id*="step"] {
+	padding: 0;
+	border:  0;
+}
+
+.reports ul { margin: 12px }
+
+.reports .stepcontent {
+    margin:  0 0 12px;
+    padding: 0;
+}
+
+.reports ul li {
+    clear: both;
+    padding: 0 12px 6px 12px;
+}
+
+.reports .label { color: #777 }
+.reports .field { color: #000 }
+
+.reports ul li:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*Reports Headers*/
+.reports h1 {
+    padding: 9px 18px;
+    margin: 0;
+}
+
+.reports h2 {
+    padding: 3px 6px;
+    margin: 6px 18px;
+    color: #000;
+}
+
+.reports h3 {
+    padding: 3px 6px;
+    margin: 6px 18px;
+}
+
+.reports h3 a img {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.reports h3.steptitle {
+    background: #BBBBBB;
+    color: #FFFFFF;
+    font-size: 110%;
+    margin: 0;
+    padding: 4px 12px;
+    letter-spacing: 0;
+}
+
+.reports h4 {
+    font-size: 115%;
+    color: #fff;
+    background: #bbb;
+    margin: 0 10px;
+    padding: 3px 12px;
+}
+
+.reports h5 {
+    margin: 12px -12px 0 -12px;
+    padding: 0 0 6px 0;
+    font-size: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.reports .attachments {
+    margin: 0;
+}
+
+.reports t.wide {
+    width: 100%;
+    margin: 0;
+}
+
+/*TOC modifications*/
+
+/*TOC list modifications*/
+
+#toc {
+    margin: 12px 0;
+    list-style-type: decimal;
+    padding: 0 0 0 20px;
+    list-style-position: outside;
+}
+
+#toc ul { margin: 0 24px 24px }
+
+.toc_div {
+    margin: 6px 18px 18px 18px;
+    clear: both;
+    padding: 4px 0 4px 8px;
+    border: 2px solid #ccc;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.toc_div ol li ul li {
+    padding: 0;
+    margin: 0;
+}
+
+.reports .toc_div h2 {
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+
+.toc_div h2 a img { margin-right: 6px }
+
+.toc_div a.toggle {
+    text-decoration: none;
+    background: #f6f6f6;
+    font-size: 95%;
+    float: right;
+    font-weight: normal;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 6px 10px;
+    position: relative;
+    top: -4px;
+    -moz-border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0 4px 4px 0;
+}
+
+.toc_div a.toggle:hover { background: #fff }
+
+.backtotop,
+.dateofreport { float: right }
+
+.dateofreport { margin: 6px 18px 12px 0 }
+
+/*Collapsible block*/
+
+.reports .block {
+    border: 1px solid #ccc;
+    margin: 0 18px 24px;
+    background: #fff;
+    -moz-border-radius: 4px 4px 0 4px;
+    -webkit-border-radius: 4px 4px 0 4px;
+}
+
+/*Back to top link located at the bottom of a block.*/
+
+.backtotop {
+    margin-bottom: -40px;
+    margin-right: -1px;
+    float: right;
+    position: relative;
+}
+
+.backtotop a {
+    text-decoration: none;
+    background: #f6f6f6;
+    font-size: 95%;
+    padding: 3px 12px 3px 8px;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: block;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    border-radius:  0 0 4px 4px;
+}
+
+.backtotop a:hover { background: #fff }
+
+.backtotop a img { margin-right: 5px }
+
+ 
+ /* @end REPORTS*/
+/* @group PORTFOLIO */
+ 
+ div.fontPreview {
+     display: block;
+     float: left;
+     margin: 3px 0;
+     background: #fff;
+     border: 1px solid #000;
+     padding: 4px;
+ }
+ 
+ .textareaDiv { padding-bottom: 6px }
+ 
+ .textareaDiv table { width: 98% }
+ 
+ .textareaDiv table table,
+ .textareaDiv table table table { width: 100% }
+ 
+ .textareaDiv textarea {
+     width: 100%;
+     border-top: 2px solid #666;
+ }
+ 
+ div.textToolbar {
+     width: 97.7%;
+     border: 1px solid #ccc;
+     background: #f6f6f6;
+     padding: 4px 0;
+ }
+ 
+ div.textToolbar a {
+     white-space: nowrap;
+     font-size: 90%;
+ }
+ 
+ div.textToolbar label {
+     font-size: 90%;
+     vertical-align: middle;
+     padding-left: 4px;
+ }
+ 
+ div.textToolbar select {
+     font-size: 90%;
+     vertical-align: middle;
+ }
+ 
+ .previewTextArea {
+     display: none;
+     border: 2px solid #999;
+     padding: 0px;
+     width: 459px;
+     height: 112px;
+     background: #fff;
+     overflow: auto;
+ }
+ 
+ .previewTextArea div.previewTitle {
+     margin: 0 0 4px;
+     border-bottom: 2px solid #eee;
+     padding: 2px;
+     background: #eee;
+ }
+ 
+ .previewTextArea div.previewTitle a { float: right }
+ 
+ .previewTextArea div.previewTitle h6 {
+     float: left;
+     margin: 0;
+     font-size: 90%;
+ }
+ 
+ .previewTextArea div.previewContent { padding: 3px }
+ 
+ 
+ 
+ /* @end PORTFOLIO */
+  
+ 
+ /*outcomes recipients page mesage containers*/
+ 
+ .messageContainer h6 {
+     margin: 0;
+     padding: 0;
+     font-size: 95%;
+ }
+ 
+ .messageContainer p {
+     margin: 0;
+     padding: 6px 0;
+ }
+ 
+ .messageVariable {
+     -moz-border-radius: 1px;
+     -webkit-border-radius: 1px;
+     color: #000;
+     background-color: #fff1c5;
+     font-size: 100%;
+     font-weight: normal;
+     padding: 0px 3px;
+     border: 1px solid #eedd99;
+     display: inline;
+ }
+ 
+ 
+/*My Places palette in Outcomes*/
+.myPlaces .navPaletteContent,
+.explore .navPaletteContent { padding: 9px 0 }
+
+.myPlaces a {
+    background-color: transparent;
+    padding-left: 30px;
+    border: 0;
+}
+
+.myPlaces a:hover,
+.myPlaces a:focus { text-decoration: underline }
+
+.myPlaces a.home { padding-right: 20px }
+
+.myPlaces span.homeIconWrap {
+    background: url(/images/ci/icons/clphomepage/home_ti.gif) no-repeat 0 0;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.myPlaces span.homeIconWrap img {
+    width: 16px;
+    height: 16px;
+}
+
+.myPlaces a.unit,
+.myPlaces a.course,
+.myPlaces a.ee,
+.myPlaces a.program,
+.myPlaces a.workspace {
+    margin: 0;
+    list-style-type: none;
+    background-repeat: no-repeat;
+    background-position: 6px 3px;
+}
+
+.myPlaces a.unit,
+.myPlaces a.unit:hover { background-image: url(/images/ci/icons/clp_unit_ti.gif) }
+
+.myPlaces a.course,
+.myPlaces a.course:hover { background-image: url(/images/ci/icons/clp_course_ti.gif) }
+
+.myPlaces a.ee,
+.myPlaces a.ee:hover { background-image: url(/images/ci/icons/clp_ee_ti.gif) }
+
+.myPlaces a.program,
+.myPlaces a.program:hover { background-image: url(/images/ci/icons/clp_program_ti.gif) }
+
+.myPlaces a.workspace,
+.myPlaces a.workspace:hover { background-image: url(/images/ci/icons/clp_workspace_ti.gif) }
+
+.explore a {
+    background-color: #ededed;
+    background: url(images/indicators.png) no-repeat 9px -1489px;
+    padding-left: 30px;
+}
+
+.explore h4 a,
+.explore h4 a:hover,
+.explore h4 a:focus {
+    background: transparent;
+    font-weight: bold;
+    border: 0;
+}
+
+

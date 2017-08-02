@@ -1,0 +1,863 @@
+
+/** New Fonts **/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Serif+Pro');
+
+
+/* @group TOP FRAME
+----------------------------------------------- */
+
+/* @group TOP FRAME LAYOUT */
+
+/*Branding image container.*/
+
+/*Application tabs (top frame)*/
+
+table.bouncer {
+    width: 100%;
+}
+
+table.bouncer td {
+    padding:0;
+}
+
+.brandingImgWrap {
+    overflow:hidden;
+}
+
+/*Branding image is hidden when compact tabs are used*/
+.topTabs-compact .bannerImage, .topTabs-compact .brandingImgWrap {
+    display:none;
+}
+
+/*Regular tabs*/
+.topTabs {
+    position: relative;
+    overflow-y:hidden;
+    height: 86px;
+
+}
+
+/*Compact tabs*/
+.topTabs-compact {
+    position:relative;
+}
+
+/*Center aligned tabs*/
+.topTabs .tabWrapper-center .appTabs, .topTabs-compact .tabWrapper-center .appTabs {
+    margin: 0 auto;
+}
+
+/*Right aligned tabs.*/
+.topTabs .tabWrapper-right .appTabs, .topTabs-compact .tabWrapper-right .appTabs {
+    float: right;
+}
+
+#topFrame /*@branding - do not remove*/,
+    /*---*/
+.bgBanner {
+    background-color: #555;
+    background-position: 0 0px;
+    background-repeat: no-repeat;
+    color:#CCCCCC;
+}
+
+.brandingImgWrap {
+    height:50px;
+}
+
+.brandingImgWrap a {
+    display: inline-block;
+    position: absolute;
+}
+
+.brandingImgWrap a:focus {
+    outline-color: #CCC;
+}
+
+.bannerImage {
+    max-height: 35px;
+}
+
+.brandingImgWrap img[src*="header_institution"] {
+    left: 12px;
+    max-height: 60px;
+    position: absolute;
+    top: 0px;
+    z-index: 9001;
+}
+
+.brandingImgWrap img {
+    left: 12px;
+    max-height: 60px;
+    max-width: 140px;
+    position: absolute;
+    top: 50px;
+    z-index: 9001;
+}
+
+/*Branding image, hot spots and hot links are hidden when compact tabs are used*/
+.topTabs-compact .bannerImage, .topTabs-compact .brandingImgWrap, .topTabs-compact .hotItems {
+    display:none;
+}
+
+/*Regular tabs*/
+.topTabs {
+    padding: 0;
+    background-color: #555; /*@pal*/
+    -moz-box-shadow: 0 -6px 17px #333 inset; /*@pal*/
+    -webkit-box-shadow: 0 -6px 17px #333 inset; /*@pal*/
+    box-shadow: 0 -6px 17px #333 inset; /*@pal*/
+
+
+}
+
+/*Compact tabs*/
+.topTabs-compact {
+    height: 52px;
+}
+
+/*Tab wrapper*/
+.tabWrapper-left, .tabWrapper-center, .tabWrapper-right {
+    width: auto;
+    padding: 0px 28px;
+}
+
+/*Table that contains application tabs*/
+/*Regular tabs*/
+.appTabs {
+    width: auto;
+    position: relative;
+}
+
+.topTabs-compact .tabWrapper-left, .topTabs-compact .tabWrapper-center, .topTabs-compact .tabWrapper-right {
+    padding-top: 24px;
+}
+
+/* @end */
+
+/* @group APPLICATION TABS */
+
+/*Application tabs*/
+/*Regular tabs*/
+.appTabs a {
+    font-size:110%;
+    text-align:center;
+    display:block;
+    text-decoration:none;
+    padding: 10px 1.2em 19px;
+    color:#efefef;
+    color:rgba(255,255,255,0.9);
+    z-index:100;
+    white-space:nowrap;
+    position: relative;
+    border: 1px solid transparent;
+    border-width: 1px 1px 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    font-size: 1.1rem;
+}
+
+/*@branding - do not remove*/
+#topTab {
+    background: transparent;
+    color:#efefef;
+}
+
+.appTabs a span {
+    border-bottom: 1px dotted transparent;
+    padding-bottom: 1px;
+}
+
+.topTabs-compact .appTabs a span {
+    padding-bottom: 0;
+}
+
+
+.appTabs a:hover, .appTabs a:focus {
+    color:#fff;
+}
+
+.appTabs a:hover span, .appTabs a:focus span {
+    border: 0px !important;
+    color: #fff;
+
+}
+
+/*@branding - do not remove*/
+#topTabActive,
+.appTabs .active a, .appTabs .active a:hover, .appTabs .active a:focus {
+    color:#fff;
+    font-weight:bold;
+    text-shadow: 0 0 6px #000;
+    z-index:100;
+}
+
+.appTabs .active a  span, .appTabs .active a:hover span, .appTabs .active a:focus span {
+    border: 0;
+}
+
+.appTabs .active .hideoff,
+.appTabs .active a:hover .hideoff,
+.appTabs .active a:focus .hideoff,
+.toppTabs-compact .appTabs .active .hideoff,
+.toppTabs-compact .appTabs .active a:hover .hideoff,
+.toppTabs-compact .appTabs .active a:focus .hideoff {
+    bottom: 0;
+    border-left:0px solid transparent;
+    border-right:0px solid transparent;
+    border-top:0;
+    margin-left: -12px;
+    bottom: 0px;
+    line-height: 0;
+    left: 50%;
+    top: auto;
+    color: transparent;
+    font-size: 0;
+    z-index: 100;
+
+}
+
+.topTabs-compact .appTabs .active .hideoff,
+.topTabs-compact .appTabs .active a:hover .hideoff,
+.topTabs-compact .appTabs .active a:focus .hideoff {
+    border-width: 0 7px 7px;
+    margin-left: -7px;
+}
+
+
+
+
+.topTabs-compact .appTabs a,
+.topTabs-compact  .appTabs .active a:hover,
+.topTabs-compact  .appTabs .active a:focus {
+    font-size: 95%;
+    padding: 0.4em 1em .7em;
+}
+
+
+/*Rounding options*/
+.round1 a {
+    -moz-border-radius:3px 3px 0 0;
+    -webkit-border-radius:3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.round2 a {
+    -moz-border-radius:12px 12px 0 0;
+    -webkit-border-radius:12px 12px 0 0;
+    border-radius:12px 12px 0 0;
+}
+
+/* @end */
+
+
+/* @group TOP FRAME LINKS (HOME, HELP, LOGOUT)
+----------------------------------------------- */
+
+/*Top frame links*/
+
+.topGlobalLinks {
+    background-color: rgba(0,0,0, 0.15);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000020, endColorstr=#33000020";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000020, endColorstr=#33000020);
+}
+
+.topGlobalLinks ul {
+    z-index: 1001
+}
+
+.topGlobalLinks  ul li {
+    color: #ccc;
+    display: inline-block;
+    margin: 0  0 0 -4px;
+}
+
+.topGlobalLinks ul li:first-child {
+    margin: 0;
+}
+
+.topGlobalLinks a {
+    display: inline-block;
+    color: #ccc;
+    text-align: left;
+    padding: 3px 5px;
+    text-indent: -10000px;
+    min-width: 18px;
+    overflow: hidden;
+    background: none!important;
+}
+
+.topGlobalLinks a .link-icon {
+    background-image: url(images/utilicons_sprite_rev.png);
+    background-repeat: no-repeat;
+    display: block;
+    float: right;
+    height: 16px;
+    width: 16px;
+    overflow: hidden;
+}
+
+.topGlobalLinks .home .link-icon {
+    background-position: -129px 0
+}
+
+.topGlobalLinks .home:hover .link-icon,
+.topGlobalLinks .home:focus .link-icon {
+    background-position: -129px -16px
+}
+
+.topGlobalLinks .logout .link-icon {
+    display: none
+}
+
+.topGlobalLinks .logout {
+    text-indent: 0;
+    padding: 2px 9px;
+    width: auto!important;
+}
+
+.topGlobalLinks .help .link-icon {
+    background-position: -145px 1px
+}
+
+.topGlobalLinks .help:hover .link-icon,
+.topGlobalLinks .help:focus .link-icon  {
+    background-position: -145px 1px
+}
+
+.topGlobalLinks a:hover,
+.topGlobalLinks a:focus {
+    color: #eee;
+    background-color: rgba(0,0,0, 0.25)!important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#44000025, endColorstr=#44000025";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#44000025, endColorstr=#44000025);
+}
+
+/* @end TOP FRAME LINKS*/
+
+/* @group TOP FRAME HOT ITEMS
+----------------------------------------------- */
+
+.hotItems {
+    position: relative;
+    margin-right: 3px;
+    width: 240px;
+    min-height: 28px;
+    color: #ddd;
+    text-align: center;
+    background-color: rgba(0,0,0, 0.20);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000020, endColorstr=#33000020";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000020, endColorstr=#33000020);
+}
+
+.hotSpots {
+    max-height: 46px;
+    overflow: auto;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    padding: 3px 3px 5px;
+}
+
+.hotSpots li {
+    display: inline-block;
+    display: inline\9;/*IE8*/
+    padding: 0 0 2px;
+}
+
+.hotSpots a {
+    background: transparent;
+    color: #ddd;
+    display: inline-block;
+    padding: 0 6px 0 0;
+}
+
+.hotSpots li:after {
+    content: "\2022";
+    color: #999999;
+    position: relative;
+    right: 1px;
+}
+
+.hotSpots li:last-child:after {
+    content: none
+}
+
+.hotSpots a:hover,
+.hotSpots a:focus {
+    color: #eee;
+}
+
+/* @end TOP FRAME HOT*/
+
+/* // GLOBAL NAV // */
+/* these styles override the icons set on the Customize Brand page. This is specific to the 2012 theme */
+.bottom-buttons-home a.home {
+    background: transparent
+    url('/images/ci/mybb/mybb_nav_bottombuttons_sprite.png ') no-repeat
+    50% 6px;
+}
+
+.bottom-buttons-help a.help {
+    background: transparent
+    url('/images/ci/mybb/mybb_nav_bottombuttons_sprite.png ') no-repeat
+    50% -13px;
+}
+
+.bottom-buttons-logout a.logout {
+    background: transparent
+    url('/images/ci/mybb/mybb_nav_bottombuttons_sprite.png ') no-repeat
+    50% -33px;
+}
+
+.global-nav-bar a.logout-link, .global-nav-bar a.logout-link:hover, .global-nav-bar a.logout-link:focus {
+    background-image: url('/images/ci/mybb/mybb_nav_logout.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.global-nav-bar a.logout-link:hover, .global-nav-bar a.logout-link:focus {
+    background-position: 50% -22px;
+}
+/* // end GLOBAL NAV // */
+
+#quick_links_wrap{
+    top:12px!important;
+}
+
+.quickLinksOnly #quick_links_wrap {
+	top: 0 !important;
+}
+
+#globalNavPageNavArea{
+   /* height: 116px;*/
+    background:#232323;
+}
+/* @end TOP FRAME */
+
+
+/** CSU Theme changes start here **/
+
+
+/** New Fonts Imported at start of this CSS **/
+
+/** HTML & Body Changes **/
+
+html {
+	background-color: #f8f8f8 !important;
+}
+
+body {
+ 	max-width: 100% !important;
+ 	font-size: 15px;
+}
+
+body, p, h1, h2, h3, div, span {
+   font-family:  'Source Sans Pro' !important;
+}
+
+
+/** Global Nav Bar **/
+
+.global-nav-bar-wrap {
+  height: 25px;
+  background-color: #414141;
+}
+
+.hotItems, .nav-link {
+  background-color: transparent !important;
+}
+
+.global-nav-bar, .hotItems, .hotSpots a {
+    text-transform: uppercase;
+    color: rgba(255,255,255,.6);
+}
+
+.global-nav-bar span[style], .hotSpots a {
+  text-decoration: none !important;
+}
+
+.global-nav-bar .badge, .side-nav .menu-icon span.badge {
+	background-color: #3A87AD;
+}
+
+.nav-link:hover, .nav-link:focus {
+  background: rgba(0, 0, 0, 0.6);
+  color: rgba(255,255,255,1) !important;
+  border-bottom: 2px solid #D92231;
+}
+
+.hotSpots {
+  padding: 5px;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+	.global-nav-bar {
+	margin: 0 !important;
+	font-size: 12px;
+	}
+.hotItems {
+	margin: 0 !important;
+		}
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+#globalNavPageNavArea {
+    margin: 0 !important;
+	}
+}
+/** Interact Nav Bar **/
+
+@media (max-width: 820px) and (min-width: 501px) {
+	.tabWrapper-right {
+	    margin-top: 50px !important;
+	}
+}
+
+@media (max-width: 500px) and (min-width: 100px) {
+	.tabWrapper-right {
+	    padding: 20px 10px 0 0 !important;
+	}
+}
+
+.topTabs {
+  background: #fff !important;
+}
+
+.appTabs a {
+  color: #414141 !important;
+}
+
+.appTabs td {
+  padding: 0 !important;
+}
+
+.appTabs td.active {
+    border-bottom: 3px solid #D92231;
+}
+
+.appTabs a:hover span, .appTabs a:focus span {
+    color :#D92231 !important;
+    transition: all .2s ease;
+}
+
+#topTabActive, .appTabs .active a, .appTabs .active a:hover, .appTabs .active a:focus, .appTabs .active a:hover {
+	color: #D92231 !important;
+}
+
+.bouncer {
+	border: 0;
+}
+
+/** Logo **/
+
+.brandingImgWrap {
+
+}
+
+@media only screen and (max-width: 700px) {
+	.brandingImgWrap {
+    display: block;
+	}
+	.brandingImgWrap img {
+		top: 30px;
+	}
+
+}
+/** Site Menu **/
+
+/** Text Colour **/
+#courseMenuPalette div.navPaletteContent ul li a, #courseMenuPalette h3 a, #courseMenuPalette div.navPaletteContent ul li a span {
+    color: #989898 !important;
+		background-color: transparent;
+}
+
+/** Item Background Colours **/
+.menuWrap {
+	background: #fff !important;
+}
+
+#courseMenuPalette, #courseMenuPalette ul, .actionBar, .actionBarMicro, .secondaryButton>a, .mainButton h2>a, .secondaryButton h2>a, #courseMenuPalette div.navPaletteContent, #courseMenuPalette a, #controlPanelPalette_contents a, #courseMenuPalette span, #controlPanelPalette_contents span, #courseMenuPalette a span {
+    background-color: transparent !important;
+  	color: #989898 !important;
+}
+
+.courseMenu li:hover, .submenu li:hover, #courseMenuPalette div.navPaletteContent ul li a:hover, #courseMenuPalette div.navPaletteContent ul li a span:hover{
+  color: #414141 !important;
+  background: #e6e6e6;
+}
+
+#courseMenuPalette a:hover,  #courseMenuPalette span:hover, #controlPanelPalette_contents span:hover {
+  color: #989898 !important;
+}
+
+#controlPanelPalette_contents a:hover {
+  color: #414141 !important;
+}
+
+.discover .navPaletteContent, .singleControl .navPaletteContent, .singleControl, .navPalette .discover {
+	background: transparent !important;
+}
+
+.singleControl a:hover, .singleControl a:focus, .discover a:hover, .discover a:focus {
+	background: #e6e6e6;
+}
+
+/** Menu Section Headers **/
+
+#controlPanelPalette_link, #navPaletteTitle, #courseMenuPalette h3 a {
+  color: #414141 !important;
+  text-transform: uppercase;
+}
+
+/** Nav Pane Packground **/
+
+.navigationPane {
+	background: #fff !important;
+}
+
+/** Nav Divider **/
+
+.navDivider {
+    font-size: 1.5rem;
+    padding: 20px 0 0 10px;
+    border-top: 15px solid #f2f2f2 !important;
+    padding-top: 20px;
+    color: #414141;
+    text-transform: uppercase;
+}
+
+/** Content Area **/
+
+#contentFrame, #schemePreview, .schemePreviewBody, body {
+  background: #f8f8f8 !important;
+}
+
+.pageTitle {
+	margin: 0 !important;
+}
+
+.contentPane .shadow, .navDivider {
+	border: 0;
+}
+
+.container {
+	border: 0;
+  margin: 0 1vw;
+}
+
+.containerLanding, div.landing div.container, body.landingBody div.container {
+    padding: 10px 0 0 0;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+}
+
+div[id*="stepcontent"] {
+  border: 0 !important;
+}
+
+/** States **/
+.good, .adding {
+    background: #318700;
+    border-color: #318700;
+}
+
+.read-on:hover {
+  background: #005A7E;
+  color: #fff;
+}
+
+/** Dashboard Boxes **/
+
+.portlet, .contentListPlain {
+ 	border: 0;
+	background: #ffffff;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+#moduleTitle, .portlet h2 {
+	padding: 12px 24px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+
+.edit_controls .moduleToggleLink {
+  top: 8px;
+}
+
+/** Dashboard Content **/
+
+.portlet .portletList-img>li {
+	border-left: 3px solid #9F000A;
+  	padding: 5px;
+}
+
+.portlet .portletList li {
+	padding: 5px;
+  	border-top: 1px solid #f5f5f5;
+}
+
+a, .portlet .subCategories li a, .blockGroups .itemHead, .blockGroups .itemHeadOpen {
+  color: #3A87AD;
+}
+
+a:hover, .portlet .subCategories li a:hover, .blockGroups .itemHead:hover, .blockGroups .itemHeadOpen:hover {
+  color: #005A7E;
+  transition: all .5s ease;
+}
+
+/** Calendar **/
+.vertical_filter .left_stream_wrapper {
+  margin: 0 0 0 325px;
+}
+
+.fc-button-main, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 0 !important;
+  border-bottom: 4px solid transparent !important;
+  background-image: -moz-linear-gradient(100% 100% 90deg, #e6e6e6, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#e6e6e6), to(#e6e6e6));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#e6e6e6, endColorstr=#e6e6e6";
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr=#e6e6e6, endColorstr=#e6e6e6);
+  color: #414141;
+  box-shadow: none !important;
+}
+
+.fc-button-main:hover, .ui-button:focus, .ui-button:hover {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  background: #f8f8f8;
+  border-bottom: 4px solid #3A87AD !important;
+  transition: all .3s ease;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 0 !important;
+  background-image: -moz-linear-gradient(100% 100% 90deg, #e6e6e6, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#e6e6e6), to(#e6e6e6));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#e6e6e6, endColorstr=#e6e6e6";
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr=#e6e6e6, endColorstr=#e6e6e6);
+  color: #414141;
+}
+
+.fc-button-main:hover, .ui-button:focus, .ui-button:hover {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  background: #f8f8f8;
+  transition: all .3s ease;
+}
+.fc-state-highlight, .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background: #FCF8E3 !important;
+    box-shadow: none !important;
+}
+
+
+
+/** Content Collection Navs **/
+
+.localViewToggle {
+  padding-bottom: 10px;
+  background: transparent;
+}
+
+.localViewToggle a.active {
+  border: 0px;
+}
+
+.navPaletteContent a, .navPaletteContent h3 a {
+  color: #989898 !important;
+}
+
+.shortcuts img {
+  visibility: hidden;
+}
+
+.shortcuts li a {
+  border-top: 0px;
+}
+
+.shortcuts a {
+  margin-left: -32px;
+}
+
+.shortcuts li a:hover, .shortcuts li a:focus {
+    background: none !important;
+    text-decoration: none;
+		color: #1a1a1a !important;
+}
+
+/** Help Icon **/
+
+.helpLink a.browseIcon:before {
+	height: 22px;
+  width: 22px;
+}
+
+
+/** Grade Centre **/
+
+.actionBar ul li a {
+    color: #414141 !important;
+}
+
+/** Forum **/
+
+.container>form {
+  padding: 10px;
+  background: #ffffff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.thread-detail-page .contentBox {
+  background: transparent !important;
+}
+
+.reply-lvl-0 .message-wrapper-inner, .db-head-message .message-wrapper-inner {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background: #e6e6e6;
+  border: 0 !important;
+  border-radius: 0;
+}
+
+.reply-lvl-0 .threadButtons .reply {
+  background: #3A87AD;
+}
+
+.reply-lvl-0 .threadButtons .reply:hover {
+  background: #005A7E;
+}
+
+.reply-lvl-0 .threadButtons .browse, .threadButtons .browse, .threadButtons .reply {
+  border: 0 !important;
+}
+
+.reply-lvl-0 .threadButtons .browse:hover, .threadButtons .browse:hover, .threadButtons .reply:hover {
+  background: #70B7DF;
+}
+
+.unread-posts, .need-moderation {
+  border: 0;
+  background: #FCF8E3;
+}
+
+/** Back Link **/
+
+.backLink a {
+  border-radius: 14px;
+  background: #005A7E;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.backLink a:hover {
+  background: #3A87AD;
+}
+.backLink a:before {
+  color: #fff;
+}
+
+/** Content List **/
+
+.contentList, .buildList, .contentListPlain, .announcementList {
+	background: #ffffff;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}

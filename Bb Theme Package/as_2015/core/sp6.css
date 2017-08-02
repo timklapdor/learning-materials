@@ -1,0 +1,431 @@
+/* ===[ Release 9.1 SP6 ]=== */
+
+/* SIS logs @since 9.1 sp6 */
+
+#logDetail {
+    overflow-y: auto;
+    height: 300px;
+}
+
+.totalMsgs {
+    color: #555;
+    font-weight: bold;
+    font-size: 120%;
+    padding: 11px 6px 9px 14px !important;
+}
+
+.latestEntry {
+    font-weight: normal;
+    font-size: 85%;
+    color: #666666;
+    float: right!important;
+}
+
+.log-summary {
+    border: 1px solid #ccc;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.log-summary a {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.log-summary li, .sis-seperator {
+    border-left: 1px dotted #CCCCCC;
+    min-height: 26px;
+    padding: 9px 3px 9px 14px;
+    vertical-align: middle;
+}
+
+.log-summary li:first-child { border-left: none }
+
+.log-type {
+    color: #fff;
+    text-decoration: none;
+    padding: 2px 6px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.log-summary .log-type { font-size: 120% }
+
+.log-error { background: #ef3e36 }
+
+.log-warning { background: #fcb040 }
+
+.log-message { background: #0b9444 }
+
+.log-debug { background: #00aeef }
+
+.log-header { margin: 0 0 9px }
+
+.attachments .log-type {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 90%;
+    letter-spacing: .1em;
+    min-width: 6em;
+    text-align: center;
+}
+
+.table-scroll-wrapper { /*border: 1px solid #eee; border-top:none;*/ }
+
+.table-scroll-wrapper table { margin: 0 }
+
+.table-scroll-wrapper tbody {
+    height: 200px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.row-selected { background-color: #e2eefe!important }
+
+.log-search > div > div {
+    display: inline-block;
+    padding: 0 9px 0 0!important;
+    margin: 6px 6px 0 0;
+    border-right: 1px dotted #bbb;
+}
+
+/* end SIS logs  */
+
+
+
+
+
+
+/* ---------------------------------- RUBRICS ---------------------------------- */
+#theGrid {position:relative;}
+
+.gridOverflowControl {*overflow:hidden; overflow-x:auto; padding-bottom:24px; zoom:1; *position:static; *height:1%;}
+
+.rubricTable tbody td textarea {
+	width: 99%;
+  *width:auto;
+  min-width:9em;
+	height: 6em;
+	color: #555;
+	border: 1px solid #ccc;
+}
+.rubricTable tbody td textarea + script + div {text-align:right;}
+
+.rubricTable tbody td div input[type="text"] {/* overrides a stepItems-reorder class in line 667 of inventory_tables.css */
+	border: 1px solid #ccc;
+	width: 4em;
+}
+
+#rubricColReorder {
+	position: absolute;
+	top:3em;
+	left: 15%;
+	z-index: 100;
+  *width:auto;
+}
+#rubricColReorder fieldset {position:relative;white-space:nowrap;}
+#rubricColSort {
+  margin-right:60px;
+  white-space:nowrap;
+}
+#rubricColSort li {
+  display:inline-block;
+  *display:inline;
+  position:relative;
+  margin:0 1px;
+  padding:0 6px 2px 24px;
+  border-right:1px dotted #999!important;
+  white-space:nowrap;
+}
+#rubricColSort li input {
+  position:absolute;
+  left:0;
+  top:0;
+}
+#reorderPanelControls{
+  position:absolute;
+  right:0;
+  top:0;
+}
+#reorderPanelControls a {text-decoration:none;}
+
+
+/* ---------------- BEGIN: Rubric Grading (@since 9.1 SP6) ---------------- */
+/* rubric collab widget list */
+#collabRubricList .collabRubricListTypeContainer
+{
+  margin:4px;
+}
+
+/* rubric grid */
+.rubricGradingTable, .rubricTable
+{
+  width: 100%;
+  border-collapse:separate;
+  *border-collapse:collapse;
+  border-spacing:9px;
+  margin-left:-9px;
+}
+
+.rubricGradingTable th, .rubricTable th
+{
+  color: #45586f;
+}
+
+.rubricTable thead th {
+  border-left: 1px solid #ccc;
+  padding: 3px 12px;
+}
+
+.rubricTable thead th:first-child {
+  border-left: none;
+}
+
+.rubricGradingTable tbody td, .rubricTable tbody td
+{
+  border: solid 1px #ccc;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding:  6px 12px;
+  vertical-align: top;
+  background: #ffffff; /* old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f3f3f3), color-stop(100%,#ededed)); /* webkit */
+  -moz-box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+  box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+  color:#444;
+}
+
+.rubricTable tbody td {
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+
+.rubricGradingTable tbody th, .rubricTable tbody th
+{
+  border-top:1px solid #ccc;
+  padding: 9px 12px;
+  font-weight:bold;
+  vertical-align:top;
+}
+
+.rubricTable tbody th label, .rubricTable tbody th input, .rubricTable tbody th > span {font-weight:normal;}
+
+.rubricGradingTable .rubricCellHeader
+{
+  padding:0 0 6px;
+}
+
+.rubricGradingTable .radioLabel,
+.rubricGradingTable .selectedCell .radioLabel,
+.rubricGradingTable .selectedCell .rubricSelectedValue,
+.rubricGradingTable .selectedCell .rubricCellDescription
+{
+  display: block;
+  padding:6px 0 6px 30px;
+}
+
+.rubricGradingList .radioLabel
+{
+  display: inline-block;
+  padding:3px 6px 3px 24px;
+  font-weight: bold;
+}
+
+.rubricGradingTable .rubricCellContainer
+{
+  position:relative; 
+  overflow:hidden;
+  min-height: 30px;
+}
+
+.rubricCellRadio
+{
+  position: absolute;
+  top:6px;
+}
+
+.rubricGradingList .rubricCellRadio
+{
+  position: absolute;
+  top:2px;
+}
+
+.selectedCell .rubricCellRadio {top: -60px;}
+
+.pointContainer {font-weight:bold;}
+
+.rubricGradingTable .feedback {display:none;}
+.rubricGradingTable .selectedCell .feedback {display:block;}
+
+.rubricGradingTable .feedback textarea
+{
+  width: 99%;
+}
+
+.rubricGradingTable .selectedCell
+{
+  background:#D1EAEF url(images/button_ok_ia.png) no-repeat 12px 12px;
+  color:#000000;
+  -moz-box-shadow: 0 0 6px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 0 6px rgba(0,0,0,.3);
+  box-shadow: 0 0 6px rgba(0,0,0,.3);
+}
+
+.rubricGradingList .selectedCell
+{
+  background:url(images/button_ok_ti.png) no-repeat 4px 3px;
+}
+
+.rubricGradingTable tbody td:hover
+{
+  border-color: #999;
+  background: #D1EAEF; /* old browsers */
+  background: -moz-linear-gradient(top, #D1EAEF 0%, #b5e0e8 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D1EAEF), color-stop(100%,#b5e0e8)); /* webkit */
+}
+
+.rubricTable tbody td:hover
+{
+  border: solid 1px #ccc;
+  background: #ffffff; /* old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f3f3f3), color-stop(100%,#ededed)); /* webkit */
+}
+
+.rubricGradingTable tbody .selectedCell:hover
+{
+  background: #D1EAEF url(images/button_ok_ia.png) no-repeat 12px 12px;
+}
+
+.rubricCriteriaHead {width:15%!important;}
+
+.rubricInlineEdit {
+  position:relative; *position:static; *height:1%; *zoom:1;
+}
+
+.rubricInlineEdit > div {
+  z-index:100; position: absolute; white-space:nowrap; *position:static; *height:1%; *zoom:1;
+}
+
+.gridActionBar, .gridActionBar th {
+  border: 1px solid #ddd;
+  background: #f1f1f1;
+  -moz-border-radius: 3px;
+  -webkit-border-radius:3px;
+  padding: 6px;
+}
+
+.gridActionBar ul {padding:4px;}
+
+.stepcontent .gridActionBar li {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.rubricGradingTable .data, .rubricTable .data {background: transparent;} /*overriding a legacy class from grid.css*/
+
+.rubricSelectedValue {font-weight:bold; font-size:130%; display:block;}
+.rangePercent {color:#666666; font-size:90%; font-weight:normal;}
+.selectedCell .rangeValue {padding:6px 0 0;  margin:6px 0 0; border-top:1px dashed #aaa;}
+
+.rubricControlContainer .containerTabs, .rubricControlContainer .contentAreaBlock {margin:0;}
+/* end rubric grid */
+
+/*rubric list*/
+.rubricGradingList .rubricGradingCell {
+  position: relative;
+  margin: 1px 0;
+  overflow: hidden;
+}
+.rubricGradingList .feedback {
+  padding: 3px 6px;
+}
+.rubricGradingList .feedback textarea {width: 99%!important;}
+
+.rubricGradingList h4 {position:relative; padding:3px;}
+
+.rubricGradingList h4 span {
+  background-color: #fff1c5;
+  font-weight: normal;
+  padding: 1px 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+}
+
+.rubricGradingTotalPoints {
+  font-size: 110%;
+  margin: 6px 0;
+}
+
+.rubricGradingOverride {
+  padding-bottom:6px;
+  font-size: 110%;
+  margin: 6px 0;
+}
+
+.rubricGradingComments .editor {margin-top:20px;}
+
+.rubricGradingComments .rubricVtbeLabel {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.alignmentPanel tr {color:#555;}
+
+.alignmentPanel .gradingRubric {
+	background-color:#FFFFDD;
+  color:#000;
+}
+
+.alignmentPanel .gradingRubric .title {font-weight: bold;}
+
+.alignmentPanel ul.nav span {padding-left: 3px;}
+
+.rubricPanel thead tr th {white-space: normal !important;}
+
+.rubricPopupContainer .rubricControlContainer
+{
+  margin: 0 0 10px;
+}
+
+.rubricPopupContainer .changeRubricContainer.onlyOne .pagelink.previous,
+.rubricPopupContainer .changeRubricContainer.onlyOne .pagelink.next,
+.rubricPopupContainer .changeRubricContainer.first .pagelink.previous,
+.rubricPopupContainer .changeRubricContainer.last .pagelink.next,
+.rubricGradingCell .pointRangeEdit,
+.rubricGradingCell.selectedCell .pointRangeView
+{
+  display: none;
+}
+
+
+.rubricPopupContainer .changeRubricContainer.first .pagelink.next,
+.rubricPopupContainer .changeRubricContainer.middle .pagelink.previous,
+.rubricPopupContainer .changeRubricContainer.middle .pagelink.next, 
+.rubricPopupContainer .changeRubricContainer.last .pagelink.previous
+{
+  display: inline;
+}
+
+.rubricGradingTable .pointRangeView, .rubricGradingCell.selectedCell .pointRangeEdit {
+  display: block;
+  font-weight: bold;
+}
+
+
+/* ---------------- END: Rubric Grading (@since 9.1 SP6) ---------------- */
+
+/* ---------------------------------- END RUBRICS ---------------------------------- */
+
+
+
+
+
+

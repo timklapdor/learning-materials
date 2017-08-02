@@ -1,0 +1,94 @@
+/*
+ * Styles for the HTML Diff
+ */
+ 
+ 
+ 
+/*Additions llaucys 7.23.09*/
+.diffbox-wrapper {width:80%;margin:9px auto;}
+.legendbox-wrapper {width:90%;margin:9px auto;}
+.legendbox-wrapper > div {border-left:1px solid #ddd;}
+.legendbox-wrapper > div:first-child {border-left:none;}
+.diffbox-left, .diffbox-right, .diffbox-arrow, .legendbox {float:left}
+.diffbox-left, .diffbox-right {width:44%}
+.legendbox-3 {width:33%;*width:30%;}
+.legendbox-2 {width:48%}
+.diffbox-left > div, .diffbox-right > div, .legendbox > div {padding:3px 6px;background:#f9f9f9;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.legendbox > div {background:#FFF;padding:3px 9px;}
+.diffbox-right > div {border:2px solid #ddd;}
+.diffbox-left ul li, .diffbox-right ul li, .legendbox ul li {border-top:1px dotted #ddd;padding:4px 0 2px 0;}
+.diffbox-left ul li:first-child, .diffbox-right ul li:first-child, .legendbox ul li:first-child {border-top:0;}
+.diffbox-left .label, .diffbox-right .label, .legendbox .label {width:30%;color:#666;}
+
+.diffbox-left .field, .diffbox-right .field {width:59%}
+.legendbox .label {width:45%; font-size:90%;}
+.legendbox .field {width:55%;}
+
+.diffbox-arrow {width: 6%; text-align:center;padding-top:50px}
+
+.diffLegend-sample {width:90px!important;height:17px!important;position:static!important}
+.addedImg-sample, .removedImg-sample, .changedImg-sample {height:13px!important}
+/*End llaucys*/
+
+
+.diff-html-added, .diff-html-removed, .added-sample, .removed-sample {
+  position: relative;
+  display: inline-block;
+  font-size: 100%;
+  cursor: pointer;
+}
+
+.diff-html-added, .added-sample {
+  background-color: #ccffcc; /* light green */
+}
+
+.diff-html-removed, .removed-sample {
+  text-decoration: line-through;
+  background-color: #fdc6c6; /* light red */
+}
+
+.diff-html-changed, .changed-sample {
+  background: url(../../images/diffunderline.gif) bottom repeat-x;
+  *background-color: #c6c6fd; /* light blue */
+  cursor: pointer;
+}
+
+.diff-html-added img, .addedImg-sample {
+ border: 2px solid #ccffcc !important;
+}
+
+.diff-html-removed img, .removedImg-sample {
+ border: 2px solid #fdc6c6 !important;
+}
+
+.diff-html-changed img, .changedImg-sample {
+ border: 2px dotted #000099 !important;
+ 
+}
+
+div.diff-removed-image, div.diff-added-image, .diff-addedImg-sample {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 2px;
+  
+  opacity : 0.55;
+  filter: alpha(opacity=55);
+  -moz-opacity: 0.55;
+}
+
+div.diff-removed-image, .diff-removedImg-sample {
+  background-color: #fdc6c6;
+  background-image: url(../../images/diffmin.gif);
+}
+div.diff-added-image,  .diff-addedImg-sample {
+  background-color: #ccffcc;
+  background-image: url(../../images/diffplus.gif);
+  background-repeat: no-repeat;
+}
+
+body{
+  margin-top: 0px;
+}

@@ -1,0 +1,154 @@
+/* start rating code */
+.star1 {
+ background-position: 0 -1000px;
+}
+
+.star2 {
+ background-position: 0 -1016px;
+}
+
+.star3 {
+ background-position: 0 -1032px;
+}
+
+.star4 {
+ background-position: 0 -1048px;
+}
+
+.star5 {
+ background-position: 0 -1064px;
+}
+
+ul.rating li a {
+ left: auto;
+ right: 0;
+}
+
+ul.rating li.one a {
+ right: 0;
+ left: auto;
+}
+
+ul.rating li.two a {
+ right: 16px;
+ left: auto;
+}
+
+ul.rating li.three a {
+ right: 32px;
+ left: auto;
+}
+
+ul.rating li.four a {
+ right: 48px;
+ left: auto;
+}
+
+ul.rating li.five a {
+ right: 64px;
+ left: auto;
+}
+
+ul.rating li a:hover,
+ul.rating li a:focus {
+ left: auto;
+ right: 0;
+ background: url(images/controls.png) no-repeat -90px -1000px;
+}
+
+ul.rating li.one a:hover,
+ul.rating li.one a:focus {
+ background-position: -90px -1000px;
+}
+
+ul.rating li.two a:hover,
+ul.rating li.two a:focus {
+ background-position: -90px -1016px;
+}
+
+ul.rating li.three a:hover,
+ul.rating li.three a:focus {
+ background-position: -90px -1032px;
+}
+
+ul.rating li.four a:hover,
+ul.rating li.four a:focus {
+ background-position: -90px -1048px;
+}
+
+ul.rating li.five a:hover,
+ul.rating li.five a:focus {
+ background-position: -90px -1064px;
+}
+/* end rating code */
+
+div.collectionViewReadMessageBorder {
+ border-right: 1px solid #ccc;
+ margin-right: 30px;
+ border-left: auto;
+ margin-left: auto;
+}
+
+div.collectionViewUnreadMessageBorder {
+ margin-right: 30px;
+ margin-left: auto;
+}
+
+.overridegrade {
+ margin: 3px 9px 3px 0;
+ border-right: 1px solid #ccc;
+ border-left: auto;
+}
+
+td.tag_controls {
+ padding: 3px 6px 3px 3px;
+}
+
+td.msg_controls {
+ padding: 3px 0 3px 3px;
+}
+
+td.checkbox_cell {
+ border-right: auto;
+ border-left: 1px solid #cccccc
+}
+
+.dbThreadInfo dl {
+ float: right;
+}
+
+.dbThreadInfo dt {
+ float: right;
+ clear: right;
+}
+
+.dbThreadInfo dd {
+ margin: 0 .5em 0 0;
+ float: right;
+}
+
+#collectionListContainerDiv .rumble_top ul {
+ float: right;
+}
+
+.thread-detail-page .actionBar {
+ left: -4px;
+ right: auto;
+}
+
+.thread-detail-page #navsecondary .secondaryButton a,.thread-detail-page .actionBar .mainButton a {
+ padding: 0 34px 0 9px !important;
+}
+
+.thread-detail-page #navsecondary .secondaryButton a:before,.thread-detail-page .actionBar .mainButton a:before {
+ right: 10px;
+ left: auto;
+}
+
+.messageCollectionContainer {
+ float: right;
+}
+
+.infoReceipt.receipt-lite {
+ padding: 6px 12px 6px 30px;
+}

@@ -1,0 +1,21 @@
+.assessmentPortlet {
+    left:26px;
+    right:auto;
+}
+
+/* To make sure the display order column doesn't overlap the correct position column */
+.orderingAnswersEdit {
+ padding-right: 60px;
+ padding-left: auto;
+}
+
+.copyQuestion {
+    background-position:100% 0;
+    padding-right:22px!important;
+    padding-left:0!important;
+}
+.linkQuestion {
+    background-position:100% 0;
+    padding-right:22px!important;
+    padding-left:0!important;
+}

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Arimo|Archivo+Narrow|Roboto|Lora|Merriweather|Source+Serif+Pro');
 
 html {
-	background-color: none;
+	background-color: #f8f8f8 !important;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 }
 
 body, p, h1, h2, h3, div, span {
-   font-family: 'Source Sans Pro' !important;
+   font-family:  'Source Sans Pro' !important;
 }
 
 
@@ -32,6 +32,8 @@ table.bouncer {
 .hotItems, .nav-link {
   background: transparent;
 }
+
+/**=====*/
 
 .topTabs {
   background: #fff !important;
@@ -72,23 +74,36 @@ table.bouncer {
 }
 
 
-#courseMenuPalette div.navPaletteContent ul li a, #courseMenuPalette h3 a, #courseMenuPalette div.navPaletteContent ul li a span {
+#courseMenuPalette div.navPaletteContent ul li a, #courseMenuPalette div.navPaletteContent ul li a span {
     color: #989898 !important;
 }
 
-#courseMenuPalette, #courseMenuPalette ul, .actionBar, .actionBarMicro, .menuWrap, .secondaryButton>a, .mainButton h2>a, .secondaryButton h2>a, #courseMenuPalette div.navPaletteContent, #courseMenuPalette a, #controlPanelPalette_contents a, #courseMenuPalette span, #controlPanelPalette_contents span, #courseMenuPalette a span{
-    background-color: #fff !important;
+
+#courseMenuPalette h3 a, .navPaletteTitle H3 a {
+		color: #1a1a1a !important;
+  	font-size: .8em;
+}
+
+#courseMenuPalette, #courseMenuPalette ul, .actionBar, .actionBarMicro, .menuWrap, .secondaryButton>a, .mainButton h2>a, .secondaryButton h2>a, #courseMenuPalette div.navPaletteContent, #courseMenuPalette a, #controlPanelPalette_contents a, #courseMenuPalette span, #controlPanelPalette_contents span, #courseMenuPalette a span, .menuWrap{
+    background-color: transparent !important;
   	color: #989898 !important;
+}
+
+#courseMenuPalette a:hover, #controlPanelPalette_contents a:hover, #courseMenuPalette span:hover, #controlPanelPalette_contents span:hover {
+    background-color: transparent !important;
+  	color: #989898 !important;
+}
+
+#courseMenuPalette_contents li:hover {
+	background: red;
 }
 
 .navPaletteContent h3 a {
   color: #989898;
 }
 
-
-#courseMenuPalette a:hover, #controlPanelPalette_contents a:hover, #courseMenuPalette span:hover, #controlPanelPalette_contents span:hover {
-	background-color: #f5f5f5 !important;
-  	color: #414141 !important;
+.navigationPane {
+	background: #fff !important;
 }
 
 .navDivider, .navPalette h3 {
@@ -132,4 +147,27 @@ a, .portlet .subCategories li a, .blockGroups .itemHead, .blockGroups .itemHeadO
 
 .global-nav-bar .badge, .side-nav .menu-icon span.badge {
 	background-color: #3A87AD;
+}
+
+#pageBanner {
+  max-height: 40vh;
+}
+
+#pageTitleDiv {
+  	background: rgba(0,0,0,.2) !important;
+}
+
+.navDivider, .navPalette h3{
+ background: rgba(0,0,0,.2) !important;
+ padding: 15px 10px;
+  color: #1a1a1a
+}
+
+#containerdiv {
+margin: 0;
+padding: 10px;
+}
+
+#anonymous_element_8 {
+visibility: hidden;
 }

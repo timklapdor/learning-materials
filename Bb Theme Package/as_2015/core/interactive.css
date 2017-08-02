@@ -1,0 +1,496 @@
+/*INTERACTIVE*/
+
+/* @group DISCUSSION BOARD
+----------------------------------------------- */
+
+tr.show
+{
+  display: table-row;
+}
+tr.hide
+{
+  display: none;
+}
+
+/* @end DISCUSSION BOARD*/
+
+
+/* @group BLOGS AND JOURNALS
+
+/*Blogs*/	
+/* Both Blogs and Journals share blog.jsp. The classes .blogContainer and .journalContainer are conditionally applied to the 
+main column, and .blogNav and .journalNav are conditionally applied to the side column. When refactoring the css, please do not 
+remove .blogContainer, .journalContainer, .blogNav or .journalNav from any styles, or the skins will break. */
+
+div.blogContainer {
+    float: left;
+    width: 74%;
+}
+
+/* date separators/headers */
+div.blogContainer h3.blogHead {
+    margin: 0 0 12px 0;
+    padding: 3px 15px;
+    background: #777;
+    font-size: 100%;
+    color: #fff;
+}
+
+/* contains blog entry */
+div.blogContainer div.blogEntry {
+    margin: 12px 0;
+    padding: 0;
+    border: 1px solid #999;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+div.blogContainer div.blogEntry h4 {
+    padding: 9px 12px 0 30px;
+    font-size: 110%;
+    background: url(images/small_discussions.gif) no-repeat 8px 9px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+div.blogContainer div.blogEntry div.entryText {
+    margin: 3px 12px 12px;
+    padding: 9px 0 18px;
+    overflow-x: auto;
+}
+
+/* date of entry */
+div.blogContainer div.entryDate {
+    font-size: 95%;
+    color: #444;
+}
+
+div.blogContainer div.entryDate a { font-weight: bold }
+
+/* entry footer is a wrapper for the entire blog comment area */
+
+div.blogContainer div.entryFooter {
+    padding: 6px 12px 0;
+    margin: 0;
+    background: #eaeaea;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+}
+
+/* action bar for the entry footer - contains the Add Comment control, and comments expander/collapser */
+div.blogContainer .comment-header {
+    float: left;
+    margin: 0;
+    padding: 0;
+    background: none;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+/* contains the Add Comment form - overrides positioning assigned to form by .quickAddPal */
+
+div.blogContainer div.entryFooter div.addBlogComment table { width: 98% }
+
+div.blogContainer div.entryFooter div.addBlogComment textarea { width: 99.5% }
+
+div.blogContainer div.entryFooter div.addBlogComment {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: 0;
+    border-top: 1px solid #999;
+    margin: 0 -12px 0;
+}
+
+div.blogContainer div.entryFooter div.addBlogComment h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+.addBlogComment .stepcontent ol,
+.addBlogComment .stepcontent ol li { width: 100% }
+
+div.blogContainer div.entryFooter div.addBlogComment div.controls { border: none }
+
+/* entry comments */
+
+div.blogContainer ul.entryComments {
+    background: #eaeaea;
+}
+
+div.blogContainer ul.entryComments li {
+}
+
+div.blogContainer ul.entryComments li p {
+    background: #FFF;
+    border: 1px solid #ccc;
+}
+
+div.blogContainer ul.entryComments li p.commentDate {
+    border: none;
+    background: transparent url(images/bubble_top_thin.gif) no-repeat 15px 100%;
+    font-size: 90%;
+    color: #444;
+}
+
+/* h5 wrapped around the name of each commentor */
+div.blogContainer ul.entryComments li h5 {
+    color: #444;
+    font-size: 100%;
+}
+
+div.blogContainer ul.entryComments li.newComment h5 { font-weight: bold } 
+
+/* blogNav is the right column with the EUD portlet ui */
+div.blogNav,
+div.journalNav,
+div.contentAreaNav {
+    float: right;
+    width: 25%;
+    margin: -20px -20px -30px 0!important;
+    border-left: 4px double #ccc;
+    padding-bottom: 40px;
+}
+
+#gradeDetailsFormList,
+#editGradeActionList {
+	width: 100% !important;
+}
+
+div.blogNav ul,
+div.blogNav ul li { background: transparent }
+
+div.blogNav ul li {
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+div.blogNav ul.blogArchiveList li a {
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.indentedWikiList { padding: 0 0 0 22px!important }
+
+.indentedWikiList img { margin: 0 3px 0 -22px }
+
+.blogNav #gradeDetailsForm,
+.journalNav #gradeDetailsForm { margin: 0 6px 0 -18px }
+
+.blogNav #gradeDetailsForm .liveArea,
+.journalNav #gradeDetailsForm .liveArea {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: 1px solid #999;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 6px;
+}
+
+div.blogNav li.currentBlog { font-weight: bold }
+
+div.blogNav li.currentBlog span { font-weight: normal }
+
+/* new entry/post styles for blog.htm */
+div.blogContainer .newItems {
+    background: #FFF1C5;
+    padding: 0 3px;
+    font-weight: normal;
+    color: #000;
+}
+
+div.blogNav .newItems,
+div.blogNav .gradeStatus {
+    margin: 0 4px 0 0;
+    padding: 0 0 0 2px;
+    text-align: center;
+}
+
+div.blogContainer div.u_controlsWrapper span.newItems {
+    /* appears next to the Comments expand/collapse toggle */
+    display: block;
+    float: left;
+    margin-left: 4px;
+}
+
+/* icon legend in the blog nav bar */
+
+div.blogNav ul.iconLegend,
+div.journalNav ul.iconLegend {
+    margin: 12px 0 0 24px;
+    padding: 0;
+}
+
+div.blogNav ul.iconLegend li,
+div.journalNav ul.iconLegend li {
+    margin: 0;
+    padding: 0 0 4px;
+    font-size: 82%;
+    color: #666;
+}
+
+div.blogNav ul ul { margin-left: 9px }
+
+div.blogNav ul#blogArchive ul { margin: 0 9px 9px 18px }
+
+/*Journals*/
+
+div.journalContainer {
+    float: left;
+    margin-right: 1%;
+    width: 74%;
+}
+
+/* date separators/headers */
+
+div.journalContainer h3.blogHead {
+    margin: 0 0 12px 0;
+    padding: 3px 15px;
+    background: #aaa;
+    font-size: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+/* contains blog entry */
+
+div.journalContainer div.blogEntry {
+    margin: 12px 0;
+    padding: 0 0 0 36px;
+    border: 3px solid #eee;
+    border-width: 3px 3px 3px 0;
+    position: relative;
+    background: #fff url(images/blog_notebook_paper.gif) repeat-y 0 0;
+}
+
+div.journalContainer div.blogEntry h4 {
+    padding: 12px 24px 0 12px;
+    margin: 0;
+    background: #fff;
+    text-align: center;
+    font-size: 110%;
+    overflow: hidden;
+}
+
+/* date of entry */
+div.journalContainer div.entryDate {
+    margin: 0;
+    padding: 3px 24px 12px 12px;
+    background: #fff;
+    font-size: 95%;
+    color: #444;
+    text-align: center;
+    border-bottom: 1px solid #C0DACE;
+    z-index: 100;
+}
+
+div.journalContainer div.entryDate a { font-weight: bold }
+
+div.journalContainer div.blogEntry div.entryText {
+    margin: 0;
+    padding: 12px 12px 18px 12px;
+    background: #fff;
+    overflow-x: auto;
+}
+
+/* entry footer is a wrapper for the entire blog comment area */
+div.journalContainer div.entryFooter {
+    margin: 0 0 0 -31px;
+    padding: 0 12px 12px 43px;
+    background: url(images/blog_notebook_paper_bot.gif) repeat-x bottom center;
+    zoom: 1;
+}
+
+/* action bar for the entry footer - contains the Add Comment control, and comments expander/collapser */
+
+div.journalContainer .comment-header {
+    float: left;
+    margin: 0;
+    padding: 0;
+    background: none;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+div.journalContainer div.entryFooter a.genericButton {
+    display: block;
+    float: right;
+}
+
+/* contains the Add Comment form - overrides positioning assigned to form by .quickAddPal */
+div.journalContainer div.entryFooter div.addBlogComment table { width: 98% }
+
+div.journalContainer div.entryFooter div.addBlogComment textarea {  width: 99.35%; }
+
+
+/* allows comment field to resize with window */
+
+div.journalContainer div.entryFooter div.addBlogComment {
+    display: none;
+    margin-bottom: 6px;
+}
+
+/* entry comments */
+
+div.journalContainer ul.entryComments {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+div.journalContainer ul.entryComments li {
+    list-style: none;
+    margin: 0;
+    padding: 6px 0;
+    border-top: 1px solid #C0DACE;
+}
+
+div.journalContainer ul.entryComments li p {
+    margin: 4px 18px;
+    *margin-left: 19px;
+    padding: 0;
+}
+
+div.journalContainer ul.entryComments li p.commentDate {
+    font-size: 90%;
+    color: #444;
+    margin-left: 19px;
+}
+
+/* h5 wrapped around the name of each commentor */
+div.journalContainer ul.entryComments li h5 {
+    display: inline;
+    margin: 0;
+    padding: 3px 0 0 18px;
+    background: url(images/small_blog_comment.gif) no-repeat 0px 3px;
+    color: #000;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+div.journalContainer ul.entryComments li.newComment h5 { font-weight: bold }
+
+div.journalNav ul,
+div.journalNav ul li { background: transparent }
+
+div.journalNav ul li { overflow: hidden }
+
+div.journalNav li.currentBlog { font-weight: bold }
+
+div.journalNav li.currentBlog span { font-weight: normal }
+
+
+/* removed from 9.1 */
+
+/* new entry/post styles for blog.htm */
+
+.newItems {
+    background: #FFF1C5;
+    padding: 0 3px;
+    font-weight: normal;
+    color: #000;
+}
+
+div.journalNav .newItems { padding: 0 2px 2px }
+
+div.journalContainer div.u_controlsWrapper span.newItems {
+    display: block;
+    float: left;
+    margin-left: 4px;
+}
+
+div.journalNav ul ul { margin-left: 9px }
+
+div.journalNav ul#blogArchive ul { margin: 0 9px 9px 18px }
+
+/*Blogs*/
+
+#blogNavLinks {
+    padding: 0;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+
+.contentAreaPalette ul#aboutBlog li.currentBlogView {
+    margin-bottom: 3px;
+    border: 2px solid #0078cb;
+    padding: 2px 4px;
+    background: #EFF6FF;
+}
+
+.currentBlogView a {
+    text-decoration: none;
+    color: black;
+}
+
+ul.blogArchiveList { margin-left: 16px }
+
+ul.blogArchiveList li { padding-bottom: 4px }
+
+#gradeWidget span#blogGradeValue {
+    position: relative;
+    padding-left: 6px;
+}
+
+#blogGradeValue img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* aligns the "Grade Modified Manually" icon */
+.contentAreaNav a.itemHead {
+    display: block;
+    margin: 0pt;
+    padding: 6px 60px 6px 24px;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+/* Give more room for headers without next/prev buttons */
+.contentAreaNav a#aboutBlogLink {
+	padding-right: 6px;
+}
+
+.contentAreaPalette {
+    position: relative;
+    border-top: 2px groove rgba(255, 255, 255, 0.3);
+    padding: 4px 0;
+}
+
+div.blogNav .contentAreaPalette:first-child,
+div.journalNav .contentAreaPalette:first-child,
+.rightColumn-narrow .contentAreaPalette:first-child { border-top: 0 }
+
+.contentAreaPalette ul {
+    padding: 0px;
+    margin: 0 0 0 24px;
+    list-style: none;
+}
+
+.contentAreaPalette li {
+    padding: 0 0 6px;
+    font-size: 90%;
+}
+
+.contentAreaPalette li li { font-size: 100% }
+
+div.iconLegendBlog { border: none }
+
+/* collapsible instructions. used in wikis */
+.collapsibleInstructions {
+  margin:0 0 12px;
+}
+  
+.collapsibleInstructions > a {
+  display: block;
+  margin:3px 0;
+  font-weight: bold;
+}
+
+/* @end BLOGS AND JOURNALS*/
+
+

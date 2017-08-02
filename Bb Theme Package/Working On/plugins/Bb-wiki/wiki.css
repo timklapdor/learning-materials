@@ -1,0 +1,32 @@
+div.blogContainer div.wikiPage {
+  border: 2px solid #ccc;
+}
+
+div.blogContainer div.wikiPage h4 {
+  font-size: 120%;
+  background-image: none;
+  padding: 4px 0;
+}
+
+div.blogContainer div.entryFooter h4 {
+  font-size: 100%;
+}
+
+div.blogContainer div.entryDate {
+  color: #666;
+  font-size: 95%;
+  margin: 6px 0 6px 30px;
+}
+
+.editWiki {
+  margin: 9px 9px
+}
+
+/* required for properly displaying the dynamic buttons in IE */
+.sub {
+  float: left;
+}
+
+.wikiList {
+  float: left;
+}

@@ -1,0 +1,164 @@
+.selected-tab-header,
+.tabs-pull { display: none }
+
+/* 
+.scroller-top.expanded { 
+    height: 80px!important;
+    -webkit-transition: height 2s ease-in-out;
+} 
+.scroller-bottom.expanded { 
+    margin-top: 80px; 
+    -webkit-transition: margin-top 2s ease-in-out;
+} 
+
+.expanded-top-body { 
+    height: 80px!important;
+    overflow: visible; 
+    -webkit-transition: height 2s ease-in-out;
+}  
+    
+.expanded-top-body  .topTabs,  
+.expanded-top-body  .brandingImgWrap, 
+.expanded-top-body .tabWrapper-left, 
+.expanded-top-body .tabWrapper-center,  
+.expanded-top-body .tabWrapper-right {
+    height: 80px; 
+    overflow: visible;
+}  
+.expanded-top-body .appTabs td { 
+    display: table-cell;
+} 
+
+.expanded-top-body .selected-tab-header  { 
+    margin-left: 24px;
+}
+
+.expanded-top-body .appTabs td a { 
+    font-size:    100%; 
+    font-weight: normal; 
+    padding:0 12px;
+}
+
+*/
+
+/* Shared styles for phones and tablets ----------- */
+
+@media only screen 
+and (min-device-width:320px) 
+and (max-device-width:1024px)  { 
+   
+html { 
+	font: 400 0.9em "Helvetica Neue", Helvetica, Arial, sans-serif;
+/* 	-webkit-overflow-scrolling: touch; */
+	/* 		-webkit-tap-highlight-color: #f3f5f6; */
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	background: #EFEDE3;
+	min-width: 0;
+	width: 100%;
+}
+
+.access-reorder,
+.reorder { 
+	display: none!important;
+}
+
+   
+/*Login*/
+
+body.login-page {
+	min-height: 0;
+}
+
+div.loginBody {
+	width: auto;
+}
+
+#loginHeader { 
+	display: none;
+}
+
+#loginBox input[type="text"], 
+#loginBox input[type="password"] {
+	box-sizing: border-box;
+	margin: 0;
+}
+ 
+.login-page #copyright {
+	 width: 100%;
+	 left: auto;
+}
+
+#loginOptions {
+	width: 100%;
+}
+
+/*Global Nav*/
+ 	#quick_links_wrap {
+        position: fixed;
+        top: 17px;
+        z-index: 1000;
+        display: none;
+    }
+    
+/*iframe management*/
+
+   .scroller-top,
+   .scroller-bottom {
+       overflow: auto;
+       -webkit-overflow-scrolling: touch;
+}
+
+    .scroller-top {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+    }
+    
+
+.selected-tab-header {
+	display: block;
+	font-size: 100%;
+	color: #FFF;
+	box-sizing: border-box;
+}
+
+
+
+/*course menu*/
+    #courseMenuPalette_paletteTitleHeading { display: none }
+   
+}
+
+/*breadcrumbs*/
+
+.theme-switch-wrapper { 
+	display: none;
+}
+
+
+/* Desktops and laptops ----------- */
+
+@media only screen 
+and (min-width:1224px) { 
+    /* Styles */
+}
+
+/* Large screens ----------*/
+
+@media only screen 
+and (min-width:1824px) { 
+    /* Styles */
+}
+
+/* iPhone 4 ----------- */
+
+@media only screen 
+and (-webkit-min-device-pixel-ratio:1.5), 
+only screen 
+and (min-device-pixel-ratio:1.5) { 
+    /* Styles */
+}

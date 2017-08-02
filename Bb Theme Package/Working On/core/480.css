@@ -1,0 +1,756 @@
+/* Smartphones (portrait and landscape) ---------- */
+
+@media only screen
+and (min-width:320px) and/* adds a space so YUI can render media queries! */(max-width:480px) {
+
+    /*Login*/
+
+    div.loginBody {
+        padding: 100px 0 0;
+        background-size: 50%;
+        background-position: center 40px;
+        width: auto;
+    }
+
+    #loginBox ul {
+        width: 300px;
+    }
+
+    #loginBox li {
+        padding: 0 0 9px;
+    }
+
+    #loginBox li + li + li {
+        padding: 12px 0 0;
+        float: none;
+        display: block;
+    }
+
+    #loginBox li + li + li + li {
+        text-align: center;
+        float: none;
+        display: block;
+    }
+
+    #loginBox li input[type="submit"] {
+        font-size: 110%;
+        padding: 6px 22px;
+        margin: 0;
+        width: 100%;
+        border-radius: 2px;
+    }
+
+    .forgot a {
+        font-size: 95%;
+    }
+
+    #loginBox input[type="text"],
+    #loginBox input[type="password"] {
+        font-size: 110%;
+        padding: 4px 6px;
+        border-width: 2px;
+        border-radius: 2px;
+    }
+
+    #loginOptions ul li, #loginOptions ul li.subOption {
+        display: block;
+    }
+
+    #loginBox li label,
+    .portlet #loginBoxFull li label {
+        font-size: 75%;
+        padding: 0 0 1px;
+    }
+
+    #loginOptions ul li a,
+    #loginOptions ul li.subOption a {
+        font-size: 100%;
+    }
+
+    #loginOptions {
+        margin: 24px auto 0;
+        width: auto;
+    }
+    #loginAnnouncements ul {
+        width: 300px;
+    }
+
+    .login-page #copyright {
+        margin:16px auto 0;
+        position: relative;
+        bottom: auto;
+        width: auto;
+        left: inherit;
+    }
+
+    html {
+        /*momentum scrolling on mobile*/
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /*iframe management*/
+
+
+    /*Top Frame*/
+
+    iframe#navFrame {
+        height: 34px!important;
+    }
+
+    .scroller-top,
+    .scroller-bottom {
+        width: 100%;
+    }
+
+    .scroller-top {
+        height: 34px
+    }
+
+    .scroller-bottom {
+        margin-top: 34px;
+    }
+
+
+    .selected-tab-header {
+        height: 34px;
+        width: 140px;
+        padding-top: 8px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    /*top frame*/
+
+    .tabWrapper-left,
+    .tabWrapper-center,
+    .tabWrapper-right {
+        padding:0 6px;
+    }
+
+    .brandingImgWrap {
+        display: none;
+    }
+
+    .tabs-pulldown {
+        display: block;
+        position: absolute;
+        opacity: 0;
+        left: 0;
+        top: 0;
+        height: 30px;
+        width: 140px;
+    }
+
+    .contentList .details {
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+
+    /*course menu*/
+    .menuWrap-inner {
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .menuWrap {
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 1px 1px 0 rgba(255, 255, 255, 0.5);
+        border-radius: 0;
+        border: 1px solid rgba(0,0,0,.1);
+        border-width: 1px 1px 1px 0;
+    }
+
+    .ineditmode div.listCm ul.courseMenu li {
+        border: 0;
+        border-left: 0;
+    }
+
+    .ineditmode div.listCm ul.courseMenu li:hover {
+        -webkit-transition: none;
+        background-color: rgba(0,0,0,0.1) !important;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: 0;
+        border-left: 0;
+    }
+
+    .listCm .courseMenu li a.cmimg { opacity: 1 }
+
+    .listCm .courseMenu a, .buttonCm .courseMenu a {
+        margin: 0 26px 0 0;
+        padding: 6px 0 6px 9px;
+    }
+
+    .listCm .courseMenu .divider, .buttonCm .courseMenu .divider {
+        padding: 12px 22px 12px 9px;
+    }
+
+    #courseMenuPalette div.navPaletteContent {
+        padding-top: 0;
+    }
+
+    .navDivider {
+        padding: 18px 6px 4px 9px;
+        font-size: 75%;
+    }
+
+
+    /*global nav*/
+
+    .global-nav-bar-wrap { position: fixed }
+
+
+    .nav-link {
+        width: 30px;
+        box-sizing: border-box;
+        overflow: hidden;
+        color: transparent;
+        background: transparent;
+        height: 34px!important;
+    }
+
+    .global-nav-bar .logout-link {
+        width: 30px;
+    }
+
+    .global-nav-bar {
+        font-size: 13px;
+        height: 30px;
+    }
+
+    #global-nav .global-top-avatar {
+        left: 6px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .global-nav-bar.logout {
+        margin-left: 0;
+        height: 25px;
+        overflow: hidden;
+    }
+
+    .nav-link {
+        box-sizing: border-box;
+        height: 25px !important;
+        background-color: transparent;
+        padding-right: 22px;
+    }
+
+
+    .nav-link .badge {
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+
+    .global-nav-bar .badge, .side-nav .menu-icon span.badge {
+        font-size: 11px;
+        height: 12px;
+        line-height: 12px;
+        margin-left: 0px;
+        padding: 4px 3px;
+        min-width: 12px;
+        height: auto;
+    }
+    body #globalNavPageNavArea {
+        height: auto !important;
+        margin-top: 44px;
+        overflow-y: hidden;
+    }
+    .topTabs .tabWrapper-right .appTabs {
+    }
+    .appTabs td {
+        padding-bottom: 0 !important;
+    }
+
+    .flyout-menu {
+        /*         width: 220px; */
+        top: 34px;
+    }
+
+    .flyout-menu .accordion-wrapper {
+        /*      	width: 172px; */
+    }
+
+    /*content*/
+
+    .contentPaneWide,
+    .portalPane {
+        margin: 0 3px;
+    }
+
+    .containerPortal,
+    .portal .container {
+        margin: 0 !important;
+        min-width: 0;
+    }
+
+    .container {
+        padding: 12px;
+        margin: 10px 0 !important;
+        border-left: none;
+        border-right: none;
+    }
+
+    .paneTabs {
+        margin: 0 0 3px;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        -webkit-border-radius: 0;
+    }
+
+    .paneTabs a {
+        padding: 11px 7px;
+    }
+
+    /*portal*/
+    .column-1,
+    .column-2,
+    .column-3,
+    .column-4,
+    .column-5 {
+        margin: 0;
+        min-height: 20px;
+
+    }
+
+    #column0, #column1 , #column2 {
+        width: 100% !important;
+    }
+
+    .colophon {
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+
+    .contentPaneWide .pageTitle {
+        padding: 20px 10px;
+    }
+
+    /*.portlet,*/
+    /*.containerPortal > div:first-child .portlet,*/
+    /*.containerPortal > div:last-child .portlet,*/
+    /*.containerPortal > div:nth-last-child(-n+2) .reorderableModule {*/
+        /*margin: 4px 4px 0;*/
+        /*border-radius: 1px;*/
+    /*}*/
+
+    /*Breadcrumbs*/
+    .breadcrumbs .path {
+        display: none;
+    }
+
+    /*.path .root a[href*="course_id"],*/
+    /*.simplePath .root a[href*="course_id"] {*/
+        /*padding-left: 24px;*/
+    /*}*/
+
+    /*.path,*/
+    /*.simplePath {*/
+        /*width: 250px;*/
+        /*border: 0;*/
+    /*}*/
+
+    /*.path li,*/
+    /*.simplePath li {*/
+        /*border: 0;*/
+        /*font-size: 12px;*/
+        /*position: relative;*/
+        /*top: -7px;*/
+    /*}*/
+
+    /*.path .root,*/
+    /*.simplePath .root {*/
+        /*width: 100%;*/
+        /*padding: 0;*/
+        /*margin: 0;*/
+        /*box-sizing: border-box;*/
+        /*height: 40px;*/
+        /*padding-top: 9px;*/
+        /*border: 0;*/
+        /*width: 250px;*/
+        /*top: 0;*/
+    /*}*/
+
+    /*.path .placeholder { display: none }*/
+
+    /*.path .root a {*/
+        /*font-size: 18px;*/
+        /*font-weight: normal;*/
+    /*}*/
+
+    /*.path a,*/
+    /*.simplePath a {*/
+        /*text-overflow: ellipsis;*/
+        /*max-width: 100px;*/
+        /*white-space: nowrap;*/
+        /*display: block;*/
+        /*overflow: hidden;*/
+    /*}*/
+
+    /*.path .root a[href*="course_id"],*/
+    /*.simplePath .root a[href*="course_id"],*/
+    /*.path .root a[href*="admin"],*/
+    /*.simplePath .root a[href*="admin"],*/
+    /*.path .root a[href*="tabId="],*/
+    /*.simplePath .root a[href*="tabId="] {*/
+        /*width: auto;*/
+        /*height: auto;*/
+        /*color: #000;*/
+        /*max-width: 230px;*/
+    /*}*/
+
+    /*.path .root a[href*="course_id"]:before,*/
+    /*.simplePath .root a[href*="course_id"]:before { content: none }*/
+
+    /*.path .root a:before,*/
+    /*.simplePath .root a:before {*/
+        /*content: none;*/
+        /*display: none;*/
+    /*}*/
+
+    /*.breadcrumb-controls {*/
+        /*width: 52px;*/
+        /*margin-top: 3px;*/
+    /*}*/
+
+    /*.switcherLabel {*/
+        /*padding: 1px 0 1px!important;*/
+        /*font-size: 63%;*/
+    /*}*/
+
+
+    /*.read-on {*/
+        /*font-size: 11px;*/
+    /*}*/
+
+
+
+
+    /*!*Menu*!*/
+
+    /*#puller,*/
+    /*#puller a {*/
+        /*width: 34px;*/
+        /*height: 34px;*/
+        /*opacity: 1;*/
+    /*}*/
+
+    /*#puller {*/
+        /*top: -54px;*/
+        /*left: 2px;*/
+        /*-webkit-transition: none;*/
+    /*}*/
+
+    /*#puller a,*/
+    /*#puller a:hover,*/
+    /*#puller a:focus,*/
+    /*#puller.pullcollapsed a,*/
+    /*#puller.pullcollapsed a:hover,*/
+    /*#puller.pullcollapsed a:focus {*/
+        /*box-shadow: none;*/
+        /*border: 0;*/
+        /*border-radius: 0;*/
+        /*background: transparent url("images/mobile/course_menu_toggle.png") no-repeat 0 0;*/
+        /*-webkit-transition: none;*/
+    /*}*/
+
+    /*#puller.pullcollapsed {*/
+        /*left: 190px;*/
+        /*opacity: 1;*/
+    /*}*/
+
+    /*#puller a img {*/
+        /*width: 34px;*/
+        /*height: 34px;*/
+    /*}*/
+
+    /*#puller a:after {*/
+        /*content: none;*/
+        /*display: none;*/
+    /*}*/
+
+    /*!*content area*!*/
+
+    /*.locationPane {*/
+        /*width: 100%;*/
+    /*}*/
+
+    /*.navigationPane {*/
+        /*width: 190px;*/
+    /*}*/
+
+    /*.contentPane {*/
+        /*margin: 0 -190px 0 194px;*/
+    /*}*/
+
+    /*.contcollapsed {*/
+        /*margin: 0 4px;*/
+        /*min-width: 312px;*/
+    /*}*/
+
+    /*.navcollapsed {*/
+        /*margin-left: -190px;*/
+    /*}*/
+
+
+    /*.customBanner img {*/
+        /*width:	100%;*/
+    /*}*/
+
+
+
+    /*#pageHeader,*/
+    /*.pageTitle h1,*/
+    /*.pageTitleError h1 { font-size: 18px }*/
+
+    /*.locationPane { margin-top: 0 }*/
+
+    /*.contentList,*/
+    /*.buildList,*/
+    /*.contentListPlain,*/
+    /*.announcementList { margin: -6px -9px }*/
+
+    /*.contentList > li,*/
+    /*.buildList > li,*/
+    /*.contentListPlain > li,*/
+    /*.announcementList > li,*/
+    /*.contentPageItem {*/
+        /*padding: 9px 9px;*/
+        /*margin: 0;*/
+        /*border: 0;*/
+        /*border-top: 1px solid #ccc;*/
+        /*min-height: 18px;*/
+    /*}*/
+
+    /*.liItem:hover,*/
+    /*.buildList > li:hover {*/
+        /*background-color: #f0f0f0;*/
+        /*box-shadow: none;*/
+        /*border: 1px solid #ccc;*/
+        /*-webkit-transition: none;*/
+        /*border-width: 1px 0 0 0;*/
+    /*}*/
+
+    /*.item {*/
+        /*font-size: 100%;*/
+        /*padding: 0 0 6px;*/
+        /*height: auto !important;*/
+    /*}*/
+
+    /*.liItem a[onclick*="toggleDetails"] {*/
+        /*position: relative;*/
+        /*right: -6px;*/
+        /*top: 3px;*/
+        /*visibility: visible;*/
+    /*}*/
+
+    /*!*user content*!*/
+    /*.vtbegenerated img {*/
+        /*max-width: 100%;*/
+        /*box-sizing: border-box;*/
+    /*}*/
+
+
+
+    /*#pageHeader,*/
+    /*#schemePreviewHead,*/
+    /*.pageTitle {*/
+        /*padding: 16px 9px;*/
+        /*box-sizing: border-box;*/
+        /*border-radius: 0;*/
+        /*box-shadow: none;*/
+        /*background: #f0f0f0;*/
+    /*}*/
+
+    /*.actionBar li.mainButton:first-child h2 > a,*/
+    /*.actionBar li.mainButton:first-child > a { padding-left: 7px }*/
+
+    /*.mainButton > a,*/
+    /*.secondaryButton > a,*/
+    /*.mainButton h2 > a,*/
+    /*.secondaryButton h2 > a {*/
+        /*padding: 11px 7px 11px;*/
+    /*}*/
+
+    /*.actionBar,*/
+    /*.actionBarMicro,*/
+    /*.singleControl,*/
+    /*.navPalette .discover { border-radius: 0 }*/
+
+    /*.actionBarMicro,*/
+    /*.actionBar {*/
+        /*-webkit-box-shadow: none;*/
+        /*box-shadow: none;*/
+        /*border-radius: 0;*/
+        /*border:0;*/
+        /*!*         margin:-1px -1px 0; *!*/
+    /*}*/
+
+    /*.actionBarMicro .nav.u_floatThis-right { display: none }*/
+
+    /*!*Copyright*!*/
+
+    /*.logo {*/
+        /*margin-top: 3px;*/
+        /*left: 5px;*/
+    /*}*/
+
+    /*.logo img {*/
+        /*width: 34px;*/
+    /*}*/
+
+    /*.newCopyright {*/
+        /*margin: 0 0 0 3px;*/
+        /*padding: 0 0px 0px 50px;*/
+        /*font-size: 10px;*/
+    /*}*/
+
+    /*#copyright {*/
+        /*margin: 16px 0 0 0px;*/
+    /*}*/
+
+
+    /*.additionalInfo {*/
+        /*display: none;*/
+    /*}*/
+
+    /*!*Data Collection*!*/
+    /*div.noLabelField {*/
+        /*overflow: hidden;*/
+        /*border: 1px solid red;*/
+    /*}*/
+
+    /*div.field {*/
+        /*width: 100%;*/
+    /*}*/
+
+    /*#dataCollectionContainer {*/
+        /*margin: 0 -9px 0 -9px;*/
+    /*}*/
+
+    /*div[id*="step"],*/
+    /*.submittitle,*/
+    /*#infoStep,*/
+    /*#taskStatusStep,*/
+    /*#linkedContentStep {*/
+        /*padding: 9px 6px 9px 0;*/
+    /*}*/
+
+    /*div[id*="stepcontent"] {*/
+        /*padding: 0 0 0 30px;*/
+    /*}*/
+
+    /*.steptitle span, .submittitle span {*/
+        /*font-size: 120%;*/
+    /*}*/
+
+    /*.steptitle, .submittitle {*/
+        /*font-size: 100%;*/
+    /*}*/
+
+    /*div.label, div.gb_gridCell_inner h3.label {*/
+        /*width: 100%;*/
+        /*max-width: 100%;*/
+    /*}*/
+
+    /*div#dataCollectionContainer .taskbuttondiv:first-child,*/
+    /*div#dataCollectionContainer .reqfield + .taskbuttondiv,*/
+    /*div#containerdiv .mapCanvasForm .taskbuttondiv:first-child {*/
+        /*padding: 2px 9px 9px 16px;*/
+        /*margin: 0;*/
+        /*clear: both;*/
+    /*}*/
+
+    /*.reqfield {*/
+        /*padding: 0 0 0 9px;*/
+        /*font-size: 100%;*/
+    /*}*/
+
+    /*.taskbuttonhelp {*/
+        /*padding: 0 0 0px 35px;*/
+        /*font-size: 100%;*/
+    /*}*/
+
+    /*.stepcontent .stepHelp, .stepHelp,*/
+    /*.helphelp, .pageTitle p, .details.label {*/
+        /*font-size: 100%;*/
+    /*}*/
+
+
+    /*!*input styling*!*/
+
+    /*input[type="text"],*/
+    /*input[type="password"],*/
+    /*input[type="checkbox"] {*/
+        /*border-radius: 1px;*/
+        /*border: 1px solid #999;*/
+        /*font-size: 100%;*/
+    /*}*/
+
+    /*input[type="checkbox"][value="1"],*/
+    /*input[type="text"]:focus,*/
+    /*input[type="password"]:focus {*/
+        /*border-color: #555;*/
+        /*border-radius: 1px;*/
+    /*}*/
+
+    /*input[type="text"],*/
+    /*input[type="password"],*/
+    /*select {*/
+        /*font-size: 100%;*/
+    /*}*/
+
+    /*input[type="text"][id*="bbDateTimePicker"] {*/
+        /*width:	110px;*/
+    /*}*/
+
+
+/*}*/
+
+/*!* Smartphones (landscape) ----------- *!*/
+
+/*@media only screen and (min-width:321px) {*/
+
+    /*div.noLabelField {*/
+        /*width: 420px;*/
+    /*}*/
+
+    /*.field input[type="text"][id*="title"] {*/
+        /*width: 410px;*/
+        /*max-width: 410px;*/
+    /*}*/
+
+
+/*}*/
+
+/*!* Smartphones (portrait)----------- *!*/
+
+/*@media only screen and (max-width:320px) {*/
+
+    /*.scroller-top, .scroller-bottom {*/
+        /*width: 320px;*/
+    /*}*/
+
+    /*body {*/
+        /*min-width: 320px;*/
+        /*width: 320px;*/
+    /*}*/
+
+    /*div.noLabelField {*/
+        /*width: 270px;*/
+    /*}*/
+
+    /*.field input[type="text"],*/
+    /*.field select {*/
+        /*max-width: 250px;*/
+    /*}*/
+
+    /*.dateTimeErrorDiv {*/
+        /*display: block*/
+    /*}*/
+
+
+
+}

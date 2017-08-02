@@ -1,0 +1,228 @@
+/*
+ * These styles are common to grading tools system-wide
+ */
+
+.navPageHeader {
+    margin: 1em 0;
+    text-align: center;
+}
+
+.navPageHeader h3 {
+    margin-left: 12px;
+    display: inline;
+}
+
+.navPageHeader span {
+    color: #888;
+    margin: 0 6px 0 0;
+    font-weight: normal;
+}
+
+fieldset.secondaryActions { float: right }
+
+
+/*Informational bubbles*/
+
+.bubble {
+    display: none;
+    padding: 0pt;
+    position: absolute;
+    width: 190px;
+    z-index: 1000;
+}
+
+.bubble ul {
+    background-color: #E2EEFE;
+    border: 1px solid #ACC2DF;
+    border-bottom: 1px solid #5577bb;
+    border-right: 1px solid #5577bb;
+    list-style-type: none;
+    margin: 0;
+    padding: 6px 6px 6px 6px;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.bubble ul li {
+    clear: left;
+    color: #666666;
+    float: left;
+    font-size: 90%;
+    font-weight: bold;
+    margin: 0pt 0pt 4px;
+    padding: 0pt;
+    width: 174px;
+}
+
+.bubble ul li span {
+    color: #666666;
+    display: block;
+    float: left;
+    font-weight: normal;
+    margin-right: 3px;
+    width: 80px;
+}
+
+.bubble ul li span.icon {
+    float: left;
+    width: 20px;
+    overflow: hidden;
+}
+
+.bubble ul li span.label {
+    font-size: 100%;
+    font-weight: normal;
+    width: 147px;
+}
+
+/*
+ * styles for grading navigation in pmo-1500
+ */
+
+.gradeInfoHeader {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    margin: 0 -12px;
+    padding: 3px;
+}
+
+.gradeInfoHeader h3 {
+    margin: 0 4px 0 12px;
+    padding: 7px 0;
+    font-weight: normal;
+    color: #666666;
+}
+
+.gradeInfoHeader h3 span {
+    font-weight: bold;
+    color: #000;
+}
+
+.gradeInfoHeader h3.root {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 3px;
+    background: #888888;
+    color: #FFFFFF;
+}
+
+.gradeInfoHeader h3.root span { color: #FFFFFF }
+
+.gradeInfoHeader h3 span.attempt-count {
+  font-weight: normal;
+  color: #555;
+}
+
+.gradeInfoHeader .count {
+  font-size: 10px;
+  color: #666;
+  display: block;
+  margin: 0px 0px 2px;
+  font-weight: normal;
+  width: 100%;
+  border-bottom: 1px solid #CCC;
+  padding: 2px 0px;
+  text-align: center;
+}
+
+.navStatusButtons {
+  margin: 15px 5px 0px 0px;
+}
+
+.containerOptions .navStatusButtons input[type="button"],
+.containerOptions .navStatusButtons input[type="submit"] {
+  padding: 6px 8px 7px 8px;
+}
+
+.navStatusButtons  .taskbuttondiv { padding: 0 } 
+
+.user-navigator {
+  display: block;
+  position: relative;
+  border: 1px solid #BBB;
+  float: left;
+  border-radius: 3px;
+  margin: 0px 0px 0px 15px;
+  background-image: -moz-linear-gradient(100% 100% 90deg, #cfcfcf, #efefef);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#efefef), to(#cfcfcf));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#cfcfcf";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#cfcfcf);
+  width: 50%;
+}
+
+.pager, .students-pager {
+  display: inline-block;
+  text-align: center;
+}
+
+.pager {
+  width: 30px;
+  vertical-align: bottom;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.pager.next {
+  left: auto;
+  right: 0px;
+  top: 0px;
+  
+  padding: 0px;
+  margin: 0px;
+  border-style:none;
+}
+
+.pager a {
+  display: block;
+  margin: 0 -4px 0px 0px;
+  border-radius: 3px 0px 0px 3px;
+  transition: all 0.1s ease-in 0s;
+  padding: 20px 6px 36px;
+}
+
+.pager.next a {
+  margin: 0 0px 0px -4px;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.pager a span {
+  background: url("/images/ci/gradebook/left.png") no-repeat;
+  left: 15px;
+  margin-top: 3px;
+  position: absolute;
+  right: 0;
+  text-indent: -9999px;
+}
+
+.pager.next a span {
+  background: url("/images/ci/gradebook/right.png") no-repeat;
+  left: 10px;
+}
+
+.pager a:hover,
+.pager a:focus {
+  background-color: #FFF;
+}
+
+.pager a.disabled,
+.pager a.disabled:hover,
+.pager a.disabled:focus {
+  background-color: #EDEDED;
+  opacity: 0.3;
+}
+
+.students-pager {
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  text-align: left;
+  display: block;
+  margin: 0px 35px;
+  position: relative;
+  transition: all 0.1s ease-in 0s;
+}
+
+.students-pager img.user-avatar {
+  width: 24px;
+  height: 24px;
+}

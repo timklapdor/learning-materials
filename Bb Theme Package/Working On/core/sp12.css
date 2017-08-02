@@ -1,0 +1,65 @@
+/* Service Pack 12 additions */
+
+/* Community Tool Settings Page */
+.listTable {
+	background-color: #fff;
+	color: #737373;
+	margin-bottom: 70px;}
+.listTable td:first-child{
+	border-left:1px solid #d8d8d8;}
+.listTable td:last-child{
+	border-right:1px solid #d8d8d8;}
+.listTable td {
+	height:43px;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;}
+.listTable .lastColumn {border-right: 1px solid #d8d8d8 !important;}
+.listTable .toolName {
+	font-size: 15px;
+	font-weight: bold;
+	padding-left:0;}
+.listTable th {
+	border:none;
+	font-weight:bold;
+	background-color:#fff;}
+.listTable .col {
+	display: inline-block;
+	padding: 0 10px;
+	height: 30px;
+	margin: 0 32px;
+	line-height: 30px;
+	width: 80px;
+	text-align: center;}
+.listTable .col img {
+	margin: 0;}
+.listTable .row {
+	height: 30px}
+.listTable .lockCell{
+	display:inline-block;
+	text-align:left !important;
+	margin-left:10px;}
+.listTable .lockCell img{
+	margin-left:7px;
+}
+
+/*lock/unlock*/
+.padlock {
+height: 14px;
+width: 17px;
+margin: 0;
+padding: 4px 2px 4px 7px;
+border: 1px solid #eee;}
+.padlock:hover, #switch:hover {
+	cursor: pointer;
+	cursor: hand;
+	background-color:#eee;
+	border:1px solid #ddd;
+}
+.lockOptions{
+    display: block;
+    margin-left: 0;
+    margin-top: 6px;}
+.lockOptions select{
+	display: block;
+}
+/* END: Community Tool Settings Page */

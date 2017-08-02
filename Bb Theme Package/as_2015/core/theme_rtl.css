@@ -1,0 +1,2867 @@
+body {
+	min-width:100%;
+	width:100%;
+	direction:rtl;
+}
+
+body.topFrame {
+	min-width:100%;
+	direction:rtl;
+}
+
+/* TOP FRAME */
+
+.brandingImgWrap img[src*="header_institution"] {
+	right: 12px;
+	left: auto;
+}
+
+.topGlobalLinks {
+	margin: -5px 0 0 -5px;
+}
+
+.topGlobalLinks ul li {
+	margin: 0 -4px 0 0;
+}
+
+.topGlobalLinks .nav .sub ul {
+	zoom:1;
+	position:absolute!important;
+}
+.topGlobalLinks .nav li.sub, .actionBarMicro ul li, .navPalette {
+	*position:static;
+}
+div.topGlobalLinks ul.nav li.sub:hover, div.actionBarMicro ul li:hover, div.navPalette {
+	*position:relative;
+}
+
+/* @group TOP FRAME HOT ITEMS
+----------------------------------------------- */
+.hotItems {
+	margin: 0 0 0 3px;
+}
+
+.hotSpots {
+	padding: 3px 3px 5px 18px;
+}
+
+.hotSpots a {
+	padding: 0 0 0 6px;
+}
+
+.hotSpots li:after {
+	right: auto;
+	left: 1px;
+}
+/* @end TOP FRAME HOT*/
+
+caption, th, td {
+	text-align:right;
+}
+
+ul.nav li.sub ul.narrow li a, ul.nav li.sub ul.narrow li a:hover {
+	text-align:right;
+}
+
+#navigationPane, .navigationPane {
+	position:absolute;
+	top:0;
+	right:0;
+	left:auto;
+	width:212px;
+	padding:0;
+	margin-top:0;
+	clear:both;
+}
+div.paneTabs ul li, div.paneTabs ul li.active, div.paneTabs ul li.addbutton {
+	float:right;
+	margin:0 0 0 5px;
+}
+
+.paneTabs a {
+	border-right: 1px solid #CCCCCC;
+	border-left: 0;
+}
+
+.paneTabs li:first-child a {
+	border: 0;
+}
+
+#puller {
+	right:212px;
+	left:auto;
+}
+
+#puller a {
+	border-width: 1px 0 1px 1px;
+	border-radius:  3px 0 0 3px;
+}
+#puller a:hover {
+	cursor: e-resize;
+}
+#puller.pullcollapsed a:hover {
+	cursor: w-resize;
+}
+#puller a:after {
+	content: "\2192";
+	right: auto;
+	left: -30px;
+	padding: 3px 1px 3px 6px;
+	border-radius: 12px 0 0 12px;
+}
+#puller.pullcollapsed a:after {
+	content: "\2190";
+}
+
+.menuWrap {
+	border-width: 1px 0 1px 1px;
+	border-radius: 4px 0 0 4px;
+}
+.pullcollapsed a {
+	background-position:-150px -125px!important;
+}
+.contcollapsed {
+	margin-right:15px!important;
+}
+.pullcollapsed {
+	/*right:1px!important;
+	left:auto!important;*/
+}
+.navcollapsed {
+	margin-right: -210px;
+}
+#puller.pullcollapsed {
+	left: -10px;
+	right: auto;
+}
+
+.contentPane {
+	margin:0 222px 0 12px;
+}
+.receipt {
+	*height:1%;
+}
+.receipt p {
+	padding:0;
+	margin:0;
+	_position:auto;
+}
+
+.infoReceipt .button-1,
+.infoReceipt.bad .button-1,
+.infoReceipt.good .button-1 {
+	float: left;
+	margin-left: 0px;
+	margin-right: 5px;
+}
+
+.infoAlert span {
+	padding: 5px 0px 5px 140px;
+}
+
+.infoAlert .button-1 {
+	right: auto;
+	left: 0px;
+}
+
+.path, .simplePath {
+	float: right;
+}
+
+
+div.path ol li, div.simplePath ol li {
+	/* 	float:right; */
+	padding:0 3px 0 12px;
+	background:transparent url(images/indicators_rtl.png) no-repeat 1px 50%;
+}
+div.path li.contextPath {
+	padding: 0 0 0 12px;
+}
+div.path ol li.placeholder, div.simplePath ol li.placeholder {
+	background-image:none;
+	padding:0 3 0 0;
+}
+
+.colophon {
+	float:left;
+	padding:0 55px 3px 0;
+}
+.colophon img {
+	right:0;
+	left:auto;
+}
+div.localViewToggle ul li {
+	float:left;
+}
+div.viewToggle ul li,
+div.helpOnlyToggle ul li {
+	float:left;
+	margin:0 3px;
+	position:relative;
+	top:2px;
+}
+
+div.viewToggle {
+	top:3px;
+	left:5px;
+	right:auto;
+}
+
+.path .root, .simplePath .root {
+	border-left: 1px solid #CCCCCC;
+	border-right:  0;;
+	font-weight: bold;
+	margin: -12px 0 -13px 6px;
+	padding: 13px 0 13px 9px;
+}
+
+
+
+.switcherLabel {
+	float:right;
+	padding:2px 0 2px 4px;
+}
+
+/*div.helpLink {
+	left:4px;
+	right:auto;
+}*/
+
+.breadcrumb-controls {
+	float: left;
+}
+
+.path .root a[href*="course_id"]:before, .simplePath .root a[href*="course_id"]:before {
+	display: block;
+}
+
+.theme-switch {
+	border-left: 1px solid #CCCCCC;
+	border-right: 0;
+	margin: -14px 0 -14px 9px;
+}
+
+.helpLink a.browseIcon:before {
+	content:"\061F";
+	font-size: 150%;
+	top:-3px;
+	right: 4px\9;
+}
+
+
+.vtbeSwitch div.modeSwitchWrap {
+	left:0;
+	right:auto;
+	width:18em;
+}
+.vtbeSwitch {
+	float:left;
+}
+.vtbeTable-legacy textarea {
+	width:99%;
+}
+
+
+div.navDivider {
+	margin:18px 0 4px 0;
+	letter-spacing:2px;
+	zoom:1;
+}
+div.listCm ul.courseMenu {
+	*margin:0 -14px 0 0;
+}
+div.listCm ul.courseMenu li {
+	margin:0 -14px 0 0;
+	*margin:0 0 -3px 0;
+	*padding-left:0;
+}
+
+
+div.listCm ul.courseMenu li.subhead h4 {
+	margin:0 14px 0 0;
+	*margin:0 14px 0 -14px;
+}
+div.listCm ul.courseMenu li.subhead h3 {
+	margin:0 18px 0 0;
+}
+
+div.renameCourseToc { left: auto!important; }
+.renameCourseToc input { margin-right: 18px; }
+
+div.listCm ul.courseMenu li.divider hr {
+	*margin:0;
+}
+div.listCm ul.courseMenu li.collapsed {
+	padding:0 14px 0 0;
+	_padding:3px 14px 0 3px;
+}
+div.listCm ul.courseMenu li.invisible a span.cmLink-hidden, div.listCm ul.courseMenu li.invisible a span.cmLink-empty, div.listCm ul.courseMenu li.invisible span.cmLink-hidden, div.listCm ul.courseMenu li.invisible span.cmLink-empty {
+	margin:0 3px 0 3px;
+	padding:0 3px 0 3px;
+	vertical-align:middle;
+	width:20px;
+}
+div.listCm ul.courseMenu li.invisible a span.cmLink-hidden img, div.listCm ul.courseMenu li.invisible a span.cmLink-empty img, div.listCm ul.courseMenu li.invisible span.cmLink-hidden img, div.listCm ul.courseMenu li.invisible span.cmLink-empty img {
+	padding:0 2px;
+}
+div.pickerMenu {
+	right:14px;
+	left:auto;
+}
+div.controlpanel ul, div.controlpanel ul li, div.tools ul, div.tools ul li {
+	*height:1%;
+}
+
+.navPaletteContent a {
+	background-image: url("images/portlet_expand_alt_rev.png");
+}
+
+.navPaletteContent a.comboLink, .navPaletteContent a.comboLink_active,
+.navPaletteContent ul li h4 a, .navPaletteContent h3 a  {
+	padding: 6px 30px 6px 20px;
+}
+
+.navPaletteContent h3 a {
+	background-position: 98% 8px;
+}
+
+.navPaletteContent .submenu {
+	padding: 0 30px 12px 6px;
+}
+
+.navPaletteCol h3 a, .navPaletteCol h3 a.comboLink {
+	background: url("images/portlet_expand_alt_rev.png") no-repeat scroll 100% 6px transparent;
+}
+
+
+div.controlpanel ul li a.submenuLink, div.controlpanel ul li a.submenuLink_active {
+
+}
+
+.singleControl a.enrolled:before, .singleControl a.not-enrolled:before, .discover a:before {
+	right: -4px;
+	left: auto;
+}
+
+.controlpanel a.submenuLink:after, .controlpanel a.submenuLink_active:after, .tools a.submenuLink:after, .tools a.submenuLink_active:after {
+	content: "\2190";
+	left:4px;
+	right:auto;
+}
+
+h2.navDivider {
+	padding: 18px 12px 4px 6px;
+}
+
+div.tools ul li a, div.pickerMenu ul li a {
+	background-position:5px center;
+	height:1%;
+}
+div.tools ul li a:hover, div.tools ul li a.simpleLink:hover {
+	background-position:5px center;
+	_height:1%;
+}
+div.singleControl ul li, div.singleControl ul, div.singleControl ul li a {
+	_height:1%;
+}
+ul.submenu li ul li {
+	padding-right:12px;
+	padding-left:12px;
+}
+.navPalette ul.courseMenu li a.cmimg, .navPalette ul.courseMenu li a.cmimg:hover, .navPalette h3 a.cmimg, div.buttonCm ul.courseMenu li a.cmimg, div.buttonCm ul.courseMenu li a.cmimg:hover, div.buttonCm h3 a.cmimg {
+	left:4px;
+	right:auto;
+}
+.portlet .subCategories li a, .blockGroups .itemHead {
+	background-position: 99.5% 9px;
+	padding:8px 18px 8px 5px;
+	position:relative;
+}
+.blockGroups .itemHead:not(.itemHeadOpen) {
+	background-image: url("images/portlet_expand_alt_rev.png");
+}
+.itemHead a.cmimg, .itemHeadOpen a.cmimg {
+	top:6px;
+	left:4px;
+	right:auto;
+}
+.blockGroups .itemHead a.cmimg {
+	float:none!important;
+	position:absolute;
+}
+.portlet ul.hierarchyList {
+	margin-right:22px;
+}
+div.buttonCm ul.courseMenu li a.cmimg:hover {
+	margin:0;
+}
+div.buttonCm ul.courseMenu li, div.buttonCm ul.courseMenu li.here {
+	background-position:100% 0!important;
+	margin:4px 0 4px 0;
+}
+.flag {
+	margin:0 3px 0;
+}
+#courseMenu, .navPaletteContent a,
+.myPlaces a.unit, .myPlaces a.course, .myPlaces a.ee, .myPlaces a.program, .myPlaces a.workspace
+{
+	background-position:98% 8px;
+
+}
+
+.navPaletteContent a.comboLink_active, .navPaletteContent a.open {
+	background-position:98% 6px;
+}
+
+
+.controlpanel .submenu a, .explore .submenu a {
+	padding: 2px 6px 2px 9px;
+}
+
+
+
+.evalColumn .taskbuttondiv {
+	text-align:  left;
+}
+
+.button-split-left {
+	float: right;
+}
+.button-split-right {
+	float: right;
+}
+
+div.navPalette a.submenuLink, div.navPalette a.submenuLink_active {
+	left:0;
+	right:auto;
+}
+
+.navPaletteTitle h3 + h3 {
+	position: absolute;
+	right: auto;
+	left: 0;
+}
+
+.item input[type="checkbox"] {
+	float: right;
+	margin: 2px -6px 0 6px;
+}
+.item {
+	margin: 0 18px 0 0;
+}
+
+ul.noimg li, ul.buildList li, ul.contentListPlain li {
+	border-left:none;
+}
+ul.easylist li.read div.item_icon {
+	right:0;
+	left:auto;
+	margin:0 12px 0 8px;
+}
+ul.easylist li div.item_icon, ul.contentList li .item_icon {
+	right:12px;
+	left:auto;
+	margin:0 18px 0 8px;
+	position:absolute;
+}
+ul.easylist li img.item_icon {
+	left:auto;
+	right:31px;
+}
+ul.easylist li.read h3.item, ul.easylist li.read h3, ul.contentList li.read div.item {
+	padding:6px 72px 6px 6px;
+}
+.details ul.attachments li, ul.attachments li, ul.attachments li.read {
+	position:static;
+}
+ul.easylist li h3.item, ul.contentList li div.item {
+	padding:6px 75px 6px 6px;
+}
+
+.contentList .item {
+	padding: 0 60px 12px 0;
+}
+
+
+.contentList .item h3 + .contextMenuContainer {
+	margin: 0  3px 0 0;
+}
+
+.contentListPlain .item h3, .contentList .item h3, .contentListPlain .item .contextMenuContainer, .contentList .item .contextMenuContainer {
+	float: right;
+}
+
+ul.iconsOnly li div.item {
+	border-top:0!important;
+	padding:6px!important;
+}
+ul.iconsOnly li div.item h3 {
+	float:none;
+}
+ul.noimg li h3.item, ul.buildList li h3.item, ul.contentListPlain li div.item {
+	padding:6px 20px 6px 6px;
+}
+ul.contentList li div.details {
+	margin-left:0;
+	padding-left:0;
+	padding-right:60px;
+}
+ul.announcementList li div.details, ul#announcementList li div.details {
+	margin:0 18px 0 13em;
+	padding:0 6px 0 0;
+}
+ul.announcementList-read li h3.item, ul#announcementList li h3.item {
+	padding:6px 6px 6px 13em;
+}
+ul.noimg li div.details, ul.buildList li div.details, ul.contentListPlain li div.details, div.staticHeader div.details, div.staticFooter div.details {
+	margin-left:0;
+}
+
+.item h3, .item .contextMenuContainer {
+	float: right;
+	margin: 0px 0px 0px 3px;
+}
+
+.buildList .detailList {
+	padding: 3px 48px 3px 3px;
+}
+
+.item div.itemDetails, h3.item p.itemDetails, p.itemDetails {
+	left:0;
+	right:auto;
+}
+div.announcementInfo, p.itemDetails, div.itemDetails {
+	border-right:1px dotted #CCC;
+	border-left:none;
+	padding-right:12px;
+	right:auto;
+	left:0;
+	word-wrap:break-word;
+}
+
+.tab-groups h3.item {
+	margin: 0 -12px 8px 11em ;
+	padding: 0 12px 8px 0;
+}
+
+ul.announcementList-read li h3.item,, ul.announcementList-read li div.details {
+										  border:0;
+									  }
+ul.contentList li div.item input[type="checkbox"], ul.contentListPlain li div.item input[type="checkbox"] {
+	float:right;
+	margin:2px -12px 0 6px;
+}
+ul.contentListPlain li div.item h3, ul.contentList li div.item h3 {
+	float:right;
+}
+ul.contentListPlain li div.item div.contextMenuContainer, ul.contentList li div.item div.contextMenuContainer {
+	float:right;
+	margin:0 3px 0 0;
+}
+.contentListRight {
+	right:auto;
+	left:6px;
+}
+div.contentListRight {
+	left:2px;
+	right:auto;
+	text-align:left;
+}
+ul.contentList-slim li.read div.item {
+	padding-left:0;
+	padding-right:48px;
+}
+ul.contentList-slim li.read div.details {
+	margin-left:0;
+	padding-right:48px;
+}
+
+
+.itemDetails + .details {
+	margin-left: 13em!important;
+	margin-right: 20px;
+}
+
+div.itemHeaderControl {
+	left: 14.5em;
+	right: auto;
+}
+
+.infoListFloat li {
+	float:right;
+	background:url(images/indicators_rtl.png) 100% center no-repeat;
+}
+.infoListWrapper h3 a {
+	background-position:99.5% 4px;
+}
+.designAreaHeader, .designAreaFooter {
+	margin:.6em 18px .6em 0;
+}
+.designAreaHeader .headertext, .designAreaFooter .footertext {
+	padding:0 12px .4em 0;
+}
+.actionBar ul li, .actionBar ul li.mainButton, .actionbar_portal ul li, .actionBar ul li.mainButton-legacy {
+	float:right;
+}
+
+.actionBar li.mainButton:first-child h2 > a, .actionBar li.mainButton:first-child > a {
+	padding-right: 30px;
+	padding-left: 12px;
+}
+
+.mainButton > a, .mainButton h2 > a {
+	border-right: 1px solid transparent;
+	border-left: 1px solid #595959 !important;
+}
+
+.secondaryButton > a {
+	border-right: 1px solid #595959 !important;
+	border-left: 1px solid transparent !important;
+}
+
+.actionBar ul li.mainButton, {
+	*float:none;
+	*display:inline;
+	*margin:0;
+}
+.actionBar ul li.mainButton a {
+	*margin:0 0 0 6px;
+}
+.actionBar ul li.mainButton.sub a img, .actionBar ul li.secondaryButton.sub a img {
+	padding:0 4px 0 0;
+	margin:-2px 0 0 0;
+	*padding:0;
+	*margin:-2px 4px 0 -4px;
+}
+.actionBar ul li.search, .actionBar ul li.secondaryButton, .actionbar_portal ul li.search {
+	float:left;
+	*position:static;
+}
+.actionBar ul li.buttontotab, .actionBar ul li.secondaryButtonTab {
+	float:left;
+	margin:0 0 0 6px;
+}
+.searchbar fieldset ol li, .searchbarPicker fieldset ol li {
+	float:right;
+}
+.searchbar fieldset ol li.options, .searchbarPicker fieldset ol li.options {
+	float:left;
+}
+div.navPalette div.actionBarMicro ul li, div.navPalette div.buttons div.actionBarMicro ul li, .portlet div.actionBarMicro ul li, div.actionBarMicro ul li {
+	float:right;
+}
+div.navPalette div.actionBarMicro ul li.mainButton {
+	*float:none;
+}
+.actionBarMicro ul.nav li.sub ul,
+ul.nav li.sub ul {
+	width:208px;
+}
+
+div.navPalette div.actionBarMicro ul li.secondaryButton, div.navPalette div.buttons div.actionBarMicro ul li.secondaryButton {
+	float:left;
+	*position:static;
+}
+
+.nav .sub ul li a, .cmdiv a, .menumini a, #loginLang ul li a {
+	padding: 5px 12px 5px 6px;
+}
+
+ul.nav li.sub ul li {
+	float:none;
+	margin:0;
+	padding:0;
+}
+
+.buildList li input {
+	float: right;
+	margin: 2px 28px 2px 8px;
+}
+
+ul.buildList ul.detailList .detail-item-title {
+	float: right;
+}
+
+ul.buildList ul li > div {
+	margin-left: 0;
+	margin-right: 135px;
+	width: auto;
+}
+
+.currentTags a.closeCloud {
+	text-align: left;
+}
+
+.nav .sub:hover .flyout {
+	right:0;
+	left:auto;
+}
+div.landingPageColumn {
+	float:right;
+}
+div.landingPageColumn ul {
+	margin:0 2em 0 0;
+}
+div.landingPageColumn ul li {
+	margin:0 0 1.6em 0;
+	text-align:right;
+}
+.cmdiv li.contextmenubar_top, .menumini li.contextmenubar {
+}
+a.close {
+	right:auto !important;
+	left:6px;
+}
+
+.subtabs-framed a.close {
+	left: 22px;
+	right: auto;
+}
+
+.tabbedPane .receipt a.close,
+.contentPane .receipt a.close,
+.contentPaneWide .receipt a.close,
+.external-breadcrumbs .breadcrumbs a.close {
+	left: 12px;
+	right: auto;
+}
+
+.column-2, .column-3, .nav .sub .flyout div {
+	float:right;
+}
+
+.edit_controls {
+	float: left;
+	padding: 7px 0 0 6px;
+}
+
+div.edit_controls a, span.edit_controls a {
+	float:none!important;
+	display:inline!important;
+}
+div.edit_controls a img, span.edit_controls a img {
+	padding:0 3px 0 0;
+}
+
+.edit_controls a.moduleToggleLink.expand {
+	background-image: url("images/portlet_expand_alt_rev.png");
+}
+
+.portlet ul.courselist li {
+	clear:both;
+}
+.portlet .eventList li .event {
+	padding:2px 18px 2px 4px;
+}
+.portlet .portletList-img>li {
+	padding:7px 18px 0 0;
+	text-indent:-15px;
+}
+.portlet .courseInformation {
+	text-indent:-16px;
+	padding:0 16px 0 0;
+}
+.portlet .courseDataBlock {
+	text-indent:-4px;
+	padding:0 4px 0 0;
+}
+.portlet .courseDataBlock ul {margin-top:5px}
+.portlet .courseDataBlock ul li {
+	text-indent:0;
+}
+.portlet .courseDataBlock ul li {
+	background:transparent url(images/indicators_rtl.png) no-repeat 99% -892px;
+	padding:0 14px 0 0;
+}
+.portlet .courseDataBlock a, .portlet .courseDataBlock li a {
+	font-weight:normal;
+	text-decoration:none;
+}
+.portlet .courseDataBlock a:hover, .portlet .courseDataBlock li a:hover {
+	text-decoration:underline;
+}
+ul.tagcloud li {
+	background-image:none;
+}
+.portletBlock ul li, .blockContents ul li, ul.memberList li {
+	background-image:none;
+	padding:0;
+	margin:0;
+}
+
+.portlet h2.dragHandle {
+	padding-right: 20px;
+	padding-left: 8px;
+}
+
+
+
+.edit_controls .moduleToggleLink {
+	right: 3px;
+	left: auto;
+}
+
+
+.portlet h2 a {
+	padding:0 0 0 12px;
+	display:block;
+	float:right;
+	text-align:right;
+}
+.portletInfoFooter {
+	left:0;
+	right:auto;
+}
+div.rumble_top ul li, div.rumble ul li {
+	float:right;
+	margin:0 0 0 3px;
+}
+div.rumble_top ul li a, div.rumble ul li a {
+	display:block;
+}
+div.rumble li.multiple label, div.rumble_top li.multiple label, div.rumble li#addTagActionItem_bottom label, div.rumble_top li#addTagActionItem_top label {
+	float:right;
+	*float:none;
+	*display:inline-block;
+	margin:0 6px 0 3px;
+	border:none;
+	border-right:1px dotted #999;
+	padding:0 6px 0 0;
+}
+div.rumble li.multiple input, div.rumble_top li.multiple input, div.rumble li#addTagActionItem_bottom input, div.rumble_top li#addTagActionItem_top input {
+	margin:0 3px 0 0;
+}
+div.rumble li.multiple a, div.rumble_top li.multiple a, div.rumble li#addTagActionItem_bottom a, div.rumble_top li#addTagActionItem_top a {
+	float:right;
+	*float:none;
+	*display:inline-block;
+	margin:0 3px 0 0;
+}
+div.rumbleBuildList, div.rumbleBuildListTop {
+	margin-right:18px;
+	margin-left:0;
+}
+div.rumble {
+	padding-right:34px;
+	padding-left:6px;
+	background-image:url(images/selected_items_bottom_rtl.png);
+	background-position:99% center;
+}
+div.rumble_top {
+	padding-right:34px;
+	padding-left:6px;
+	background-image:url(images/selected_items_top_rtl.png);
+	background-position:99% center;
+}
+div.rumble_top ul li, div.rumble ul li, div.rumble_top ul li.primary, div.rumble ul li.primary {
+	float:right;
+}
+div.rumble_top ul li.secondary, div.rumble ul li.secondary {
+	float:left;
+}
+caption, th, td {
+	text-align:right;
+}
+table.inventory {
+	margin:0 0 1px 0;
+	clear:both;
+}
+table.inventory caption {
+	text-align:right;
+}
+table.inventory thead tr th {
+	text-align:right;
+}
+table.inventory tbody tr th {
+	text-align:right;
+}
+table.sortable span.sortarrow {
+	left:0;
+	right:auto;
+}
+.jumptopage, .inventory_paging.jumptopage {
+	float:left;
+	text-align:right;
+	padding:2px 6px 2px 18px!important;
+}
+table.inventory tr {
+	*position:static!important;
+}
+.sortable a.sortheader {
+	padding-left: 17px;
+	padding-right: 0;
+}
+.key-valueTable td, .key-valueTable th {
+	padding:2px 0 2px 6px;
+}
+div.rumble_top ul li.inventory_paging, div.rumble ul li.inventory_paging {
+	float:left;
+	margin:0 9px 0 0;
+	padding:2px 9px 0 0;
+	unicode-bidi:bidi-override;
+}
+div.rumble_top ul li.inventory_paging a, div.rumble ul li.inventory_paging a, div.rumble_top ul li.inventory_paging a.inactive, div.rumble ul li.inventory_paging a.inactive {
+	display:inline;
+}
+div.rumble_top ul li.secondaryControl, div.rumble ul li.secondaryControl {
+	float:left;
+}
+.paging {
+	clear:both;
+	float:none;
+	text-align:left;
+}
+.paging span {
+	border:none;
+	margin:0 0 0 9px;
+	padding:1px 0 1px 6px;
+}
+.pagingprefs {
+	text-align:left;
+}
+.pagingprefs a {
+	margin-right:2px;
+}
+.pagingform {
+	padding:4px 22px 4px 28px;
+}
+.pagingform a.close {
+	left:4px;
+	right:auto;
+	top:4px;
+}
+div.jumptopage button, .jumptopage button {
+	position:absolute;
+	left:0!important;
+	right:auto!important;
+}
+.rumble li.listActionDivider, .rumble_top li.listActionDivider, .selectList .listActionDivider, .listActionDivider {
+	border:1px dotted #999;
+	border-width:0 0 0 1px;
+	margin:0 0 0 9px;
+	padding:0 0 0 9px;
+}
+.reqfield {
+	float:right;
+	padding: 24px 40px 0 0;
+}
+.required > .label > label:before {
+	left: auto;
+	right: 0px;
+}
+div#dataCollectionContainer .taskbuttondiv:first-child, div#dataCollectionContainer .reqfield + .taskbuttondiv, div#containerdiv .mapCanvasForm .taskbuttondiv:first-child {
+	padding: 18px 58px 18px 24px;
+}
+
+div#dataCollectionContainer .taskbuttonhelp + .taskbuttondiv {
+	padding: 0 58px 18px 24px;
+}
+
+
+.taskbuttonhelp {
+	padding: 0 58px 0 0;
+}
+
+div[id*="step"], .submittitle, #infoStep, #taskStatusStep, #linkedContentStep {
+	padding: 0 12px 34px 24px;
+}
+
+
+
+
+
+div.steptitle span, h3.steptitle span {
+	right:0;
+	left:auto;
+	text-align:left;
+	margin: 0 -18px 0 0;
+}
+div.label, div.gb_gridCell_inner h3.label {
+	float:right;
+	*position:static;
+}
+.required div.label label {
+	padding-left: 0px;
+	padding-right: 20px;
+}
+div.field, div.noLabelField {
+	float:right;
+	*height:1%;
+	*position:static;
+}
+div.colorChip, div.fontPreview, div.portfolioMenuPreview {
+	float:right;
+}
+fieldset.stepcontent, div.stepcontent {
+	margin:0 18px 0 0;
+	padding:6px 16px 12px 4px;
+}
+li.required div.label label img, li.required div.label img {
+	margin:-3px 0 0 0;
+	*margin:-3px -8px 0 0;
+}
+fieldset.stepcontent ol li {
+	*position:static;
+}
+.nestedSubList {margin:6px 30px 6px 6px;}
+
+div#texteditor {
+	float:right;
+}
+li.required div.label label img {
+	float:right;
+	margin:2px -16px 0 3px;
+	*margin:2px 0 0 3px;
+}
+p.taskbuttondiv, p.taskButtonsContent, div.controls, p.okbutton, .quickAddPal .controls, .keyboardAccess .controls, .comText .controls, .e_expandArea .controls {
+	text-align:left;
+}
+p.backLink {
+	right:auto;
+	left:0;
+}
+p.backLink a {
+	display:block;
+	float:left;
+}
+
+/* backlink by itself puts the button way too far down and out of the content area on some pages - closeToContentBackLink*/
+.closeToContentBackLink {
+	margin-left: 20px;
+	margin-right: auto;
+}
+
+#bottom_submitButtonRow {
+	float: left;
+}
+
+.steptitle, .submittitle {
+	margin-right: -14px;
+	margin-left: 0;
+}
+
+
+.backLink a {
+	-moz-border-radius:  0 4px 0 4px;
+	-webkit-border-radius:  0 4px 0 4px;
+	-webkit-box-shadow: -1px 1px 4px #ddd inset;
+	-moz-box-shadow: -1px 1px 4px #DDDDDD inset;
+	background: #EEEEEE;
+	color: #888888;
+	display: inline-block;
+	font-weight: bold;
+	padding: 8px 18px 8px 12px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+	border: 1px solid #cdcdcd;
+	border-width: 1px 1px 0 0;
+}
+
+
+
+.containerTabs {
+	*position:static;
+	*height:1%;
+	*width:100%;
+}
+.containerTabs li {
+	float:right;
+	margin-left:3px;
+	margin-right:0;
+	*height:1%;
+	display:inline-block;
+}
+ul.buttonLibrary {
+	padding:6px 6px 6px 0;
+}
+ul.buttonLibrary li {
+	float:right;
+}
+.schemeWrapper {
+	float:right;
+	margin:0 0 0 12px;
+	*position:static;
+	*height:1%;
+}
+.modulePreview, .schemePreviewBody {
+	*position:static;
+}
+div.mapTabs ul {
+	float:right;
+	padding:0 3px 0 0;
+	*float:none;
+	zoom:1;
+}
+ul.setStatus li {
+	clear:both;
+}
+ul.setStatus li input {
+	float:right;
+	margin:2px 0 2px 4px;
+	*margin:0;
+}
+ul.setStatus li label, ul.setStatus li label.complete {
+	background-position:99% 1px;
+	padding:1px 22px 1px 1px;
+	float:right;
+}
+div.selectItems > div, div.selectItems {
+	float:right;
+	*height:1%;
+	*position:static;
+}
+div.selectItems {
+	*float:none;
+}
+div.selectItems h4 { margin: 0 56px 12px 0;}
+.userSelectedRoles { padding: 3px 56px 6px 0; }
+.userSelectedRoles .selectArrows {left:auto; right:20px;}
+
+#dataCollectionContainer .noLabelField > .userRoleSelect:before,
+#dataCollectionContainer .noLabelField > .selectItems:before {
+	left: auto;
+	right: 347px;
+}
+
+#dataCollectionContainer .noLabelField > .userRoleSelect.selectItems:before {
+	left: auto;
+	right: 358px;
+}
+
+#loginPageContainer {
+	text-align:right;
+}
+#loginHeader h1 {
+	float:right;
+}
+#loginHeader img.productLogo {
+	float:right;
+	margin:12px 20px 0 8px;
+}
+#loginHeader ul {
+	float:left;
+}
+#loginHeader ul li {
+	float:left;
+	border-right:none;
+	border-left:1px dotted #999;
+}
+#loginHeader ul li:first-child {
+	border-right:none;
+}
+#loginLang h3 {
+	float:right;
+}
+#loginLang ul {
+	zoom:1;
+}
+
+#loginLang ul li:first-child {
+	border-right:none;
+}
+
+
+#loginBox li label, .portlet #loginBoxFull li label {
+	text-align: right;
+}
+
+#loginBox li + li + li + li {
+	text-align: left;
+}
+
+
+#loginBox input[type="text"], #loginBox input[type="password"] {
+	margin: 0 -10px 0 0;
+}
+
+#loginBox li + li + li {
+	text-align: right;
+}
+
+
+#loginBox li input[type="submit"] {
+
+	margin: -20px 0 0 -7px;
+
+}
+
+
+
+
+
+
+
+
+#loginOptions {
+	border-width:0 1px 0 0;
+	padding-right:4px;
+	padding-left:0;
+	float:left;
+}
+#loginAnnouncements ul li {
+	margin:5px 15px 5px 5px;
+	padding:0;
+}
+td.checkbox_cell {
+	border-left:1px solid #ccc;
+	border-right:medium none;
+}
+
+div#lightbox {
+	text-align:right;
+}
+.stepTitleRight {
+	right:auto!important;
+	left:6px!important;
+}
+ul.selectList {
+	float:right;
+	*height:1%;
+	display:inline-block;
+	zoom:1;
+	*position:static;
+}
+ul.selectList li {
+	display:inline-block;
+	*height:1%;
+	*position:static;
+}
+ul.selectList li:hover {
+	*position:relative;
+}
+ul.selectList li.sub a, ul.selectList li a {
+	*display:inline-block;
+}
+.sub a img, .sub .button-1 img, .sub .button-2 img {
+	margin:-2px 4px 0 -4px;
+}
+#table1_container {
+	*position:static;
+	*height:1%;
+}
+.gbtable th {
+	text-align:right;
+	*height:1%;
+}
+.gbtable_header th, .gbtable thead th {
+	text-align:right;
+	background-color: #333333 !important;
+	border: 1px solid #333333 !important;
+	font-weight: normal !important;
+}
+.gbtable div.gbText, .gbtable_header div.gbText {
+	float:right;
+	text-align:right;
+	*position:static;
+}
+.gbtable td input, .gbtable th input, .gbtable_header th input {
+	float:right;
+	padding:5px 5px 0 0;
+}
+.gbtable td a.cmimg, .gbtable th a.cmimg, .gbtable_header th a.cmimg {
+	float:left!important;
+	padding:1px 0 0 2px;
+	margin:0 0 0 4px;
+	_margin:0;
+}
+.gbView, .gbEdit {
+	float:right;
+	*position:static;
+}
+.gbEdit {
+	float:right;
+	*position:static;
+	*border:1px solid purple;
+}
+.cmdiv ul li {
+	padding:0;
+	margin:0;
+	background-position:4px 98%;
+}
+.cmdiv li.contextmenubar a, .info a.contextmenubar {
+	text-align:left;
+}
+.comText a.contextmenubar {
+	text-align:left;
+}
+.navtabs li {
+	float:right;
+	border-right:1px solid #CCC;
+}
+.navtabs li.last {
+	border-left:1px solid #CCC;
+}
+.multiAction {
+	clear:right;
+}
+.ortext a.inlineAction {
+	float:left;
+}
+.criteriaItem a {
+	float:left;
+}
+.reporttable table tr th {
+	text-align:right;
+}
+.info ul li {
+	float:right;
+}
+dl.gdetail dt {
+	float:right;
+	text-align:left;
+}
+.gbtablesimple th {
+	text-align:right;
+}
+dl.gdetail dd {
+	padding:5px 190px 5px 0;
+}
+dl.gdetail dd.flush {
+	clear:right;
+	padding-right:0;
+}
+dl.gdetail dt.flush {
+	text-align:right;
+}
+.statbox h2, .stattable h2 {
+	text-align:right;
+}
+.statbox table tr th, .stattable table tr th {
+	text-align:right;
+}
+.viewgrade div.gradeval {
+	float:right;
+	margin-left:15px;
+}
+.viewgrade div.viewblock, .editgrade div.editblock {
+	float:right;
+	margin-left:15px;
+}
+.saver {
+	clear:right;
+}
+div.viewgrade a.actionButton {
+	height:1%;
+}
+div.gradeNav {
+	float:left;
+}
+.viewdiv div, .viewdiv ul.flynav {
+	float:right;
+}
+.viewdiv ul.flynav li nobr {
+	*display:inline;
+	*height:1%;
+}
+.viewdiv ul.flynav li {
+	*display:inline;
+	*height:1%;
+}
+.secondaryActions {
+	float:left!important;
+	padding-left:9px;
+}
+.gradeInfoHeader h3 {
+	margin:0 0 0 12px;
+}
+div.info h3 a {
+	background-position:4px 98%;
+}
+ul.selectList li.sub ul li.current a, ul.selectList li.sub ul li.current a:hover, .nav .sub .current a, .nav .sub .current a:hover {
+	background-position:98% 4px;
+}
+
+.wizardBody #contentPanel {
+	padding: 12px 210px 0 0;
+}
+
+
+/*div.navigationPaneWizard {
+	margin-top:45px;
+	width:159px;
+}*/
+
+.wizardBody .contentPaneWide > .contentBox > .pageTitle {
+	margin: -13px -224px 24px -12px;
+}
+
+.wizardSubmit {
+	margin: 0 -210px -79px 0;
+}
+
+.navigationPaneWizard {
+	margin-top: 63px;
+	padding: 0 12px 0 0;
+	width: 190px;
+}
+
+.wizardBody .modeSwitchWrap {
+	left: 12px;
+	right: auto;
+}
+
+.navigationPaneWizard .navPalette ul li.currentStep:after {
+	content: none;
+}
+
+.navigationPaneWizard .navPalette ul li.currentStep:before {
+	color: #999999;
+	content:  "\2190"; /*left arrow = &larr;*/
+	font-size: 18px;
+	line-height: 0.5;
+	position: absolute;
+	left: 0;
+	top: 9px;
+}
+
+
+div.navigationPaneWizard div.navPalette {
+	/*	margin:0 12px 12px 0;*/
+}
+/*div.navigationPaneWizard div.navPalette ul li.currentStep, div.navigationPaneWizard div.navPalette ul li {
+	background-position:99% center;
+	padding:4px 24px 4px 9px;
+}*/
+/*div.navigationPaneWizard div.navPalette ul li {
+	border-right:1px solid #CDCDCD;
+	border-left:0;
+}*/
+/*body.wizardBody div.containerWizard {
+	zoom:1;
+*height:1%;
+*position:;
+}*/
+.palette h3.alt, .palette h3.top {
+	margin-left:0!important;
+	margin-right:-18px;
+}
+div.buttons_divider {
+	margin-left:12px;
+	margin-right:0!important;
+}
+.unitHomePageTitle a.browse, .caliperTitle a.browse {
+	float:left!important;
+	margin:4px 6px 0 0!important;
+}
+.unitHomePageTitle h1, .caliperTitle h1 {
+	width:100%;
+	*height:1%;
+}
+.caliperTitle, .discoverTitle {
+	*top:-11px;
+	*position:relative;
+}
+div.button, div.button_down {
+	float:right!important;
+	margin-right:0!important;
+	margin-left:12px!important;
+}
+div.landingPageColumn ul li h3, div.landingPageColumn ul.outcomesLanding li a {
+	background:transparent url(images/controls_rtl.png) no-repeat scroll 99% -100px;
+}
+div.landingPageColumn ul.outcomesLanding li a {
+	display:block;
+}
+div.myPlaces ul li a, div.myPlaces ul li a:hover {
+	padding:3px 22px 3px 9px;
+}
+div.myPlaces ul li a.home {
+	padding-left:20px;
+	padding-right:22px;
+}
+div.myPlaces ul li span.homeIconWrap {
+	left:3px;
+	right:auto;
+}
+.sidebar, .sidebar div.paddingWrap, .mainColumn {
+	*position:static;
+	*height:1%;
+}
+.pagedControls {
+	margin:-5px -40px -5px -4px!important;
+}
+div.itemTrayContentPane {
+	left:0;
+	right:200px;
+}
+#cartSubmit p.taskbuttondiv {
+	float:left;
+}
+.searchbarPositioned, .columnActions, .columnActions a {
+	zoom:1;
+}
+div.criteriaSummary ul li {
+	float:right;
+}
+div.criteriaSummary ul li:first-child {
+	margin:0 0 0 1px;
+}
+div.criteriaSummary ul li strong, div.criteriaSummary ul li span, div.criteriaSummary ul li a {
+	float:right;
+	*float:none;
+	*display:inline-block;
+}
+div.criteriaSummary ul li a {
+	padding:0 2px 0 18px;
+	background:#eee url(../../../images/ci/icons/delete_li.gif) no-repeat 0 2px;
+}
+div.criteriaSummary ul li span:last-child, div.criteriaSummary ul li a:last-child {
+	margin:0 0 2px 2px;
+}
+.picker .leftColumn-narrow,
+.picker  #bb-question-discover .leftColumn-narrow  {
+	margin: -12px -20px 0 0;
+}
+
+#bb-question-discover .leftColumn-wide {
+	border-right: 3px double #ccc;
+	margin: -20px -3px 0 -20px;
+}
+
+.criteriaSummary {
+	margin: 0 0 0 -28px;
+	padding-right: 12px;
+	padding-left: auto;
+}
+
+
+.leftColumn-narrow {
+	float:right;
+	margin: 0;
+	border-right: 0;
+	border-left: 3px double #CCCCCC;
+}
+.rightColumn-narrow {
+	float:left;
+	margin-left:0;
+	margin-right:1%;
+}
+.rightColumn-wide {
+	float:left;
+}
+.leftColumn-wide {
+	float:right;
+	border-left: 0;
+	border-right: 3px double #CCCCCC;
+	margin-left: 0;
+	margin-right: -3px;
+}
+
+.paletteItems li {
+	margin: 0 16px 0 0;
+}
+
+.paletteItems li label {
+	display: inline-block;
+	padding: 0 21px 0 0;
+}
+
+.paletteItems li input[type="checkbox"], .paletteItems li input[type="radio"] {
+	right: 0;
+	left: auto;
+}
+
+
+#bb-question-discover .inventoryListContainerDiv, .picker .inventoryListContainerDiv {
+	padding: 0 12px 0 0;
+}
+
+/*.leftColumn-narrow a.itemHead, .rightColumn-narrow a.itemHead, .columnPalette a.itemHead {
+	padding:0 16px 0 0;
+	background-position:100% -445px;
+}
+.leftColumn-narrow a.itemHeadOpen, .rightColumn-narrow a.itemHeadOpen, .columnPalette a.itemHeadOpen {
+	background-position:100% -1040px;
+}*/
+
+.leftColumn-narrow a.itemHead, .rightColumn-narrow a.itemHead, a.itemHead {
+	background-position: 99.5% 6px ;
+	padding: 6px 24px 6px 60px;
+}
+
+/* Give more room for headers without next/prev buttons */
+.contentAreaNav a#aboutBlogLink {
+	padding: 6px 16px;
+}
+
+#filterContainer h2, #filterContainer .columnActions {
+	margin-right: 14px;
+	margin-left: 0;
+}
+
+
+
+ul.paletteItems li label {
+	padding:0 21px 0 0;
+	*zoom:1;
+}
+ul.paletteItems li input[type=checkbox], ul.paletteItems li input[type=radio] {
+	right:0;
+}
+div.searchResultList-sortOptions {
+	text-align:left;
+}
+div.searchResultList-sortOptionsCount {
+	float:right;
+}
+div.blogContainer {
+	float:right;
+	margin-right:0;
+	margin-left:1%;
+}
+div.blogContainer div.blogEntry {
+	border-width:2px 2px 0 0;
+}
+div.blogContainer div.blogEntry h4 {
+	padding:3px 18px 0 0;
+	background-position:100% 2px;
+}
+div.blogContainer div.entryDate {
+	margin:3px 12px 6px 0;
+}
+div.blogContainer div.entryFooter h4 {
+	float:right;
+	padding:0;
+}
+
+div.blogContainer ul.entryComments li p.commentDate {
+	background-position:95% 100%;
+}
+div.blogContainer div.blogInstructions h4 {
+	padding:0;
+	background-image:none;
+}
+div.blogNav {
+	float:left;
+	zoom:1;
+}
+div.blogContainer div.commentControls span.newItems, div.blogContainer div.u_controlsWrapper span.newItems {
+	float:right;
+	margin-right:4px;
+	margin-left:0;
+}
+div.blogNav ul#blogArchive ul {
+	margin:0 18px 9px 9px;
+}
+div.journalContainer {
+	float:right;
+	margin-right:0;
+	margin-left:1%;
+	width:74%;
+}
+div.journalContainer div.blogEntry {
+	padding:0 36px 0 0;
+	border-width:3px 0 3px 3px;
+	background-image:url(images/blog_notebook_paper_rtl.gif);
+	background-position:100% 0;
+}
+div.journalContainer div.blogEntry h4 {
+	padding:12px 12px 0 24px;
+}
+div.journalContainer div.entryDate {
+	padding:3px 12px 12px 24px;
+}
+div.journalContainer div.entryFooter {
+	margin:0 -31px 0 0;
+	padding:0 43px 12px 12px;
+	zoom:1;
+}
+div.journalContainer div.entryFooter h4 {
+	float:right;
+	padding:0;
+}
+div.journalContainer div.entryFooter a.genericButton {
+	display:block;
+	float:left;
+}
+div.journalContainer ul.entryComments li p {
+	margin:4px 18px;
+	*margin-right:19px;
+	*margin-left:18px;
+}
+div.journalContainer ul.entryComments li p.commentDate {
+	margin-left:0;
+	margin-right:19px;
+}
+div.journalContainer ul.entryComments li h5 {
+	padding:3px 18px 0 0;
+	background-position:100% 3px;
+	zoom:1;
+}
+div.journalContainer div.blogInstructions {
+	border:none;
+	padding:3px 12px 6px;
+	background-image:none;
+}
+div.journalContainer div.blogInstructions h4 {
+	padding:0;
+	text-align:right;
+}
+div.journalNav {
+	float:left;
+	zoom:1;
+}
+div.journalContainer div.commentControls span.newItems, div.journalContainer div.u_controlsWrapper span.newItems {
+	float:right;
+	margin-left:0;
+	margin-right:4px;
+}
+div.journalNav ul#blogArchive ul {
+	margin:0 18px 9px 9px;
+}
+#blogNavLinks {
+	left:3px;
+	right:auto;
+}
+ul#blogArchive ul.blogArchiveList {
+	margin-left:0;
+	margin-right:16px;
+}
+#gradeWidget span#blogGradeValue {
+	position:relative;
+	padding-left:0;
+	padding-right:6px;
+}
+#blogGradeValue img {
+	position:absolute;
+	top:0;
+	left:auto;
+	right:0;
+}
+div.blogPalette {
+	zoom:1;
+	*height:1%;
+}
+div#blogNav a#blogListLink {
+	padding-left:48px;
+	padding-right:16px;
+}
+.secondaryActions {
+	float:left!important;
+	padding-left:9px;
+}
+.tocActions a, .tocActions span, .tocActions>img {
+	margin:0 0 0 2px;
+}
+ul#tocTree span {
+	padding:0 0 0 3px;
+}
+.treeNodeIcon {
+	padding:0 0 0 3px;
+}
+.sideTOC, sideTOCMinimize {
+	left:auto;
+}
+.tocBottom_pullExpanded {
+	left:0;
+	right:200px;
+}
+.tocBottom_pullCollapsed {
+	left:0;
+	right:0;
+}
+.tocSide_pullExpanded {
+	left:auto;
+	right:212px;
+}
+.tocSide_pullCollapsed {
+	left:auto;
+	right:14px;
+}
+.sideTOC_panel {
+	padding-left:0;
+	padding-right:220px;
+}
+.sideTOC_panelMin {
+	padding-left:0;
+	padding-right:24px;
+}
+.sideTOC_panelMax {
+	padding-left:0;
+	padding-right:370px;
+}
+.sideTOCMinimize .tocActions {
+	left:auto;
+	right:-4px;
+}
+div.treeContainer ul.tree ul, ul.tree ul {
+	margin:0 12px 0 0;
+}
+div.treeContainer ul.tree li h3+ul {
+	padding:0 9px 9px 0;
+}
+div.treeContainer ul.tree li, ul.tree li {
+	background-position:100% 0;
+}
+div.treeContainer ul.tree li a, ul.tree li a {
+	padding:2px 0 2px 0;
+}
+div.treeContainer ul.tree li a.open_folder {
+	padding:2px 0 2px 3px;
+}
+div.treeContainer ul.tree li a.exp {
+	background-position:100% 0;
+	padding:0 0 0 21px;
+}
+div.treeContainer ul.tree li a.collapse {
+	background-position:100% 0;
+	padding:0 0 0 21px;
+}
+div.treeContainer h3.treehead {
+	padding:0 5px 0 0;
+}
+div.treeContainer ul.tree li.subhead {
+	background-image:none;
+}
+div.treeContainer ul.tree li.subhead h3 a {
+	padding:3px 18px 3px 9px;
+	background-position:98% -1187px;
+}
+div.treeContainer ul.tree li.subhead h3.treeSubhead-collapsed a {
+	background-position:98% -593px;
+}
+div.alignPanel table.attachments th.alignedHeading {
+	padding:6px 0;
+	text-align:right;
+	font-size:100%;
+	color:#444;
+}
+.panelList_leftCol {
+	position:absolute;
+	left:auto;
+	right:6px;
+}
+.panelList_rightCol {
+	position:absolute;
+	right:auto;
+	left:6px;
+}
+.connectionWrapper {
+	float:right;
+	padding:0 0 0 30px;
+}
+.connectionWrapper a {
+	right:auto;
+	left:0;
+}
+.invertItems {
+	margin:0 0 0 26px;
+}
+.invertItems a {
+	right:auto;
+	left:-33px;
+}
+.reorder {
+	-moz-border-radius:0 3px 3px 0;
+	-webkit-border-radius:0 3px 3px 0;
+}
+.item .reorder, .liItem .reorder {
+	top: 0;
+	left:auto;
+	right: 0;
+}
+
+.liItem a[onclick*="toggleDetails"] {
+	position: relative;
+	right: auto;
+	left: -19px;
+	top: -6px;
+	visibility: hidden;
+}
+
+
+.listCm .reorder, .subList-reorder .reorder {
+	left:auto;
+	right: 0;
+}
+.subList-reorder .reorder {
+	left:auto;
+	right:-17px;
+}
+.buttonCm .divider .reorder {
+	left:auto;
+	right:0;
+}
+
+.portlet .reorder {
+	border-radius: 0 3px 3px 0;
+	border-width: 1px 1px 1px 0 ;
+	right: -19px;
+	left: auto;
+}
+
+.item .reorder span, .liItem .reorder span, .listCm .reorder span, .subList-reorder .reorder span, .buttonCm .reorder span, .dndHandle .reorder span, .portlet .reorder span {
+	background-position: -171px -118px;
+}
+
+
+.nestedReceipt {
+	margin:0 0 6px 20% !important;
+	padding: 6px 12px 12px 30px !important;
+}
+.htmlarea .toolbar div>div {
+	float:right;
+}
+
+.u_normalAlign {
+	text-align:right!important;
+}
+.u_indent {
+	margin-right:1.4em!important;
+	margin-left:0;
+}
+.sliderWrapper {
+	float: right;
+	-moz-border-radius: 3px 0 0 0;
+	-webkit-border-radius: 3px 0 0 0;
+}
+#sliderHandle {
+	-moz-border-radius:3px 0 0 0;
+	-webkit-border-radius:3px 0 0 0;
+	border-radius:3px 0 0 0;
+}
+
+#sliderTrack {
+	/*
+  	-moz-border-radius:2px;
+  	-webkit-border-radius:2px;
+  	background:#EDEDED;
+  	border:1px solid #CCCCCC;
+  	display:inline-block;
+  	height:2px;
+  	margin:0 0 0 6px;
+  	width:60px;
+  	position:relative;
+  	top:-2px;
+	*/
+}
+
+
+
+.timediv {
+	padding:2px 0 0 0;
+}
+.calPicker .calHead h3 {
+	*position:absolute;
+	*left:40px;
+	*right:40px;
+}
+.calPicker .calWrapper {
+	*margin-top:1.6em;
+}
+.calPicker .previous {
+	right:2px;
+	left:auto;
+}
+.calPicker .next {
+	left:2px;
+	right:auto;
+}
+.calPicker a.contextmenubar, .calPicker a.contextmenubar:hover {
+	text-align:left;
+}
+.collapseTabsData {
+	padding:6px 6px 6px 24px;
+}
+
+#rubricColSort {
+	margin:0 0 0 60px;
+}
+#rubricColSort li {
+	padding:0 24px 2px 6px;
+	border:1px dotted #999!important;
+	border-width:0 0 0 1px;
+}
+#rubricColSort li input {
+	left:auto;
+	right:0;
+}
+#reorderPanelControls {
+	right:auto;
+	left:0;
+}
+div.copyrightDetailContents {
+	clear:both;
+	right: 0;
+	left: 0;
+	padding:6px 20px 9px 6px;
+}
+.productImg, .copyrightDetailContents ul {
+	float:right;
+}
+.copyrightDetailContents ul {
+	margin:0 12px 0;
+}
+a.closeCopyright {
+	float:left;
+}
+/* new styles for Standards Documents */
+
+.column-nav {
+	float: right;
+}
+.colspan2 {
+	margin:0 190px 0 0;
+}
+.column-inner {
+	padding: 6px 18px 12px 0;
+}
+.column-nav-inner {
+	padding: 0 12px 12px 0;
+}
+.category-column .column-nav-inner {
+	border: 1px solid #ccc;
+	border-right: none;
+	background: -moz-linear-gradient(right, #eeeeee 31%, #dddddd 93%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, right top, left top, color-stop(31%, #eeeeee), color-stop(93%, #dddddd), color-stop(100%, #cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(right, #eeeeee 31%, #dddddd 93%, #cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(right, #eeeeee 31%, #dddddd 93%, #cccccc 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(right, #eeeeee 31%, #dddddd 93%, #cccccc 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc', GradientType=1 ); /* IE6-9 */
+	background: linear-gradient(right, #eeeeee 31%, #dddddd 93%, #cccccc 100%); /* W3C */
+}
+.navmenu-list-item {
+	padding: 12px 18px 12px 21px;
+	-moz-border-radius: 0;
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-topright: 4px;
+	-webkit-border-radius:0;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+.navmenu-list .active, .navmenu-list .active:hover {
+	-moz-box-shadow: inset -2px 2px 4px #555, 0px 1px 0px #999;
+	padding: 12px 20px 12px 21px;
+}
+.category-column .navmenu-list-item:hover {
+	background: -moz-linear-gradient(right, #e0e0e0 31%, #dddddd 93%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, right top, left top, color-stop(31%, #e0e0e0), color-stop(93%, #dddddd), color-stop(100%, #cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(right, #e0e0e0 31%, #dddddd 93%, #cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(right, #e0e0e0 31%, #dddddd 93%, #cccccc 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(right, #e0e0e0 31%, #dddddd 93%, #cccccc 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#cccccc', GradientType=1 ); /* IE6-9 */
+	background: linear-gradient(right, #e0e0e0 31%, #dddddd 93%, #cccccc 100%); /* W3C */
+}
+.category-column .navmenu-list .active {
+	margin: 0 0 0 -1px;
+	-moz-border-radius: 0;
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-topright: 4px;
+	-webkit-border-radius:0;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+.standards .groupLabel {
+	padding:2px 0 0 6px;
+}
+.navmenu-actions-1 {
+	left:auto;
+	right: 1px;
+}
+.active .navmenu-actions-1 {
+	left: auto;
+	right: 4px;
+}
+.navmenu-actions-2 {
+	right:auto;
+	left: 2px;
+}
+.navmenu-list-item .contextMenuContainer {
+	right: auto;
+	left: 2px;
+}
+.standards .column-2 {
+	border: none;
+	border-right:1px solid #ccc;
+}
+.standardForm {
+	left: auto;
+	right: 6px;
+}
+.docs-column .column-nav-inner {
+	border: 1px solid #777;
+	border-left: none;
+	-moz-border-radius: 0;
+	-moz-border-radius-topright:6px;
+	-moz-border-radius-bottomright:6px;
+	-webkit-border-radius: 0;
+	-webkit-border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	background: -moz-linear-gradient(right, #999999 0%, #888888 94%, #777 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, right top, left top, color-stop(0%, #999999), color-stop(94%, #888888), color-stop(100%, #777)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(right, #999999 0%, #888888 94%, #777 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(right, #999999 0%, #888888 94%, #777 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(right, #999999 0%, #888888 94%, #777 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#777', GradientType=1 ); /* IE6-9 */
+	background: linear-gradient(right, #999999 0%, #888888 94%, #777 100%); /* W3C */
+}
+.iconToggle .fieldHelp {
+	left: auto;
+	right: 0;
+}
+.iconToggleWrapper .selectedItem {
+	-moz-box-shadow:inset -2px 2px 2px rgba(0, 0, 0, .3);
+	-webkit-box-shadow:inset -2px 2px 2px rgba(0, 0, 0, .3);
+	box-shadow:inset -2px 2px 2px rgba(0, 0, 0, .3);
+}
+.pageHead-2 span:first-child {
+	border-right: none;
+	border-left: 1px dotted #aaa;
+}
+/* END new styles for Standards Documents*/
+
+/* COURSE WIZARD rtl styles */
+#wizard .accordion_content {
+	text-align: right;
+}
+#wizard .accordion_toggle {
+	background-position: 100% 10px;
+	padding: 10px 20px 10px 45px;
+}
+#wizard .accordion_toggle.collapsed {
+	background-position: 100% 10px;
+}
+#wizard .accordion_toggle .accordionTabLabel {
+	float: right;
+}
+#wizard .accordion_toggle_help .accordionTabLabel {
+	text-align: right;
+}
+#wizard .accordion_toggle_help .number {
+	text-align: right;
+}
+#wizard a.wizard-close {
+	left: 13px;
+	right: auto;
+}
+#wizard .number {
+	float: right;
+	margin-left: 18px;
+}
+#wizard .right-image {
+	left: 8px;
+	right: auto;
+}
+#wizard .previewArea .conclusion {
+	left: 0;
+	right: auto;
+}
+#wizard .helplink .easylist {
+	margin-right: 0px !important;
+	margin-left: 24px !important;
+}
+#wizard .helplink .easylist li {
+	float: right;
+}
+#wizard .gotocourse {
+	text-align: right;
+	padding: 10px 28px 0px 2px;
+}
+#wizard .gotocourse .button-2 {
+	margin-left: 25px;
+	margin-right: 0px;
+}
+#wizard .courseNameAndDescription > .textboxtable {
+	margin-left: 0px;
+	margin-right: 9px;
+}
+/* Course Structures selector styles @since 9.1SP8*/
+
+.courseStructureNameScroller {
+	float: right;
+	border-right: 1px solid #CCC;
+	border-left: 0px;
+}
+.courseStructureNameScroller .current-value {
+	background-position: 100% 20%;
+	padding-right: 17px;
+	padding-left: 0px;
+	right: 15px;
+}
+#wizard .courseStructureNameScroller ol, .courseStructureNameScroller ol {
+	padding: 0px 12px 0px 0px;
+}
+.courseStructureDescription a.unselectStructureButton.existingstructure {
+	margin-left: 39%;
+	margin-right: 0%;
+}
+#wizard .arrow_guide,
+.arrow_guide {
+	background: url('/images/ci/icons/right-arrow-point.png') no-repeat;
+	left: 70%;
+}
+#wizard .courseStructureNameScroller ol li {
+	margin-right: 13px;
+	margin-left: 0px;
+	padding-left: 0;
+	padding-right: 6px;
+}
+.courseStructureChoiceSelected {
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	background-position: 98% 45%;
+}
+.structure_scrollbar_track {
+	right: 160px;
+	margin: 1px 0;
+}
+
+div.courseStructureDescriptions .structure_scrollbar_track {
+	top:10px;
+	margin: 1px 0 1px 3%;
+	right: auto;
+	left: 0;
+}
+
+#wizard .structure_scrollbar_track {
+	margin: 1px 0;
+}
+
+#wizard .courseStructureDescriptions .structure_scrollbar_track {
+	left: 15px;
+	right: auto;
+}
+.theme_scrollbar_track {
+	left: 2px;
+	right: auto;
+}
+.course_welcome_help_scrollbar_track {
+	left: 0px;
+	right: auto;
+}
+#wizard .courseStructureHeader, .courseStructureNameScroller ol li.courseStructureHeader {
+	padding: 12px 0px 4px 15px;
+}
+#wizard .accordion_toggle a#unselectStructure, #wizard .accordion_toggle a#unselectTheme {
+	float: left;
+}
+#wizard .accordion_toggle span#selectedStructureName, #wizard .accordion_toggle span#selectedThemeName {
+	margin-left: 0px;
+	margin-right: 3px;
+}
+.courseStructureChoiceLink {
+	padding: 6px 18px 6px 15px;
+}
+#wizard .courseStructureDescriptions, .courseStructureDescriptions {
+	margin-right: 170px;
+	margin-left: auto;
+}
+.courseStructureDescriptionAndMenu {
+	float: right;
+	padding: 0px 20px 0px 0px;
+}
+.courseStructureMenu {
+	float: left;
+	margin: 0px 20px 0px 0px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.structureIncludeSampleContentCheck {
+	margin-left: 0px;
+	margin-right: -20px;
+	padding-right: 15px;
+	padding-left: 0px;
+	box-shadow: 10px 0 6px #CCCCCC inset;
+}
+#wizard .structureIncludeSampleContentCheck {
+	left: 25px;
+	margin-left: 0px;
+}
+/* End Course Structures selector styles */
+
+/* For Grade Center favorites in control panel  */
+.navPaletteContent .submenu li.favorite {
+	padding-right:10px;
+	padding-left:0px;
+}
+.linkLeftSpacesp {
+	padding:0 5px 0 0;
+}
+
+.floatedReceipt {
+	padding: 10px 10px 10px 22px !important;
+}
+
+.floatedReceipt#receipt_floated_theme {
+	right: auto;
+	left: 45px;
+}
+
+.floatedReceipt#receipt_floated_courseMenu {
+	left: auto;
+	right: 180px;
+}
+
+.floatedReceipt.pointTop .arrow {
+	left: auto;
+	right: 41%;
+}
+
+.floatedReceipt.pointLeft .arrow {
+	left: auto;
+	right: -30px;
+	border-left-color: #FCFBD1;
+	border-left-style: solid;
+	border-right-color: transparent;
+	border-right-style: dashed;
+
+}
+
+.statusFilter {
+	padding-left: auto;
+	padding-right: 8px;
+}
+
+/* more tools menu */
+.nav .sub .slideoutLink img {
+	background: url(images/utilicons_arrows_dark.png) 0px 16px;
+	float: left;
+}
+
+.nav .sub .slideoutLink-active {
+	margin: 0 0 0 -1px;
+	border-width:1px 1px 1px 0;
+	box-shadow:3px 0 3px rgba(0,0,0,.3);
+}
+.nav .sub .slideoutLink-active img {
+	background: url(images/utilicons_arrows_dark.png) 16px 16px;
+}
+
+.slideoutOpen {
+	margin: 0 -1px 0 0!important;
+	background: -moz-linear-gradient(left, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.08)), color-stop(5%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	border-right: none;
+	border-left: 1px solid #ccc;
+}
+
+ul.nav li.sub .slideoutOpen ul {
+	width:auto;
+}
+/* end more tools menu */
+
+/* Styles for autocomplete text fields used in Standards Docs. */
+.autocomplete_pos {
+	left: auto!important;
+	right: 0!important;
+}
+
+.theme-switch .nav .sub ul a  {
+	padding:4px 18px 4px 4px;
+}
+
+.theme-switch .currentTheme a:after {
+	left:auto;
+	right:3px;
+}
+
+.gradeSide_panel .container {
+	padding-left: 45%;
+	padding-right:30px;
+	position: relative;
+}
+
+.gradeSide_panel .contentListPlain {
+	margin:  -20px -30px 0 0;
+}
+
+.collabContainer {
+	padding: 20px 30px 30px;
+}
+
+.gradeSide {
+	left: 20px;
+	right: auto;
+}
+
+
+
+.collapseTabsData a.close {
+	right: auto;
+	left:4px;
+}
+
+.bubble ul li {
+	clear: right;
+	float: right;
+}
+
+.bubble ul li span {
+	float: right;
+	margin-right: auto;
+	margin-left: 3px;
+}
+
+.bubble ul li span.icon {
+	float: right;
+}
+
+#wizard .introtext {
+	padding: 1em 0em 1em 2;
+	float: right;
+}
+
+#wizard .introtext label {
+	margin-left: auto;
+	margin-right: 15px;
+}
+
+#wizard .introtext .courseNameAndDescription table table {
+	margin-left: auto;
+	margin-right: 7px;
+}
+
+#wizard .introtext input, #wizard .introtext textarea {
+	margin-left: auto;
+	margin-right: 15px;
+	padding: 7px 7px 7px 0px;
+}
+
+#wizard .introtext .courseNameAndDescription {
+	float: right;
+	margin-left: 1em;
+	padding-left: 0.8em;
+	border-left: 3px dotted #666;
+	margin-right: auto;
+	padding-right: auto;
+	border-right: none;
+}
+
+#wizard .introtext p {
+	margin: 55px 0px 0px 20px;
+}
+
+.mceToolbarRow5
+{
+	left: 2px !important ;
+	right: auto !important;}
+/* @since 9.1SP3 */
+.itemIconOverlay {
+	-moz-box-shadow:1px 1px 3px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow:1px 1px 3px rgba(0, 0, 0, 0.4);
+	-moz-border-radius:10px 2px 10px 10px; /* (only BbLearn theme uses rounded corners) */
+	-webkit-border-radius:10px;
+	-webkit-border-top-right-radius:2px;
+}
+
+.contentList .itemIconOverlay {
+	left: auto;
+	right: 58px;
+}
+
+/* Since 9.1SP10 */
+.gradingOptions {
+	margin-left: auto;
+	border-left-style: initial;
+	margin-right: 30px;
+	border-right-style: outset;
+}
+
+/* ---------------------------------- RUBRICS ---------------------------------- */
+
+.rubricTable tbody td textarea + script + div {text-align:left;}
+
+/* Reorder Panel*/
+#rubricColReorder {
+	left: auto;
+	right: 15%;
+}
+
+#rubricColSort {
+	margin:0 0 0 60px;
+}
+#rubricColSort li {
+	padding:0 24px 2px 6px;
+	border-left:1px dotted #999!important;
+	border-right: none!important;
+}
+#rubricColSort li input {
+	left:auto;
+	right: 0;
+}
+#reorderPanelControls{
+	left: 0;
+	right:auto;
+}
+
+/* ---------------- BEGIN: Rubric Grading (@since 9.1 SP6) ---------------- */
+
+/* rubric grid */
+.rubricGradingTable, .rubricTable
+{
+	margin:0 -9px 0 0;
+}
+
+.rubricGradingTable .radioLabel,
+.rubricGradingTable .selectedCell .radioLabel,
+.rubricGradingTable .selectedCell .rubricSelectedValue,
+.rubricGradingTable .selectedCell .rubricCellDescription
+{
+	padding:6px 30px 6px 0;
+}
+
+.rubricGradingList .radioLabel
+{
+	padding:3px 24px 3px 6px;
+}
+
+.rubricGradingTable .selectedCell
+{
+	background:#D1EAEF url(images/button_ok_ia.png) no-repeat 95% 12px;
+}
+
+.rubricGradingList .selectedCell
+{
+	background:url(images/button_ok_ti.png) no-repeat 99% 3px;
+}
+
+.rubricGradingTable tbody .selectedCell:hover
+{
+	background: #D1EAEF url(images/button_ok_ia.png) no-repeat 95% 12px;
+}
+/* end rubric grid */
+
+.rubricGradingList h4 span {
+	right: auto;
+	left: 0;
+}
+
+.alignmentPanel ul.nav span {padding: 0 3px 0 0;}
+
+/* ---------------- END: Rubric Grading (@since 9.1 SP6) ---------------- */
+
+/* // start SURVEY RECIPIENT UI // */
+
+/* TABS Style */
+
+/* DIV that holds each tab*/
+div.tab_content {
+	margin: -1px 0px 0px 20px;
+	float: right;
+}
+
+#tabs .arrow:before,#tabs .arrow:after {
+	border-color: -moz-use-text-color transparent #FFF;
+	border-style: none solid solid;
+	border-width: 0 15px 15px;
+}
+
+#tabs .arrow.outer:before,#tabs .arrow.outer:after {
+	border-color: -moz-use-text-color transparent #CCC;
+	border-style: none solid solid;
+	border-width: 0 16px 16px;
+	margin-left: -1px;
+}
+
+.arrow.firstButton:before,.arrow.firstButton:after {
+	left: auto;
+	right: 9%;
+}
+
+.arrow.secondButton:before,.arrow.secondButton:after {
+	left: auto;
+	right: 35%;
+}
+
+.arrow.thirdButton:before,.arrow.thirdButton:after {
+	left: auto;
+	right: 58%;
+}
+
+/* Tab Bar, created via JS*/
+div#tab-bar {
+	margin: 0px 0px 20px 10px;
+}
+
+/* Single Tab */
+div#tab-bar div.mt-tab {
+	float: right;
+	margin: -1px 0px 0px -1px;
+}
+
+/* Single Tab, when active */
+div#tab-bar div.mt-tab-active {
+	margin: -1px 0px 0px -1px;
+	background: url('/images/ci/icons/active_ti.png') no-repeat 7% 50%;
+}
+
+/* CONTENT STYLES */
+.survey-count {
+	right: auto;
+	left: -42px;
+}
+
+.survey-count .right-triangle {
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	left: auto;
+	right: -10px;
+}
+
+.survey-count span img#recipient_count_preview_progress {
+	left: auto;
+	right: 0px;
+}
+
+.survey-count img {
+	right: auto;
+	left: 20px;
+}
+
+.tag-node {
+	margin-right: 0px;
+	margin-left: 10px;
+	padding: 4px 10px 4px 25px;
+}
+
+.tag-node:after {
+	right: auto;
+	left: 9px;
+}
+
+.toggle-button {
+	padding: 7px 15px 7px 0px;
+}
+
+.toggle-button.active {
+	border-radius: 0px 5px 5px 0px;
+}
+
+.toggle-button.active:after {
+	-moz-transform: rotate(3deg);
+	left: 17px;
+	right: 11px;
+}
+
+.toggle-button label {
+	padding: 10px 10px 10px 20px;
+}
+
+.selectButton { /*height: 40px;*/
+	margin-right: 0px;
+	margin-left: 10px;
+	float: right;
+}
+
+.selectButton.active:before,.selectButton.active:after {
+	border-color: #D1EAEF transparent transparent;
+	border-style: solid solid none;
+	border-width: 15px 15px 0px;
+	left: 50%;
+	margin-left: -15px;
+}
+
+.tab_content .formElements {
+	float: right;
+	padding: 17px 17px 17px 180px;
+}
+
+.tab_content .radio-selection {
+	float: right;
+}
+
+/* // end SURVEY RECIPIENT UI // */
+
+/* // start SURVEY ANALYZE REPORT // */
+
+.stepcontent li .response-periods-list li,
+.response-periods-list li {
+	padding: 10px 30px 10px 10px;
+}
+
+.response-periods-list input[type="checkbox"] {
+	left: auto;
+	right: 2px;
+}
+
+.response-period-description,
+.response-period-data span {
+	float: right;
+}
+
+.response-period-data {
+	float: left;
+}
+
+.secondary-options {
+	margin-left: 0px;
+	margin-right: 40px;
+}
+.tertiary-options {
+	margin-left: 0px;
+	margin-right: 80px;
+}
+
+.floatedReceipt.pointRight .arrow {
+	border-right-color: #FCFBD1;
+	border-right-style: solid;
+	border-left-style: none;
+	right: 167px;
+}
+
+/* // end SURVEY ANALYZE REPORT // */
+
+/* // Item Analysis // */
+.questionDetails .rumble_top {
+	margin: -16px 0 0 -8px;
+}
+
+.questionDetails .rumble_top ul {
+	padding: 0 0 0 3px;
+}
+
+.questionDetails .backLink:first-child {
+	right: 0;
+	left: auto;
+}
+
+.questionDetails .backLink:first-child a {
+	border-width: 0 0 1px 1px;
+}
+/* // end Item Analysis // */
+
+/* Resource Picker */
+
+div.resourcePickerContainer div.localViewToggle {
+	float: left;
+}
+
+div.resourcePickerContainer .tabsBar #tabs {
+	float: right;
+}
+
+div.resourcePickerContainer .tabsBar #tabs ul li {
+	float:right;
+}
+
+div.resourcePickerContainer .tabsBar #tabs ul li ul li
+{
+	float: none;
+}
+
+div.resourcePickerContainer ul.dropdown ul
+{
+	right: 0;
+}
+div.resourcePickerContainer ul.dropdown  > li {
+	border-left: 1px solid #BBBBBB;
+	border-right: none;
+}
+
+div.resourcePickerContainer ul.dropdown > li:first-child {
+	border-left: 1px solid #BBBBBB;
+	border-right: none;
+}
+
+/* end Resource Picker */
+
+
+/* Service Pack 12 additions */
+/* Community Tool Settings Page */
+.listTable td:first-child{
+	border-right:1px solid #d8d8d8;
+	border-left:auto;}
+.listTable td:last-child{
+	border-left:1px solid #d8d8d8;
+	border-right:auto;}
+.listTable .lastColumn {border-left: 1px solid #d8d8d8 !important;}
+.listTable .toolName {
+	padding-right:0;}
+.listTable .lockCell{
+	text-align:right !important;
+	margin-right:10px;
+	margin-left:auto;}
+.listTable .lockCell img{
+	margin-right:7px;
+	margin-left:auto;
+}
+/*lock/unlock*/
+.lockOptions{
+	margin-right: 0;
+	margin-left:auto;
+}
+/* END: Community Tool Settings Page */
+/* END: Service Pack 12 additions */
+
+/*
+ * styles for grading navigation in pmo-1500
+ */
+
+.gradeInfoHeader h3 {
+	margin: 0 12px 0 4px;
+}
+
+.navStatusButtons {
+	margin: 15px 0px 0px 5px;
+}
+
+.user-navigator {
+	float: right;
+	margin: 0px 15px 0px 0px;
+}
+
+.pager {
+	left: auto;
+	right: 0px;
+}
+
+.pager.next {
+	right: auto;
+	left: 0px;
+}
+
+.pager a {
+	margin: 0 0px 0px -4px;
+	border-radius: 0px 3px 3px 0px;
+}
+
+.pager.next a {
+	margin: 0 -4px 0px 0px;
+	border-radius: 3px 0px 0px 3px;
+}
+
+.pager a span {
+	background: url("/images/ci/gradebook/right.png") no-repeat;
+	left: 9px;
+}
+
+.pager.next a span {
+	background: url("/images/ci/gradebook/left.png") no-repeat;
+	left: 13px;
+}
+
+.students-pager {
+	text-align: right;
+}
+
+.external-breadcrumbs .breadcrumbs {
+	padding:12px 12px 0 40px;
+}
+
+.external-breadcrumbs .receipt,
+.external-breadcrumbs .contentPaneWide .receipt {
+	padding: 0 0 0 12px;
+}
+.insideContainer{
+	border-right: 1px solid #ccc;
+	border-left: none;
+}
+
+@media only screen
+and (min-width:320px) and/* adds a space so YUI can render media queries! */(max-width:480px) {
+
+	.colophon {
+		float: none;
+		width: auto;
+		margin: 0;
+	}
+
+	.contentPaneWide .pageTitle {
+		padding: 20px 10px;
+	}
+
+}

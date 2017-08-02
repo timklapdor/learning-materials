@@ -1,0 +1,803 @@
+/*    iPads (portrait and landscape) ----------- */
+
+@media only screen 
+and (min-device-width:768px) 
+and (max-device-width:1024px) { 
+    
+
+
+    body {
+/*         min-width: 768px; */
+    }
+
+    /*Top Frame*/
+
+    iframe#navFrame { height: 40px!important }
+
+    body.topFrame {
+        overflow: hidden;
+        height: 40px;
+    }
+
+    .topTabs,
+    .brandingImgWrap { height: 40px }
+
+    .topTabs { background-color: #333 }
+
+    .brandingImgWrap { display: none }
+
+    .brandingImgWrap img[src*="header_institution"] {
+        left: 6px;
+        height: 36px;
+    }
+
+    .selected-tab-header {
+        display: block;
+        height: 40px;
+        width: 240px;
+        font-size: 100%;
+        padding-top: 11px;
+        font-weight: bold;
+        color: #FFF;
+        box-sizing: border-box;
+    }
+
+    .tabs-pulldown {
+        display: block;
+        position: absolute;
+        opacity: 0;
+        left: 40px;
+        top: 0;
+        height: 40px;
+        width: 260px;
+    }
+
+    .topTabs .tabWrapper-right .appTabs,
+    .topTabs-compact .tabWrapper-right .appTabs { float: left }
+
+    .tabWrapper-left,
+    .tabWrapper-center,
+    .tabWrapper-right {
+        height: 40px;
+        overerflow: hidden;
+        padding-left: 24px;
+    }
+
+    .appTabs { display: block }
+
+    #topTab,
+    .appTabs a {
+        padding-left: 0;
+        padding-top: 8px;
+        text-align: left;
+        font-weight: bold;
+        height: 40px;
+        color: #fff;
+        box-sizing: border-box;
+    }
+
+    #topTabActive,
+    .appTabs .active a,
+    .appTabs .active a:hover,
+    .appTabs .active a:focus {
+        color: #fff;
+        text-shadow: none;
+    }
+
+    .appTabs a span { border: 0 }
+
+    .appTabs .active .hideoff,
+    .appTabs .active a:hover .hideoff,
+    .appTabs .active a:focus .hideoff,
+    .toppTabs-compact .appTabs .active .hideoff,
+    .toppTabs-compact .appTabs .active a:hover .hideoff,
+    .toppTabs-compact .appTabs .active a:focus .hideoff {
+        right: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 0;
+        border-top: 6px solid #FFF;
+        left: auto;
+        bottom: auto;
+        top: 50%;
+        margin-top: -3px;
+        display: none;
+    }
+
+    /*Global nav*/
+
+    .global-nav-bar-wrap { position: fixed }
+
+    .flyout-menu {
+        width: 320px;
+        top: 40px;
+    }
+
+    .flyout-menu .accordion-wrapper { width: 272px }
+
+    .flyout-menu .accordion_toggle span {
+        line-height: 34px;
+        padding: 0 16px;
+    }
+
+    .flyout-menu .labelMenuItem { padding: 18px 6px 0 18px }
+
+    .accordion_content li { margin: 0 18px }
+
+    .nav-link {
+        box-sizing: border-box;
+        padding-top: 7px;
+        height: 40px;
+        background-color: transparent;
+        padding-right: 22px;
+    }
+    
+    .nav-link .badge {
+	    position: relative;
+	    top: auto;
+	    right: auto;
+	   }
+	   
+	   .global-nav-bar .badge, .side-nav .menu-icon span.badge {
+			font-size: 11px;
+			height: 12px;
+			line-height: 12px;
+			margin-left: 0px;
+			padding: 4px 3px;
+			min-width: 12px;
+			height: auto;
+}
+
+
+
+
+
+    #global-nav .global-top-avatar { top: 11px }
+
+    .global-toggle { top: 18px }
+
+    .global-nav-bar.logout {
+        margin-top: 6px;
+        height: 24px;
+        overflow: hidden;
+    }
+    
+    
+    /*Contextual Menu*/
+    .nav .sub ul li a, 
+    .cmdiv a, 
+    .menumini a, 
+    #loginLang ul li a,
+    .cmdiv a  {
+	    font-size: 100%;
+    }
+    
+    .cmdiv li.contextmenubar_top, .menumini li.contextmenubar {
+	    width: 212px;
+    }
+    
+    .cmdiv ul {
+		width: 210px;
+		box-sizing: border-box;
+}
+
+    /*Login page*/
+    
+/*
+div.loginBody {
+	background-position: center 94px;
+	background-size: 46%;
+	padding-top: 224px;
+}
+*/
+div.loginBody {
+	background-position: center 94px;
+	background-size: 57%;
+	width: 600px;
+	margin: 0 auto;
+	padding-top: 224px;
+  }
+    
+    
+
+    #loginBox li + li + li {
+        text-align: left;
+        float: left;
+    }
+
+    #loginBox li + li + li + li {
+        text-align: right;
+        float: right;
+    }
+
+    #loginBox li input[type="submit"] {
+    	margin: 0;
+        height: 2.5em;
+        min-width: 8em;
+    }
+    
+#loginBox ul {
+	   width: 435px;
+}
+
+#loginAnnouncements ul { 
+	width: 600px;
+}
+
+    .table.bouncer,
+    .appTabs {
+        /* display: none;*/
+    }
+
+    #quick_links_wrap {
+        /* display: none;*/
+    }
+
+    .breadcrumbs {
+        margin: 0;
+        padding: 0 0 0 24px;
+        height: 70px;
+        box-sizing: border-box;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+    }
+    
+    .path .root a[href*="course_id"],
+    .simplePath .root a[href*="course_id"] {
+	    padding-left: 24px;
+    }
+
+    body.login-page { min-height: 0 }
+
+    .contentPaneWide,
+    .portalPane { margin: 0 6px }
+
+    .containerPortal,
+    .portal .container { 
+    	padding: 0 6px;
+    }
+
+    .portlet { 
+    	margin: 0 3px 6px;
+    	border-radius: 1px;	
+    }
+
+    .containerPortal > div:first-child .portlet { margin: 0 3px 6px 0 }
+
+    .containerPortal > div:last-child .portlet {
+        margin: 0 0 6px 3px;
+    }
+
+    .containerPortal > div:nth-last-child(-n+2) .reorderableModule { margin: 0 0 6px 3px }
+
+    .edit_controls a { opacity: 1 }
+
+    
+
+    .edit_controls .moduleToggleLink {
+        height: 14px;
+        left: 0;
+        opacity: 0.5;
+        width: 80%;
+        height: 28px;
+        bottom: 0;
+        background-position: 3px 9px !important;
+    }
+
+    .theme-switch-wrapper { display: none }
+
+    .modeSwitchWrap { margin-top: 20px }
+
+    .helpLink { margin: 19px 6px 0 0 }
+
+    .path,
+    .simplePath {
+        width: 560px;
+        border: 0;
+    }
+
+    .path li,
+    .simplePath li {
+        border: 0;
+        font-size: 12px;
+        position: relative;
+        top: -16px;
+    }
+
+    .path .root,
+    .simplePath .root {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        height: 60px;
+        padding-top: 16px;
+        border: 0;
+        width: 520px;
+        top: 0;
+    }
+
+    .path .placeholder { display: none }
+
+    .path .root a {
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    .path a,
+    .simplePath a {
+        text-overflow: ellipsis;
+        max-width: 175px;
+        white-space: nowrap;
+        display: block;
+        overflow: hidden;
+    }
+    
+    .helpLink a.browseIcon {
+	    font-size: 105%;
+    }
+
+    #pageHeader,
+    .pageTitle h1,
+    .pageTitleError h1 { font-size: 24px }
+
+    .locationPane { margin-top: 0 }
+
+    .container { padding: 12px 18px }
+
+    .contentList,
+    .buildList,
+    .contentListPlain,
+    .announcementList { margin: -12px -18px }
+
+    .contentList > li,
+    .buildList > li,
+    .contentListPlain > li,
+    .announcementList > li,
+    .contentPageItem {
+        padding: 12px 18px;
+        min-height: ;
+        margin: 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    .liItem:hover,
+    .buildList > li:hover {
+        background-color: #f0f0f0;
+        box-shadow: none;
+        border: 1px solid #ccc;
+        -webkit-transition: none;
+        border-width: 1px 0 0 0;
+    }
+
+    .liItem a[onclick*="toggleDetails"] {
+        position: relative;
+        right: -12px;
+        top: -6px;
+        visibility: visible;
+    }
+
+
+
+    .paneTabs { 
+    	margin: 0 0 6px;
+		border: 0;
+		border-radius: 0;
+		border-bottom: 1px solid #ccc;
+	}
+	
+	.paneTabs a {
+		padding: 12px 18px;
+	}
+
+    .breadcollapsed { margin-left: 0 }
+
+    .breadcollapsed .path,
+    .breadcollapsed .simplePath { width: 540px }
+
+    .path,
+    .simplePath {
+        max-width: 540px;
+        float: none;
+    }
+
+    #dataCollectionContainer { margin: -20px -18px 0 -18px }
+
+    div[id*="step"],
+    .submittitle,
+    #infoStep,
+    #taskStatusStep,
+    #linkedContentStep { padding: 18px 18px 18px 12px }
+
+    .selectItems select {
+        height: 60px;
+        width: 246px;
+        max-width: 246px;
+    }
+
+    .selectItems { width: 536px }
+    
+    /*Error message*/
+    
+	.contentPane .receipt, 
+	.contentPaneWide .receipt {
+		margin: 0;
+		-webkit-box-shadow: 0 -6px 9px rgba(0, 0, 0, 0.1) inset;
+		border-radius: 0;
+	}
+
+    /*Discussions*/
+
+    .db-message .profileCardAvatarThumb img { left: -80px }
+
+    .db-message-wrapper .dbThreadFooter .threadButtons,
+    .db-message-wrapper .dbThreadHeader .threadButtons,
+    .db-message-wrapper .dbThreadFooter .navButtons,
+    .db-message-wrapper .dbThreadHeader .navButtons {
+        opacity: 1!important;
+        -webkit-transition: none;
+        transition: none;
+    }
+
+    .colophon { width: 290px }
+
+    .hotSpots,
+    .hotItems { display: none }
+
+    /*Global Nav Bar*/
+
+    .global-nav-bar { font-size: 13px }
+    
+    /*iframe management*/
+
+    .scroller-bottom { 
+    	margin-top: 40px;
+    }
+    
+    
+    
+
+    /*Content Area*/
+
+    #contentArea,
+    #schemePreviewBody,
+    .contentBox {
+        border-radius: 0;
+        border: 1px solid rgba(0,0,0,.25);
+        min-height: 819px;
+    }
+
+    #pageHeader,
+    #schemePreviewHead,
+    .pageTitle {
+        padding: 16px 18px 18px;
+        min-height: 60px;
+        box-sizing: border-box;
+        border-radius: 0;
+        box-shadow: none;
+        background: #f0f0f0;
+    }
+
+    .actionBar li.mainButton:first-child h2 > a,
+    .actionBar li.mainButton:first-child > a { padding-left: 18px }
+
+    .mainButton > a,
+    .secondaryButton > a,
+    .mainButton h2 > a,
+    .secondaryButton h2 > a { padding: 10px 14px 11px }
+
+   /*Data collection*/
+   
+   .reqfield {
+	   line-height: 1;
+	   padding-left: 20px;
+}
+
+.steptitle, .submittitle {
+	margin: 0;
+}
+
+input[type="text"], 
+input[type="password"],
+input[type="checkbox"] {
+	border-radius: 1px;
+	border: 1px solid #999;
+	font-size: 100%;
+}
+
+input[type="checkbox"][value="1"],
+input[type="text"]:focus, 
+input[type="password"]:focus {
+	border-color: #555;
+	border-radius: 1px;
+}
+
+input[type="text"], 
+input[type="password"], 
+select {
+	font-size: 100%;
+}
+
+    /*Menu*/
+
+#puller,
+#puller a {
+        width: 34px;
+        height: 34px;
+        opacity: 1;
+    }
+
+    #puller {
+        top: -58px;
+        left: 9px;
+        -webkit-transition: none;
+    }
+
+    #puller a,
+    #puller a:hover,
+    #puller a:focus,
+    #puller.pullcollapsed a,
+    #puller.pullcollapsed a:hover,
+    #puller.pullcollapsed a:focus {
+        box-shadow: none;
+        border: 0;
+        border-radius: 0;
+        background: transparent url("images/mobile/course_menu_toggle.png") no-repeat 0 0;
+        -webkit-transition: none;
+    }
+
+    #puller.pullcollapsed {
+        left: 249px;
+        opacity: 1;
+    }
+
+    #puller a img {
+        width: 34px;
+        height: 34px;
+    }
+
+    #puller a:after {
+        content: none;
+        display: none;
+    }
+    
+    /*Breadcrumbs*/
+
+    .path .root a[href*="course_id"],
+    .simplePath .root a[href*="course_id"],
+    .path .root a[href*="admin"],
+    .simplePath .root a[href*="admin"],
+    .path .root a[href*="tabId="],
+    .simplePath .root a[href*="tabId="] {
+        width: auto;
+        height: auto;
+        color: #000;
+        max-width: 500px;
+    }
+
+    .path .root a[href*="course_id"]:before,
+    .simplePath .root a[href*="course_id"]:before { content: none }
+
+    .path .root a:before,
+    .simplePath .root a:before {
+	 	content: none;
+	 	display: none;
+    }
+
+    .actionBarMicro .nav.u_floatThis-right { display: none }
+
+    .actionBar,
+    .actionBarMicro,
+    .singleControl,
+    .navPalette .discover { border-radius: 0 }
+
+    .navigationPane {
+        /*position: fixed;*/
+        -webkit-transition: none;
+    }
+
+    .menuWrap-inner { overflow: auto }
+
+    .menuWrap {
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 1px 1px 0 rgba(255, 255, 255, 0.5);
+        border-radius: 0;
+        border: 1px solid rgba(0,0,0,.1);
+        border-width: 1px 1px 1px 0;
+        background: transparent;
+    }
+
+    .contentPane { -webkit-transition: none }
+
+    .helphelp,
+    .pageTitle p { font-size: 100% }
+
+    div.noLabelField {
+        width: 100%;
+    }
+
+
+/*---------------------------------------  FILE PICKER */
+
+
+.itemTray {
+    width: auto;
+}
+
+.filePickerWidget .contentBox, 
+.filePickerWidget #content,
+.content, 
+.container, 
+.containerPortal  {
+    min-height: 0;
+}
+
+.filePickerWidget .container {
+    max-height: 508px;
+    overflow: auto;
+}
+
+body.cartMode {
+    max-height: 583px;
+}
+
+/*.resourcePickerContainer  {
+    max-width: 712px;
+}*/
+
+.filePickerWidget .locationPane {
+    width: 100%;
+}
+
+.pathFolder {
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#contentSearch .contentInput input[type="text"], 
+.locationInput input[type="text"]  {
+    width: 150px;
+}
+
+
+}
+
+/* iPads (portrait) ----------- */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+
+    body {
+        min-width: 768px;
+        width: 768px;
+        /* background: rgba(233,20,20,0);*/
+    }
+
+    .locationPane { width: 100% }
+
+    .navigationPane {
+        height: 1024px!important;
+        width: 240px;
+        /* background: lime;*/
+    }
+
+    .contentPane {
+        /*width: 768px;*/
+        margin: 0 -240px 0 246px;
+    }
+
+    .contcollapsed {
+        margin: 0 6px;
+        /*width: 100%;*/
+        min-width: 756px;
+    }
+
+    .navcollapsed { margin-left: -240px }
+
+.login-page #copyright {
+	margin: 30px auto 0;
+}
+
+    .scroller-top,
+    .scroller-bottom { width: 768px }
+    
+       .scroller-top {
+	       height: 40px
+       }
+
+
+
+    .actionBarMicro,
+    .actionBar {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-radius: 0;
+        background-color: #555;
+        border:0;
+    }
+
+    .ineditmode div.listCm ul.courseMenu li {
+        border: 0;
+        border-left: 0;
+    }
+
+    .ineditmode div.listCm ul.courseMenu li:hover {
+        -webkit-transition: none;
+        background-color: rgba(0,0,0,0.1) !important;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: 0;
+        border-left: 0;
+    }
+
+    .listCm .courseMenu li a.cmimg { opacity: 1 }
+
+    .listCm .courseMenu a,
+    .buttonCm .courseMenu a {
+        /* padding-left: 20px;*/
+    }
+
+
+
+}
+
+/* iPads (landscape) ----------- */
+
+@media only screen 
+and (min-device-width :768px) 
+and (max-device-width :1024px) 
+and (orientation : landscape) {
+ 
+    html { /*width: 1024px!important*/ }
+
+    body,
+    body.frameset {
+       /* min-width: 1024px!important;
+        width: 1024px!important;*/
+        /* background: rgba(83,225,83,0.86)!important;
+        border: 1px solid red;*/
+    }
+
+    /*iframe,
+    .locationPane { width: 1024px!important }*/
+
+    .contentPane {
+        /*width: 1024px!important;*/
+        margin: 0 -240px 0 240px;
+    }
+
+    .login-page #copyright {
+        width: 1024px;
+        margin-left: -512px;
+    }
+
+    .scroller-top,
+    .scroller-bottom { width: 1024px }
+
+  
+}
+
+/* Retina iPads (portrait) ----------- */
+
+@media only screen 
+and (min-device-width:768px) 
+and (max-device-width:1024px) 
+and (orientation:portrait) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+    
+}
+
+/* Retina iPads (landscape) ----------- */
+
+@media only screen 
+and (min-device-width:768px) 
+and (max-device-width:1024px) 
+and (orientation:landscape) 
+and (-webkit-min-device-pixel-ratio: 2) 
+and (min-device-pixel-ratio: 2) { 
+    
+}

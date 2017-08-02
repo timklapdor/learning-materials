@@ -1,0 +1,416 @@
+html {
+	background-color: #f8f8f8 !important;
+}
+
+body {
+ 	max-width: 100% !important;
+ 	font-size: 15px;
+}
+
+body, p, h1, h2, h3, div, span {
+   font-family:  'Source Sans Pro' !important;
+}
+
+
+/** Global Nav Bar **/
+
+.global-nav-bar-wrap {
+  height: 25px;
+  background-color: #414141;
+}
+
+.hotItems, .nav-link {
+  background-color: transparent !important;
+}
+
+.global-nav-bar, .hotItems, .hotSpots a {
+    text-transform: uppercase;
+    color: rgba(255,255,255,.6);
+}
+
+.global-nav-bar span[style], .hotSpots a {
+  text-decoration: none !important;
+}
+
+.global-nav-bar .badge, .side-nav .menu-icon span.badge {
+	background-color: #3A87AD;
+}
+
+.nav-link:hover, .nav-link:focus {
+  background: rgba(0, 0, 0, 0.6);
+  color: rgba(255,255,255,1) !important;
+  border-bottom: 2px solid #D92231;
+}
+
+.hotSpots {
+  padding: 5px;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+	.global-nav-bar {
+	margin: 0 !important;
+	font-size: 12px;
+	}
+.hotItems {
+	margin: 0 !important;
+		}
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+#globalNavPageNavArea {
+    margin: 0 !important;
+	}
+}
+/** Interact Nav Bar **/
+
+@media (max-width: 820px) and (min-width: 501px) {
+	.tabWrapper-right {
+	    margin-top: 50px !important;
+	}
+}
+
+@media (max-width: 500px) and (min-width: 100px) {
+	.tabWrapper-right {
+	    padding: 20px 10px 0 0 !important;
+	}
+}
+
+.topTabs {
+  background: #fff !important;
+}
+
+.appTabs a {
+  color: #414141 !important;
+}
+
+.appTabs td {
+  padding: 0 !important;
+}
+
+.appTabs td.active {
+    border-bottom: 3px solid #D92231;
+}
+
+.appTabs a:hover span, .appTabs a:focus span {
+    color :#D92231 !important;
+    transition: all .2s ease;
+}
+
+#topTabActive, .appTabs .active a, .appTabs .active a:hover, .appTabs .active a:focus, .appTabs .active a:hover {
+	color: #D92231 !important;
+}
+
+.bouncer {
+	border: 0;
+}
+
+/** Logo **/
+
+.brandingImgWrap {
+
+}
+
+@media only screen and (max-width: 700px) {
+	.brandingImgWrap {
+    display: block;
+	}
+	.brandingImgWrap img {
+		top: 30px;
+	}
+
+}
+/** Site Menu **/
+
+/** Text Colour **/
+#courseMenuPalette div.navPaletteContent ul li a, #courseMenuPalette h3 a, #courseMenuPalette div.navPaletteContent ul li a span {
+    color: #989898 !important;
+		background-color: transparent;
+}
+
+/** Item Background Colours **/
+.menuWrap {
+	background: #fff !important;
+}
+
+#courseMenuPalette, #courseMenuPalette ul, .actionBar, .actionBarMicro, .secondaryButton>a, .mainButton h2>a, .secondaryButton h2>a, #courseMenuPalette div.navPaletteContent, #courseMenuPalette a, #controlPanelPalette_contents a, #courseMenuPalette span, #controlPanelPalette_contents span, #courseMenuPalette a span {
+    background-color: transparent !important;
+  	color: #989898 !important;
+}
+
+.courseMenu li:hover, .submenu li:hover, #courseMenuPalette div.navPaletteContent ul li a:hover, #courseMenuPalette div.navPaletteContent ul li a span:hover{
+  color: #414141 !important;
+  background: #e6e6e6;
+}
+
+#courseMenuPalette a:hover,  #courseMenuPalette span:hover, #controlPanelPalette_contents span:hover {
+  color: #989898 !important;
+}
+
+#controlPanelPalette_contents a:hover {
+  color: #414141 !important;
+}
+
+.discover .navPaletteContent, .singleControl .navPaletteContent, .singleControl, .navPalette .discover {
+	background: transparent !important;
+}
+
+.singleControl a:hover, .singleControl a:focus, .discover a:hover, .discover a:focus {
+	background: #e6e6e6;
+}
+
+/** Menu Section Headers **/
+
+#controlPanelPalette_link, #navPaletteTitle, #courseMenuPalette h3 a {
+  color: #414141 !important;
+  text-transform: uppercase;
+}
+
+/** Nav Pane Packground **/
+
+.navigationPane {
+	background: #fff !important;
+}
+
+/** Nav Divider **/
+
+.navDivider {
+    font-size: 1.5rem;
+    padding: 20px 0 0 10px;
+    border-top: 15px solid #f2f2f2 !important;
+    padding-top: 20px;
+    color: #414141;
+    text-transform: uppercase;
+}
+
+/** Content Area **/
+
+#contentFrame, #schemePreview, .schemePreviewBody, body {
+  background: #f8f8f8 !important;
+}
+
+.pageTitle {
+	margin: 0 !important;
+}
+
+.contentPane .shadow, .navDivider {
+	border: 0;
+}
+
+.container {
+	border: 0;
+  margin: 0 1vw;
+}
+
+.containerLanding, div.landing div.container, body.landingBody div.container {
+    padding: 10px 0 0 0;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+}
+
+div[id*="stepcontent"] {
+  border: 0 !important;
+}
+
+/** States **/
+.good, .adding {
+    background: #318700;
+    border-color: #318700;
+}
+
+.read-on:hover {
+  background: #005A7E;
+  color: #fff;
+}
+
+/** Dashboard Boxes **/
+
+.portlet, .contentListPlain {
+ 	border: 0;
+	background: #ffffff;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+#moduleTitle, .portlet h2 {
+	padding: 12px 24px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+
+.edit_controls .moduleToggleLink {
+  top: 8px;
+}
+
+/** Dashboard Content **/
+
+.portlet .portletList-img>li {
+	border-left: 3px solid #9F000A;
+  	padding: 5px;
+}
+
+.portlet .portletList li {
+	padding: 5px;
+  	border-top: 1px solid #f5f5f5;
+}
+
+a, .portlet .subCategories li a, .blockGroups .itemHead, .blockGroups .itemHeadOpen {
+  color: #3A87AD;
+}
+
+a:hover, .portlet .subCategories li a:hover, .blockGroups .itemHead:hover, .blockGroups .itemHeadOpen:hover {
+  color: #005A7E;
+  transition: all .5s ease;
+}
+
+/** Calendar **/
+.vertical_filter .left_stream_wrapper {
+  margin: 0 0 0 325px;
+}
+
+.fc-button-main, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 0 !important;
+  border-bottom: 4px solid transparent !important;
+  background-image: -moz-linear-gradient(100% 100% 90deg, #e6e6e6, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#e6e6e6), to(#e6e6e6));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#e6e6e6, endColorstr=#e6e6e6";
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr=#e6e6e6, endColorstr=#e6e6e6);
+  color: #414141;
+  box-shadow: none !important;
+}
+
+.fc-button-main:hover, .ui-button:focus, .ui-button:hover {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  background: #f8f8f8;
+  border-bottom: 4px solid #3A87AD !important;
+  transition: all .3s ease;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 0 !important;
+  background-image: -moz-linear-gradient(100% 100% 90deg, #e6e6e6, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#e6e6e6), to(#e6e6e6));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#e6e6e6, endColorstr=#e6e6e6";
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr=#e6e6e6, endColorstr=#e6e6e6);
+  color: #414141;
+}
+
+.fc-button-main:hover, .ui-button:focus, .ui-button:hover {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  background: #f8f8f8;
+  transition: all .3s ease;
+}
+.fc-state-highlight, .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background: #FCF8E3 !important;
+    box-shadow: none !important;
+}
+
+
+
+/** Content Collection Navs **/
+
+.localViewToggle {
+  padding-bottom: 10px;
+  background: transparent;
+}
+
+.localViewToggle a.active {
+  border: 0px;
+}
+
+.navPaletteContent a, .navPaletteContent h3 a {
+  color: #989898 !important;
+}
+
+.shortcuts img {
+  visibility: hidden;
+}
+
+.shortcuts li a {
+  border-top: 0px;
+}
+
+.shortcuts a {
+  margin-left: -32px;
+}
+
+.shortcuts li a:hover, .shortcuts li a:focus {
+    background: none !important;
+    text-decoration: none;
+		color: #1a1a1a !important;
+}
+
+/** Help Icon **/
+
+.helpLink a.browseIcon:before {
+	height: 22px;
+  width: 22px;
+}
+
+
+/** Grade Centre **/
+
+.actionBar ul li a {
+    color: #414141 !important;
+}
+
+/** Forum **/
+
+.container>form {
+  padding: 10px;
+  background: #ffffff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.thread-detail-page .contentBox {
+  background: transparent !important;
+}
+
+.reply-lvl-0 .message-wrapper-inner, .db-head-message .message-wrapper-inner {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background: #e6e6e6;
+  border: 0 !important;
+  border-radius: 0;
+}
+
+.reply-lvl-0 .threadButtons .reply {
+  background: #3A87AD;
+}
+
+.reply-lvl-0 .threadButtons .reply:hover {
+  background: #005A7E;
+}
+
+.reply-lvl-0 .threadButtons .browse, .threadButtons .browse, .threadButtons .reply {
+  border: 0 !important;
+}
+
+.reply-lvl-0 .threadButtons .browse:hover, .threadButtons .browse:hover, .threadButtons .reply:hover {
+  background: #70B7DF;
+}
+
+.unread-posts, .need-moderation {
+  border: 0;
+  background: #FCF8E3;
+}
+
+/** Back Link **/
+
+.backLink a {
+  border-radius: 14px;
+  background: #005A7E;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.backLink a:hover {
+  background: #3A87AD;
+}
+.backLink a:before {
+  color: #fff;
+}
+
+/** Content List **/
+
+.contentList, .buildList, .contentListPlain, .announcementList {
+	background: #ffffff;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}

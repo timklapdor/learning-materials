@@ -1,0 +1,177 @@
+/*INTERACTIVE*/
+
+/* @group BLOGS AND JOURNALS
+
+/*Blogs*/	
+/* Both Blogs and Journals share blog.jsp. The classes .blogContainer and .journalContainer are conditionally applied to the 
+main column, and .blogNav and .journalNav are conditionally applied to the side column. When refactoring the css, please do not 
+remove .blogContainer, .journalContainer, .blogNav or .journalNav from any styles, or the skins will break. */
+
+div.blogContainer {
+    float: right;
+}
+
+div.blogContainer div.blogEntry h4 {
+    padding: 9px 30px 0 12px;
+    background: url(images/small_discussions.gif) no-repeat 100% 9px;
+}
+
+/* action bar for the entry footer - contains the Add Comment control, and comments expander/collapser */
+div.blogContainer .comment-header {
+    float: right;
+}
+
+/* entry comments */
+
+div.blogContainer ul.entryComments li p.commentDate {
+    background: transparent url(images/bubble_top_thin.gif) no-repeat 94% 100%;
+}
+
+
+/* blogNav is the right column with the EUD portlet ui */
+div.blogNav,
+div.journalNav,
+div.contentAreaNav {
+    float: left;
+    margin: -20px 0px -30px -20!important;
+    border-left: none;
+    border-right: 4px double #ccc;
+}
+
+.indentedWikiList { padding: 0 22px 0 0!important }
+
+.indentedWikiList img { margin: 0 -22px 0 3px }
+
+.blogNav #gradeDetailsForm,
+.journalNav #gradeDetailsForm { margin: 0 -18px 0 3px }
+
+/* new entry/post styles for blog.htm */
+
+div.blogNav .newItems,
+div.blogNav .gradeStatus {
+    margin: 0 0 0 4px;
+    padding: 0 2px 0 0;
+}
+
+div.blogContainer div.u_controlsWrapper span.newItems {
+    float: right;
+    margin: 0 4px 0 0;
+}
+
+/* icon legend in the blog nav bar */
+
+div.blogNav ul.iconLegend,
+div.journalNav ul.iconLegend {
+    margin: 12px 24px 0 0;
+}
+
+
+div.blogNav ul ul { margin: 0 9px 0 0; }
+
+div.blogNav ul#blogArchive ul { margin: 0 18px 9px 9px }
+
+/*Journals*/
+
+div.journalContainer {
+    float: right;
+    margin: 0 0 0 1%;
+}
+
+
+/* contains blog entry */
+
+div.journalContainer div.blogEntry {
+    padding: 0 36px 0 0;
+    border-width: 3px 0 3px 3px;
+    background: #fff url(images/blog_notebook_paper.gif) repeat-y 100% 0;
+}
+
+div.journalContainer div.blogEntry h4 {
+    padding: 12px 12px 0 24px;
+}
+
+/* date of entry */
+div.journalContainer div.entryDate {
+    padding: 3px 12px 12px 24px;
+}
+
+/* entry footer is a wrapper for the entire blog comment area */
+div.journalContainer div.entryFooter {
+    margin: 0 -31px 0 0;
+    padding: 0 43px 12px 12px;
+}
+
+/* action bar for the entry footer - contains the Add Comment control, and comments expander/collapser */
+
+div.journalContainer .comment-header {
+    float: right;
+}
+
+div.journalContainer div.entryFooter a.genericButton {
+    float: left;
+}
+
+/* entry comments */
+
+div.journalContainer ul.entryComments li p.commentDate {
+    margin-left:0;
+    margin-right:19px;
+}
+
+/* h5 wrapped around the name of each commentor */
+div.journalContainer ul.entryComments li h5 {
+	padding:3px 18px 0 0;
+	background-position:100% 3px;
+	zoom:1;
+}
+
+/* removed from 9.1 */
+
+/* new entry/post styles for blog.htm */
+
+div.journalContainer div.u_controlsWrapper span.newItems {
+    float:right;
+    margin-left:0;
+    margin-right:4px;
+}
+
+div.journalNav ul ul { margin-left: 0; margin-right: 9px; }
+
+div.journalNav ul#blogArchive ul { margin: 0 18px 9px 9px }
+
+/*Blogs*/
+
+#blogNavLinks {
+    left: 6px;
+    right: auto;
+}
+
+ul.blogArchiveList { margin-left: 0; margin-right: 16px; }
+
+#gradeWidget span#blogGradeValue {
+    padding-left: 0;
+    padding-right: 6px;
+}
+
+#blogGradeValue img {
+    left: auto;
+    right: 0;
+}
+
+
+/* aligns the "Grade Modified Manually" icon */
+.contentAreaNav a.itemHead {
+    padding: 6px 24px 6px 60px;
+}
+
+/* Give more room for headers without next/prev buttons */
+.contentAreaNav a#aboutBlogLink {
+	padding-left: 6px;
+	padding-right: 0;
+}
+
+.contentAreaPalette ul {
+    margin: 0 24px 0 0;
+}
+
+/* @end BLOGS AND JOURNALS*/

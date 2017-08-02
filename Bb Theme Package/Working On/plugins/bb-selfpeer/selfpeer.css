@@ -1,0 +1,209 @@
+div.canvasHead {
+    margin: 0.6em 0;
+    padding: 6px 16px 12px;
+    background: #F6F6F6;
+}
+
+div.canvasHead ul li { border-top: 1px solid #EEEEEE }
+
+div.canvasHead ul li:first-child { border-top: none }
+
+div.canvasHead ul li div.label { color: #555 }
+
+.peer_instructions { margin: 12px 6px }
+
+.peerHelp { color: #555 }
+
+/* for viewSingleMarking.jsp */
+h2.evaluator { margin: 1em 0 .3em }
+
+h2.evaluator span {
+    font-weight: normal;
+    font-size: 90%;
+}
+
+/* for evaluation.jsp - also applies to the Test/Survey Status Bar in Assessments too */
+
+div.peerCriteriaStatus {
+    border: 1px solid #bbb;
+    padding: .3em;
+    background: #fff;
+}
+
+div.peerCriteriaStatus a.itemHeadOpen {
+    display: block;
+    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 90%;
+    color: #597298;
+    letter-spacing: 1px;
+}
+
+div.peerCriteriaStatus a.itemHeadOpen:hover { text-decoration: underline }
+
+div.peerCriteriaStatus td.qStatus {
+    padding: 4px 1px;
+    width: 5%;
+}
+
+div.peerCriteriaStatus td.qStatus a span {
+    border: 1px solid #fff;
+    padding: 1px 1px 1px 2px;
+    background: white;
+    font-weight: bold;
+}
+
+div.peerCriteriaStatus td.qStatus a span.qComplete {
+    border: 1px solid #ccc;
+    background: #eee;
+}
+
+div.peerCriteriaStatus td.qStatus a.qActive span.qComplete,
+div.peerCriteriaStatus td.qStatus a.qActive span.qIncomplete {
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+div.peerCriteriaStatus a span img {
+    padding: 2px;
+    width: 12px;
+    height: 12px;
+}
+
+.questionDiv {
+    margin: -1px 0 6px 0;
+    border: 1px solid #CCC;
+    padding: .6em;
+}
+
+.questionDiv h3 {
+    margin: 0 0 .6em;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 .6em;
+}
+
+.questionDiv p {
+    margin: .6em 1.2em;
+    padding: 0;
+}
+
+.questionDiv div.criteriaText {
+    margin: .6em 1.2em;
+    padding: 0;
+    font-size: 95%;
+}
+
+.questionDiv div.submission_text {
+    border: 1px solid #ccc;
+    padding: 2px 4px;
+    width: 100%;
+    height: 150px;
+    overflow: auto;
+}
+
+.questionDiv table { width: 98% }
+
+.questionDiv table table { width: auto }
+
+.questionDiv td.label {
+    width: 150px;
+    white-space: nowrap;
+}
+
+/* used to show name and metadata of attached files. needs review */
+ul.fileData {
+    clear: both;
+    margin: 3px 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.fileData li {
+    float: left;
+    margin: 0;
+    border-left: 1px solid #ddd;
+    padding: 2px 6px;
+}
+
+/* styles for studentViewResults.jsp */
+ul.listNav {
+    /* list nav styles the navigation among criteria. a one-off. should be replaced in 9.1. */
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #ddd;
+}
+
+ul.listNav  li {
+    float: left;
+    margin: 1px;
+    background: #ededed;
+    padding: 0;
+    text-align: center;
+    color: #2d2680;
+    white-space: nowrap;
+}
+
+ul.listNav li a {
+    text-decoration: none;
+    display: block;
+    padding: 4px 10px;
+}
+
+ul.listNav li a:hover {
+    background-color: #dedede;
+    text-decoration: underline;
+}
+
+ul.listNav li a.active {
+    border: 2px solid #000;
+    background: #fff;
+    padding: 2px 8px;
+    font-weight: bold;
+    color: #000;
+}
+
+ul.evaluation {
+    /* styles the criteria metadata (text/feedback/points, etc.). another one-off. should be replaced. */
+    margin: .6em 1.2em;
+    padding: 0;
+    background: transparent;
+    list-style: none;
+}
+
+ul.evaluation li {
+    clear: both;
+    margin: 0;
+    border-top: 1px solid #ddd;
+    padding: 4px 0;
+}
+
+ul.evaluation li p {
+    float: left;
+    margin: 1px 0;
+    padding: 0;
+    width: 79%;
+}
+
+ul.evaluation h4 {
+    margin: 1px 0;
+    padding: 0;
+    padding-left: 4px;
+    float: left;
+    width: 20%;
+    font-size: 100%;
+}
+
+ul.evaluation li p span { color: #555 }
+
+/* end of styles for studentViewResults.jsp */
+
+/* viewSingleSubmission.jsp - should be added to data_collection.css line 906 */
+
+div.stepPanel div.user_html {
+    margin: 5px 5px 12px 12px;
+    padding: 0;
+}
+
