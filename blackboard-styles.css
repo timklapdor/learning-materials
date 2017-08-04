@@ -1,5 +1,6 @@
 html {
 	background-color: #f8f8f8 !important;
+	font-size: calc(11px + 0.125vw) !important;
 }
 
 body {
@@ -7,7 +8,7 @@ body {
  	font-size: 15px;
 }
 
-body, p, h1, h2, h3, div, span {
+html, body, p, h1, h2, h3, div, span {
    font-family:  'Source Sans Pro' !important;
 }
 
@@ -406,6 +407,12 @@ a:hover, .portlet .subCategories li a:hover, .blockGroups .itemHead:hover, .bloc
 }
 .backLink a:before {
   color: #fff;
+}
+
+/** Reorder **/
+
+.item .reorder {
+	background: #FFDC0B;
 }
 
 /** Content List **/

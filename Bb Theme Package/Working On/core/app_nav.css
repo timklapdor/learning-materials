@@ -35,7 +35,6 @@ table.bouncer td {
     position: relative;
     overflow-y:hidden;
     height: 86px;
-
 }
 
 /*Compact tabs*/
@@ -105,11 +104,10 @@ table.bouncer td {
 .topTabs {
     padding: 0;
     background-color: #555; /*@pal*/
-    -moz-box-shadow: 0 -6px 17px #333 inset; /*@pal*/
-    -webkit-box-shadow: 0 -6px 17px #333 inset; /*@pal*/
-    box-shadow: 0 -6px 17px #333 inset; /*@pal*/
-
-
+    height: 100% !important;
+    /*-moz-box-shadow: 0 -6px 17px #333 inset; Couldn't override
+    -webkit-box-shadow: 0 -6px 17px #333 inset;
+    box-shadow: 0 -6px 17px #333 inset;*/
 }
 
 /*Compact tabs*/
@@ -447,6 +445,7 @@ table.bouncer td {
 
 html {
 	background-color: #f8f8f8 !important;
+  font-size: calc(11px + 0.125vw) !important;
 }
 
 body {
@@ -454,7 +453,7 @@ body {
  	font-size: 15px;
 }
 
-body, p, h1, h2, h3, div, span {
+html, body, p, h1, h2, h3, div, span {
    font-family:  'Source Sans Pro' !important;
 }
 
@@ -532,15 +531,24 @@ body, p, h1, h2, h3, div, span {
 
 .appTabs td {
   padding: 0 !important;
+  border-bottom: 3px solid transparent;
 }
 
 .appTabs td.active {
-    border-bottom: 3px solid #D92231;
+  border-bottom: 3px solid transparent;
+}
+.appTabs td.active a {
+  color: #414141 !important;
+}
+
+.appTabs td:hover {
+  border-bottom: 3px solid #D92231;
+  transition: all .2s ease;
 }
 
 .appTabs a:hover span, .appTabs a:focus span {
-    color :#D92231 !important;
-    transition: all .2s ease;
+  color :#D92231 !important;
+  transition: all .2s ease;
 }
 
 #topTabActive, .appTabs .active a, .appTabs .active a:hover, .appTabs .active a:focus, .appTabs .active a:hover {
@@ -605,6 +613,10 @@ body, p, h1, h2, h3, div, span {
 	background: #e6e6e6;
 }
 
+.navPaletteContent {
+  font-size: 90%;
+}
+
 /** Menu Section Headers **/
 
 #controlPanelPalette_link, #navPaletteTitle, #courseMenuPalette h3 a {
@@ -646,6 +658,9 @@ body, p, h1, h2, h3, div, span {
 .container {
 	border: 0;
   margin: 0 1vw;
+  background: #fff !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  min-height: 5vh;
 }
 
 .containerLanding, div.landing div.container, body.landingBody div.container {
@@ -656,6 +671,10 @@ body, p, h1, h2, h3, div, span {
 
 div[id*="stepcontent"] {
   border: 0 !important;
+}
+
+.contentPane .contentBox {
+  background: transparent !important;
 }
 
 /** States **/
@@ -671,16 +690,17 @@ div[id*="stepcontent"] {
 
 /** Dashboard Boxes **/
 
-.portlet, .contentListPlain {
+.portlet {
  	border: 0;
-	background: #ffffff;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+	background: rgba(255,255,255,.75) !important;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 #moduleTitle, .portlet h2 {
 	padding: 12px 24px;
   text-transform: uppercase;
-  color: #1a1a1a;
+  color: #1a1a1a !important;
+  background: rgba(255,255,255,.8) !important;
 }
 
 .edit_controls .moduleToggleLink {
@@ -690,8 +710,9 @@ div[id*="stepcontent"] {
 /** Dashboard Content **/
 
 .portlet .portletList-img>li {
-	border-left: 3px solid #9F000A;
-  	padding: 5px;
+  border-left: 16px solid #D92231;
+  padding: 8px;
+  background: white;
 }
 
 .portlet .portletList li {
@@ -704,8 +725,8 @@ a, .portlet .subCategories li a, .blockGroups .itemHead, .blockGroups .itemHeadO
 }
 
 a:hover, .portlet .subCategories li a:hover, .blockGroups .itemHead:hover, .blockGroups .itemHeadOpen:hover {
-  color: #005A7E;
-  transition: all .5s ease;
+  color: #1A1A1A;
+  transition: all .2s ease;
 }
 
 /** Calendar **/
@@ -763,6 +784,11 @@ a:hover, .portlet .subCategories li a:hover, .blockGroups .itemHead:hover, .bloc
   border: 0px;
 }
 
+.localViewToggle a.active:hover, .localViewToggle a.active:focus, .localViewToggle a:hover {
+  background: #1a1a1a !important;
+  color:#fff;
+}
+
 .navPaletteContent a, .navPaletteContent h3 a {
   color: #989898 !important;
 }
@@ -803,8 +829,15 @@ a:hover, .portlet .subCategories li a:hover, .blockGroups .itemHead:hover, .bloc
 
 .container>form {
   padding: 10px;
-  background: #ffffff;
+}
+
+.db-message-wrapper {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.reply-lvl-0 .message-wrapper-inner, .db-head-message .message-wrapper-inner {
+  box-shadow: none;
+  border-radius: 0px !important;
 }
 
 .thread-detail-page .contentBox {
@@ -844,7 +877,7 @@ a:hover, .portlet .subCategories li a:hover, .blockGroups .itemHead:hover, .bloc
 .backLink a {
   border-radius: 14px;
   background: #005A7E;
-  color: #fff;
+  color: #fff !important;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -852,12 +885,151 @@ a:hover, .portlet .subCategories li a:hover, .blockGroups .itemHead:hover, .bloc
   background: #3A87AD;
 }
 .backLink a:before {
-  color: #fff;
+  color: #fff !important;
+}
+
+/** Button Hover **/
+
+.mainButton a:hover, .mainButton a:focus, .mainButton a, .actionBarMicro .mainButton a:hover, .actionBarMicro .mainButton a:focus, .rumble .mainButton > a, .rumble_top .mainButton > a:focus, .rumble .mainButton > a:hover, .rumble_top .mainButton > a:focus, .rumble .mainButton > a:hover, .rumble_top .mainButton > a:focus, .button-1, .button-1-img, .button-1:hover, .button-1-img:hover, .button-1:focus, .button-1-img:focus, input.submit[type="submit"]:hover, input.submit[type="submit"]:focus {
+  background: #D92231 !important;
+  box-shadow: none !important;
 }
 
 /** Content List **/
 
-.contentList, .buildList, .contentListPlain, .announcementList {
+.contentList, .buildList, .announcementList {
 	background: #ffffff;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.contentList>li, .buildList>li, .contentListPlain>li, .announcementList>li, .contentPageItem {
+  background: #ffffff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/** Reorder **/
+
+.item .reorder {
+  background: #FFDC0B;
+}
+
+/** Dashboard Container **/
+
+.containerPortal {
+  background: linear-gradient(to right,  rgba(0,0,0,.2),  rgba(0,0,0,.1)), url(https://uimagine.edu.au/interact2-theme/5.jpg) no-repeat left center;
+  background-size: contain, cover;
+  padding: 4px;
+  min-height: 70vh;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.containerPortal:before {
+  content:'Interact 2';
+  color: rgba(255,255,255,.4);
+  font-size: 5em;
+  padding-left:.1em;
+  font-style:italic;
+  text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/** My Bb Hacks **/
+
+.mybb-div .side-nav {background: #414141;}
+.mybb-div .badge {background: #D92231;}
+.mybb-div .stream_page_left {background: #fff !important; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;}
+.mybb-div .stream_right {box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+.iframe-wrap {border: 0 !important; box-shadow: none;}
+
+/** iFrame Hackery **/
+
+#contentFrame, #schemePreview, .schemePreviewBody, body {max-width: 100%;}
+
+/** Drag and Drop **/
+div.dropzone {
+  margin-left:2.5px !important;
+  padding:0 !important;
+}
+
+/** Logo Z Position **/
+
+.brandingImgWrap img {
+  z-index: 0;
+}
+
+/** Modules **/
+
+
+#tocTree img {
+  visibility: hidden;
+  margin: -2px;
+}
+
+.tocWrapper {
+  background: #f2f2f2 !important;
+  border: 0 !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  height: 100% !important;
+  overflow: auto;
+}
+
+.tocHead {
+
+}
+
+.tocHead h2, .tocActions {
+  margin-bottom: 5px !important;
+}
+
+div.treeContainer ul.tree li, ul.tree li {
+  background: transparent !important;
+  padding: 2px;
+}
+
+ul.tree li a+img+a:focus, ul.tree li img+img+a:focus, div.treeContainer ul.tree li a.itemActive, #learningUnitToc ul.tree li a.itemActive, ul.tree li a.itemActive {
+  background: #f8f8f8 !important;
+  color: #1a1a1a;
+  border: 0;
+  border-left: 3px solid #005A7E;
+}
+
+.sideTOC_panelMax .contentBox {
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);;
+  margin-left: 20px;
+}
+
+.sideTOC .tocTreeWrapper {
+    overflow: auto;
+    height: 100% !important;
+  }
+
+.tocBottom_pullExpanded {
+    left: 228px;
+    max-height: 90%! important;
+    max-width: 40%;
+}
+
+.tocBottom_pullCollapsed {
+    left: 18px;
+    max-width: 75%;
+    max-height: 90%;
+}
+
+.sideTOCMinimize {
+    margin: -4px 0 0 -11px;
+    padding: 0;
+    width: 24px !important;
+}
+
+.sideTOCMinimize .tocActions {
+    left: -10px;
+}
+
+ul#tocTree li {
+  padding:4px;
+}
+
+ul#tocTree li ul {
+  padding:8px;
 }
