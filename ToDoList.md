@@ -1,11 +1,11 @@
 ## To Do List
 
-- [ ] Padding and Margins to add more "whitespace"
+- [x] Padding and Margins to add more "whitespace"
 - [ ] - [ ] Declutter modules on home page
   - What can be removed?
   - Simple UX - reduce replication - link to student portal should make others redundant
 
-- [ ] Font Choices - [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro) - Most similar to Helvetica, range of weights
+- [x] Font Choices - [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro) - Most similar to Helvetica, range of weights
 - [ ] Define Color Palette(s)
   - Need to do more testing and finalise.
   - Look at SCSS for variables  
