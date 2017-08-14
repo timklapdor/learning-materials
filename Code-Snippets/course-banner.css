@@ -1,0 +1,62 @@
+/* PageBanner (Course Banner) */
+
+#pageBanner img {
+  width: 100%;
+  min-height: 30vh;
+  max-height: 50vh;
+}
+
+body:not(.ineditmode) #pageBanner + #pageTitleDiv {
+    margin: -77px 0 77px -2em !important;
+    box-sizing: border-box;
+}
+
+body:not(.ineditmode) #pageBanner + #pageTitleDiv h1 > span {
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 2.0em !important;
+    display: inline-block;
+}
+
+body:not(.ineditmode) #pageBanner + #pageTitleDiv h1 {
+    padding: .25em 0.5em .25em 2em;
+    background: rgba(0,0,0,0.35) !important;
+    transform: translate(0,-120%);
+    margin-right: .75em;
+}
+
+body:not(.ineditmode) #pageBanner + #pageTitleDiv h1 > span > span {
+    color: #fff !important;
+}
+
+body:not(.ineditmode) #pageBanner + #pageTitleDiv > #pageTitleBar {
+    position: absolute;
+}
+
+@media(max-width:500px) {
+    #pageBanner {
+        margin-top:-0.5em !Important;
+        margin-bottom: 0 !important;
+    }
+
+    body:not(.ineditmode) #pageBanner+#pageTitleDiv h1>span {
+        font-size: 1.3em !important;
+    }
+
+    body:not(.ineditmode) #pageBanner + #pageTitleDiv h1 {
+        padding: .25em 0.2em .25em .75em;
+        margin-right: .1em;
+    }
+
+    body:not(.ineditmode) #pageBanner+#pageTitleDiv {
+        margin-top: -170px !important;
+    }
+
+    body:not(.ineditmode) #pageBanner+#pageTitleDiv>#pageTitleBar {
+        position:static;
+    }
+
+    body:not(.ineditmode) #pageBanner+#pageTitleDiv h1 {
+        transform:none;
+    }
+}

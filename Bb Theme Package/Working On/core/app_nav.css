@@ -907,6 +907,7 @@ a:hover, .portlet .subCategories li a:hover, .blockGroups .itemHead:hover, .bloc
 .mainButton a:hover, .mainButton a:focus, .actionBarMicro .mainButton a:hover, .actionBarMicro .mainButton a:focus, .rumble_top .mainButton > a:focus, .rumble .mainButton > a:hover, .rumble_top .mainButton > a:focus, .rumble .mainButton > a:hover, .rumble_top .mainButton > a:focus, .button-1:hover, .button-1-img:hover, .button-1:focus, .button-1-img:focus, input.submit[type="submit"]:hover, input.submit[type="submit"]:focus {
   background: #9F000A !important;
   box-shadow: none !important;
+  color: #ffffff !important;
 }
 
 
@@ -1056,63 +1057,8 @@ ul#tocTree li ul {
 
 #pageBanner img {
   width: 100%;
-  min-height: 30vh;
+  min-height: 100%;
   max-height: 50vh;
-}
-
-body:not(.ineditmode) #pageBanner + #pageTitleDiv {
-    margin: -77px 0 77px -2em !important;
-    box-sizing: border-box;
-}
-
-body:not(.ineditmode) #pageBanner + #pageTitleDiv h1 > span {
-    margin-bottom: 0;
-    font-weight: 300;
-    font-size: 2.0em !important;
-    display: inline-block;
-}
-
-body:not(.ineditmode) #pageBanner + #pageTitleDiv h1 {
-    padding: .25em 0.5em .25em 2em;
-    background: rgba(0,0,0,0.35) !important;
-    transform: translate(0,-120%);
-    margin-right: .75em;
-}
-
-body:not(.ineditmode) #pageBanner + #pageTitleDiv h1 > span > span {
-    color: #fff !important;
-}
-
-body:not(.ineditmode) #pageBanner + #pageTitleDiv > #pageTitleBar {
-    position: absolute;
-}
-
-@media(max-width:500px) {
-    #pageBanner {
-        margin-top:-0.5em !Important;
-        margin-bottom: 0 !important;
-    }
-
-    body:not(.ineditmode) #pageBanner+#pageTitleDiv h1>span {
-        font-size: 1.3em !important;
-    }
-
-    body:not(.ineditmode) #pageBanner + #pageTitleDiv h1 {
-        padding: .25em 0.2em .25em .75em;
-        margin-right: .1em;
-    }
-
-    body:not(.ineditmode) #pageBanner+#pageTitleDiv {
-        margin-top: -170px !important;
-    }
-
-    body:not(.ineditmode) #pageBanner+#pageTitleDiv>#pageTitleBar {
-        position:static;
-    }
-
-    body:not(.ineditmode) #pageBanner+#pageTitleDiv h1 {
-        transform:none;
-    }
 }
 
 /** Content Styles **/
@@ -1144,7 +1090,15 @@ body:not(.ineditmode) #pageBanner + #pageTitleDiv > #pageTitleBar {
 #containerdiv .vtbegenerated table {
   font-size: 70% !important;
   margin-bottom: 15px;
+  border: 1px solid #e6e6e6;
+  max-width: 95% !important;
+  min-width: 50% !important;
 }
+
+#containerdiv .vtbegenerated td {
+  border: 0;
+}
+
 
 /** Styled Tables **/
 #containerdiv .vtbegenerated .styled table {
@@ -1238,6 +1192,134 @@ font-weight: bold;
 top: 40px;
 }
 }
+
+/** Wiki/Blog/Journal Styles **/
+
+.inlineGrader, .entryFooter {
+  background: transparent !important;
+}
+
+.collabContainer div.blogContainer div.blogEntry {
+  border: 0 !important;
+}
+
+div.blogContainer div.wikiPage h4 {
+  margin-left: 2em;
+}
+
+.previewerInner {
+  border-top: 1.5em solid #f2f2f2
+}
+
+div.journalContainer div.blogEntry {
+  background: transparent;
+  border: 0;
+}
+
+div.journalContainer .vtbegenerated {
+  box-shadow: none !important;
+}
+
+div.journalContainer div.entryDate {
+  border-bottom: 1px solid #D92231;
+}
+
+.gradingPanelHeader {
+  background: #414141;
+}
+
+.detailsHeader {
+  color: rgba(255,255,255,.8) !important;
+}
+
+div.blogContainer ul.entryComments {
+  background: #f2f2f2 !important;
+}
+
+div.blogContainer ul.entryComments {
+  margin: 4px;
+  padding: 16px;
+}
+
+div.blogContainer h3.blogHead {
+  background: #005A7E;
+}
+
+.newItems {
+  background: #FFFF56;
+  padding: 3px !important;
+}
+
+/** Glossary Tweak **/
+
+.glossary .vtbegenerated p {
+  font-size: 70% !important;
+  font-style: italic;
+  line-height: 1.2;
+  padding-top: 1em !important;
+}
+
+/** Test Tweaks **/
+
+.stepcontent td {
+  vertical-align: top;
+}
+
+.stepcontent th {
+  padding: 8px !important;
+}
+
+.stepcontent .vtbegenerated * {
+  margin: 0 !important;
+}
+
+.stepcontent .vtbegenerated p {
+  font-size: 70% !important;
+  margin: 0 !important;
+}
+
+.key-valueTable td {
+  padding: 8px !important;
+}
+
+.key-valueTable th {
+  padding: 8px !important;
+}
+
+.takeQuestionDiv .vtbegenerated {
+box-shadow: none !important
+}
+
+.takeQuestionDiv .vtbegenerated p {
+  margin: .5em 0 !important;
+  line-height: 1.2;
+}
+
+.questionShell .vtbegenerated {
+  box-shadow: none !important
+}
+
+.questionShell .vtbegenerated p {
+  margin: .5em 0 !important;
+  font-size: 70% !important;
+}
+
+.legend-visible {
+  font-size: 120%;
+  font-weight: 600;
+}
+
+#dataCollectionContainer .label {
+  font-weight: bold;
+}
+
+#dataCollectionContainer .stepcontent li {
+  padding-bottom: 16px;
+}
+#dataCollectionContainer input[type="checkbox"]{
+  margin-top: .9em !important;
+}
+
 
 /** Floats **/
 
