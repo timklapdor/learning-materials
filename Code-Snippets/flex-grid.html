@@ -1,0 +1,217 @@
+<html>
+<head>
+<style>
+body {
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap row;
+}
+
+/** Flex Grid **/
+
+.row {
+  width: 99vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1em 0;
+}
+
+.column, .third, .two-third, .column-quarter, .column-half, .column-2, .column-3 {flex-basis: 100%; flex-direction: column;}
+.column img {max-width: 97% !important;}
+
+@media screen and (min-width: 600px) {
+  .column {flex: 1;}
+  .column-quarter {flex: .25;}
+  .column-half {flex: .5;}
+  .column-2 {flex:2;}
+  .column-3 {flex: 3;}
+  ._2up {flex: 0 1 49%}
+  ._3up {flex: 0 1 32%;}
+  ._4up {flex: 0 1 24%;}
+  ._5up {flex: 0 1 19%;}
+/** For Legacy Use **/
+  .third {flex: 1;}
+  .two-third {flex: 2;}
+}
+
+
+.box {
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap column;
+  min-height: 5em;
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  min-height: 300px;
+  margin: .2rem;
+  min-width: 100px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap column;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card p {}
+
+.card img {width: 100%; }
+
+.card:hover {box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
+
+
+/*.column + .column { margin-left: 1rem }*/
+
+/* Alignment per row */
+.row_top {justify-content: flex-start;}
+.row_bottom {justify-content: flex-end;}
+.row_center {justify-content: center;}
+
+/* Alignment per column */
+.col-top {justify-content: flex-start;}
+.col-bottom {justify-content: flex-end;}
+.col-center {justify-content: center;}
+
+
+</style>
+
+</head>
+<body>
+
+<div class="row">
+  <div class="column card"></div>
+  <div class="column card"></div>
+</div>
+
+<div class="row">
+  <div class="column card"></div>
+  <div class="column card"></div>
+  <div class="column card"></div>
+</div>
+
+<div class="row">
+  <div class="card third"></div>
+  <div class="card two-third "></div>
+</div>
+
+<div class="row">
+  <div class="column box"><p>Hello</p></div>
+  <div class="column-2 box"><p>Hello</p></div>
+</div>
+
+<div class="row">
+  <div class="column box"><p>Hello</p></div>
+  <div class="column-3 box"><p>Hello</p></div>
+</div>
+
+<div class="row">
+  <div class="column box"><p>Hello</p></div>
+  <div class="column-2 box"><p>Hello</p></div>
+  <div class="column box"><p>Hello</p></div>
+  <div class="column-half box"><p>Hello</p></div>
+</div>
+
+<div class="row row_center">
+  <div class="column card _2up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _2up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _2up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _2up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _2up"><img src="../images/csu-logo-114.png"></div>
+</div>
+
+<div class="row row_center">
+  <div class="column card _3up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _3up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _3up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _3up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _3up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _3up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _3up"><img src="../images/csu-logo-114.png"></div>
+</div>
+
+<div class="row row_center">
+  <div class="column card _4up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _4up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _4up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _4up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _4up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _4up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _4up"><img src="../images/csu-logo-114.png"></div>
+</div>
+
+
+<div class="row row_center">
+  <div class="column card _5up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _5up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _5up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _5up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _5up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _5up"><img src="../images/csu-logo-114.png"></div>
+  <div class="column card _5up"><img src="../images/csu-logo-114.png"></div>
+</div>
+
+<div class="larger-profile row" style="clear:both;">
+    <div class="third" style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; overflow: visible; margin: 0; padding: 0 10px 0 0;">
+        <img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg" style="max-width: 100%;">
+        <h4 style="font-family: sans-serif; text-transform: uppercase; font-weight: 600; margin: 12px 0px 0px 0px; padding: 0.5em 10px;">Christian Surname</h4>
+        <h6 style="font-family: sans-serif; font-size: 1.2em;  font-style: italic; font-weight: 400; font-variant: normal; margin: 0; padding: 0 0 0.5em 0.5em;">Job Title</h6>
+        <p style="font-family: sans-serif; color: #1A1A1A; word-wrap: break-word; line-height: 1.2em; margin: 0px; padding: 0 0 0 0.5em;"><span style="font-weight: bold;">Contact:</span> email@some.com</p>
+        <p style="font-family: sans-serif; color: #1A1A1A; word-wrap: break-word; line-height: 1.2em; margin: 0px; padding: 0 0 0 0.5em;"><span style="font-weight: bold; ">Twitter:</span> @someone</p>
+    </div>
+
+    <div class="two-third" style="text-align: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; overflow: visible; border-left-color: #eee; border-left-style: solid; margin: 0; padding: 0 10px; border-width: 0 0 0 1px;">
+        <p style="font-family: sans-serif; color: #1A1A1A; word-wrap: break-word; line-height: 1.2em; margin: 0px; padding: 0 0 0.5em;">Spent several months developing shaving cream in West Palm Beach, FL. Lead a team buying and selling catfish in Libya. Spent 2001-2005 getting my feet wet with fried chicken in Deltona, FL. Managed a small team working on cigarettes in Cuba. Spent 2001-2007 investing in toy planes in Minneapolis, MN. Garnered an industry award while getting to know junk food in Jacksonville, FL.</p>
+        <p style="font-family: sans-serif; color: #1A1A1A; word-wrap: break-word; line-height: 1.2em; margin: 0px; padding: 0 0 0.5em;">Spent several months developing shaving cream in West Palm Beach, FL. Lead a team buying and selling catfish in Libya. Spent 2001-2005 getting my feet wet with fried chicken in Deltona, FL. Managed a small team working on cigarettes in Cuba. Spent 2001-2007 investing in toy planes in Minneapolis, MN. Garnered an industry award while getting to know junk food in Jacksonville, FL.</p>
+        <p style="font-family: sans-serif; color: #1A1A1A; word-wrap: break-word; line-height: 1.2em; margin: 0px; padding: 0 0 0.5em;">Spent several months developing shaving cream in West Palm Beach, FL. Lead a team buying and selling catfish in Libya. Spent 2001-2005 getting my feet wet with fried chicken in Deltona, FL. Managed a small team working on cigarettes in Cuba. Spent 2001-2007 investing in toy planes in Minneapolis, MN. Garnered an industry award while getting to know junk food in Jacksonville, FL.</p>
+        <p style="font-family: sans-serif; color: #1A1A1A; word-wrap: break-word; line-height: 1.2em; margin: 0px; padding: 0 0 0.5em;">Spent several months developing shaving cream in West Palm Beach, FL. Lead a team buying and selling catfish in Libya. Spent 2001-2005 getting my feet wet with fried chicken in Deltona, FL. Managed a small team working on cigarettes in Cuba. Spent 2001-2007 investing in toy planes in Minneapolis, MN. Garnered an industry award while getting to know junk food in Jacksonville, FL.</p>
+</div>
+</div>
+
+
+<div class="halves row" style="clear:both;">
+  <div class="column-half"></div>
+      <div class="column" style="text-align: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; overflow: visible; border-left-color: #eee; border-left-style: solid; margin: 0; padding: 0 5px 10 0; border-width: 0 1px 0 0;">
+        <h4 class="blue" style="font-family: sans-serif; color: #fff; text-transform: uppercase; font-weight: 600; background-color: #00AFD8; margin: 12px 0px 0px 0px; padding: 0.5em 10px;">Christian Surname</h4>
+        <img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg" style="max-width: 70%; display: block; height: auto; margin: auto; padding: 10px;">
+        <h6 style="font-family: sans-serif; font-size: 1.2em;  font-style: italic; font-weight: 400; font-variant: normal; margin: 0; padding: 0.5em 0 0 0.5em;">Job Title</h6>
+        <p style="font-family: sans-serif; color: #1A1A1A; word-wrap: break-word; line-height: 1.2em; margin: 0px; padding: 0 0 0 0.5em;"><span style="font-weight: bold;">Contact:</span> email@some.com</p>
+        <p style="font-family: sans-serif; color: #1A1A1A; word-wrap: break-word; line-height: 1.2em; margin: 0px; padding: 0 0 0 0.5em;"><span style="font-weight: bold; ">Twitter:</span> @someone</p>
+      </div>
+      <div class="column" style="text-align: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; overflow: visible; border-left-color: #eee; border-left-style: solid; margin: 0; padding: 0 0 10px 5px; border-width: 0 0 0 1px;">
+        <h4 class="blue" style="font-family: sans-serif; color: #fff; text-transform: uppercase; font-weight: 600; background-color: #00AFD8; margin: 12px 0px 0px 0px; padding: 0.5em 10px;">Christian Surname</h4>
+        <img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg" style="max-width: 70%; display: block; height: auto; margin: auto; padding: 10px;">
+        <h6 style="font-family: sans-serif; font-size: 1.2em;  font-style: italic; font-weight: 400; font-variant: normal; margin: 0; padding: 0.5em 0 0 0.5em;">Job Title</h6>
+        <p style="font-family: sans-serif; color: #1A1A1A; word-wrap: break-word; line-height: 1.2em; margin: 0px; padding: 0 0 0 0.5em;"><span style="font-weight: bold;">Contact:</span> email@some.com</p>
+        <p style="font-family: sans-serif; color: #1A1A1A; word-wrap: break-word; line-height: 1.2em; margin: 0px; padding: 0 0 0 0.5em;"><span style="font-weight: bold; ">Twitter:</span> @someone</p>
+      </div>
+      <div class="column-half"></div>
+</div>
+
+<div class="halves row" id="div_0a77_0">
+      <div class="column" id="div_0a77_1">
+        <h4 class="blue" id="h4_0a77_0">Christian Surname</h4>
+        <img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg" id="img_0a77_0">
+        <h6 id="h6_0a77_0">Job Title</h6>
+        <p id="p_0a77_0"><span id="span_0a77_0">Contact:</span> email@some.com</p>
+        <p id="p_0a77_1"><span id="span_0a77_1">Twitter:</span> @someone</p>
+      </div>
+      <div class="column" id="div_0a77_2">
+        <h4 class="blue" id="h4_0a77_1">Christian Surname</h4>
+        <img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg" id="img_0a77_1">
+        <h6 id="h6_0a77_1">Job Title</h6>
+        <p id="p_0a77_2"><span id="span_0a77_2">Contact:</span> email@some.com</p>
+        <p id="p_0a77_3"><span id="span_0a77_3">Twitter:</span> @someone</p>
+      </div>
+</div>
+
+</body>
+</html>

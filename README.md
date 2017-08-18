@@ -23,6 +23,39 @@ Forms the basis of new CSU websites
   - [Materialize CSS](http://materializecss.com)
   - [Material Design Lite](https://getmdl.io/index.html)
 
+### Responsive type
+
+Responsive type settings used are based on this article:[Viewport Unit Based Typography](https://zellwk.com/blog/viewport-based-typography/). This uses a single calculation based on the screens width to set the baseline value of 18px to create the font size value:
+
+```css
+font-size: calc(112.5% + 0.5vw)
+```
+
+Font's used in Blackboard are mostly are based on percentages and ems so this size flows through the site quite well.
+
+### Flex Grid
+
+A simple grid system using flexbox has been deployed in the theme. Based on these articles:
+
+- https://philipwalton.github.io/solved-by-flexbox/demos/grids/
+- https://www.taniarascia.com/easiest-flex-grid-ever/
+
+By using Flexbox's innate nature to resize elements based on the page the grid is simply based on Rows and Columns. Place Columns in a Row and they will automatically resize equally. This works fine for most applications but there are special classes - column-half, column-2 and column-3 - which will help come up with thirds and other column configurations. Flexbox also provides ways to align content within elements to top, bottom and center.
+
+## Useful Tools
+
+### Colour Tools
+
+- [Adobe Color](https://color.adobe.com)
+- [Sass Color Generator](http://scg.ar-ch.org/)
+
+### HTML
+
+- [HTML Cleaner](https://html-cleaner.com/) - general purpose cleaner for HTML
+- [CSS Out](https://uimagine.edu.au/cssout) - cleans out inline styles
+- [Atom](https://atom.io) - text editor designed for working in code
+
+
 ## Tips for Testing
 
 1. Open Chrome and install [Styler](https://chrome.google.com/webstore/detail/styler/bogdgcfoocbajfkjjolkmcdcnnellpkb)

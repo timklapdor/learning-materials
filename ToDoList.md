@@ -1,11 +1,10 @@
 ## To Do List
 
-- [x] Padding and Margins to add more "whitespace"
-- [ ] - [ ] Declutter modules on home page
-  - What can be removed?
-  - Simple UX - reduce replication - link to student portal should make others redundant
-
-- [x] Font Choices - [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro) - Most similar to Helvetica, range of weights
+- [ ] Declutter modules on home page
+  - Remove everything except course & orgs by default
+    - **add video to introduce new Inteact2 theme on Dashboard?**  
+    - keep customisation on so students can add and remove as they like
+    - staff - use settings to turn on staff links too
 - [ ] Define Color Palette(s)
   - Need to do more testing and finalise.
   - Look at SCSS for variables  
@@ -35,3 +34,6 @@
   -
 
 Drop zone in drag and drop
+
+
+- Sass Colour Generator http://scg.ar-ch.org/

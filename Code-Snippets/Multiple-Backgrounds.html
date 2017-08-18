@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+body {
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap row;
+}
+
+.card {
+  height: 95vh;
+  margin: 1rem;
+  width: 95vw;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap column;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card p {
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 5em;
+  text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card:hover {box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+
+/** Background Examples from https://blog.prototypr.io/css-only-multi-color-backgrounds-4d96a5569a20 **/
+
+.v1 {background: linear-gradient(95deg, #D92231  15%, rgba(0,0,0,0) 15%), linear-gradient(85deg, #9F000A  15%, rgba(0,0,0,0) 15%), linear-gradient(to right,  rgba(0,0,0,.2),  rgba(0,0,0,.1)), url(https://uimagine.edu.au/interact2-theme/5.jpg) right no-repeat;}
+.v2 {background: linear-gradient(85deg, #FFDC0B  15%, rgba(0,0,0,0) 15%), linear-gradient(120deg, #C7AB00  15%, rgba(0,0,0,0) 15%), linear-gradient(to right,  rgba(0,0,0,.2),  rgba(0,0,0,.3)), url(https://uimagine.edu.au/interact2-theme/2.jpg) right no-repeat;}
+.v3 {background: linear-gradient(45deg, #318700  15%, rgba(0,0,0,0) 15%), linear-gradient(80deg, #005900  15%, rgba(0,0,0,0) 15%), linear-gradient(to right,  rgba(0,0,0,.2),  rgba(0,0,0,.3)), url(https://uimagine.edu.au/interact2-theme/1.jpg) right no-repeat;}
+
+
+</style>
+
+</head>
+<body>
+
+
+  <div class="card v1"><p>Putting plenty of text here</p></div>
+  <div class="card v2"><p>Putting plenty of text here</p></div>
+  <div class="card v3"><p>Putting plenty of text here</p></div>
+
+</body>
+</html>
