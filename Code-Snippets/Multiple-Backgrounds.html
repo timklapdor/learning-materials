@@ -32,8 +32,11 @@ body {
 
 /** Background Examples from https://blog.prototypr.io/css-only-multi-color-backgrounds-4d96a5569a20 **/
 
+.v01 {background: linear-gradient(45deg, #6E267B  15%, rgba(0,0,0,0) 15%), linear-gradient(80deg, #4B1A54  15%, rgba(0,0,0,0) 15%), linear-gradient(to right,  rgba(0,0,0,0),  rgba(0,0,0,0)), #9132A2;}
+
+.v0 {background: linear-gradient(45deg, #318700  15%, rgba(0,0,0,0) 15%), linear-gradient(80deg, #005900  15%, rgba(0,0,0,0) 15%), linear-gradient(to right,  rgba(0,0,0,.2),  rgba(0,0,0,.2)), #5BBA60;}
 .v1 {background: linear-gradient(95deg, #D92231  15%, rgba(0,0,0,0) 15%), linear-gradient(85deg, #9F000A  15%, rgba(0,0,0,0) 15%), linear-gradient(to right,  rgba(0,0,0,.2),  rgba(0,0,0,.1)), url(https://uimagine.edu.au/interact2-theme/5.jpg) right no-repeat;}
-.v2 {background: linear-gradient(85deg, #FFDC0B  15%, rgba(0,0,0,0) 15%), linear-gradient(120deg, #C7AB00  15%, rgba(0,0,0,0) 15%), linear-gradient(to right,  rgba(0,0,0,.2),  rgba(0,0,0,.3)), url(https://uimagine.edu.au/interact2-theme/2.jpg) right no-repeat;}
+.v2 {background: linear-gradient(85deg, #FFDC0B  15%, rgba(0,0,0,0) 15%), linear-gradient(110deg, #C7AB00  30%, rgba(0,0,0,0) 30%), linear-gradient(to right,  rgba(0,0,0,.2),  rgba(0,0,0,.3)), url(https://uimagine.edu.au/interact2-theme/2.jpg) right no-repeat;}
 .v3 {background: linear-gradient(45deg, #318700  15%, rgba(0,0,0,0) 15%), linear-gradient(80deg, #005900  15%, rgba(0,0,0,0) 15%), linear-gradient(to right,  rgba(0,0,0,.2),  rgba(0,0,0,.3)), url(https://uimagine.edu.au/interact2-theme/1.jpg) right no-repeat;}
 
 
@@ -42,7 +45,9 @@ body {
 </head>
 <body>
 
+  <div class="card v0"><p>Putting plenty of text here</p></div>
 
+  <div class="card v01"><p>Putting plenty of text here</p></div>
   <div class="card v1"><p>Putting plenty of text here</p></div>
   <div class="card v2"><p>Putting plenty of text here</p></div>
   <div class="card v3"><p>Putting plenty of text here</p></div>

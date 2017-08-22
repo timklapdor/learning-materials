@@ -20,7 +20,7 @@ body {
 }
 
 .column, .third, .two-third, .column-quarter, .column-half, .column-2, .column-3 {flex-basis: 100%; flex-direction: column;}
-.column img {max-width: 97% !important;}
+.row img {max-width: 97% !important; margin: .5em;}
 
 @media screen and (min-width: 600px) {
   .column {flex: 1;}
@@ -68,7 +68,6 @@ body {
 
 .card:hover {box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
 
-
 /*.column + .column { margin-left: 1rem }*/
 
 /* Alignment per row */
@@ -81,6 +80,101 @@ body {
 .col-bottom {justify-content: flex-end;}
 .col-center {justify-content: center;}
 
+
+h1{font-size: 160%; padding: 0.4em; margin: .5em;}
+h2{font-size: 140%; padding: 0.4em; margin: .5em;}
+h3{font-size: 130%; padding: 0.4em; margin: .5em;}
+h4{font-size: 120%; padding: 0.4em; margin: .5em;}
+h5{font-size: 110%; padding: 0.4em; margin: .5em;}
+h6{font-size: 100%; padding: 0.4em; margin: .5em;}
+
+/** Lists **/
+
+ol {padding-left: 3vw !important;}
+ul {padding-left: 3vw !important;}
+
+blockquote {
+  margin: .5em 5vw !important;
+  padding: 1em;
+  border-left: 4px solid;
+  font-style: italic;
+  color: #717171;
+}
+
+blockquote cite {
+  font-size: 80%;
+}
+
+blockquote cite:before {
+  content: ' – ';
+  margin-left: 1em;
+}
+
+.pullquote {
+  border: 0 !Important;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.fancyquote {
+  border-width: 2px 0 !important;
+  border-style: solid;
+}
+
+.fancyquote, .fancyquote p {font-family: "Times New Roman", Georgia, Serif !important; font-size: 1.3em;}
+
+/** Floats **/
+
+.u-float-right {float: right;}
+.u-float-left {float: left;}
+.u-clear-both {clear: both;}
+
+/** Text Transforms **/
+
+.uppercase {text-transform: uppercase;}
+.capitalise {text-transform: capitalize !important;}
+.lowercase {text-transform: lowercase;}
+.underline {padding: .4em .1em .1em .4em !important; border-bottom: 2px solid !important;}
+
+.small-text {font-size: 70% !important;}
+.smaller-text {font-size: 85% !important;}
+
+.heavy {font-weight: 800;}
+.light {font-weight: lighter;}
+
+.indent {margin: 1em 6vw !important;}
+
+/** Color Palette **/
+.primary {color: #fff !important; background-color: #D92231 !important;}
+.secondary {color: #fff !important; background-color: #3A87AD !important;}
+
+.warning {color: #fff !important; background-color: #FFDC0B !important;}
+.success {color: #fff !important; background-color: #318700 !important;}
+
+.blue {color: #fff !important; background-color: #0A6396 !important;}
+.green {color: #fff !important; background-color: #43A047 !important;}
+.grey {color: #fff !important; background-color: #666666 !important;}
+.orange {color: #fff !important; background-color: #F4511E !important;}
+.purple {color: #fff !important; background-color: #6E267B !important;}
+.red {color: #fff !important; background-color: #D92231 !important;}
+.yellow {color: #fff !important; background-color: #C9870A !important;}
+
+.rev {color: #fff !important;}
+.border {border: 2px solid; }
+.blue-line {border-color: #0A6396 !important;}
+.green-line {border-color: #43A047 !important;}
+.grey-line {border-color: #666666 !important;}
+.orange-line {border-color: #F4511E !important;}
+.purple-line {border-color: #6E267B !important;}
+.red-line {border-color: #D92231 !important;}
+.yellow-line {border-color: #C9870A !important;}
+
+.blue-text {color: #0A6396 !important;}
+.green-text {color: #43A047 !important;}
+.grey-text {color: #666666 !important;}
+.orange-text {color: #F4511E !important;}
+.purple-text {color: #6E267B !important;}
+.red-text {color: #D92231 !important;}
+.yellow-text {color: #C9870A !important;}
 
 </style>
 
@@ -211,6 +305,23 @@ body {
         <p id="p_0a77_2"><span id="span_0a77_2">Contact:</span> email@some.com</p>
         <p id="p_0a77_3"><span id="span_0a77_3">Twitter:</span> @someone</p>
       </div>
+</div>
+
+<div class="row ">
+  <div class="column box">
+    <h4 class="blue">Christian Surname</h4>
+    <img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg" />
+    <h6>Job Title</h6>
+    <p><strong>Contact:</strong> email@some.com</p>
+    <p><strong>Twitter:</strong> @someone</p>
+  </div>
+  <div class="column box">
+    <h4 class="purple">Christian Surname</h4>
+    <img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg" />
+    <h6>Job Title</h6>
+    <p><strong>Contact:</strong> email@some.com</p>
+    <p><strong>Twitter:</strong> @someone</p>
+</div>
 </div>
 
 </body>

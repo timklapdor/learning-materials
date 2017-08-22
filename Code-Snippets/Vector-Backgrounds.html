@@ -1,0 +1,63 @@
+<html>
+<head>
+<style>
+body {
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap row;
+}
+
+.card {
+  height: 20vh;
+  margin: 1rem;
+  width: 75vw;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap column;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card p {
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3em;
+  text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card:hover {box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+
+/** Background Examples from https://blog.prototypr.io/css-only-multi-color-backgrounds-4d96a5569a20 **/
+
+.v1 {background: linear-gradient(45deg, #D92231  40%, rgba(0,0,0,0) 40%), linear-gradient(85deg, #9F000A  100%, rgba(0,0,0,0) 100%);}
+.v2 {background: linear-gradient(85deg, #C9870A  35%, rgba(0,0,0,0) 35%), linear-gradient(120deg, #986608  100%, rgba(0,0,0,0) 100%);}
+.v3 {background: linear-gradient(60deg, #43A047  55%, rgba(0,0,0,0) 55%), linear-gradient(80deg, #347C37  100%, rgba(0,0,0,0) 100%);}
+.v4 {background: linear-gradient(15deg, #F4511E  55%, rgba(0,0,0,0) 55%), linear-gradient(80deg, #D53B0A  100%, rgba(0,0,0,0) 100%);}
+.v5 {background: linear-gradient(125deg, #6E267B  25%, rgba(0,0,0,0) 25%), linear-gradient(80deg, #4B1A54  100%, rgba(0,0,0,0) 100%);}
+.v6 {background: linear-gradient(125deg, #0A6396  60%, rgba(0,0,0,0) 60%), linear-gradient(80deg, #074366  100%, rgba(0,0,0,0) 100%);}
+
+.v8 {background: linear-gradient(45deg, #0A6396 15%, #074366);}
+.v9 {background: linear-gradient(-45deg, #C9870A 15%, #986608);}
+.v10 {background: linear-gradient(90deg, #F4511E 15%, #D53B0A);}
+
+</style>
+
+</head>
+<body>
+
+
+  <div class="card v1"><p>Putting plenty of text here</p></div>
+  <div class="card v2"><p>Putting plenty of text here</p></div>
+  <div class="card v3"><p>Putting plenty of text here</p></div>
+  <div class="card v4"><p>Putting plenty of text here</p></div>
+  <div class="card v5"><p>Putting plenty of text here</p></div>
+  <div class="card v6"><p>Putting plenty of text here</p></div>
+  <div class="card v8"><p>Putting plenty of text here</p></div>
+  <div class="card v9"><p>Putting plenty of text here</p></div>
+  <div class="card v10"><p>Putting plenty of text here</p></div>
+
+</body>
+</html>

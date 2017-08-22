@@ -1,0 +1,604 @@
+<html>
+<head>
+<style>
+
+/*html {  font-size: calc(1.125em + 0.5vw) !important;}*/
+
+body {
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap row;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', serif !important;
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  margin: 2em;
+  width: 90vw;
+  max-width: 40em;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-flow: wrap column;
+  font-size: calc(1.125em + 0.5vw) !important;
+  padding-bottom: 2em;
+}
+
+/** Flex Grid **/
+
+.row {
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1em 0;
+}
+
+.column, .third, .two-third, .column-quarter, .column-half, .column-2, .column-3 {flex-basis: 100%; flex-direction: column;}
+
+.row img {max-width: 95% !important;}
+
+@media screen and (min-width: 600px) {
+  .column {flex: 1;}
+  .column-quarter {flex: .25;}
+  .column-half {flex: .5;}
+  .column-2 {flex:2;}
+  .column-3 {flex: 3;}
+  ._2up {flex: 0 1 49%}
+  ._3up {flex: 0 1 32%;}
+  ._4up {flex: 0 1 24%;}
+  ._5up {flex: 0 1 19%;}
+/** For Legacy Use **/
+  .third {flex: 1;}
+  .two-third {flex: 2;}
+}
+
+.box {padding: 1em 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
+.square5 {height: 5em; width: 5em;}
+
+
+/* Row Alignment */
+.row_top {justify-content: flex-start;}
+.row_bottom {justify-content: flex-end;}
+.row_center {justify-content: center;}
+
+/* Column Alignment */
+.col-top {justify-content: flex-start;}
+.col-bottom {justify-content: flex-end;}
+.col-center {justify-content: center;}
+
+.centers {align-items: center;}
+
+/** Heading Levels **/
+
+h1{font-size: 160%; padding: 0.4em; margin: .5vw;}
+h2{font-size: 140%; padding: 0.4em; margin: .5vw;}
+h3{font-size: 130%; padding: 0.4em; margin: .5vw;}
+h4{font-size: 120%; padding: 0.4em; margin: .5vw;}
+h5{font-size: 110%; padding: 0.4em; margin: .5vw;}
+h6{font-size: 100%; padding: 0.4em; margin: .5vw;}
+p {font-size: 100%; padding: 0.4em; margin: .5vw;}
+
+.lead-paragraph {font-size: 105%; font-style: italic;}
+
+.label {
+  font-size: 60%;
+  text-transform: uppercase;
+  margin-left: -.3em;
+  font-weight: normal;
+  color: #989898;
+  background: #f2f2f2;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+/** Lists **/
+
+ol {margin-left: 3vw !important;}
+ul {margin-left: 3vw !important;}
+
+
+/** Quotes **/
+
+blockquote {
+  margin: .5em 5vw !important;
+  padding: 1em;
+  border-left: 4px solid;
+  font-style: italic;
+  color: #717171;
+}
+
+cite {font-size: 80%;}
+cite:before {content: ' – '; margin-left: 1em;}
+
+.pullquote {border: 0 !Important; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+
+.fancyquote {border-width: 2px 0 !important; border-style: solid;}
+.fancyquote, .fancyquote p {font-family: "Times New Roman", Georgia, Serif !important; font-size: 1.3em;}
+
+/** Floats **/
+
+.float-right {float: right;}
+.float-left {float: left;}
+.clear-both {clear: both;}
+
+/** Text Transforms **/
+
+.uppercase {text-transform: uppercase;}
+.capitalise {text-transform: capitalize !important;}
+.lowercase {text-transform: lowercase;}
+.underline {padding: .4em .1em .1em .4em !important; border-bottom: 2px solid !important; width: 80%;}
+.small-text {font-size: 70% !important;}
+.smaller-text {font-size: 55% !important;}
+.heavy-text {font-weight: 800;}
+.light-text {font-weight: lighter;}
+.indent {margin: 1em 6vw !important;}
+
+/** Color Palette **/
+.primary {color: #fff !important; background-color: #D92231 !important;}
+.secondary {color: #fff !important; background-color: #3A87AD !important;}
+.warning {color: #fff !important; background-color: #FFDC0B !important;}
+.success {color: #fff !important; background-color: #318700 !important;}
+.grey-nav {color: #fff !important; background-color: #414141 !important;}
+.grey-item {color: #fff !important; background-color: #717171 !important;}
+.grey-hover {color: #fff !important; background-color: #e6e6e6 !important;}
+.grey-page {color: #fff !important; background-color: #f8f8f8 !important;}
+.highlight-subtle {color: #fff !important; background-color: #FCF8E3 !important;}
+
+.blue {color: #fff !important; background-color: #0A6396 !important;}
+.green {color: #fff !important; background-color: #43A047 !important;}
+.grey {color: #fff !important; background-color: #666666 !important;}
+.orange {color: #fff !important; background-color: #F4511E !important;}
+.purple {color: #fff !important; background-color: #6E267B !important;}
+.red {color: #fff !important; background-color: #D92231 !important;}
+.yellow {color: #fff !important; background-color: #C9870A !important;}
+
+.rev {color: #fff !important;}
+.rev-blk {color: #000 !important;}
+
+.border {border: 2px solid; }
+.blue-line {border-color: #0A6396 !important;}
+.green-line {border-color: #43A047 !important;}
+.grey-line {border-color: #666666 !important;}
+.orange-line {border-color: #F4511E !important;}
+.purple-line {border-color: #6E267B !important;}
+.red-line {border-color: #D92231 !important;}
+.yellow-line {border-color: #C9870A !important;}
+
+.blue-text {color: #0A6396 !important;}
+.green-text {color: #43A047 !important;}
+.grey-text {color: #666666 !important;}
+.orange-text {color: #F4511E !important;}
+.purple-text {color: #6E267B !important;}
+.red-text {color: #D92231 !important;}
+.yellow-text {color: #C9870A !important;}
+
+/** Faculty Colour Classes **/
+
+.foa {color: #fff !important; background-color: #327B8C !important;}
+.foa-line {border-color: #327B8C !important;}
+.foa-text {color: #327B8C !important;}
+
+.fob {color: #fff !important; background-color: #1647AD !important;}
+.fob-line {border-color: #1647AD !important;}
+.fob-text {color: #1647AD !important;}
+
+.fos {color: #fff !important; background-color: #9CBB15 !important;}
+.fos-line {border-color: #9CBB15 !important;}
+.fos-text {color: #9CBB15 !important;}
+
+
+/** Chat Markup **/
+
+.chat {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f2f2f2;
+  color: #fff;
+  border-radius: 20px;
+  margin-bottom: 1em;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.2s ease;
+}
+
+.chat p {padding: 1em; margin: 1em; border-radius: 20px; max-width: 60%; justify-content: center;}
+.chat p img {height: 2em; width: 2em; margin: 0 .2em; border-radius: 2em; border: 1px solid #fff; float: left;}
+.chat h3 {text-align: center; align-self: center; width: 80%; text-transform: uppercase; color: #414141; border-bottom: 2px solid #414141;}
+.chat p:nth-child(even) {align-self: flex-start; background: #0A6396; }
+.chat p:nth-child(odd) {align-self: flex-end; background: #43A047}
+.chat p:nth-child(odd) img {float: right;}
+.chat br {
+  content: ' ';
+  display: inline-block;
+  width: 120%;
+  border-bottom: 4px solid #f2f2f2;
+  margin: 0 0 .5em -2em;
+  padding: .1em 0 .5em;
+}
+
+/** Buttons **/
+
+.button {
+  display: block;
+  font-size: 80% !important;
+  text-transform: uppercase;
+  padding: .5em 2em;
+  background: #414141;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  text-align: center;
+  margin: .5em 1em;
+}
+.button:hover {box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22), inset 0 0 20px 1px rgba(0,0,0,.15); ;}
+.btn-wide {padding: .5em 4em;}
+.btn-large {padding: 1em 3em;}
+
+
+/** Activity **/
+.activity {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1em 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon {flex: 1 !important; display: flex; align-items: flex-start;; padding: .25em; margin: 1em .5em}
+.icon img {max-width: 100%;}
+.instructions {flex: 4;}
+
+/** Figure **/
+figure {
+  min-width: 10%;
+  max-width: 99%;
+  display: flex;
+  flex-flow: wrap column;
+  background: #f2f2f2;
+  padding: .15em;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+figure figcaption {align-self: center; font-size: 80%; color: #414141; font-style: italic; padding: .25em}
+
+figure img {max-width: 100%}
+
+.featured {margin-left: auto; margin-right: auto;}
+.gallery {box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); background: #f2f2f2; align-self: center; justify-content: center;}
+.gallery h3 {flex: 1 1 100%; text-align: center;}
+.gallery figure {box-shadow: none !important; margin: 0; padding: 2px 0;}
+
+figure._30 {width: 30%;}
+figure._50 {width: 50%;}
+figure._60 {width: 60%;}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/** APA Referencing **/
+
+.apa,.apa ul,.apa ol,.apa dl,.ref-apa,.ref-apa ul,.ref-apa ol,.ref-apa dl,.apa-ref,.apa-ref ul,.apa-ref ol,.apa-ref dl,.refapa,.refapa ul,.refapa ol,.refapa dl,.aparef,.aparef ul,.aparef ol,.aparef dl
+{padding-left: 0; margin-left: 0; }
+
+
+.apa li,.ref-apa li,.refapa li,.apa-ref li,.aparef li
+{list-style-type: none;}
+
+
+.apa p,.apa li,.apa dd,.ref-apa p,.ref-apa li,.ref-apa dd,.refapa p,.refapa li,.refapa dd,.apa-ref p,.apa-ref li,.apa-ref dd,.aparef p,.aparef li,.aparef dd {
+  margin-bottom: 1em;
+  margin-left: 2em;
+  margin-top: 1em;
+  text-indent: -2em;
+}
+
+/** Horizontal Rules **/
+
+hr {border-top: 2px solid; width: 98%}
+
+/** Progress Bar **/
+
+.progress {
+  height: 2em;
+  width: 90%;
+  position: relative;
+  border-radius: 4px;
+  margin: 1em auto;
+}
+.progress:before {
+  content: attr(data-label);
+  font-size: 70%;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: .7em;
+  left: 0;
+  right: 0;
+}
+.progress .value {
+  background-color: rgba(0,0,0,.3);
+  display: inline-block;
+  height: 100%;
+}
+
+/* Actions */
+
+.action {width: 80%; margin: 1em auto; border-radius: 1em; }
+.action img {max-width: 20%; float: left; margin-right: 1em; padding: .5em; vertical-align: top;}
+
+
+</style>
+</head>
+<body>
+  <div class="card">
+
+    <h2 class="label">HTML Elements</h2>
+    <p>A Preview of HTML Elements, Styles and modifiers</p>
+
+    <h2 class="label">Headings</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <h2 class="label">Lead Paragraph</h2>
+    <p class="lead-paragraph">All essential learning activities, learning content and learning tools for your subject are found within this site. Your Subject Outline (in the left-side navigation menu) is the first document you need to read before commencing to study. The Subject Outline is an accurate and historical record of the curriculum and scope of your subject, and should be available 14 days before the start of a study session.</p>
+
+    <h2 class="label">Standard Paragraph</h2>
+    <p>Paragraph of text goes in here. It's pretty easy to see how this might all work, when there's an example of you to have a look at.</p>
+
+    <h2 class="label">Blockquote + Cite</h2>
+    <blockquote>
+    <p>Someone famous once said something really profound. It was probably Einstein. Yeah Einstein.</p>
+    <cite>Albert Einstein, 2017</cite></blockquote>
+
+    <h2 class="label">Ordered List</h2>
+    <ol>
+    <li>Lists of things</li>
+    <li>Reminds me of sesame street</li>
+    <li>Three Things!! hahaha</li>
+    <li>Four Things! hahaha</li>
+    <li>All of the things! hahaha</li>
+    <li>!thunderclap!</li>
+    </ol>
+
+    <h2 class="label">Unordered List</h2>
+    <ul>
+    <li>Plain lists are easier to view</li>
+    <li>It's just a dot</li>
+    <li>After the next</li>
+    <li>Till it's done</li>
+    </ul>
+
+
+    <h2 class="label">Modifiers</h2>
+    <h4 class="blue">Colours - blue, green, grey, orange, purple, red & Yellow</h4>
+    <h4 class="underline">Underline</h4>
+    <h4 class="underline red-line">Underline + colour - blue, green, grey, orange, purple, red & Yellow</h4>
+    <h4 class="blue-text">Text Colour - blue, green, grey, orange, purple, red & Yellow</h4>
+
+
+    <h2 class="label">Blockquote + Cite with Colour</h2>
+    <blockquote class="blue-text">
+    <p>Someone famous once said something really profound. It was probably Einstein. Yeah Einstein.</p>
+    <cite>Albert Einstein, 2017</cite></blockquote>
+
+    <h2 class="label">Blockquote + Cite with pullquote</h2>
+    <blockquote class="pullquote">
+    <p>Someone famous once said something really profound. It was probably Einstein. Yeah Einstein.</p>
+    <cite>Albert Einstein, 2017</cite></blockquote>
+
+    <h2 class="label">Blockquote + Cite with pullquote and colour</h2>
+    <blockquote class="pullquote blue">
+    <p>Someone famous once said something really profound. It was probably Einstein. Yeah Einstein.</p>
+    <cite>Albert Einstein, 2017</cite></blockquote>
+
+    <h2 class="label">Blockquote + Cite with pullquote and colour</h2>
+    <blockquote class="pullquote blue-text">
+    <p>Someone famous once said something really profound. It was probably Einstein. Yeah Einstein.</p>
+    <cite>Albert Einstein, 2017</cite></blockquote>
+
+    <h2 class="label">Text Transforms</h2>
+    <p class="uppercase">Text with Uppercase Transform</p>
+    <p class="capitalise">text with capitalise transform</p>
+    <p class="lowercase">TEXT WITH LOWERCASE TRANSFORM</p>
+    <h6 class="underline">Heading with Underline added</h6>
+    <p class="small-text">Text with small text transform</p>
+    <p class="smaller-text">Text with smaller text transform</p>
+    <p class="heavy-text">Text with heavy text transform</p>
+    <p class="light-text">Text with light text transform</p>
+    <p class="indent">Text with indent applied</p>
+    <cite class="indent">Cite with indent applied</cite>
+
+    <h2 class="label">Buttons</h2>
+    <p class="button">Regular Button</p>
+    <p class="button btn-wide">Wide Button</p>
+    <p class="button btn-large">Large Button</p>
+
+    <h2 class="label">Buttons + Colours</h2>
+    <p class="button blue">Regular Button with Blue</p>
+    <p class="button btn-wide green">Wide Button with Green</p>
+    <p class="button btn-large yellow">Large Button With Yellow</p>
+
+    <h2 class="label">UI Colour Palette</h2>
+    <div class="row small-text">
+      <div class="column square5 primary">Primary</div>
+      <div class="column square5 secondary">Secondary</div>
+      <div class="column square5 warning">Warning</div>
+      <div class="column square5 success">Success</div>
+      <div class="column square5 grey-nav">Grey Nav</div>
+      <div class="column square5 grey-item">Grey Item</div>
+      <div class="column square5 grey-hover rev-blk">Grey Hover</div>
+      <div class="column square5 grey-page rev-blk">Grey Page</div>
+      <div class="column square5 highlight-subtle rev-blk">Highlight Subtle</div>
+    </div>
+
+    <h2 class="label">Resource Colour Palette</h2>
+    <div class="row small-text">
+      <div class="column square5 blue">Blue</div>
+      <div class="column square5 green">Green</div>
+      <div class="column square5 grey">Grey</div>
+      <div class="column square5 orange">Orange</div>
+      <div class="column square5 purple">Purple</div>
+      <div class="column square5 red">Red</div>
+      <div class="column square5 yellow">Yellow</div>
+    </div>
+
+    <h2 class="label">Faculty Colour Palette</h2>
+    <div class="row small-text">
+      <div class="column square5 foa">FoAE</div>
+      <div class="column square5 fob">FoBJBS</div>
+      <div class="column square5 fos">FoS</div>
+    </div>
+
+    <h2 class="label">Activity</h2>
+    <div class="activity">
+      <div class="icon"><img src="http://icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/256/Home-icon.png"></div>
+      <div class="instructions">
+        <h2>Heading Inside</h2>
+        <p>make it high quality and please use html can you make the font a bit bigger and change it to times new roman? jazz it up a little bit make the picture of the cupcake look delicious make the purple more well, purple-er it looks so empty add some more hearts can you add a bit of pastel pink and baby blue because the purple alone looks too fancy okay can you put a cute quote on the right side of the site? oh no it looks messed up! i think we need to start from scratch. We need more images of groups of people having non-specific types of fun. We have big contacts we will promote you I really like the colour but can you change it, and can you make it pop.</p>
+      </div>
+    </div>
+
+    <h2 class="label">Figure with Image & Caption</h2>
+    <figure class="featured">
+      <img src="http://www.australia.com/content/australia/en/places/sydney/_jcr_content/hero/image.adapt.1663.medium.jpg">
+      <figcaption>The Sydney Harbour Bridge <cite>http://www.australia.com/en/places/sydney.html</cite></figcaption>
+    </figure>
+
+    <h2 class="label">Figure with Video & Caption</h2>
+    <figure class="featured">
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ydyGiq7hnOg" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <figcaption>This is a video with lot of stuff in it that we need to include <cite>http://www.australia.com/en/places/sydney.html</cite></figcaption>
+    </figure>
+
+    <h2 class="label">Gallery of figures with Image & Caption</h2>
+    <div class="row gallery">
+      <h3 class="underline orange-line">Title of Gallery</h3>
+      <figure class="_3up">
+        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <figcaption>A pretty flower</figcaption>
+      </figure>
+      <figure class="_3up">
+        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <figcaption>A pretty flower</figcaption>
+      </figure>
+      <figure class="_3up">
+        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <figcaption>A pretty flower</figcaption>
+      </figure>
+      <figure class="_3up">
+        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <figcaption>A pretty flower</figcaption>
+      </figure>
+      <figure class="_3up">
+        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <figcaption>A pretty flower</figcaption>
+      </figure>
+    </div>
+
+    <h2 class="label">Gallery of figures with Image & Caption</h2>
+    <div class="row gallery">
+      <h3 class="underline green-line">Title of Gallery</h3>
+      <figure class="_4up">
+        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <figcaption>A pretty flower</figcaption>
+      </figure>
+      <figure class="_4up">
+        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <figcaption>A pretty flower</figcaption>
+      </figure>
+      <figure class="_4up">
+        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <figcaption>A pretty flower</figcaption>
+      </figure>
+      <figure class="_4up">
+        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <figcaption>A pretty flower</figcaption>
+      </figure>
+      <figure class="_4up">
+        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <figcaption>A pretty flower</figcaption>
+      </figure>
+      <figure class="_4up">
+        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <figcaption>A pretty flower</figcaption>
+      </figure>
+      <figure class="_4up">
+        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <figcaption>A pretty flower</figcaption>
+      </figure>
+    </div>
+
+    <h2 class="label">Figure in paragraph</h2>
+    <div class="">
+    <figure class="_50 float-left"><img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg"><figcaption>A pretty flower</figcaption></figure>
+    <p>I cant pay you there are more projects lined up charge extra the next time, nor can you use a high definition screenshot. Can you make pink a little more pinkish we don't need a backup, it never goes down! make it original, or this was not according to brief I have an awesome idea for a startup, i need you to build it for me. Anyway, you are the designer, you know what to do this looks perfect. Just Photoshop out the dog, add a baby, and make the curtains blue is this the best we can do. That's great, but can you make it work for ie 2 please could you rotate the picture to show the other side of the room? nor this is just a 5 minutes job can you make it look like this clipart i found. Give us a complimentary logo along with the website I have printed it out, but the animated gif is not moving could you rotate the picture to show the other side of the room? is this the best we can do I need a website. How much will it cost I think we need to start from scratch.</p>
+    </div>
+
+    <h2 class="label">APA Referencing</h2>
+    <div class="apa">
+      <p>Conole, G. (2009). <em>Personalisation through technology-Enhanced learning</em>. In J. O’Donoghue (Ed.), Technology-Supported Environments for Personalized Learning: Methods and Case Studies (pp. 1-15). London: IGI Global. doi:10.4018/978-1-60566-884-0.ch001</p>
+      <p>Gibson, D., Ostashewski, N., Flintoff, K., Grant, S., & Knight, E. (2013). Digital badges in education. <em>Education and information technologies, 20</em>(2), 403-410. doi:10.1007/s10639-013-9291-7</p>
+      <p>Irwin, B., Hepplestone, S., Holden, G., Parkin, H. J., & Thorpe, L. (2013). Engaging students with feedback through adaptive release. <em>Innovations in Education & Teaching International, 50</em>(1), 51-61. doi:10.1080/14703297.2012.748333</p>
+      <p>Siemens, G., & Long, P. (2011). Penetrating the fog: Analytics in learning and education. <em>EDUCAUSE review, 46</em>(5), 30.</p>
+    </div>
+
+    <h2 class="label">Horizontal Rules</h2>
+    <hr class="">
+    <hr class="blue-line">
+    <hr class="red-line">
+    <hr class="yellow-line">
+
+    <h2 class="label">Progress Bar</h2>
+    <div class="progress success" data-label="10% Complete">
+      <span class="value" style="width:10%;"></span>
+    </div>
+
+    <h2 class="label">Action</h2>
+    <div class="action warning rev-blk">
+      <img src="https://s-media-cache-ak0.pinimg.com/originals/9d/86/ab/9d86ab26bc61bc94bf09d352edff07a1.png">
+      <h4>Some Clear Instruction</h4>
+      <p>Some clear text about what to do</p>
+    </div>
+
+    <h2 class="label">Chat Bubbles</h2>
+    <div class="chat">
+      <h3>Title of the chat</h3>
+      <p><img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg"> Here is the first person speaking.</p>
+      <p><img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">And here is the second person speaking.</p>
+      <p><img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg">First again.</p>
+      <p><img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">Second Again.</p>
+      <p><img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg">I'll know it when i see it. Thats not what i saw in my head at all we need more images of groups of people having non-specific types of fun, so I want you to take it to the next level make it original the website doesn't have the theme i was going for this is just a 5 minutes job. <br> I know somebody who can do this for a reasonable cost the hair is just too polarising, yet thats not what i saw in my head at all. I need a website. </p>
+      <p><img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">How much will it cost it looks a bit empty, try to make everything bigger thanks for taking the time to make the website, but i already made it in wix can we try some other colours maybe. <br>I have an awesome idea for a startup, i need you to build it for me make it sexy, that's great, but can you make it work for ie 2 please we are your relatives can we have another option. Could you rotate the picture to show the other side of the room?</p>
+    </div>
+
+  </div>
+</body>
+</html>
