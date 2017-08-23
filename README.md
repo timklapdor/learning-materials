@@ -42,6 +42,10 @@ A simple grid system using flexbox has been deployed in the theme. Based on thes
 
 By using Flexbox's innate nature to resize elements based on the page the grid is simply based on Rows and Columns. Place Columns in a Row and they will automatically resize equally. This works fine for most applications but there are special classes - column-half, column-2 and column-3 - which will help come up with thirds and other column configurations. Flexbox also provides ways to align content within elements to top, bottom and center.
 
+### Tooltips
+
+Tool tips uses the CSS framework from [Wenk](https://tiaanduplessis.github.io/wenk/) but replaces the ```data-wenk``` attribute with ```tooltip```. To use simply se an attribute in the tag to ```tooltip="the text you want to display"```. 
+
 ## Useful Tools
 
 ### Colour Tools
