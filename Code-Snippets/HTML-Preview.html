@@ -24,32 +24,37 @@ body {
   align-items: left;
   justify-content: center;
   flex-flow: wrap column;
-  font-size: calc(1.125em + 0.5vw) !important;
+  font-size: calc(1.063em + 0.5vw) !important;
   padding-bottom: 2em;
 }
 
 /** Flex Grid **/
 
-.row {
+.flex-row {
   width: 98%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 1em 0;
+  margin: 0;
 }
 
-.column, .third, .two-third, .column-quarter, .column-half, .column-2, .column-3 {flex-basis: 100%; flex-direction: column;}
+.flex-column {flex-direction: column;}
 
-.row img {max-width: 95% !important;}
+.flex-column, .third, .two-third, .flex-column-quarter, .flex-column-half, .flex-column-2, .flex-column-3 {flex-basis: 100%; flex-direction: column;}
+
+.flex-row img {max-width: 100% !important;}
+.flex-row:first-child, :not(.flex-row) + .flex-row {margin-top: 1em !important;}
+.flex-row + .flex-row {margin: 0;}
+.flex-row:last-child {margin-bottom: 1em !important;}
 
 @media screen and (min-width: 600px) {
-  .column {flex: 1;}
-  .column-quarter {flex: .25;}
-  .column-half {flex: .5;}
-  .column-2 {flex:2;}
-  .column-3 {flex: 3;}
+  .flex-column {flex: 1;}
+  .flex-column-quarter {flex: .25;}
+  .flex-column-half {flex: .5;}
+  .flex-column-2 {flex:2;}
+  .flex-column-3 {flex: 3;}
   ._2up {flex: 0 1 49%}
-  ._3up {flex: 0 1 32%;}
+  ._3up {flex: 0 1 30%;}
   ._4up {flex: 0 1 24%;}
   ._5up {flex: 0 1 19%;}
 /** For Legacy Use **/
@@ -58,35 +63,51 @@ body {
 }
 
 .box {padding: 1em 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
-.square5 {height: 5em; width: 5em;}
-
-
-/* Row Alignment */
-.row_top {justify-content: flex-start;}
-.row_bottom {justify-content: flex-end;}
-.row_center {justify-content: center;}
+.square5 {height: 5em; width: 5em; }
+.square10 {height: 10em; width: 10em; }
 
 /* Column Alignment */
-.col-top {justify-content: flex-start;}
-.col-bottom {justify-content: flex-end;}
-.col-center {justify-content: center;}
+.flex-start {justify-content: flex-start;}
+.flex-end {justify-content: flex-end;}
+.flex-center {justify-content: center;}
+
+.flex-align-start {align-items: flex-start;}
+.flex-align-end {align-items: flex-end;}
+.flex-align-center {align-items: center;}
 
 .center-items {align-items: center;}
 .center-self {align-self: center;}
 .center-text {text-align: center;}
 
-
+.flex-container {display: flex;}
+.flex-direction-row {flex-direction: row;}
+.flex-direction-column {flex-direction: column;}
 .u-full-width {width:99%;}
+
+.flex-tiles { margin: 0; align-items: stretch; min-height: calc(100vh/5); }
+.flex-tiles:first-child, :not(.flex-tiles) + .flex-tiles {margin-top: 1em !important;}
+.flex-tiles:last-child {margin-bottom: 1em !important;}
+.flex-tile-grout > * {box-shadow: 2px 0 0 0 #fff, 0 2px 0 0 #ffffff, 2px 2px 0 0 #fff, 2px 0 0 0 #fff inset, 0 2px 0 0 #fff inset;}
+.flex-tile-fill {justify-content: center; align-items: center; overflow: hidden}
+.flex-tile-fill img {min-height:100%; min-width: 100%; object-fit: cover;}
+
+.swatch {border: 1px solid #E6E6E6; border-radius: .4em; margin: .25em; background-color: currentColor; align-items: stretch; min-height: 25vh;}
+.swatch p {display: block; background-color: #fff; color: #414141; text-align: center;}
+
+.profile h6, .profile p {padding: 0;}
+.profile {margin: 0 .25em; padding: 0 .25em; border-left: 1px solid #e6e6e6;}
+.profile figure {margin: 0;}
+
 
 /** Heading Levels **/
 
-h1{font-size: 160%; padding: 0.4em; margin: .5vw;}
-h2{font-size: 140%; padding: 0.4em; margin: .5vw;}
-h3{font-size: 130%; padding: 0.4em; margin: .5vw;}
-h4{font-size: 120%; padding: 0.4em; margin: .5vw;}
-h5{font-size: 110%; padding: 0.4em; margin: .5vw;}
-h6{font-size: 100%; padding: 0.4em; margin: .5vw;}
-p {font-size: 100%; padding: 0.4em; margin: .5vw;}
+h1{font-size: 160%; padding: 0.4em; margin: .5vw 0;}
+h2{font-size: 140%; padding: 0.4em; margin: .5vw 0;}
+h3{font-size: 130%; padding: 0.4em; margin: .5vw 0;}
+h4{font-size: 120%; padding: 0.4em; margin: .5vw 0;}
+h5{font-size: 110%; padding: 0.4em; margin: .5vw 0;}
+h6{font-size: 100%; padding: 0.4em; margin: .5vw 0;}
+p {font-size: 100%; padding: 0.4em; margin: .5vw 0;}
 
 .lead-paragraph {font-size: 105%; font-style: italic;}
 
@@ -95,12 +116,12 @@ p {font-size: 100%; padding: 0.4em; margin: .5vw;}
   text-transform: uppercase;
   margin-left: -.3em;
   font-weight: normal;
-  color: #989898;
-  background: #f2f2f2;
+  color: #717171;
+  background: #f8f8f8;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-code {font-size: 95%; color: #3A87AD; background: #f2f2f2; padding: 0.4em; margin: .5vw;}
+code {font-size: 95%; color: #0A6396; background: #f8f8f8; padding: 0.4em; margin: .5vw;}
 p code {padding: .125em; margin: 0;}
 
 /** Lists **/
@@ -108,7 +129,7 @@ p code {padding: .125em; margin: 0;}
 ol {margin-left: 3vw !important;}
 ul {margin-left: 3vw !important;}
 
-a {text-decoration: none; color: #3A87AD;}
+a {text-decoration: none; color: #347EA4;}
 /** Quotes **/
 
 blockquote {
@@ -122,15 +143,15 @@ blockquote {
 cite {font-size: 80%;}
 cite:before {content: '\2014\00a0\00a0 '; margin-left: 1em;}
 
-.pullquote {border: 0 !Important; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+.pullquote {border: 0 !important; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
 
 .fancyquote {border-width: 2px 0 !important; border-style: solid;}
-.fancyquote, .fancyquote p {font-family: "Times New Roman", Georgia, Serif !important; font-size: 1.3em;}
+.fancyquote, .fancyquote p {font-family: "Times New Roman", Georgia, Serif !important; font-size: 125%;}
 
 /** Floats **/
 
-.float-right {float: right;}
-.float-left {float: left;}
+.u-float-right {float: right; margin: .5em 0 .5em .5em;}
+.u-float-left {float: left; margin: .5em .5em .5em 0;}
 .clear-both {clear: both;}
 
 /** Text Transforms **/
@@ -146,43 +167,43 @@ cite:before {content: '\2014\00a0\00a0 '; margin-left: 1em;}
 .indent {margin: 1em 6vw !important;}
 
 /** Color Palette **/
-.primary {color: #fff !important; background-color: #D92231 !important;}
-.secondary {color: #fff !important; background-color: #3A87AD !important;}
-.warning {color: #fff !important; background-color: #FFDC0B !important;}
-.success {color: #fff !important; background-color: #318700 !important;}
-.grey-nav {color: #fff !important; background-color: #414141 !important;}
-.grey-item {color: #fff !important; background-color: #717171 !important;}
-.grey-hover {color: #fff !important; background-color: #e6e6e6 !important;}
-.grey-page {color: #fff !important; background-color: #f8f8f8 !important;}
-.highlight-subtle {color: #fff !important; background-color: #FCF8E3 !important;}
+.csu-primary {color: #fff !important; background-color: #D92231 !important;}
+.csu-secondary {color: #fff !important; background-color: #347EA4 !important;}
+.csu-warning {color: #fff !important; background-color: #FFDC0B !important;}
+.csu-success {color: #fff !important; background-color: #318700 !important;}
+.csu-grey-nav {color: #fff !important; background-color: #414141 !important;}
+.csu-grey-item {color: #fff !important; background-color: #717171 !important;}
+.csu-grey-hover {color: #fff !important; background-color: #E6E6E6 !important;}
+.csu-grey-page {color: #fff !important; background-color: #f8f8f8 !important;}
+.csu-highlight-subtle {color: #fff !important; background-color: #FCF8E3 !important;}
 
-.blue {color: #fff !important; background-color: #0A6396 !important;}
-.green {color: #fff !important; background-color: #43A047 !important;}
-.grey {color: #fff !important; background-color: #666666 !important;}
-.orange {color: #fff !important; background-color: #F4511E !important;}
-.purple {color: #fff !important; background-color: #6E267B !important;}
-.red {color: #fff !important; background-color: #D92231 !important;}
-.yellow {color: #fff !important; background-color: #C9870A !important;}
+.csu-blue {color: #fff !important; background-color: #0A6396 !important;}
+.csu-green {color: #fff !important; background-color: #0F8A14 !important;}
+.csu-grey {color: #fff !important; background-color: #666666 !important;}
+.csu-orange {color: #fff !important; background-color: #D93C0B !important;}
+.csu-purple {color: #fff !important; background-color: #6E267B !important;}
+.csu-red {color: #fff !important; background-color: #D92231 !important;}
+.csu-ochre {color: #fff !important; background-color: #B76603 !important;}
 
 .rev {color: #fff !important;}
 .rev-blk {color: #000 !important;}
 
 .border {border: 2px solid; }
 .blue-line {border-color: #0A6396 !important;}
-.green-line {border-color: #43A047 !important;}
+.green-line {border-color: #0F8A14 !important;}
 .grey-line {border-color: #666666 !important;}
-.orange-line {border-color: #F4511E !important;}
+.orange-line {border-color: #D93C0B !important;}
 .purple-line {border-color: #6E267B !important;}
 .red-line {border-color: #D92231 !important;}
-.yellow-line {border-color: #C9870A !important;}
+.ochre-line {border-color: #B76603 !important;}
 
 .blue-text {color: #0A6396 !important;}
-.green-text {color: #43A047 !important;}
+.green-text {color: #0F8A14 !important;}
 .grey-text {color: #666666 !important;}
-.orange-text {color: #F4511E !important;}
+.orange-text {color: #D93C0B !important;}
 .purple-text {color: #6E267B !important;}
 .red-text {color: #D92231 !important;}
-.yellow-text {color: #C9870A !important;}
+.ochre-text {color: #B76603 !important;}
 
 /** Faculty Colour Classes **/
 
@@ -208,7 +229,7 @@ cite:before {content: '\2014\00a0\00a0 '; margin-left: 1em;}
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  background: #f2f2f2;
+  background: #f8f8f8;
   color: #fff;
   border-radius: 20px;
   margin-bottom: 1em;
@@ -220,21 +241,20 @@ cite:before {content: '\2014\00a0\00a0 '; margin-left: 1em;}
 .chat p img {height: 2em; width: 2em; margin: 0 .2em; border-radius: 2em; border: 1px solid #fff; float: left;}
 .chat h3 {text-align: center; align-self: center; width: 80%; text-transform: uppercase; color: #414141; border-bottom: 2px solid #414141;}
 .chat p:nth-child(even) {align-self: flex-start; background: #0A6396; }
-.chat p:nth-child(odd) {align-self: flex-end; background: #43A047}
+.chat p:nth-child(odd) {align-self: flex-end; background: #0F8A14}
 .chat p:nth-child(odd) img {float: right;}
 .chat br {
   content: ' ';
   display: inline-block;
   width: 120%;
-  border-bottom: 4px solid #f2f2f2;
+  border-bottom: 4px solid #f8f8f8;
   margin: 0 0 .5em -2em;
   padding: .1em 0 .5em;
 }
 
 /** Buttons **/
 
-.button {
-  display: block;
+.csu-button {
   font-size: 80% !important;
   text-transform: uppercase;
   padding: .5em 2em;
@@ -243,11 +263,13 @@ cite:before {content: '\2014\00a0\00a0 '; margin-left: 1em;}
   cursor: pointer;
   border-radius: 2px;
   text-align: center;
-  margin: .5em 1em;
+  margin: .5em 1em !important;
+  display: block;
 }
-.button:hover, .button:active  {box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22), inset 0 0 20px 1px rgba(0,0,0,.15); ;}
-.btn-wide {padding: .5em 4em;}
-.btn-large {padding: 1em 3em;}
+.csu-button:hover, .csu-button:active  {box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22), inset 0 0 20px 1px rgba(0,0,0,.15); ;}
+.csu-btn-wide {padding: .5em 6em;}
+.csu-btn-large {padding: 1em 3em;}
+.csu-btn-full {display: block !important; min-width: 80%; margin-left: auto !important; margin-right: auto !important;}
 
 
 /** Activity **/
@@ -272,7 +294,7 @@ figure {
   display: flex;
   flex-flow: column;
   align-items: center;
-  background: #f2f2f2;
+  background: #f8f8f8;
   padding: .15em;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
@@ -286,13 +308,13 @@ figure img {max-width: 100%}
 .video iframe, .video object, .video embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
 .featured {display: block; margin-left: auto; margin-right: auto;}
-.gallery {box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); background: #f2f2f2; align-self: center; justify-content: center;}
+.gallery {box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); background: #f8f8f8; align-self: center; justify-content: center;}
 .gallery h3 {flex: 1 1 100%; text-align: center;}
 .gallery figure {box-shadow: none !important; margin: 0; padding: 2px 0;}
 
-figure._30 {width: 30%;}
-figure._50 {width: 50%;}
-figure._60 {width: 60%;}
+figure._30 {width: 30%; margin: 1vw 2.25vw !important;}
+figure._50 {width: 50%; margin: 1vw 2.25vw !important;}
+figure._60 {width: 60%; margin: 1vw 2.25vw !important;}
 
 /** APA Referencing **/
 
@@ -361,7 +383,7 @@ svg path {fill="currentcolor"}
 
 .step-list li {
   padding: .5em;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #E6E6E6;
   counter-increment: step-counter;
 }
 
@@ -410,11 +432,11 @@ svg path {fill="currentcolor"}
 
 .timeline li {
   padding: .5em 1em;
-  border-left: 4px solid #e6e6e6;
+  border-left: 4px solid #E6E6E6;
 }
 
 .timeline h2 {text-transform: uppercase; font-size: 100%; font-weight: bold; margin: -1em 0 .2em; padding: 0;}
-.timeline h3 {text-transform: uppercase; font-size: 70%; font-weight: bold; color: #989898; margin: -1em 0 .2em; padding: 0;}
+.timeline h3 {text-transform: uppercase; font-size: 70%; font-weight: bold; color: #717171; margin: -1em 0 .2em; padding: 0;}
 .timeline p {padding: 0;}
 .timeline p span {font-style: italic; color: #717171;}
 
@@ -436,17 +458,16 @@ svg path {fill="currentcolor"}
 
 .fancylist-red li:before {background: #D92231; }
 .fancylist-blue li:before {background: #0A6396;}
-.fancylist-green li:before {background: #43A047;}
+.fancylist-green li:before {background: #0F8A14;}
 .fancylist-grey li:before {background: #666666;}
-.fancylist-orange li:before {background:#F4511E;}
+.fancylist-orange li:before {background:#D93C0B;}
 .fancylist-purple li:before {background: #6E267B;}
-.fancylist-yellow li:before {background: #C9870A;}
+.fancylist-ochre li:before {background: #B76603;}
 .fancylist-foa li:before {background: #327B8C;}
 .fancylist-fob li:before {background:#1647AD;}
 .fancylist-fos li:before {background: #9CBB15;}
 
 /** Tool Tips **/
-
 
 [tooltip] {
    position: relative;
@@ -563,22 +584,22 @@ svg path {fill="currentcolor"}
 
 .table td, .table th {padding: 6px; text-align: left; }
 
-.table tbody tr:nth-child(odd) {border: 1px solid #989898; border-width: 1px 0;}
+.table tbody tr:nth-child(odd) {border: 1px solid #717171; border-width: 1px 0;}
 
-.table.striped tbody tr:nth-child(odd) {background: #f6f6f6; border: 1px solid #989898; border-width: 1px 0;}
+.table.striped tbody tr:nth-child(odd) {background: #f6f6f6; border: 1px solid #717171; border-width: 1px 0;}
 
-.table caption, .table .caption {text-align: center; font-style: italic; color: #717171; border-bottom: 1px solid #989898; background: #f6f6f6; padding: .5em 0;}
+.table caption, .table .caption {text-align: center; font-style: italic; color: #717171; border-bottom: 1px solid #717171; background: #f6f6f6; padding: .5em 0;}
 
-.table .row {width: 99%; margin: 0; border-collapse: collapse;}
-.table.striped .row:nth-child(odd) {background: #f6f6f6; border: 1px solid #989898; border-width: 1px 0; }
+.table .flex-row {width: 99%; margin: 0; border-collapse: collapse;}
+.table.striped .flex-row:nth-child(odd) {background: #f6f6f6; border: 1px solid #717171; border-width: 1px 0; }
 
 
-.table .header .column {font-weight: bold;}
-.table .row .column {padding: 6px; text-align: left; }
+.table .header .flex-column{font-weight: bold;}
+.table .flex-row .flex-column{padding: 6px; text-align: left; }
 
-.table .row.boxes > * {box-shadow: 1px 0 0 0 #888, 0 1px 0 0 #888, 1px 1px 0 0 #888, 1px 0 0 0 #888 inset, 0 1px 0 0 #888 inset;}
-.table.boxes td {border: 1px solid #989898;}
-.table.boxes th {border: 1px solid #989898;}
+.table .flex-row.boxes > * {box-shadow: 1px 0 0 0 #888, 0 1px 0 0 #888, 1px 1px 0 0 #888, 1px 0 0 0 #888 inset, 0 1px 0 0 #888 inset;}
+.table.boxes td {border: 1px solid #717171;}
+.table.boxes th {border: 1px solid #717171;}
 
 .table.col-first th:nth-of-type(1) {background: #f6f6f6; }
 .table.col-odd td:nth-child(odd), .table.col-odd th:nth-child(odd) {background: #f6f6f6; }
@@ -631,10 +652,10 @@ svg path {fill="currentcolor"}
 
 
     <h2 class="label">Modifiers</h2>
-    <h4 class="blue">Colours - blue, green, grey, orange, purple, red & Yellow</h4>
+    <h4 class="csu-blue">Colours - blue, green, grey, orange, purple, red & ochre</h4>
     <h4 class="underline">Underline</h4>
-    <h4 class="underline red-line">Underline + colour - blue, green, grey, orange, purple, red & Yellow</h4>
-    <h4 class="blue-text">Text Colour - blue, green, grey, orange, purple, red & Yellow</h4>
+    <h4 class="underline red-line">Underline + colour - blue, green, grey, orange, purple, red & ochre</h4>
+    <h4 class="blue-text">Text Colour - blue, green, grey, orange, purple, red & ochre</h4>
 
 
     <h2 class="label">Blockquote + Cite with Colour</h2>
@@ -648,7 +669,7 @@ svg path {fill="currentcolor"}
     <cite>Albert Einstein, 2017</cite></blockquote>
 
     <h2 class="label">Blockquote + Cite with pullquote and colour</h2>
-    <blockquote class="pullquote blue">
+    <blockquote class="pullquote csu-blue">
     <p>Someone famous once said something really profound. It was probably Einstein. Yeah Einstein.</p>
     <cite>Albert Einstein, 2017</cite></blockquote>
 
@@ -686,44 +707,51 @@ svg path {fill="currentcolor"}
     <cite class="indent">Cite with indent applied</cite>
 
     <h2 class="label">Buttons</h2>
-    <p class="button">Regular Button</p>
-    <p class="button btn-wide">Wide Button</p>
-    <p class="button btn-large">Large Button</p>
+    <p>Here are some example Buttons</p>
+    <p class="csu-button ">Regular Button</p>
+    <p class="csu-button csu-btn-wide">Wide Button</p>
+    <p class="csu-button csu-btn-large">Large Button</p>
+    <p class="csu-button csu-btn-full">Full Button</p>
 
     <h2 class="label">Buttons + Colours</h2>
-    <p class="button blue">Regular Button with Blue</p>
-    <p class="button btn-wide green">Wide Button with Green</p>
-    <p class="button btn-large yellow">Large Button With Yellow</p>
+    <p>Here are some example Buttons</p>
+    <p class="csu-button csu-blue">Regular Button with Blue</p>
+    <p class="csu-button csu-btn-wide csu-green">Wide Button with Green</p>
+    <p class="csu-button csu-btn-large csu-ochre">Large Button With Ochre</p>
 
     <h2 class="label">UI Colour Palette</h2>
-    <div class="row small-text">
-      <div class="column square5 primary">Primary</div>
-      <div class="column square5 secondary">Secondary</div>
-      <div class="column square5 warning">Warning</div>
-      <div class="column square5 success">Success</div>
-      <div class="column square5 grey-nav">Grey Nav</div>
-      <div class="column square5 grey-item">Grey Item</div>
-      <div class="column square5 grey-hover rev-blk">Grey Hover</div>
-      <div class="column square5 grey-page rev-blk">Grey Page</div>
-      <div class="column square5 highlight-subtle rev-blk">Highlight Subtle</div>
+
+    <div class="flex-row">
+      <div class="flex-column csu-primary swatch flex-container flex-end"><p>Primary <br><span class="small-text">#D92231</span></p></div>
+      <div class="flex-column csu-secondary swatch flex-container flex-end"><p>Secondary <br><span class="small-text">#347EA4</span></p></div>
+      <div class="flex-column csu-warning swatch flex-container flex-end"><p>Warning <br><span class="small-text">#FFDC0B</span></p></div>
+      <div class="flex-column csu-success swatch flex-container flex-end"><p>Success <br><span class="small-text">#318700</span></p></div>
+      <div class="flex-column csu-highlight-subtle swatch flex-container flex-end"><p>Subtle <br><span class="small-text">#FCF8E3</span></p></div>
+    </div>
+    <div class="flex-row">
+      <div class="flex-column csu-grey-nav swatch flex-container flex-end"><p>Grey Nav <br><span class="small-text">#414141</span></p></div>
+      <div class="flex-column csu-grey-item swatch flex-container flex-end"><p>Grey Item <br><span class="small-text">#717171</span></p></div>
+      <div class="flex-column csu-grey-hover swatch flex-container flex-end"><p>Grey Hover <br><span class="small-text">#E6E6E6</span></p></div>
+      <div class="flex-column csu-grey-page swatch flex-container flex-end"><p>Grey Page <br><span class="small-text">#f8f8f8</span></p></div>
     </div>
 
     <h2 class="label">Resource Colour Palette</h2>
-    <div class="row small-text">
-      <div class="column square5 blue">Blue</div>
-      <div class="column square5 green">Green</div>
-      <div class="column square5 grey">Grey</div>
-      <div class="column square5 orange">Orange</div>
-      <div class="column square5 purple">Purple</div>
-      <div class="column square5 red">Red</div>
-      <div class="column square5 yellow">Yellow</div>
+    <div class="flex-row ">
+      <div class="flex-column csu-blue swatch flex-container flex-end"><p>Blue<br><span class="small-text">#0A6396</span></p></div>
+      <div class="flex-column csu-green swatch flex-container flex-end"><p>Green <br><span class="small-text">#0F8A14</span></p></div>
+      <div class="flex-column csu-grey swatch flex-container flex-end"><p>Grey <br><span class="small-text">#666666</span></p></div>
+      <div class="flex-column csu-ochre swatch flex-container flex-end"><p>Ochre <br><span class="small-text">#B76603</span></p></div>
+      <div class="flex-column csu-orange swatch flex-container flex-end"><p>Orange <br><span class="small-text">#D93C0B</span></p></div>
+      <div class="flex-column csu-purple swatch flex-container flex-end"><p>Purple <br><span class="small-text">#6E267B</span></p></div>
+      <div class="flex-column csu-red swatch flex-container flex-end"><p>Red <br><span class="small-text">#D92231</span></p></div>
     </div>
 
     <h2 class="label">Faculty Colour Palette</h2>
-    <div class="row small-text">
-      <div class="column square5 foa">FoAE</div>
-      <div class="column square5 fob">FoBJBS</div>
-      <div class="column square5 fos">FoS</div>
+
+    <div class="flex-row ">
+      <div class="flex-column foa swatch flex-container flex-end"><p>FoAE<br><span class="small-text">#327B8C</span></p></div>
+      <div class="flex-column fob swatch flex-container flex-end"><p>FoBJBS <br><span class="small-text">#1647AD</span></p></div>
+      <div class="flex-column fos swatch flex-container flex-end"><p>FoS <br><span class="small-text">#9CBB15</span></p></div>
     </div>
 
     <h2 class="label">Activity</h2>
@@ -743,71 +771,71 @@ svg path {fill="currentcolor"}
 
     <h2 class="label">Figure with Video & Caption</h2>
     <figure class="featured u-full-width">
-      <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/ydyGiq7hnOg" frameborder="0" allowfullscreen></iframe></div>
+      <div class="video"><iframe width="978" height="960" src="https://www.youtube.com/embed/g6eNPrqTGOE" frameborder="0" allowfullscreen></iframe></div>
       <figcaption>This is a video with lot of stuff in it that we need to include <cite>http://www.australia.com/en/places/sydney.html</cite></figcaption>
     </figure>
 
     <h2 class="label">Gallery of figures with Image & Caption</h2>
-    <div class="row gallery">
+    <div class="flex-row gallery">
       <h3 class="">Title of Gallery</h3>
       <figure class="_3up">
-        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg">
         <figcaption>A pretty flower</figcaption>
       </figure>
       <figure class="_3up">
-        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg">
         <figcaption>A pretty flower</figcaption>
       </figure>
       <figure class="_3up">
-        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg">
         <figcaption>A pretty flower</figcaption>
       </figure>
       <figure class="_3up">
-        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg">
         <figcaption>A pretty flower</figcaption>
       </figure>
       <figure class="_3up">
-        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg">
         <figcaption>A pretty flower</figcaption>
       </figure>
     </div>
 
     <h2 class="label">Gallery of figures with Image & Caption and underlined heading</h2>
-    <div class="row gallery">
+    <div class="flex-row gallery">
       <h3 class="underline orange-line">Title of Gallery</h3>
       <figure class="_4up">
-        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg">
         <figcaption>A pretty flower</figcaption>
       </figure>
       <figure class="_4up">
-        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg">
         <figcaption>A pretty flower</figcaption>
       </figure>
       <figure class="_4up">
-        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg">
         <figcaption>A pretty flower</figcaption>
       </figure>
       <figure class="_4up">
-        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg">
         <figcaption>A pretty flower</figcaption>
       </figure>
       <figure class="_4up">
-        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg">
         <figcaption>A pretty flower</figcaption>
       </figure>
       <figure class="_4up">
-        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg">
         <figcaption>A pretty flower</figcaption>
       </figure>
       <figure class="_4up">
-        <img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">
+        <img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg">
         <figcaption>A pretty flower</figcaption>
       </figure>
     </div>
 
     <h2 class="label">Figure in paragraph</h2>
     <div class="">
-    <figure class="_50 float-left"><img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg"><figcaption>A pretty flower</figcaption></figure>
+    <figure class="_50 u-float-left"><img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg"><figcaption>A pretty flower</figcaption></figure>
     <p>I cant pay you there are more projects lined up charge extra the next time, nor can you use a high definition screenshot. Can you make pink a little more pinkish we don't need a backup, it never goes down! make it original, or this was not according to brief I have an awesome idea for a startup, i need you to build it for me. Anyway, you are the designer, you know what to do this looks perfect. Just Photoshop out the dog, add a baby, and make the curtains blue is this the best we can do. That's great, but can you make it work for ie 2 please could you rotate the picture to show the other side of the room? nor this is just a 5 minutes job can you make it look like this clipart i found. Give us a complimentary logo along with the website I have printed it out, but the animated gif is not moving could you rotate the picture to show the other side of the room? is this the best we can do I need a website. How much will it cost I think we need to start from scratch.</p>
     </div>
 
@@ -823,60 +851,60 @@ svg path {fill="currentcolor"}
     <hr class="">
     <hr class="blue-line">
     <hr class="red-line">
-    <hr class="yellow-line">
+    <hr class="ochre-line">
 
     <h2 class="label">Progress Bar</h2>
-    <div class="progress success" data-label="90% Complete">
-      <span class="value" style="width:10%;"></span>
+    <div class="progress csu-success" data-label="90% Complete">
+      <span class="value" style="width:10%;">&nbsp;</span>
     </div>
 
-    <div class="progress blue" data-label="10% Complete">
-      <span class="value" style="width:90%;"></span>
+    <div class="progress csu-blue" data-label="10% Complete">
+      <span class="value" style="width:90%;">&nbsp;</span>
     </div>
 
-    <div class="progress orange" data-label="45% Complete">
-      <span class="value" style="width:55%;"></span>
+    <div class="progress csu-orange" data-label="45% Complete">
+      <span class="value" style="width:55%;">&nbsp;</span>
     </div>
 
         <h2 class="label">Action - Warning</h2>
-    <div class="row action warning rev-blk">
-      <div class="column center-text">
+    <div class="flex-row action csu-warning rev-blk">
+      <div class="flex-column center-text">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M2 42h44L24 4 2 42zm24-6h-4v-4h4v4zm0-8h-4v-8h4v8z"/></svg>
       </div>
-      <div class="column-3">
+      <div class="flex-column-3">
         <h4>Some Clear Instruction</h4>
         <p>Some clear text about what to do</p>
       </div>
     </div>
 
     <h2 class="label">Action - Success</h2>
-    <div class="row action success">
-      <div class="column center-text">
+    <div class="flex-row action csu-success">
+      <div class="flex-column center-text">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="currentcolor" d="M24 4C12.95 4 4 12.95 4 24c0 11.04 8.95 20 20 20 11.04 0 20-8.96 20-20 0-11.05-8.96-20-20-20zm-4 30L10 24l2.83-2.83L20 28.34l15.17-15.17L38 16 20 34z"/></svg>
       </div>
-      <div class="column-3">
+      <div class="flex-column-3">
         <h4>Some Clear Instruction</h4>
         <p>Some clear text about what to do</p>
       </div>
     </div>
 
     <h2 class="label">Action - Failure</h2>
-    <div class="row action primary">
-      <div class="column center-text">
+    <div class="flex-row action csu-primary">
+      <div class="flex-column center-text">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="currentcolor" d="M46 11v29c0 4.4-3.6 8-8 8H23.4c-2.16 0-4.2-.86-5.7-2.38L2 29.66s2.52-2.46 2.6-2.5c.44-.38.98-.58 1.58-.58.44 0 .84.12 1.2.32.08.02 8.62 4.92 8.62 4.92V8c0-1.66 1.34-3 3-3s3 1.34 3 3v14h2V3c0-1.66 1.34-3 3-3s3 1.34 3 3v19h2V5c0-1.66 1.34-3 3-3s3 1.34 3 3v17h2V11c0-1.66 1.34-3 3-3s3 1.34 3 3z"/></svg>
       </div>
-      <div class="column-3">
+      <div class="flex-column-3">
         <h4>Some Clear Instruction</h4>
         <p>Some clear text about what to do</p>
       </div>
     </div>
 
     <h2 class="label">Action - Prompt</h2>
-    <div class="row action secondary">
-      <div class="column center-text">
+    <div class="flex-row action csu-secondary">
+      <div class="flex-column center-text">
         <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="currentcolor" d="M23.99 4C12.94 4 4 12.95 4 24s8.94 20 19.99 20C35.04 44 44 35.05 44 24S35.04 4 23.99 4zm8.47 32L24 30.9 15.54 36l2.24-9.62-7.46-6.47 9.84-.84L24 10l3.84 9.07 9.84.84-7.46 6.47L32.46 36z"/></svg>
       </div>
-      <div class="column-3">
+      <div class="flex-column-3">
         <h4>Some Clear Instruction</h4>
         <p>Some clear text about what to do</p>
       </div>
@@ -886,11 +914,11 @@ svg path {fill="currentcolor"}
     <div class="chat">
       <h3>Title of the chat</h3>
       <p><img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg"> Here is the first person speaking.</p>
-      <p><img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">And here is the second person speaking.</p>
+      <p><img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg">And here is the second person speaking.</p>
       <p><img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg">First again.</p>
-      <p><img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">Second Again.</p>
+      <p><img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg">Second Again.</p>
       <p><img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg">I'll know it when i see it. Thats not what i saw in my head at all we need more images of groups of people having non-specific types of fun, so I want you to take it to the next level make it original the website doesn't have the theme i was going for this is just a 5 minutes job. <br> I know somebody who can do this for a reasonable cost the hair is just too polarising, yet thats not what i saw in my head at all. I need a website. </p>
-      <p><img src="https://dl.dropboxusercontent.com/u/2706309/Images/flower.jpg">How much will it cost it looks a bit empty, try to make everything bigger thanks for taking the time to make the website, but i already made it in wix can we try some other colours maybe. <br>I have an awesome idea for a startup, i need you to build it for me make it sexy, that's great, but can you make it work for ie 2 please we are your relatives can we have another option. Could you rotate the picture to show the other side of the room?</p>
+      <p><img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg">How much will it cost it looks a bit empty, try to make everything bigger thanks for taking the time to make the website, but i already made it in wix can we try some other colours maybe. <br>I have an awesome idea for a startup, i need you to build it for me make it sexy, that's great, but can you make it work for ie 2 please we are your relatives can we have another option. Could you rotate the picture to show the other side of the room?</p>
     </div>
 
     <h2 class="label">Step List</h2>
@@ -1012,7 +1040,7 @@ svg path {fill="currentcolor"}
     <h2 class="label">Table with head in color</h2>
     <table class="table ">
       <!-- <caption>A quick description of the table goes here.</caption> -->
-    <thead class="blue">
+    <thead class="csu-blue">
       <tr>
         <th>First Name</th>
         <th>Last Name</th>
@@ -1058,46 +1086,171 @@ svg path {fill="currentcolor"}
     <h2 class="label">Flex Table</h2>
     <div class="table striped blue-text">
       <!-- <div class="caption">A quick description of the table goes here.</div> -->
-    <div class="row header blue">
-      <div class="column">First Name</div>
-      <div class="column">Last Name</div>
-      <div class="column">Job Title</div>
+    <div class="flex-row header csu-blue">
+      <div class="flex-column">First Name</div>
+      <div class="flex-column">Last Name</div>
+      <div class="flex-column">Job Title</div>
       </div>
-    <div class="row">
-      <div class="column">James</div>
-      <div class="column">Matman</div>
-      <div class="column">Chief Sandwich Eater</div>
+    <div class="flex-row">
+      <div class="flex-column">James</div>
+      <div class="flex-column">Matman</div>
+      <div class="flex-column">Chief Sandwich Eater</div>
     </div>
-    <div class="row">
-      <div class="column">The</div>
-      <div class="column">Tick</div>
-      <div class="column">Crimefighter Sorta</div>
+    <div class="flex-row">
+      <div class="flex-column">The</div>
+      <div class="flex-column">Tick</div>
+      <div class="flex-column">Crimefighter Sorta</div>
     </div>
     </div>
 
     <h2 class="label">Grid Test - Thirds Layout</h2>
-    <div class="row">
-      <div class="column"><figure class="featured"><div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/ydyGiq7hnOg" frameborder="0" allowfullscreen></iframe></div><figcaption>Some text in here</figcaption></figure></div>
-      <div class="column-2"><p>How much will it cost it looks a bit empty, try to make everything bigger thanks for taking the time to make the website, but i already made it in wix can we try some other colours maybe. <br>I have an awesome idea for a startup, i need you to build it for me make it sexy, that's great, but can you make it work for ie 2 please we are your relatives can we have another option. Could you rotate the picture to show the other side of the room?</p></div>
+    <div class="flex-row">
+      <div class="flex-column"><figure class="featured"><div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/ydyGiq7hnOg" frameborder="0" allowfullscreen></iframe></div><figcaption>Some text in here</figcaption></figure></div>
+      <div class="flex-column-2"><p>How much will it cost it looks a bit empty, try to make everything bigger thanks for taking the time to make the website, but i already made it in wix can we try some other colours maybe. <br>I have an awesome idea for a startup, i need you to build it for me make it sexy, that's great, but can you make it work for ie 2 please we are your relatives can we have another option. Could you rotate the picture to show the other side of the room?</p></div>
     </div>
 
     <h2 class="label">Grid Test - Halves Layout</h2>
-    <div class="row">
-      <div class="column-2"><figure class="featured"><div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/ydyGiq7hnOg" frameborder="0" allowfullscreen></iframe></div><figcaption>Some text in here</figcaption></figure></div>
-      <div class="column-2"><p>How much will it cost it looks a bit empty, try to make everything bigger thanks for taking the time to make the website, but i already made it in wix can we try some other colours maybe. <br>I have an awesome idea for a startup, i need you to build it for me make it sexy, that's great, but can you make it work for ie 2 please we are your relatives can we have another option. Could you rotate the picture to show the other side of the room?</p></div>
+    <div class="flex-row">
+      <div class="flex-column-2"><figure class="featured"><div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/ydyGiq7hnOg" frameborder="0" allowfullscreen></iframe></div><figcaption>Some text in here</figcaption></figure></div>
+      <div class="flex-column-2"><p>How much will it cost it looks a bit empty, try to make everything bigger thanks for taking the time to make the website, but i already made it in wix can we try some other colours maybe. <br>I have an awesome idea for a startup, i need you to build it for me make it sexy, that's great, but can you make it work for ie 2 please we are your relatives can we have another option. Could you rotate the picture to show the other side of the room?</p></div>
     </div>
 
     <h2 class="label">Grid Test - 2/4 Layout</h2>
-    <div class="row">
-      <div class="column"><figure class="featured"><div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/ydyGiq7hnOg" frameborder="0" allowfullscreen></iframe></div><figcaption>Some text in here</figcaption></figure></div>
-      <div class="column-3"><p>How much will it cost it looks a bit empty, try to make everything bigger thanks for taking the time to make the website, but i already made it in wix can we try some other colours maybe. <br>I have an awesome idea for a startup, i need you to build it for me make it sexy, that's great, but can you make it work for ie 2 please we are your relatives can we have another option. Could you rotate the picture to show the other side of the room?</p></div>
+    <div class="flex-row">
+      <div class="flex-column"><figure class="featured"><div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/ydyGiq7hnOg" frameborder="0" allowfullscreen></iframe></div><figcaption>Some text in here</figcaption></figure></div>
+      <div class="flex-column-3"><p>How much will it cost it looks a bit empty, try to make everything bigger thanks for taking the time to make the website, but i already made it in wix can we try some other colours maybe. <br>I have an awesome idea for a startup, i need you to build it for me make it sexy, that's great, but can you make it work for ie 2 please we are your relatives can we have another option. Could you rotate the picture to show the other side of the room?</p></div>
     </div>
 
 
-    <h2 class="label">Code Samples</h2>
-    <code>Putting in some stuff that can be code</code>
-    <p>That is code on it's own, <code>this is inline</code>.
+    <h2 class="label">Grid Alignment - Vertical</h2>
+    <div class="flex-row">
+      <div class="flex-column flex-container flex-start square10 csu-grey"><p>Start</p></div>
+      <div class="flex-column flex-container flex-center square10 csu-green"><p>Center</p></div>
+      <div class="flex-column flex-container flex-end square10 csu-blue"><p>End</p></div>
+    </div>
 
+    <h2 class="label">Grid Alignment - Horizontal</h2>
+    <div class="flex-row">
+      <div class="flex-column flex-container flex-center flex-align-start square5 csu-grey"><p>Start</p></div>
+      <div class="flex-column flex-container flex-center flex-align-center square5 csu-green"><p>Center</p></div>
+      <div class="flex-column flex-container flex-center flex-align-end square5 csu-blue"><p>End</p></div>
+    </div>
+
+    <h2 class="label">Code Samples</h2>
+    <p>You can use the CODE tag to code up simple blocks of code or text.</p>
+    <p><code>Putting in some stuff that can be code</code></p>
+    <p>That is code on it's own, <code>this is inline</code>.</p>
+
+    <h2 class="label">Profie Page</h2>
+    <div class="flex-row">
+    </div>
+    <div class="flex-row">
+      <div class="flex-column profile">
+        <figure class="featured">
+          <img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg">
+        </figure>
+        <h6>Course Director</h6>
+        <p><strong>Contact:</strong> email@some.com</p>
+        <p><strong>Twitter:</strong> @someone</p>
+      </div>
+      <div class="flex-column-2">
+        <h4 class="csu-purple">Christian Surname</h4>
+
+        <p>Spent several months developing shaving cream in West Palm Beach, FL. Lead a team buying and selling catfish in Libya. Spent 2001-2005 getting my feet wet with fried chicken in Deltona, FL. Managed a small team working on cigarettes in Cuba. Spent 2001-2007 investing in toy planes in Minneapolis, MN. Garnered an industry award while getting to know junk food in Jacksonville, FL.</p>
+        <p>Spent several months developing shaving cream in West Palm Beach, FL. Lead a team buying and selling catfish in Libya. Spent 2001-2005 getting my feet wet with fried chicken in Deltona, FL. Managed a small team working on cigarettes in Cuba. Spent 2001-2007 investing in toy planes in Minneapolis, MN. Garnered an industry award while getting to know junk food in Jacksonville, FL.</p>
+        <p>Spent several months developing shaving cream in West Palm Beach, FL. Lead a team buying and selling catfish in Libya. Spent 2001-2005 getting my feet wet with fried chicken in Deltona, FL. Managed a small team working on cigarettes in Cuba. Spent 2001-2007 investing in toy planes in Minneapolis, MN. Garnered an industry award while getting to know junk food in Jacksonville, FL.</p>
+        <p>Spent several months developing shaving cream in West Palm Beach, FL. Lead a team buying and selling catfish in Libya. Spent 2001-2005 getting my feet wet with fried chicken in Deltona, FL. Managed a small team working on cigarettes in Cuba. Spent 2001-2007 investing in toy planes in Minneapolis, MN. Garnered an industry award while getting to know junk food in Jacksonville, FL.</p>
+      </div>
+    </div>
+
+    <h2 class="label">Profie Page</h2>
+    <div class="flex-row">
+        <div class="flex-column profile _3up">
+          <h4 class="csu-green">Christian Surname</h4>
+        <figure class="featured">
+          <img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg">
+        </figure>
+
+        <h6>Course Director</h6>
+        <p><strong>Contact:</strong> email@some.com</p>
+        <p><strong>Twitter:</strong> @someone</p>
+        <p>Spent several months developing shaving cream in West Palm Beach, FL. Lead a team buying and selling catfish in Libya. Spent 2001-2005 getting my feet wet with fried chicken in Deltona, FL. Managed a small team working on cigarettes in Cuba. Spent 2001-2007 investing in toy planes in Minneapolis, MN. Garnered an industry award while getting to know junk food in Jacksonville, FL.</p>
+        </div>
+      <div class="flex-column profile _3up">
+        <h4 class="csu-green">Christian Surname</h4>
+        <figure class="featured">
+          <img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg">
+        </figure>
+        <h6>Course Director</h6>
+        <p><strong>Contact:</strong> email@some.com</p>
+        <p><strong>Twitter:</strong> @someone</p>
+        <p>Spent several months developing shaving cream in West Palm Beach, FL. Lead a team buying and selling catfish in Libya. Spent 2001-2005 getting my feet wet with fried chicken in Deltona, FL. Managed a small team working on cigarettes in Cuba. Spent 2001-2007 investing in toy planes in Minneapolis, MN. Garnered an industry award while getting to know junk food in Jacksonville, FL.</p>
+        </div>
+      <div class="flex-column profile _3up">
+        <h4 class="csu-green">Christian Surname</h4>
+        <figure class="featured">
+          <img src="http://timklapdor.github.io/Bb-landing-pages/assets/squareprofile.jpg">
+        </figure>
+        <h6>Course Director</h6>
+        <p><strong>Contact:</strong> email@some.com</p>
+        <p><strong>Twitter:</strong> @someone</p>
+        <p>Spent several months developing shaving cream in West Palm Beach, FL. Lead a team buying and selling catfish in Libya. Spent 2001-2005 getting my feet wet with fried chicken in Deltona, FL. Managed a small team working on cigarettes in Cuba. Spent 2001-2007 investing in toy planes in Minneapolis, MN. Garnered an industry award while getting to know junk food in Jacksonville, FL.</p>
+      </div>
+      </div>
+
+
+    <h2 class="label">Tiles</h2>
+    <div class="flex-row flex-tiles">
+      <div class="flex-column csu-green flex-container flex-center"><h4>Social media accelerator.</h4><p>Churn rate non-disclosure agreement buyer focus ecosystem iPad.</p></div>
+      <div class="flex-column csu-blue center-items"><h4>Social media accelerator.</h4><p>Churn rate non-disclosure agreement buyer focus ecosystem iPad.</p><p>Churn rate non-disclosure agreement buyer focus ecosystem iPad.</p></div>
+      <div class="flex-column csu-grey center-items flex-tile-fill"><a href="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg" target="_blank"><img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg" /></a></div>
+    </div>
+
+    <h2 class="label">Tiles with images that fill center/center</h2>
+    <div class="flex-row flex-tiles">
+      <div class="flex-column csu-ochre flex-tile-fill"><img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg" /></div>
+      <div class="flex-column csu-greenn flex-tile-fill"><img src="http://www.australia.com/content/australia/en/places/sydney/_jcr_content/hero/image.adapt.1663.medium.jpg" /></div>    </div>
+    <div class="flex-row flex-tiles">
+      <div class="flex-column csu-green"></div>
+      <div class="flex-column csu-blue"></div>
+      <div class="flex-column csu-grey"></div>
+    </div>
+
+    <h2 class="label">Tiles with Grout</h2>
+    <p>Some tiles with "grout"</p>
+    <div class="flex-row flex-tiles flex-tile-grout">
+      <div class="flex-column csu-orange"></div>
+      <div class="flex-column csu-red"></div>
+      <div class="flex-column csu-ochre"></div>
+      <div class="flex-column csu-orange"></div>
+      <div class="flex-column csu-red"></div>
+      <div class="flex-column csu-ochre"></div>
+    </div>
+    <p>Some tiles without "grout"</p>
+    <div class="flex-row flex-tiles">
+      <div class="flex-column csu-orange"></div>
+      <div class="flex-column csu-red"></div>
+      <div class="flex-column csu-ochre"></div>
+      <div class="flex-column csu-orange"></div>
+      <div class="flex-column csu-red"></div>
+      <div class="flex-column csu-ochre"></div>
+    </div>
+    <p>Some applications </p>
+    <div class="flex-row flex-tiles flex-tile-grout">
+      <div class="flex-column csu-orange flex-container flex-center flex-align-center"><h2>1</h2></div>
+      <div class="flex-column csu-orange flex-container flex-center flex-align-center"><h2>2</h2></div>
+      <div class="flex-column csu-orange flex-container flex-center flex-align-center"><h2>3</h2></div>
+    </div>
+    <div class="flex-row flex-tiles flex-tile-grout">
+      <div class="flex-column csu-orange flex-container flex-center flex-align-center"><h2>4</h2></div>
+      <div class="flex-column csu-blue flex-container flex-center flex-align-center"><h2>5</h2></div>
+      <div class="flex-column csu-orange flex-container flex-center flex-align-center"><h2>6</h2></div>
+    </div>
+    <div class="flex-row flex-tiles flex-tile-grout">
+      <div class="flex-column csu-orange flex-container flex-center flex-align-center"><h2>7</h2></div>
+      <div class="flex-column csu-orange flex-container flex-center flex-align-center"><h2>8</h2></div>
+      <div class="flex-column csu-orange flex-container flex-center flex-align-center"><h2>9</h2></div>
+    </div>
 
 
 

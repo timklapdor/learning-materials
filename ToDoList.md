@@ -21,11 +21,18 @@
 - [x] Messages to provide directions to students (actions)
 - [x] Maths Equations (in Bb)
 - [x] Pop Over/Tooltips
-- [ ]  Profiles with multiple layouts
+- [ ] Profiles with multiple layouts
 - [x] Define Color Palette(s)
   - [ ] Test and finalise.
 - [ ] Add print.css
 - [ ] Dashboard images
+- [ ] Develop new **Activity** Icons
+  - [ ] Based on "Interactions"
+    - [ ] Teacher
+    - [ ] Peer
+    - [ ] Content
+    - [ ] Community
+    - [ ] Institution
 
 #### Decisions
 - [ ] Icons
@@ -36,7 +43,7 @@
 		-  ```<img>```
 		- ```svg```
 
-#### Question Marks
+#### Move to Phase 2
 
 - [ ] Aside & Marginalia - for related information, notes or additional info
 - [ ] Accordion for FAQ, definitions, glossary
