@@ -35,7 +35,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 1em auto;
 }
 
 .flex-column {flex-direction: column;}
@@ -44,7 +44,7 @@ body {
 
 .flex-row img {max-width: 100% !important;}
 .flex-row:first-child, :not(.flex-row) + .flex-row {margin-top: 1em !important;}
-.flex-row + .flex-row {margin: 0;}
+.flex-row + .flex-row {margin-top: -1em !important;}
 .flex-row:last-child {margin-bottom: 1em !important;}
 
 @media screen and (min-width: 600px) {
@@ -91,7 +91,7 @@ body {
 .flex-tile-fill {justify-content: center; align-items: center; overflow: hidden}
 .flex-tile-fill img {min-height:100%; min-width: 100%; object-fit: cover;}
 
-.swatch {border: 1px solid #E6E6E6; border-radius: .4em; margin: .25em; background-color: currentColor; align-items: stretch; min-height: 25vh;}
+.swatch {border-radius: .4em; margin: .25em; background-color: currentColor; align-items: stretch; min-height: 25vh; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
 .swatch p {display: block; background-color: #fff; color: #414141; text-align: center;}
 
 .profile h6, .profile p {padding: 0;}
@@ -103,22 +103,22 @@ body {
 
 h1{font-size: 160%; padding: 0.4em; margin: .5vw 0;}
 h2{font-size: 140%; padding: 0.4em; margin: .5vw 0;}
-h3{font-size: 130%; padding: 0.4em; margin: .5vw 0;}
+h3{font-size: 130%; padding: 0.4em; margin: .5vw 0; font-weight: normal;}
 h4{font-size: 120%; padding: 0.4em; margin: .5vw 0;}
-h5{font-size: 110%; padding: 0.4em; margin: .5vw 0;}
+h5{font-size: 110%; padding: 0.4em; margin: .5vw 0; font-weight: normal;}
 h6{font-size: 100%; padding: 0.4em; margin: .5vw 0;}
 p {font-size: 100%; padding: 0.4em; margin: .5vw 0;}
 
 .lead-paragraph {font-size: 105%; font-style: italic;}
 
 .label {
-  font-size: 60%;
-  text-transform: uppercase;
-  margin-left: -.3em;
-  font-weight: normal;
-  color: #717171;
   background: #f8f8f8;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  color: #717171;
+  font-size: 60%;
+  font-weight: normal;
+  margin: 4em 0 -.5em -.3em;
+  text-transform: uppercase;
 }
 
 code {font-size: 95%; color: #0A6396; background: #f8f8f8; padding: 0.4em; margin: .5vw;}
@@ -150,8 +150,8 @@ cite:before {content: '\2014\00a0\00a0 '; margin-left: 1em;}
 
 /** Floats **/
 
-.u-float-right {float: right; margin: .5em 0 .5em .5em;}
-.u-float-left {float: left; margin: .5em .5em .5em 0;}
+.float-right {float: right; margin: .5em 0 .5em .5em;}
+.float-left {float: left; margin: .5em .5em .5em 0;}
 .clear-both {clear: both;}
 
 /** Text Transforms **/
@@ -604,6 +604,13 @@ svg path {fill="currentcolor"}
 .table.col-first th:nth-of-type(1) {background: #f6f6f6; }
 .table.col-odd td:nth-child(odd), .table.col-odd th:nth-child(odd) {background: #f6f6f6; }
 .table.col-even td:nth-child(even), .table.col-even th:nth-child(even) {background: #f6f6f6; }
+
+
+.shadow-1 {box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
+.shadow-2 {box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+.shadow-3 {box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+.shadow-4 {box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+.shadow-5 {box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
 
 </style>
 </head>
@@ -1115,7 +1122,7 @@ svg path {fill="currentcolor"}
       <div class="flex-column-2"><p>How much will it cost it looks a bit empty, try to make everything bigger thanks for taking the time to make the website, but i already made it in wix can we try some other colours maybe. <br>I have an awesome idea for a startup, i need you to build it for me make it sexy, that's great, but can you make it work for ie 2 please we are your relatives can we have another option. Could you rotate the picture to show the other side of the room?</p></div>
     </div>
 
-    <h2 class="label">Grid Test - 2/4 Layout</h2>
+    <h2 class="label">Grid Test - 3/4 Layout</h2>
     <div class="flex-row">
       <div class="flex-column"><figure class="featured"><div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/ydyGiq7hnOg" frameborder="0" allowfullscreen></iframe></div><figcaption>Some text in here</figcaption></figure></div>
       <div class="flex-column-3"><p>How much will it cost it looks a bit empty, try to make everything bigger thanks for taking the time to make the website, but i already made it in wix can we try some other colours maybe. <br>I have an awesome idea for a startup, i need you to build it for me make it sexy, that's great, but can you make it work for ie 2 please we are your relatives can we have another option. Could you rotate the picture to show the other side of the room?</p></div>
@@ -1252,8 +1259,16 @@ svg path {fill="currentcolor"}
       <div class="flex-column csu-orange flex-container flex-center flex-align-center"><h2>9</h2></div>
     </div>
 
+    <h2 class="label">Shadows</h2>
+    <p>Various Levels of "height" applied ia shadows</p>
+    <div class="flex-row flex-tiles flex-tile-grout">
+      <div class="flex-column swatch csu-grey shadow-1"></div>
+      <div class="flex-column swatch csu-grey shadow-2"></div>
+      <div class="flex-column swatch csu-grey shadow-3"></div>
+      <div class="flex-column swatch csu-grey shadow-4"></div>
+      <div class="flex-column swatch csu-grey shadow-5"></div>
 
-
+    </div>
   </div>
 </body>
 </html>
