@@ -1835,7 +1835,7 @@ svg path {fill:currentcolor}
 }
 
 .timeline li {
-  padding: .5em 1em;
+  padding: .5em 1em !important;
   border-left: 4px solid #E0E0E0;
 }
 
