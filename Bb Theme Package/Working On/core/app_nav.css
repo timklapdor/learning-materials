@@ -767,6 +767,7 @@ div[id*="stepcontent"] {
 .portlet .portletList-img>li {
   background: white;
   border-left: 8px solid #D92231;
+  border-top: none;
   padding: 8px;
 }
 
@@ -1111,6 +1112,16 @@ padding: 5vw !important;
   line-height: 1.2;
 }
 
+/** Home Icon Fix **/
+
+.coursePath .courseId, .coursePath .courseName {display: none;}
+
+.coursePath > a:before {
+content: 'H';
+font-family: 'Utilicons';
+font-size: 20px
+}
+
 /** Content Page **/
 
 .item h3 {
@@ -1236,7 +1247,7 @@ ul#tocTree li ul {
   font-size: unset !important;
 }
 
-@media (min-width:1300px) {
+@media (min-width:1000px) {
 #containerdiv .vtbegenerated {
     max-width: 45em;
     margin-left: auto !important;
@@ -1245,7 +1256,7 @@ ul#tocTree li ul {
 }
 
 #containerdiv .vtbegenerated > * {
-  max-width: 40em;
+  max-width: 98%;
 }
 
 #containerdiv .vtbegenerated table {
@@ -1442,7 +1453,7 @@ box-shadow: none !important
 
 /** Heading Levels **/
 
-.vtbegenerated h1{font-size: 160%; padding: 0.4em; margin: .5vw 0 !important;}
+.vtbegenerated h1{font-size: 160%; padding: 0.4em; margin: .5vw 0 !important; font-weight: normal !important;}
 .vtbegenerated h2{font-size: 140%; padding: 0.4em; margin: .5vw 0 !important;}
 .vtbegenerated h3{font-size: 130%; padding: 0.4em; margin: .5vw 0 !important; font-weight: normal !important;}
 .vtbegenerated h4{font-size: 120%; padding: 0.4em; margin: .5vw 0 !important;}
@@ -1501,18 +1512,6 @@ code {font-size: 95%; color: #347EA4; background: #f2f2f2; padding: .1em; font-f
 .float-right {float: right;}
 .float-left {float: left;}
 .clear-both {clear: both;}
-
-/** Text Transforms **/
-
-.uppercase {text-transform: uppercase;}
-.capitalise {text-transform: capitalize !important;}
-.lowercase {text-transform: lowercase;}
-.underline {padding: .4em .1em .1em .4em !important; border-bottom: 2px solid !important; width: 80%;}
-.small-text {font-size: 70% !important;}
-.smaller-text {font-size: 55% !important;}
-.heavy-text {font-weight: 800;}
-.light-text {font-weight: lighter;}
-.indent {margin: 1em 6vw !important;}
 
 /** Color Palette **/
 .csu-primary {color: #fff !important; background-color: #D92231 !important;}
@@ -1708,6 +1707,64 @@ code {font-size: 95%; color: #347EA4; background: #f2f2f2; padding: .1em; font-f
   padding: .1em 0 .5em;
 }
 
+/* Landing Pages */
+
+.landing-week {
+  line-height: 1;
+  font-size: 80%
+}
+
+.landing-week h3, .landing-week h4 {
+  padding: .125em .4em;
+}
+
+.landing-week ul {
+    list-style-type: none !important;
+    max-width: 95%;
+  }
+
+.landing-week li {
+    padding: .25em;
+    border-bottom: 1px solid #E6E6E6;
+  }
+
+.landing-week ul li:before {
+  content:"\25CB";
+  text-transform: uppercase;
+  font-size: 80%;
+  background: #414141;
+  color: #fff;
+  padding: 0 .25em .125em;
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  margin-left: -1.5em;
+  margin-right: .5em;
+  border-radius: 1em;
+  font-weight: lighter;
+}
+
+.landing-week ul li:hover:before {content: "\25CF";}
+.landing-week .flex-column {border-left: 4px solid transparent;}
+
+.profile-cards {
+  display: flex;
+  flex: 1;
+}
+
+.profile-cards div {
+  display: flex !important;
+  flex-direction: column;
+  align-items: stretch;
+  font-size: 80% !important;
+  border-left: 1px solid #f6f6f6 !important;
+  padding: 0 !important;
+}
+
+.profile-cards div img {
+ align-self: center;
+}
+
 /** Figure **/
 figure {
   max-width: 99%;
@@ -1859,6 +1916,36 @@ svg path {fill:currentcolor}
   height: 1.5em;
   border-radius: 50%;
 }
+
+.checklist {
+  list-style-type: none !important;
+  max-width: 95%;
+}
+
+.checklist li {
+  padding: .125em;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.checklist li:before {
+  content:"\25CB";
+  text-transform: uppercase;
+  font-size: 80%;
+  background: #414141;
+  color: #fff;
+  padding: 0 .25em .125em;
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  margin-left: -1.5em;
+  margin-right: .5em;
+  border-radius: 1em;
+  font-weight: lighter;
+}
+
+.checklist li:hover:before {
+    content: "\25CF";
+  }
 
 .fancylist-red li:before {background: #D92231; }
 .fancylist-blue li:before {background: #0A6396;}
@@ -2049,3 +2136,30 @@ svg path {fill:currentcolor}
 .shadow-3 {box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
 .shadow-4 {box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
 .shadow-5 {box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
+
+/** Text Transforms **/
+
+.uppercase {text-transform: uppercase;}
+.capitalise {text-transform: capitalize !important;}
+.lowercase {text-transform: lowercase;}
+.underline {padding: .4em .1em .1em .4em !important; border-bottom: 2px solid !important; width: 80%;}
+.small-text {font-size: 70% !important;}
+.smaller-text {font-size: 55% !important;}
+.heavy-text {font-weight: 800;}
+.light-text {font-weight: lighter;}
+.indent {margin: 1em 6vw !important;}
+
+/** Breakout Content **/
+
+@media (min-width: 1550px) {
+
+div.vtbegenerated {overflow: visible;}
+
+.vtbegenerated div.content, .breakout {
+  width: 130% !important;
+  max-width: 75em !important;
+  margin-left: -15% !important;
+  margin-right: -15% !important;
+}
+
+}
