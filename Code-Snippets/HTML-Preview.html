@@ -24,8 +24,17 @@ body {
   align-items: left;
   justify-content: center;
   flex-flow: wrap column;
-  font-size: calc(1.063em + 0.5vw) !important;
   padding-bottom: 2em;
+}
+
+@media screen and (min-width: 300px) {
+  .card {font-size: calc( 16px + (24 - 16) * ( (100vw - 300px) / (1200 - 400) )) !important;
+  line-height: normal;
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .card  {font-size: 24px !important;}
 }
 
 /** Flex Grid **/
@@ -117,7 +126,7 @@ p {font-size: 100%; padding: 0.4em; margin: .5vw 0;}
   color: #717171;
   font-size: 60%;
   font-weight: normal;
-  margin: 4em 0 -.5em -.3em;
+  margin: 4em 0 .5em -.3em;
   text-transform: uppercase;
 }
 
@@ -167,6 +176,9 @@ cite:before {content: '\2014\00a0\00a0 '; margin-left: 1em;}
 .indent {margin: 1em 6vw !important;}
 
 /** Color Palette **/
+
+
+/** UI **/
 .csu-primary {color: #fff !important; background-color: #D92231 !important;}
 .csu-secondary {color: #fff !important; background-color: #347EA4 !important;}
 .csu-warning {color: #fff !important; background-color: #FFDC0B !important;}
@@ -219,6 +231,28 @@ cite:before {content: '\2014\00a0\00a0 '; margin-left: 1em;}
 .fos-line {border-color: #9CBB15 !important;}
 .fos-text {color: #9CBB15 !important;}
 
+
+/** Brand **/
+
+.csu-brand-black {color: #fff !important; background-color: #1A1A1A !important;}
+.csu-brand-black-line {border-color: #1A1A1A !important;}
+.csu-brand-black-text{color: #1A1A1A !important;}
+
+.csu-brand-red {color: #fff !important; background-color: #D92231 !important;}
+.csu-brand-red-line {border-color: #D92231 !important;}
+.csu-brand-red-text{color: #D92231 !important;}
+
+.csu-brand-orange {color: #fff !important; background-color: #D1441D !important;}
+.csu-brand-orange-line {border-color: #D1441D !important;}
+.csu-brand-orange-text{color: #D1441D !important;}
+
+.csu-brand-brown {color: #fff !important; background-color: #887E6E !important;}
+.csu-brand-brown-line {border-color: #887E6E !important;}
+.csu-brand-brown-text{color: #887E6E !important;}
+
+.csu-brand-light {color: #fff !important; background-color: #DAD3CC !important;}
+.csu-brand-light-line {border-color: #DAD3CC !important;}
+.csu-brand-light-text{color: #DAD3CC !important;}
 
 /** Chat Markup **/
 
@@ -681,6 +715,8 @@ svg path {fill="currentcolor"}
 .table.col-odd td:nth-child(odd), .table.col-odd th:nth-child(odd) {background: #f6f6f6; }
 .table.col-even td:nth-child(even), .table.col-even th:nth-child(even) {background: #f6f6f6; }
 
+.table .flex-row + .flex-row {margin-top: 0em !important;}
+.table .flex-row {padding: .3em;}
 
 .shadow-1 {box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
 .shadow-2 {box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
@@ -695,6 +731,12 @@ svg path {fill="currentcolor"}
 
     <h2 class="label">HTML Elements</h2>
     <p>A Preview of HTML Elements, Styles and modifiers</p>
+
+    <h2 class="label">Baseline Font size</h2>
+    <p>The style sheet uses a dynamic calculation based on screen size to set the base font size. All subsequent styles are set as a percentage of that baseline - which is applied to the relevant container element</p>
+
+    <p>The calculations is <code>font-size: calc( 16px + (24 - 16) * ( (100vw - 400px) / ( 1000 - 400) )) !important;</code> and sets the maximum font size at 24px based on a media query at 1000px <code>@media screen and (min-width: 1000px) {
+      .card  {font-size: 24px !important;}</code></p>
 
     <h2 class="label">Headings</h2>
     <h1>Heading 1</h1>
@@ -815,7 +857,7 @@ svg path {fill="currentcolor"}
       <div class="flex-column csu-grey-nav swatch flex-container flex-end"><p>Grey Nav <br><span class="small-text">#414141</span></p></div>
       <div class="flex-column csu-grey-item swatch flex-container flex-end"><p>Grey Item <br><span class="small-text">#717171</span></p></div>
       <div class="flex-column csu-grey-hover swatch flex-container flex-end"><p>Grey Hover <br><span class="small-text">#E6E6E6</span></p></div>
-      <div class="flex-column csu-grey-page swatch flex-container flex-end"><p>Grey Page <br><span class="small-text">#f8f8f8</span></p></div>
+      <div class="flex-column csu-grey-page swatch flex-container flex-end"><p>Grey Page <br><span class="small-text">#F8F8F8</span></p></div>
     </div>
 
     <h2 class="label">Resource Colour Palette</h2>
@@ -828,6 +870,17 @@ svg path {fill="currentcolor"}
       <div class="flex-column csu-purple swatch flex-container flex-end"><p>Purple <br><span class="small-text">#6E267B</span></p></div>
       <div class="flex-column csu-red swatch flex-container flex-end"><p>Red <br><span class="small-text">#D92231</span></p></div>
     </div>
+
+    <h2 class="label">Brand Colour Palette</h2>
+
+    <div class="flex-row ">
+      <div class="flex-column csu-brand-black swatch flex-container flex-end"><p>Black<br><span class="small-text">#1A1A1A</span></p></div>
+      <div class="flex-column csu-brand-red swatch flex-container flex-end"><p>Red <br><span class="small-text">#D92231</span></p></div>
+      <div class="flex-column csu-brand-orange swatch flex-container flex-end"><p>Orange <br><span class="small-text">#D1441D</span></p></div>
+      <div class="flex-column csu-brand-brown swatch flex-container flex-end"><p>Brown <br><span class="small-text">#887E6E</span></p></div>
+      <div class="flex-column csu-brand-light swatch flex-container flex-end"><p>Light <br><span class="small-text">#DAD3CC</span></p></div>
+</div>
+
 
     <h2 class="label">Faculty Colour Palette</h2>
 
@@ -918,7 +971,7 @@ svg path {fill="currentcolor"}
 
     <h2 class="label">Figure in paragraph</h2>
     <div class="">
-    <figure class="_50 u-float-left"><img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg"><figcaption>A pretty flower</figcaption></figure>
+    <figure class="_50 float-left"><img src="https://timklapdor.github.io/Bb-landing-pages/assets/flower.jpg"><figcaption>A pretty flower</figcaption></figure>
     <p>I cant pay you there are more projects lined up charge extra the next time, nor can you use a high definition screenshot. Can you make pink a little more pinkish we don't need a backup, it never goes down! make it original, or this was not according to brief I have an awesome idea for a startup, i need you to build it for me. Anyway, you are the designer, you know what to do this looks perfect. Just Photoshop out the dog, add a baby, and make the curtains blue is this the best we can do. That's great, but can you make it work for ie 2 please could you rotate the picture to show the other side of the room? nor this is just a 5 minutes job can you make it look like this clipart i found. Give us a complimentary logo along with the website I have printed it out, but the animated gif is not moving could you rotate the picture to show the other side of the room? is this the best we can do I need a website. How much will it cost I think we need to start from scratch.</p>
     </div>
 
@@ -1201,25 +1254,42 @@ svg path {fill="currentcolor"}
     </table>
 
     <h2 class="label">Flex Table</h2>
-    <div class="table striped blue-text">
+     <div class="table striped blue-text">
       <!-- <div class="caption">A quick description of the table goes here.</div> -->
-    <div class="flex-row header csu-blue">
-      <div class="flex-column">First Name</div>
-      <div class="flex-column">Last Name</div>
-      <div class="flex-column">Job Title</div>
+      <div class="flex-row header csu-blue">
+       <div class="flex-column">
+         First Name
+       </div>
+       <div class="flex-column">
+         Last Name
+       </div>
+       <div class="flex-column">
+         Job Title
+       </div>
       </div>
-    <div class="flex-row">
-      <div class="flex-column">James</div>
-      <div class="flex-column">Matman</div>
-      <div class="flex-column">Chief Sandwich Eater</div>
-    </div>
-    <div class="flex-row">
-      <div class="flex-column">The</div>
-      <div class="flex-column">Tick</div>
-      <div class="flex-column">Crimefighter Sorta</div>
-    </div>
-    </div>
-
+      <div class="flex-row">
+       <div class="flex-column">
+         James
+       </div>
+       <div class="flex-column">
+         Matman
+       </div>
+       <div class="flex-column">
+         Chief Sandwich Eater
+       </div>
+      </div>
+      <div class="flex-row">
+       <div class="flex-column">
+         The
+       </div>
+       <div class="flex-column">
+         Tick
+       </div>
+       <div class="flex-column">
+         Crimefighter Sorta
+       </div>
+      </div>
+     </div>
     <h2 class="label">Grid Test - Thirds Layout</h2>
     <div class="flex-row">
       <div class="flex-column"><figure class="featured"><div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/ydyGiq7hnOg" frameborder="0" allowfullscreen></iframe></div><figcaption>Some text in here</figcaption></figure></div>

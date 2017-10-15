@@ -25,13 +25,18 @@ Forms the basis of new CSU websites
 
 ### Responsive type
 
-Responsive type settings used are based on this article:[Viewport Unit Based Typography](https://zellwk.com/blog/viewport-based-typography/). This uses a single calculation based on the screens width to set the baseline value of 18px to create the font size value:
+With the introduction of Responsive Design Elements a lot of consideration has gone into the design of the typography. The focus of these changes has been to improve the *readability* of the text in Blackboard - and to do it across screen sizes. The article *[Your Body Text Is Too Small
+Why website body text should be bigger, and ways to optimize it.](https://medium.com/@xtianmiller/your-body-text-is-too-small-5e02d36dc902)* provides a good overview of the approach taken and the reasons why.
+
+Responsive type settings used are based on this article:[Precise control over responsive typography](https://madebymike.com.au/writing/precise-control-responsive-typography/). This uses a single calculation based on the screens width to set the baseline value of 16px and a maximum of 24px which is designed to adapt to any screen size - the small the screen the closer to the user and the smaller the text, the larger the screen the further away the user is and so the larger the font.
+
+The basic equation sets this up here with a media query setting the max size at 24px at 1000px screen width.
 
 ```css
-font-size: calc(112.5% + 0.5vw)
+font-size: calc( 16px + (24 - 16) * ( (100vw - 400px) / ( 1000 - 400) ));
 ```
 
-Font's used in Blackboard are mostly are based on percentages and ems so this size flows through the site quite well.
+Once this baseline has been introduced to the content area - all font sizes are relative using percentages which allows them to adapt easily to all variations.
 
 ### Flex Grid
 
@@ -44,7 +49,7 @@ By using Flexbox's innate nature to resize elements based on the page the grid i
 
 ### Tooltips
 
-Tool tips uses the CSS framework from [Wenk](https://tiaanduplessis.github.io/wenk/) but replaces the ```data-wenk``` attribute with ```tooltip```. To use simply se an attribute in the tag to ```tooltip="the text you want to display"```. 
+Tool tips uses the CSS framework from [Wenk](https://tiaanduplessis.github.io/wenk/) but replaces the ```data-wenk``` attribute with ```tooltip```. To use simply se an attribute in the tag to ```tooltip="the text you want to display"```.
 
 ## Useful Tools
 
