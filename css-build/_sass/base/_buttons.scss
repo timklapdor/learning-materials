@@ -1,0 +1,21 @@
+/** Buttons **/
+
+.csu-button {
+  font-size: 80% !important;
+  text-transform: uppercase;
+  padding: .5em 2em;
+  background: $grey-nav;
+  color: $rev;
+  cursor: pointer;
+  border-radius: 2px;
+  text-align: center;
+  margin: .5em 1em !important;
+  display: block;
+}
+
+.csu-button:hover, .csu-button:active  {box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22), inset 0 0 20px 1px rgba(0,0,0,.15); ;}
+.csu-btn-wide {padding: .5em 6em;}
+.csu-btn-large {padding: 1em 3em;}
+.csu-btn-full {display: block !important; min-width: 80%; margin-left: auto !important; margin-right: auto !important;}
+.csu-button a, .csu-btn-wide a, .csu-btn-large a, .csu-btn-full a {color: $rev;}
+.csu-button a:hover, .csu-btn-wide a:hover, .csu-btn-large a:hover, .csu-btn-full a:hover {color: $rev;}

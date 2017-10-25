@@ -1,0 +1,60 @@
+/** Hero Images **/
+.hero {
+  align-items: center;
+  background: $grey-page;
+  color: $grey-page;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.hero-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  color: white;
+  background: rgba(0,0,0,.4);
+  padding: .25em;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  text-align: center;
+  font-size: 80%;
+}
+
+.hero-left {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  max-width: 95%;
+  color: white;
+  background: rgba(0,0,0,.4);
+  padding: .25em;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-size: 80%;
+}
+
+.hero-right {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  max-width: 95%;
+  color: white;
+  background: rgba(0,0,0,.4);
+  padding: .25em;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  text-align: right;
+  font-size: 80%;
+}
+.hero img {width: 100%;}
+
+@media screen and (min-width: 600px) {
+  .hero-center, .hero-left, .hero-right {
+    max-width: 75%;
+    font-size: 100%;
+  }
+}

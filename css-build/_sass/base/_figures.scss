@@ -1,0 +1,28 @@
+/** Figure **/
+figure {
+  max-width: 99%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: #f8f8f8;
+  padding: .15em;
+  box-shadow:$shadow-2;
+}
+figure figcaption {align-self: center; text-align: center; font-size: 60%; color: $grey-item; font-style: italic; padding: .25em}
+
+figure img {max-width: 100%}
+
+.video {position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;}
+.video iframe, .video object, .video embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.featured {display: block; margin-left: auto; margin-right: auto;}
+
+/** Sizing modifiers **/
+
+
+.gallery {box-shadow: $shadow-2; background: $grey-page; align-self: center; justify-content: center;}
+.gallery h3 {flex: 1 1 100%; text-align: center;}
+.gallery figure {box-shadow: none !important; margin: 0; padding: 2px 0;}
+
+figure._30 {width: 30%; margin: 1vw 2.25vw !important;}
+figure._50 {width: 50%; margin: 1vw 2.25vw !important;}
+figure._60 {width: 60%; margin: 1vw 2.25vw !important;}

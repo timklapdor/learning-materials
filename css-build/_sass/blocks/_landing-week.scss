@@ -1,0 +1,44 @@
+/* Landing Week */
+
+.landing-week {
+  line-height: 1;
+  font-size: 80%
+}
+
+.landing-week h3, .landing-week h4 {
+  padding: .125em .4em;
+}
+
+.landing-week ul {
+    list-style-type: none !important;
+    max-width: 95%;
+  }
+
+.landing-week ul {
+      list-style-type: none !important;
+      max-width: 95%;
+    }
+
+.landing-week li {
+    padding: .25em;
+    border-bottom: 1px solid #E6E6E6;
+  }
+
+.landing-week ul li:before {
+  content:"\25CB";
+  text-transform: uppercase;
+  font-size: 80%;
+  background: #414141;
+  color: #fff;
+  padding: 0 .25em .125em;
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  margin-left: -1.5em;
+  margin-right: .5em;
+  border-radius: 1em;
+  font-weight: lighter;
+}
+
+.landing-week ul li:hover:before {content: "\25CF";}
+.landing-week .flex-column {border-left: 4px solid transparent;}

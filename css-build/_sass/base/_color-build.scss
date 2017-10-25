@@ -1,0 +1,89 @@
+$brand-colors: (
+black: $brand-black,
+red: $brand-red,
+orange: $brand-orange,
+brown: $brand-brown,
+light: $brand-light
+);
+
+$ui-colors: (
+primary: $primary,
+secondary: $secondary,
+warning: $warning,
+success: $success,
+grey-nav: $grey-nav,
+grey-item: $grey-item,
+grey-hover: $grey-hover,
+grey-page: $grey-page,
+highlight-subtle: $highlight-subtle
+);
+
+$material-colors: (
+blue: $blue,
+green: $green,
+grey: $grey,
+orange: $orange,
+purple: $purple,
+red: $red,
+ochre: $ochre
+);
+
+$faculty-colors: (
+foa: $foa,
+fob: $fob,
+fos: $fos
+);
+
+$utility-colors: (
+rev: $rev,
+rev-blk: $rev-blk,
+);
+
+
+/** Brand Palette **/
+@each $color, $value in $brand-colors{
+  .csu-brand-#{$color} {background-color: $value !important; color: $rev !important; }
+  .csu-brand-#{$color}-text {color: $value !important;}
+  .csu-brand-#{$color}-line {border-color: $value !important;}
+  .csu-brand-#{$color}-dark {background-color: darken($value, 10%) !important; color: $rev !important}
+  .csu-brand-#{$color}-dark-text {color: darken($value, 10%) !important;}
+  .csu-brand-#{$color}-dark-line {border-color: darken($value, 10%) !important;}
+  .csu-brand-#{$color}-light {background-color: lighten($value, 10%) !important; color: $rev !important;}
+  .csu-brand-#{$color}-light-text {color: lighten($value, 10%) !important;}
+  .csu-brand-#{$color}-light-line {border-color: lighten($value, 10%) !important;}
+}
+/** UI Palette **/
+@each $color, $value in $ui-colors{
+  .csu-#{$color} {background-color: $value !important; color: $rev !important; }
+  .csu-#{$color}-text {color: $value !important;}
+  .csu-#{$color}-line {border-color: $value !important;}
+  .csu-#{$color}-dark {background-color: darken($value, 10%) !important; color: $rev !important;}
+  .csu-#{$color}-dark-text {color: darken($value, 10%) !important;}
+  .csu-#{$color}-dark-line {border-color: darken($value, 10%) !important;}
+  .csu-#{$color}-light {background-color: lighten($value, 10%) !important; color: $rev !important;}
+  .csu-#{$color}-light-text {color: lighten($value, 10%) !important;}
+  .csu-#{$color}-light-line {border-color: lighten($value, 10%) !important;}
+}
+/** Material Palette **/
+@each $color, $value in $material-colors{
+  .csu-#{$color} {background-color: $value !important; color: $rev !important; }
+  .csu-#{$color}-text {color: $value !important;}
+  .csu-#{$color}-line {border-color: $value !important;}
+  .csu-#{$color}-dark {background-color: darken($value, 10%) !important; color: $rev !important;}
+  .csu-#{$color}-dark-text {color: darken($value, 10%) !important;}
+  .csu-#{$color}-dark-line {border-color: darken($value, 10%) !important;}
+  .csu-#{$color}-light {background-color: lighten($value, 10%) !important; color: $rev !important;}
+  .csu-#{$color}-light-text {color: lighten($value, 10%) !important;}
+  .csu-#{$color}-light-line {border-color: lighten($value, 10%) !important;}
+  .csu-#{$color}-list li:before {background: $value !important;}
+}
+/** Faculty Palette **/
+@each $color, $value in $faculty-colors{
+  .csu-#{$color} {background-color: $value !important; color: $rev !important; }
+  .csu-#{$color}-text {color: $value !important;}
+  .csu-#{$color}-line {border-color: $value !important;}
+}
+/** Utility Palette **/
+@each $color, $value in $utility-colors{
+  .csu-#{$color} {color: $value !important;}
+}

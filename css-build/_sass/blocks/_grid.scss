@@ -1,0 +1,65 @@
+/** Flex Grid **/
+
+/* Use flex row as the container */
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1em auto;
+  width: 98%;
+}
+
+/** Colums set all items inside to stack on top of each other as the default **/
+
+.flex-column {flex-direction: column;}
+.flex-column, .flex-column-quarter, .flex-column-half, .flex-column-2, .flex-column-3 {flex-basis: 100%; flex-direction: column;}
+
+/** Sets the dsplay of columns on 600px + displays **/
+
+@media screen and (min-width: 500px) {
+  .flex-column {flex: 1;}
+  .flex-column-quarter {flex: .25;}
+  .flex-column-half {flex: .5;}
+  .flex-column-2 {flex:2;}
+  .flex-column-3 {flex: 3;}
+  ._2up {flex: 0 1 48%}
+  ._3up {flex: 0 1 28%;}
+  ._4up {flex: 0 1 23%;}
+  ._5up {flex: 0 1 18%;}
+}
+
+/* Helpers for internal items and spacing */
+
+.flex-row img {max-width: 100% !important;}
+.flex-row:first-child, :not(.flex-row) + .flex-row {margin-top: 1em !important;}
+.flex-row + .flex-row {margin-top: -1em !important;}
+.flex-row:last-child {margin-bottom: 1em !important;}
+
+/* Flex Alignment */
+.flex-start {justify-content: flex-start;}
+.flex-end {justify-content: flex-end;}
+.flex-center {justify-content: center;}
+
+.flex-align-start {align-items: flex-start;}
+.flex-align-end {align-items: flex-end;}
+.flex-align-center {align-items: center;}
+
+.center-items {align-items: center;}
+.center-self {align-self: center;}
+.center-text {text-align: center;}
+
+/* Add Flex to container or change direction */
+
+.flex-container {display: flex;}
+.flex-direction-row {flex-direction: row;}
+.flex-direction-column {flex-direction: column;}
+
+/* Tile settings */
+
+.flex-tiles { margin: 0; align-items: stretch; min-height: calc(100vh/5); }
+.flex-tiles:first-child, :not(.flex-tiles) + .flex-tiles {margin-top: 1em !important;}
+.flex-tiles:last-child {margin-bottom: 1em !important;}
+.flex-tile-grout > * {box-shadow: 2px 0 0 0 #fff, 0 2px 0 0 #ffffff, 2px 2px 0 0 #fff, 2px 0 0 0 #fff inset, 0 2px 0 0 #fff inset;}
+.flex-tile-fill {justify-content: center; align-items: center; overflow: hidden}
+.flex-tile-fill img {min-height:100%; min-width: 100%; object-fit: cover;}

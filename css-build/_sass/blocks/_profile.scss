@@ -1,0 +1,6 @@
+/** Profle **/
+
+.profile h6, .profile p {padding: 0;}
+.profile {margin: 0 .25em; padding: 0 .25em;}
+.profile:not(:first-child) {border-left: 1px solid $grey-hover;}
+.profile figure {margin: 0;}

@@ -1,0 +1,25 @@
+/** Progress Bars **/
+
+.progress {
+  border-radius: 4px;
+  height: 2em;
+  margin: 1em auto;
+  position: relative;
+  width: 90%;
+}
+.progress:before {
+  content: attr(data-label);
+  font-size: 70%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: .7em;
+}
+.progress .value {
+  background-color: $grey-hover;
+  display: inline-block;
+  float: right;
+  height: 100%;
+}

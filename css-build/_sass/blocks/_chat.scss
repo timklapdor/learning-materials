@@ -1,0 +1,31 @@
+/** Chat **/
+
+.chat {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background: $grey-page;
+  color: $rev;
+  border-radius: 20px;
+  margin-bottom: 1em;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.2s ease;
+}
+
+.chat p {padding: 1em; margin: 1em; border-radius: 20px; max-width: 60%; justify-content: center;}
+.chat p img {height: 2em; width: 2em; margin: 0 .2em; border-radius: 2em; border: 1px solid $rev; float: left;}
+.chat h3 {text-align: center; align-self: center; width: 80%; text-transform: uppercase; color: $grey-nav; border-bottom: 2px solid $grey-nav;}
+.chat p:nth-child(even) {align-self: flex-start; background: $blue; }
+.chat p:nth-child(odd) {align-self: flex-end; background: $green;}
+.chat p:nth-child(odd) img {float: right;}
+.chat br {
+  content: ' ';
+  display: inline-block;
+  width: 120%;
+  border-bottom: 4px solid $grey-page;
+  margin: 0 0 .5em -2em;
+  padding: .1em 0 .5em;
+}

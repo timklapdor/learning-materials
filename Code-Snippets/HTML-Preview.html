@@ -28,12 +28,12 @@ body {
 }
 
 @media screen and (min-width: 300px) {
-  .card {font-size: calc( 16px + (24 - 16) * ( (100vw - 300px) / (1200 - 400) )) !important;
+  .card {font-size: calc( 16px + (24 - 16) * ( (100vw - 300px) / ( 1400 - 300) )) !important;}
   line-height: normal;
 }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .card  {font-size: 24px !important;}
 }
 
@@ -62,13 +62,10 @@ body {
   .flex-column-half {flex: .5;}
   .flex-column-2 {flex:2;}
   .flex-column-3 {flex: 3;}
-  ._2up {flex: 0 1 49%}
-  ._3up {flex: 0 1 30%;}
-  ._4up {flex: 0 1 24%;}
-  ._5up {flex: 0 1 19%;}
-/** For Legacy Use **/
-  .third {flex: 1;}
-  .two-third {flex: 2;}
+  ._2up {flex: 0 1 48%}
+  ._3up {flex: 0 1 28%;}
+  ._4up {flex: 0 1 23%;}
+  ._5up {flex: 0 1 18%;}
 }
 
 .box {padding: 1em 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
@@ -110,12 +107,12 @@ body {
 
 /** Heading Levels **/
 
-h1{font-size: 160%; padding: 0.4em; margin: .5vw 0;}
-h2{font-size: 140%; padding: 0.4em; margin: .5vw 0;}
-h3{font-size: 130%; padding: 0.4em; margin: .5vw 0; font-weight: normal;}
-h4{font-size: 120%; padding: 0.4em; margin: .5vw 0;}
-h5{font-size: 110%; padding: 0.4em; margin: .5vw 0; font-weight: normal;}
-h6{font-size: 100%; padding: 0.4em; margin: .5vw 0;}
+h1{font-size: 200%; padding: 0.4em; margin: .5vw 0;}
+h2{font-size: 180%; padding: 0.4em; margin: .5vw 0;}
+h3{font-size: 150%; padding: 0.4em; margin: .5vw 0; font-weight: normal;}
+h4{font-size: 130%; padding: 0.4em; margin: .5vw 0;}
+h5{font-size: 120%; padding: 0.4em; margin: .5vw 0; font-weight: normal;}
+h6{font-size: 110%; padding: 0.4em; margin: .5vw 0;}
 p {font-size: 100%; padding: 0.4em; margin: .5vw 0;}
 
 .lead-paragraph {font-size: 105%; font-style: italic;}
@@ -133,12 +130,8 @@ p {font-size: 100%; padding: 0.4em; margin: .5vw 0;}
 code {font-size: 95%; color: #0A6396; background: #f8f8f8; padding: 0.4em; margin: .5vw;}
 p code {padding: .125em; margin: 0;}
 
-/** Lists **/
-
-/*ol {margin-left: 3vw !important;}
-ul {margin-left: 3vw !important;}*/
-
 a {text-decoration: none; color: #347EA4;}
+
 /** Quotes **/
 
 blockquote {
@@ -153,7 +146,6 @@ cite {font-size: 80%;}
 cite:before {content: '\2014\00a0\00a0 '; margin-left: 1em;}
 
 .pullquote {border: 0 !important; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
-
 .fancyquote {border-width: 2px 0 !important; border-style: solid;}
 .fancyquote, .fancyquote p {font-family: "Times New Roman", Georgia, Serif !important; font-size: 125%;}
 
@@ -197,25 +189,25 @@ cite:before {content: '\2014\00a0\00a0 '; margin-left: 1em;}
 .csu-red {color: #fff !important; background-color: #D92231 !important;}
 .csu-ochre {color: #fff !important; background-color: #B76603 !important;}
 
+.csu-blue-line {border-color: #0A6396 !important;}
+.csu-green-line {border-color: #0F8A14 !important;}
+.csu-grey-line {border-color: #666666 !important;}
+.csu-orange-line {border-color: #D93C0B !important;}
+.csu-purple-line {border-color: #6E267B !important;}
+.csu-red-line {border-color: #D92231 !important;}
+.csu-ochre-line {border-color: #B76603 !important;}
+
+.csu-blue-text {color: #0A6396 !important;}
+.csu-green-text {color: #0F8A14 !important;}
+.csu-grey-text {color: #666666 !important;}
+.csu-orange-text {color: #D93C0B !important;}
+.csu-purple-text {color: #6E267B !important;}
+.csu-red-text {color: #D92231 !important;}
+.csu-ochre-text {color: #B76603 !important;}
+
 .rev {color: #fff !important;}
 .rev-blk {color: #000 !important;}
 
-.border {border: 2px solid; }
-.blue-line {border-color: #0A6396 !important;}
-.green-line {border-color: #0F8A14 !important;}
-.grey-line {border-color: #666666 !important;}
-.orange-line {border-color: #D93C0B !important;}
-.purple-line {border-color: #6E267B !important;}
-.red-line {border-color: #D92231 !important;}
-.ochre-line {border-color: #B76603 !important;}
-
-.blue-text {color: #0A6396 !important;}
-.green-text {color: #0F8A14 !important;}
-.grey-text {color: #666666 !important;}
-.orange-text {color: #D93C0B !important;}
-.purple-text {color: #6E267B !important;}
-.red-text {color: #D92231 !important;}
-.ochre-text {color: #B76603 !important;}
 
 /** Faculty Colour Classes **/
 
@@ -253,6 +245,15 @@ cite:before {content: '\2014\00a0\00a0 '; margin-left: 1em;}
 .csu-brand-light {color: #fff !important; background-color: #DAD3CC !important;}
 .csu-brand-light-line {border-color: #DAD3CC !important;}
 .csu-brand-light-text{color: #DAD3CC !important;}
+
+
+/* Border Classes */
+
+.border-1 {border: 1px solid; }
+.border-2 {border: 2px solid; }
+.border-3 {border: 3px solid; }
+.border-4 {border: 4px solid; }
+.border-5 {border: 5px solid; }
 
 /** Chat Markup **/
 
@@ -306,8 +307,19 @@ cite:before {content: '\2014\00a0\00a0 '; margin-left: 1em;}
 .csu-btn-full {display: block !important; min-width: 80%; margin-left: auto !important; margin-right: auto !important;}
 
 
-/** Activity **/
-.activity {
+/** Actions & Activity **/
+
+.action-box {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1em auto;
+  border-radius: 1em;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.activity-box {
   width: 95%;
   display: flex;
   flex-direction: row;
@@ -317,10 +329,12 @@ cite:before {content: '\2014\00a0\00a0 '; margin-left: 1em;}
   margin-left: auto;
   margin-right: auto;
 }
-.icon {flex: 1 !important; display: flex; align-items: flex-start;; padding: .25em; margin: 1em .5em}
-.icon img {max-width: 100%;}
-.icon svg {max-width: 100%;}
+
+.icon {flex: 1 !important; display: flex; align-items: flex-start; padding: .25em; margin: 1em .5em}
+.icon img {width: 100%;}
+.icon svg {width: 100%;}
 .instructions {flex: 4;}
+
 
 /** Figure **/
 figure {
@@ -335,8 +349,6 @@ figure {
 figure figcaption {align-self: center; text-align: center; font-size: 60%; color: #717171; font-style: italic; padding: .25em}
 
 figure img {max-width: 100%}
-/*figure iframe {max-width: 100%}*/
-
 
 .video {position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;}
 .video iframe, .video object, .video embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
@@ -374,34 +386,28 @@ hr {border-top: 2px solid; width: 98%}
 /** Progress Bar **/
 
 .progress {
-  height: 2em;
-  width: 90%;
-  position: relative;
   border-radius: 4px;
+  height: 2em;
   margin: 1em auto;
+  position: relative;
+  width: 90%;
 }
 .progress:before {
   content: attr(data-label);
   font-size: 70%;
+  left: 0;
   position: absolute;
+  right: 0;
   text-align: center;
   text-transform: uppercase;
   top: .7em;
-  left: 0;
-  right: 0;
 }
 .progress .value {
-  background-color: rgba(0,0,0,.3);
+  background-color: #717171;
   display: inline-block;
-  height: 100%;
   float: right;
+  height: 100%;
 }
-
-/* Actions */
-
-.action {width: 80%; margin: 1em auto; border-radius: 1em; }
-.action img {width: 100%; padding: 1em;}
-.action svg {height: 5em; width: 5em; padding: 1em;}
 
 /*SVG */
 
@@ -478,18 +484,18 @@ svg path {fill="currentcolor"}
   margin-right: 1em;
 }
 
-.fancy-numbers {
+.number-list {
   list-style-type: none !important;
   min-width: 75%;
   max-width: 75%;
 }
 
-.fancy-numbers li {
+.number-list li {
   padding: .5em;
   counter-increment: step-counter;
 }
 
-.fancy-numbers li:before {
+.number-list li:before {
   content: counter(step-counter);
   text-transform: uppercase;
   font-size: 50%;
@@ -610,6 +616,7 @@ svg path {fill="currentcolor"}
    white-space: pre;
    width: auto
 }
+
 [tooltip]:after {
    opacity: 0
 }
@@ -846,7 +853,7 @@ svg path {fill="currentcolor"}
 
     <h2 class="label">UI Colour Palette</h2>
 
-    <div class="flex-row">
+    <div class="flex-row ">
       <div class="flex-column csu-primary swatch flex-container flex-end"><p>Primary <br><span class="small-text">#D92231</span></p></div>
       <div class="flex-column csu-secondary swatch flex-container flex-end"><p>Secondary <br><span class="small-text">#347EA4</span></p></div>
       <div class="flex-column csu-warning swatch flex-container flex-end"><p>Warning <br><span class="small-text">#FFDC0B</span></p></div>
@@ -891,8 +898,16 @@ svg path {fill="currentcolor"}
     </div>
 
     <h2 class="label">Activity</h2>
-    <div class="activity">
+    <div class="activity-box">
       <div class="icon"><img src="http://icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/256/Home-icon.png"></div>
+      <div class="instructions">
+        <h2>Heading Inside</h2>
+        <p>make it high quality and please use html can you make the font a bit bigger and change it to times new roman? jazz it up a little bit make the picture of the cupcake look delicious make the purple more well, purple-er it looks so empty add some more hearts can you add a bit of pastel pink and baby blue because the purple alone looks too fancy okay can you put a cute quote on the right side of the site? oh no it looks messed up! i think we need to start from scratch. We need more images of groups of people having non-specific types of fun. We have big contacts we will promote you I really like the colour but can you change it, and can you make it pop.</p>
+      </div>
+    </div>
+
+    <div class="activity-box csu-ochre">
+      <div class="icon"><img src="http://uimagine.edu.au/csulx/images/lc-rev.png"></div>
       <div class="instructions">
         <h2>Heading Inside</h2>
         <p>make it high quality and please use html can you make the font a bit bigger and change it to times new roman? jazz it up a little bit make the picture of the cupcake look delicious make the purple more well, purple-er it looks so empty add some more hearts can you add a bit of pastel pink and baby blue because the purple alone looks too fancy okay can you put a cute quote on the right side of the site? oh no it looks messed up! i think we need to start from scratch. We need more images of groups of people having non-specific types of fun. We have big contacts we will promote you I really like the colour but can you change it, and can you make it pop.</p>
@@ -1002,45 +1017,46 @@ svg path {fill="currentcolor"}
       <span class="value" style="width:55%;">&nbsp;</span>
     </div>
 
-        <h2 class="label">Action - Warning</h2>
-    <div class="flex-row action csu-warning rev-blk">
-      <div class="flex-column center-text">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M2 42h44L24 4 2 42zm24-6h-4v-4h4v4zm0-8h-4v-8h4v8z"/></svg>
+<h2 class="label">Action - Warning</h2>
+
+    <div class="action-box csu-warning rev-blk">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M2 42h44L24 4 2 42zm24-6h-4v-4h4v4zm0-8h-4v-8h4v8z"/></svg>
       </div>
-      <div class="flex-column-3">
+      <div class="instructions">
         <h4>Some Clear Instruction</h4>
         <p>Some clear text about what to do</p>
       </div>
     </div>
 
     <h2 class="label">Action - Success</h2>
-    <div class="flex-row action csu-success">
-      <div class="flex-column center-text">
+    <div class="action-box csu-success">
+      <div class="icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="currentcolor" d="M24 4C12.95 4 4 12.95 4 24c0 11.04 8.95 20 20 20 11.04 0 20-8.96 20-20 0-11.05-8.96-20-20-20zm-4 30L10 24l2.83-2.83L20 28.34l15.17-15.17L38 16 20 34z"/></svg>
       </div>
-      <div class="flex-column-3">
+      <div class="instructions">
         <h4>Some Clear Instruction</h4>
         <p>Some clear text about what to do</p>
       </div>
     </div>
 
     <h2 class="label">Action - Failure</h2>
-    <div class="flex-row action csu-primary">
-      <div class="flex-column center-text">
+    <div class="action-box csu-primary">
+      <div class="icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="currentcolor" d="M46 11v29c0 4.4-3.6 8-8 8H23.4c-2.16 0-4.2-.86-5.7-2.38L2 29.66s2.52-2.46 2.6-2.5c.44-.38.98-.58 1.58-.58.44 0 .84.12 1.2.32.08.02 8.62 4.92 8.62 4.92V8c0-1.66 1.34-3 3-3s3 1.34 3 3v14h2V3c0-1.66 1.34-3 3-3s3 1.34 3 3v19h2V5c0-1.66 1.34-3 3-3s3 1.34 3 3v17h2V11c0-1.66 1.34-3 3-3s3 1.34 3 3z"/></svg>
       </div>
-      <div class="flex-column-3">
+      <div class="instructions">
         <h4>Some Clear Instruction</h4>
         <p>Some clear text about what to do</p>
       </div>
     </div>
 
     <h2 class="label">Action - Prompt</h2>
-    <div class="flex-row action csu-secondary">
-      <div class="flex-column center-text">
+    <div class="action-box csu-secondary">
+      <div class="icon">
         <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="currentcolor" d="M23.99 4C12.94 4 4 12.95 4 24s8.94 20 19.99 20C35.04 44 44 35.05 44 24S35.04 4 23.99 4zm8.47 32L24 30.9 15.54 36l2.24-9.62-7.46-6.47 9.84-.84L24 10l3.84 9.07 9.84.84-7.46 6.47L32.46 36z"/></svg>
       </div>
-      <div class="flex-column-3">
+      <div class="instructions">
         <h4>Some Clear Instruction</h4>
         <p>Some clear text about what to do</p>
       </div>
@@ -1068,7 +1084,7 @@ svg path {fill="currentcolor"}
     </ol>
 
     <h2 class="label">Number List</h2>
-    <ol class="fancy-numbers fancylist-fob">
+    <ol class="number-list fancylist-fob">
       <li>Lists of things</li>
       <li>Reminds me of sesame street</li>
       <li>Three Things!! hahaha</li>
@@ -1084,7 +1100,7 @@ svg path {fill="currentcolor"}
       <li>!thunderclap!All essential learning activities, learning content and learning tools for your subject are found within this site. Your Subject Outline (in the left-side navigation menu) is the first document you need to read before commencing to study. The Subject Outline is an accurate and historical record of the curriculum and scope of your subject, and should be available 14 days before the start of a study session.</li>
     </ol>
 
-    <h2 class="label">Step List</h2>
+    <h2 class="label">Check List</h2>
     <ul class="checklist">
       <li>Lists of things</li>
       <li>Reminds me of sesame street</li>
@@ -1325,10 +1341,10 @@ svg path {fill="currentcolor"}
 
     <h2 class="label">Code Samples</h2>
     <p>You can use the CODE tag to code up simple blocks of code or text.</p>
-    <p><code>Putting in some stuff that can be code</code></p>
+    <code>Putting in some stuff that can be code</code>
     <p>That is code on it's own, <code>this is inline</code>.</p>
 
-    <h2 class="label">Profie Page</h2>
+    <h2 class="label">Profile Page</h2>
     <div class="flex-row">
     </div>
     <div class="flex-row">
@@ -1447,7 +1463,6 @@ svg path {fill="currentcolor"}
       <div class="flex-column swatch csu-grey shadow-3"></div>
       <div class="flex-column swatch csu-grey shadow-4"></div>
       <div class="flex-column swatch csu-grey shadow-5"></div>
-
     </div>
   </div>
 </body>

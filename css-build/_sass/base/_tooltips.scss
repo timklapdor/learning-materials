@@ -1,0 +1,48 @@
+/** Tool Tips **/
+
+[tooltip] {
+   position: relative;
+   border-bottom: 1px dotted;
+}
+[tooltip]:after {
+   position: absolute;
+   font-size: 80%;
+   border-radius: .4rem;
+   content: '\203A\00a0\00a0\00a0 ' attr(tooltip);
+   padding: 12.8px;
+   padding: .5rem;
+   background-color: rgba(17, 17, 17, .8);
+   box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+   color: #fff;
+   line-height: 20px;
+   line-height: 1.25rem;
+   text-align: left;
+   z-index: 1;
+   pointer-events: none;
+   display: block;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: all .3s;
+   transition: all .3s;
+   bottom: 60%;
+   left: 50%;
+   -webkit-transform: translate(-50%, 10px);
+           transform: translate(-50%, 10px);
+   white-space: pre;
+   width: auto
+}
+
+[tooltip]:after {
+   opacity: 0
+}
+[tooltip]:hover, [tooltip]:active, [tooltip]:focus {
+   overflow: visible;
+   color: #717171;
+}
+[tooltip]:hover:after {
+   display: block;
+   opacity: 1;
+   visibility: visible;
+   -webkit-transform: translate(-50%, -10px);
+           transform: translate(-50%, -10px)
+}

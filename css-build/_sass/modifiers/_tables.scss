@@ -1,0 +1,30 @@
+/** Tables **/
+
+.table {width: 99%; border-collapse: collapse; margin: 2em 0; }
+.table th {font-weight: bold;}
+
+.table td, .table th {padding: 6px; text-align: left; }
+
+.table tbody tr:nth-child(odd) {border: 1px solid $grey-item; border-width: 1px 0;}
+
+.table.striped tbody tr:nth-child(odd) {background: $grey-page; border: 1px solid $grey-item; border-width: 1px 0;}
+
+.table caption, .table .caption {text-align: center; font-style: italic; color: $grey-item; border-bottom: 1px solid $grey-item; background: $grey-page; padding: .5em 0;}
+
+.table .flex-row {width: 99%; margin: 0; border-collapse: collapse;}
+.table.striped .flex-row:nth-child(odd) {background: $grey-page; border: 1px solid $grey-item; border-width: 1px 0; }
+
+
+.table .header .flex-column {font-weight: bold;}
+.table .flex-row .flex-column {padding: 6px; text-align: left; }
+
+.table .flex-row.boxes > * {box-shadow: 1px 0 0 0 #888, 0 1px 0 0 #888, 1px 1px 0 0 #888, 1px 0 0 0 #888 inset, 0 1px 0 0 #888 inset;}
+.table.boxes td {border: 1px solid $grey-item;}
+.table.boxes th {border: 1px solid $grey-item;}
+
+.table.col-first th:nth-of-type(1) {background: $grey-page; }
+.table.col-odd td:nth-child(odd), .table.col-odd th:nth-child(odd) {background: $grey-page; }
+.table.col-even td:nth-child(even), .table.col-even th:nth-child(even) {background: $grey-page; }
+
+.table .flex-row + .flex-row {margin-top: 0em !important;}
+.table .flex-row {padding: .3em;}
