@@ -28,7 +28,7 @@
   background-color: currentColor;
   box-shadow: $shadow-1;
   margin: 0 .25em;
-  max-height: 10vh;
+  min-height: 5vh;
 }
 
 .swatch p {

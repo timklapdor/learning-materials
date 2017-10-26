@@ -13,7 +13,7 @@ ol.roman-upper {list-style-type: upper-roman;}
 ol.none {list-style-type: none;}
 
 
-/** Fancy Lists **/ 
+/** Fancy Lists **/
 
 .step-list {
   list-style-type: none !important;
@@ -105,8 +105,8 @@ ol.none {list-style-type: none;}
   border-left: 4px solid $grey-hover;
 }
 
-.timeline h2 {text-transform: uppercase; font-size: 100%; font-weight: bold; margin: -1em 0 .2em; padding: 0;}
-.timeline h3 {text-transform: uppercase; font-size: 70%; font-weight: bold; color: $grey-item; margin: -1em 0 .2em; padding: 0;}
+.timeline h2 {text-transform: uppercase; font-size: 100%; font-weight: bold; margin: -1.25em 0 .2em !important; padding: 0;}
+.timeline h3 {text-transform: uppercase; font-size: 70%; font-weight: bold; color: $grey-item; margin: -1.5em 0 .2em !important; padding: 0;}
 .timeline p {padding: 0;}
 .timeline p span {font-style: italic; color: $grey-item;}
 

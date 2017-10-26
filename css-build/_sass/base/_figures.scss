@@ -1,12 +1,12 @@
 /** Figure **/
 figure {
-  max-width: 99%;
+  max-width: 98% !important;
   display: flex;
   flex-flow: column;
   align-items: center;
-  background: #f8f8f8;
+  background: $grey-page;
   padding: .15em;
-  box-shadow:$shadow-2;
+  box-shadow: $shadow-2;
 }
 figure figcaption {align-self: center; text-align: center; font-size: 60%; color: $grey-item; font-style: italic; padding: .25em}
 

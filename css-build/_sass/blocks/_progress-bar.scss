@@ -18,8 +18,9 @@
   top: .7em;
 }
 .progress .value {
-  background-color: $grey-hover;
+  background-color: $grey-item;
   display: inline-block;
   float: right;
   height: 100%;
+  box-shadow: inset 8px 0px 10px -1px rgba(0,0,0,.3);
 }

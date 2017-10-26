@@ -2,7 +2,8 @@
 
 .lead-paragraph {font-size: 105%; font-style: italic;}
 
-.label {
+// Clash with BB
+.page .label {
   background: $grey-page;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   color: $grey-nav;
@@ -15,12 +16,17 @@
 .uppercase {text-transform: uppercase !important;}
 .capitalise {text-transform: capitalize !important;}
 .lowercase {text-transform: lowercase !important;}
-.underline {padding: .4em .1em .1em .4em !important; border-bottom: 2px solid; width: 95%;}
-.small-text {font-size: 85% !important;}
-.smaller-text {font-size: 70% !important;}
-.heavy-text {font-weight: 800 !important;}
-.light-text {font-weight: lighter !important;}
-.indent {margin: 1em 6vw !important;}
+
+p, h1, h2, h3, h4, h5, h6, cite, span, div {
+  &.underline {padding: .4em .1em .1em .4em !important; border-bottom: 2px solid; width: 95%;}
+  &.small-text {font-size: 85% !important;}
+  &.smaller-text {font-size: 70% !important;}
+  &.large-text {font-size: 130% !important;}
+  &.larger-text {font-size: 150% !important;}
+  &.heavy-text {font-weight: 800 !important;}
+  &.light-text {font-weight: lighter !important;}
+  &.indent {margin: 1em 6vw !important;}
+}
 
 /** Quotes **/
 
