@@ -7,12 +7,11 @@
 
 .table tbody tr:nth-child(odd) {border: 1px solid $grey-item; border-width: 1px 0;}
 
-.table.striped tbody tr:nth-child(odd) {background: $grey-page; border: 1px solid $grey-item; border-width: 1px 0;}
-
 .table caption, .table .caption {text-align: center; font-style: italic; color: $grey-item; border-bottom: 1px solid $grey-item; background: $grey-page; padding: .5em 0;}
 
 .table .flex-row {width: 99%; margin: 0; border-collapse: collapse;}
-.table.striped .flex-row:nth-child(odd) {background: $grey-page; border: 1px solid $grey-item; border-width: 1px 0; }
+.table.stripe-row-odd tbody tr:nth-child(odd), .table.striped-odd .flex-row:nth-child(odd) {background: $grey-page; border: 1px solid $grey-item; border-width: 1px 0; }
+.table.stripe-row-even tbody tr:nth-child(even), .table.striped-even .flex-row:nth-child(even) {background: $grey-page; border: 1px solid $grey-item; border-width: 1px 0; }
 
 
 .table .header .flex-column {font-weight: bold;}
@@ -22,9 +21,11 @@
 .table.boxes td {border: 1px solid $grey-item;}
 .table.boxes th {border: 1px solid $grey-item;}
 
-.table.col-first th:nth-of-type(1) {background: $grey-page; }
-.table.col-odd td:nth-child(odd), .table.col-odd th:nth-child(odd) {background: $grey-page; }
-.table.col-even td:nth-child(even), .table.col-even th:nth-child(even) {background: $grey-page; }
+.table.stripe-col-first th:nth-of-type(1) {background: $grey-page; }
+.table.stripe-col-odd td:nth-child(odd), .table.col-odd th:nth-child(odd) {background: $grey-page; }
+.table.stripe-col-even td:nth-child(even), .table.col-even th:nth-child(even) {background: $grey-page; }
 
 .table .flex-row + .flex-row {margin-top: 0em !important;}
 .table .flex-row {padding: .3em;}
+
+.table.table-bg, .table tr.table-bg {opacity: .2; color: $rev-blk;}

@@ -1,0 +1,23 @@
+ul.csu-footer {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none;
+  display: flex;
+  font-size: 90%;
+  width:100%;
+}
+
+ul.csu-footer > li {padding: .75em;}
+
+li.csu-info {
+  margin-right: auto !important;
+}
+.csu-footer a {
+  border-bottom: 2px solid red;
+  text-decoration: none;
+  padding: .75em;
+  margin-left: -1.75em;
+  color: $grey-nav;
+}
+
+.csu-footer a:hover {color: $primary}

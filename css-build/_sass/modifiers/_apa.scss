@@ -1,12 +1,12 @@
 /** APA Referencing **/
 
-.apa,.apa ul,.apa ol,.apa dl {padding-left: 0; margin-left: 0; font-size: 80%;}
+.apa, .apa ul, .apa ol, .apa dl {padding-left: 0 !important; margin-left: 0 !important; font-size: 80% !important;}
 
-.apa li {list-style-type: none;}
+.apa li {list-style-type: none !important;}
 
-.apa p,.apa li,.apa dd {
-  margin-bottom: 1em;
-  margin-left: 2em;
-  margin-top: 1em;
-  text-indent: -2em;
+.apa p, .apa li, .apa dd,p.apa {
+  margin-bottom: 1em !important;
+  margin-left: 2em !important;
+  margin-top: 1em !important;
+  text-indent: -2em !important;
 }

@@ -13,20 +13,20 @@
 /** Colums set all items inside to stack on top of each other as the default **/
 
 .flex-column {flex-direction: column;}
-.flex-column, .flex-column-quarter, .flex-column-half, .flex-column-2, .flex-column-3 {flex-basis: 100%; flex-direction: column;}
+.flex-column, .flex-column-quarter, .flex-column-half, .flex-column-2, .flex-column-3, ._2up, ._3up, ._4up, ._5up {flex: 1 0 100%; flex-direction: column;}
 
 /** Sets the dsplay of columns on 600px + displays **/
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   .flex-column {flex: 1;}
   .flex-column-quarter {flex: .25;}
   .flex-column-half {flex: .5;}
   .flex-column-2 {flex:2;}
   .flex-column-3 {flex: 3;}
-  ._2up {flex: 0 1 48%}
-  ._3up {flex: 0 1 28%;}
-  ._4up {flex: 0 1 23%;}
-  ._5up {flex: 0 1 18%;}
+  ._2up {flex: .5 1 48%}
+  ._3up {flex: .3 1 28%;}
+  ._4up {flex: .25 1 23%;}
+  ._5up {flex: .2 1 18%;}
 }
 
 /* Helpers for internal items and spacing */

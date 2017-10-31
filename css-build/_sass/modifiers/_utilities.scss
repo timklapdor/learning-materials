@@ -9,6 +9,19 @@
 .float-left {float: left; }
 .clear-both {clear: both;}
 
+/** Padding **/
+
+.padding-1 {padding: 1em 0;}
+.padding-2 {padding: 2em 0;}
+.padding-3 {padding: 3em 0;}
+.padding-4 {padding: 4em 0;}
+
+
+/** Radius **/
+.border-radius-1 {border-radius: 8px;}
+.border-radius-2 {border-radius: 16px;}
+.border-radius-3 {border-radius: 24px;}
+
 
 /** Useful for blank containers containers **/
 .square5 {height: 5em; width: 5em; }

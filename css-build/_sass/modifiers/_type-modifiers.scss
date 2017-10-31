@@ -17,8 +17,11 @@
 .capitalise {text-transform: capitalize !important;}
 .lowercase {text-transform: lowercase !important;}
 
-p, h1, h2, h3, h4, h5, h6, cite, span, div {
+p, h1, h2, h3, h4, h5, h6, cite, span, div, .vtbegenerated {
   &.underline {padding: .4em .1em .1em .4em !important; border-bottom: 2px solid; width: 95%;}
+  &.underline-2 {padding: .4em .1em .1em .4em !important; border-bottom: 4px solid; width: 95%;}
+  &.underline-3 {padding: .4em .1em .1em .4em !important; border-bottom: 6px solid; width: 95%;}
+  &.underline-4 {padding: .4em .1em .1em .4em !important; border-bottom: 8px solid; width: 95%;}
   &.small-text {font-size: 85% !important;}
   &.smaller-text {font-size: 70% !important;}
   &.large-text {font-size: 130% !important;}
@@ -30,6 +33,11 @@ p, h1, h2, h3, h4, h5, h6, cite, span, div {
 
 /** Quotes **/
 
-.pullquote {border: 0 !important; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
-.fancyquote {border-width: 2px 0 !important; border-style: solid;}
-.fancyquote, .fancyquote p {font-family: "Times New Roman", Georgia, Serif !important; font-size: 125%;}
+blockquote.pullquote {border: 0 !important; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+blockquote.fancyquote {border-width: 2px 0 !important; border-style: solid;}
+blockquote.fancyquote, blockquote.fancyquote p {font-family: "Times New Roman", Georgia, Serif !important; font-size: 125% !important;}
+
+/** Text Alignment **/
+.text-centre {text-align: center;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}

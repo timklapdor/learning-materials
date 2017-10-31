@@ -1,0 +1,23 @@
+.card-holder {
+  justify-content: space-between;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  box-shadow: $shadow-2;
+  transition: all .2s;
+  margin: .125em;
+}
+
+.card-item:hover {
+  box-shadow: $shadow-4;
+  flex-grow: 1.3;
+}
+
+.card-item > *, .card-item img, .card-item h1, .card-item h2, .card-item h3, .card-item h4, .card-item h5, .card-item h6 {margin: 0 !important;}
+
+.card-item img {width: 100%;}
+.card-item .csu-button {align-self: center;}

@@ -1,5 +1,6 @@
 /** Profle **/
 
+.flex-row .profile {justify-content: center;}
 .profile h6, .profile p {padding: 0;}
 .profile {margin: 0 .25vw; padding: 0 .25em;}
 .profile:not(:first-child) {border-left: 1px solid $grey-hover;}

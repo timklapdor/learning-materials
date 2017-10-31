@@ -1,28 +1,60 @@
 <html>
 <head>
-<style>  body {
-    background: #f8f8f8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: wrap row;
-  }
+<style>
 
-  .container {
-    margin: 1rem;
-    width: 95vw;
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: wrap column;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  }
+body {
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap row;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', serif !important;
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  /*margin: 2em;*/
+  width: 98vw;
+  /*max-width: 40em;*/
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-flow: wrap column;
+  font-size: calc(1.063em + 0.5vw) !important;
+  padding-bottom: 2em;
+}
+
+
+ul.csu-footer {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  font-size: 70%;
+  width:90%;
+}
+
+ul.csu-footer > li {padding: .75em;}
+
+li.csu-info {
+  margin-right: auto;
+}
+.csu-footer a {
+  border-bottom: 2px solid red;
+  text-decoration: none;
+  padding: .75em;
+  margin-left: -1.75em;
+  color: #414141;
+}
+
+.csu-footer a:hover {color: #717171}
+
 </style>
 </head>
 
 <body>
-  <div class="container">
+  <!-- <div class="container">
 
   <div style="padding: 20px;">
   <div style="float: left;">
@@ -40,18 +72,19 @@
     </ul>
   </div>
 </div>
-</div>
+</div> -->
+<section class="card">
 
-<div class="container">
-  <ul class="home">
-    <li><a href="http://student.csu.edu.au">Current Students</a></li>
-    <li><a href="http://www.csu.edu.au/staff-links">Staff</a></li>
-    <li><a href="http://library.csu.edu.au">Library</a></li>
-    <li><a href="http://www.csu.edu.au/jobs/">Jobs</a></li>
-    <li><a href="http://www.csu.edu.au/news/">News</a></li>
-    <li><a href="http://www.csu.edu.au/contacts">Contacts</a></li>
-  </ul>
-</div>
+<ul class="csu-footer" role="navigation">
+  <li class="csu-info">&#169; 2017 Charles Sturt University CRICOS 00005F</li>
+  <li><a href="http://student.csu.edu.au">Student</a></li>
+  <li><a href="http://staff.csu.edu.au">Staff</a></li>
+  <li><a href="http://library.csu.edu.au">Library</a></li>
+  <li><a href="http://www.csu.edu.au/jobs/">Jobs</a></li>
+  <li><a href="http://www.csu.edu.au/news/">News</a></li>
+  <li><a href="http://www.csu.edu.au/contacts/">Contacts</a></li>
+</ul>
 
-</div>
+
+</section>
 </html>
