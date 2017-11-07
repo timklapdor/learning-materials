@@ -6,6 +6,11 @@ This work is centred on developing a flexible and reusable Style Guide for Learn
 
 [Report put together from the Design Thinking](https://app.box.com/s/9ujleq2tqqakcjtq08gpdfc73njx0bnh) workshop. Starting point for discussions.
 
+## Preview Links
+
+New elements demonstration - [Material Demonstration](https://uimagine.edu.au/interact2-theme/material-demo)
+New style guide tool - [Style Guide]https://uimagine.edu.au/interact2-theme/guide)
+
 ## Influences on Style
 
 ### CSU Sites
@@ -53,9 +58,9 @@ Tool tips uses the CSS framework from [Wenk](https://tiaanduplessis.github.io/we
 
 ### Print CSS
 
-Add a tweaked version of the [Gutenberg Print CSS](https://github.com/BafS/Gutenberg) and removed nav and header items from display. Tweaked background printing to turn it on. 
+Add a tweaked version of the [Gutenberg Print CSS](https://github.com/BafS/Gutenberg) and removed nav and header items from display. Tweaked background printing to turn it on.
 
-## Useful Tools
+## Useful Tools Used
 
 ### Colour Tools
 
@@ -67,12 +72,3 @@ Add a tweaked version of the [Gutenberg Print CSS](https://github.com/BafS/Guten
 - [HTML Cleaner](https://html-cleaner.com/) - general purpose cleaner for HTML
 - [CSS Out](https://uimagine.edu.au/cssout) - cleans out inline styles
 - [Atom](https://atom.io) - text editor designed for working in code
-
-
-## Tips for Testing
-
-1. Open Chrome and install [Styler](https://chrome.google.com/webstore/detail/styler/bogdgcfoocbajfkjjolkmcdcnnellpkb)
-2. Go to the web page you wish to test on - Interact2 for example
-3. Click on Styler to open up the CSS & JS windows
-3. Past in CSS and click off the window to see changes
-4. Styler will store your CSS for that website so to revert to the original you need to delete the CSS
