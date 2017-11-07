@@ -97,4 +97,5 @@ rev-blk: $rev-blk,
   .csu-#{$color} {color: $value !important;}
   .csu-#{$color}-line {border-color: $value !important;}
   .csu-#{$color}-list li:before {background: $value !important;}
+  .csu-#{$color}-fade {background: rgba( $value, .1 ) !important; color: $rev-blk !important;}
 }

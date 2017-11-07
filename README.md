@@ -51,6 +51,10 @@ By using Flexbox's innate nature to resize elements based on the page the grid i
 
 Tool tips uses the CSS framework from [Wenk](https://tiaanduplessis.github.io/wenk/) but replaces the ```data-wenk``` attribute with ```tooltip```. To use simply se an attribute in the tag to ```tooltip="the text you want to display"```.
 
+### Print CSS
+
+Add a tweaked version of the [Gutenberg Print CSS](https://github.com/BafS/Gutenberg) and removed nav and header items from display. Tweaked background printing to turn it on. 
+
 ## Useful Tools
 
 ### Colour Tools

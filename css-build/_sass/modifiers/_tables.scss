@@ -18,8 +18,8 @@
 .table .flex-row .flex-column {padding: 6px; text-align: left; }
 
 .table .flex-row.boxes > * {box-shadow: 1px 0 0 0 #888, 0 1px 0 0 #888, 1px 1px 0 0 #888, 1px 0 0 0 #888 inset, 0 1px 0 0 #888 inset;}
-.table.boxes td {border: 1px solid $grey-item;}
-.table.boxes th {border: 1px solid $grey-item;}
+.table.boxes td {border: 1px solid $grey-item !important;}
+.table.boxes th {border: 1px solid $grey-item !important;}
 
 .table.stripe-col-first th:nth-of-type(1) {background: $grey-page; }
 .table.stripe-col-odd td:nth-child(odd), .table.col-odd th:nth-child(odd) {background: $grey-page; }
