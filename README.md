@@ -8,8 +8,8 @@ This work is centred on developing a flexible and reusable Style Guide for Learn
 
 ## Preview Links
 
-New elements demonstration - [Material Demonstration](https://uimagine.edu.au/interact2-theme/material-demo)
-New style guide tool - [Style Guide]https://uimagine.edu.au/interact2-theme/guide)
+- New elements demonstration - [Material Demonstration](https://uimagine.edu.au/interact2-theme/material-demo)
+- New style guide tool - [Style Guide](https://uimagine.edu.au/interact2-theme/guide)
 
 ## Influences on Style
 
