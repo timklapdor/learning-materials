@@ -52,9 +52,13 @@ rev-blk: $rev-blk,
   .csu-brand-#{$color}-light {background-color: lighten($value, 10%) !important; color: $rev !important;}
   .csu-brand-#{$color}-light-text {color: lighten($value, 10%) !important;}
   .csu-brand-#{$color}-light-line {border-color: lighten($value, 10%) !important;}
-  .csu-#{$color}-list li:before {background: $value !important;}
-
+  .csu-brand-#{$color}-list li:before {background: $value !important;}
+  .csu-brand-#{$color}-gradient-bottom {background: linear-gradient(0deg, darken($value, 20%), $value); color: $rev !important;}
+  .csu-brand-#{$color}-gradient-top {background: linear-gradient(180deg, darken($value, 20%), $value); color: $rev !important;}
+  .csu-brand-#{$color}-gradient-right {background: linear-gradient(270deg, darken($value, 20%), $value); color: $rev !important;}
+  .csu-brand-#{$color}-gradient-left {background: linear-gradient(90deg, darken($value, 20%), $value); color: $rev !important;}
 }
+
 /** UI Palette **/
 @each $color, $value in $ui-colors{
   .csu-#{$color} {background-color: $value !important; color: $rev !important; }
@@ -68,8 +72,12 @@ rev-blk: $rev-blk,
   .csu-#{$color}-light-text {color: lighten($value, 10%) !important;}
   .csu-#{$color}-light-line {border-color: lighten($value, 10%) !important;}
   .csu-#{$color}-list li:before {background: $value !important;}
-
+  .csu-#{$color}-gradient-bottom {background: linear-gradient(0deg, darken($value, 20%), $value); color: $rev !important;}
+  .csu-#{$color}-gradient-top {background: linear-gradient(180deg, darken($value, 20%), $value); color: $rev !important;}
+  .csu-#{$color}-gradient-right {background: linear-gradient(270deg, darken($value, 20%), $value); color: $rev !important;}
+  .csu-#{$color}-gradient-left {background: linear-gradient(90deg, darken($value, 20%), $value); color: $rev !important;}
 }
+
 /** Material Palette **/
 @each $color, $value in $material-colors{
   .csu-#{$color} {background-color: $value !important; color: $rev !important; }
@@ -83,6 +91,11 @@ rev-blk: $rev-blk,
   .csu-#{$color}-light-text {color: lighten($value, 10%) !important;}
   .csu-#{$color}-light-line {border-color: lighten($value, 10%) !important;}
   .csu-#{$color}-list li:before {background: $value !important;}
+  .csu-#{$color}-gradient-bottom {background: linear-gradient(0deg, darken($value, 20%), $value); color: $rev !important;}
+  .csu-#{$color}-gradient-top {background: linear-gradient(180deg, darken($value, 20%), $value); color: $rev !important;}
+  .csu-#{$color}-gradient-right {background: linear-gradient(270deg, darken($value, 20%), $value); color: $rev !important;}
+  .csu-#{$color}-gradient-left {background: linear-gradient(90deg, darken($value, 20%), $value); color: $rev !important;}
+
 }
 /** Faculty Palette **/
 @each $color, $value in $faculty-colors{
@@ -90,6 +103,10 @@ rev-blk: $rev-blk,
   .csu-#{$color}-text {color: $value !important;}
   .csu-#{$color}-line {border-color: $value !important;}
   .csu-#{$color}-fade {background: rgba( $value, .1 ) !important; color: $rev-blk !important;}
+  .csu-#{$color}-gradient-bottom {background: linear-gradient(0deg, darken($value, 20%), $value); color: $rev !important;}
+  .csu-#{$color}-gradient-top {background: linear-gradient(180deg, darken($value, 20%), $value); color: $rev !important;}
+  .csu-#{$color}-gradient-right {background: linear-gradient(270deg, darken($value, 20%), $value); color: $rev !important;}
+  .csu-#{$color}-gradient-left {background: linear-gradient(90deg, darken($value, 20%), $value); color: $rev !important;}
 }
 
 /** Utility Palette **/

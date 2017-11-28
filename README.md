@@ -30,8 +30,7 @@ Forms the basis of new CSU websites
 
 ### Responsive type
 
-With the introduction of Responsive Design Elements a lot of consideration has gone into the design of the typography. The focus of these changes has been to improve the *readability* of the text in Blackboard - and to do it across screen sizes. The article *[Your Body Text Is Too Small
-Why website body text should be bigger, and ways to optimize it.](https://medium.com/@xtianmiller/your-body-text-is-too-small-5e02d36dc902)* provides a good overview of the approach taken and the reasons why.
+With the introduction of Responsive Design Elements a lot of consideration has gone into the design of the typography. The focus of these changes has been to improve the *readability* of the text in Blackboard - and to do it across screen sizes. The article *[Your Body Text Is Too Small - Why website body text should be bigger, and ways to optimize it.](https://medium.com/@xtianmiller/your-body-text-is-too-small-5e02d36dc902)* provides a good overview of the approach taken and the reasons why.
 
 Responsive type settings used are based on this article:[Precise control over responsive typography](https://madebymike.com.au/writing/precise-control-responsive-typography/). This uses a single calculation based on the screens width to set the baseline value of 16px and a maximum of 24px which is designed to adapt to any screen size - the small the screen the closer to the user and the smaller the text, the larger the screen the further away the user is and so the larger the font.
 
@@ -42,6 +41,8 @@ font-size: calc( 16px + (24 - 16) * ( (100vw - 400px) / ( 1000 - 400) ));
 ```
 
 Once this baseline has been introduced to the content area - all font sizes are relative using percentages which allows them to adapt easily to all variations.
+
+There are going to be issues with additional scrolling - but current research suggests that this [simply isn't the problem it once was](https://uxplanet.org/best-practices-for-long-scrolling-256ffbd7aa12) or that [people don't scroll](http://uxmyths.com/post/654047943/myth-people-dont-scroll).
 
 ### Flex Grid
 

@@ -511,7 +511,7 @@ body {
 .nav-link:hover, .nav-link:focus {
   background: rgba(0, 0, 0, 0.6);
   color: rgba(255,255,255,1) !important;
-  border-bottom: 2px solid #D92231;
+  border-bottom: 2px solid #B00C1D;
 }
 
 .hotSpots {
@@ -573,17 +573,17 @@ body {
 }
 
 .appTabs td:hover {
-  border-bottom: 3px solid #D92231;
+  border-bottom: 3px solid #B00C1D;
   transition: all .2s ease;
 }
 
 .appTabs a:hover span, .appTabs a:focus span {
-  color :#D92231 !important;
+  color :#B00C1D !important;
   transition: all .2s ease;
 }
 
 #topTabActive, .appTabs .active a, .appTabs .active a:hover, .appTabs .active a:focus, .appTabs .active a:hover {
-	color: #D92231 !important;
+	color: #B00C1D !important;
 }
 
 .bouncer {
@@ -781,7 +781,7 @@ div[id*="stepcontent"] {
 
 .portlet .portletList-img>li {
   background: white;
-  border-left: 8px solid #D92231;
+  border-left: 8px solid #B00C1D;
   border-top: none;
   padding: 8px;
 }
@@ -1034,7 +1034,7 @@ div.newItemCount span.newItems {background: transparent  !important;}
 /** Button Hover **/
 
 .mainButton a, .actionBarMicro .mainButton a, .rumble .mainButton > a, .button-1, .button-1, .button-1-img, input.submit[type="submit"] {
-  background: #D92231;
+  background: #B00C1D;
   color: #fff;
 }
 
@@ -1139,7 +1139,7 @@ input[type="button"][disabled], input[type="button"][disabled]:hover {
 /** My Bb Hacks **/
 
 .mybb-div .side-nav {background: #414141;}
-.mybb-div .badge {background: #D92231;}
+.mybb-div .badge {background: #B00C1D;}
 .mybb-div .stream_page_left {background: #fff !important; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;}
 .mybb-div .stream_right {box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
 .iframe-wrap {border: 0 !important; box-shadow: none;}
@@ -1207,7 +1207,7 @@ font-size: 20px
 }
 
 .item h3 a:hover {
-  border-left: 4px solid #D92231;
+  border-left: 4px solid #B00C1D;
   color: #347EA4 !important;
 }
 
@@ -1435,7 +1435,7 @@ top: 40px;
 
 /** Font Issues **/
 
-.vtbegenerated span, .vtbegenerated div, .vtbegenerated table tbody, .vtbegenerated table tr, .vtbegenerated table td, .vtbegenerated table tr p, .vtbegenerated table tr td p, .vtbegenerated table tr td strong,  .vtbegenerated table tr td em, .vtbegenerated table tr td a, .vtbegenerated a, .vtbegenerated span, .vtbegenerated p, .vtbegenerated ul, .vtbegenerated ol, .vtbegenerated ol li,  .vtbegenerated ul li, div .vtbegenerated ul li span, .vtbegenerated ol li span, .vtbegenerated ul li span em, .vtbegenerated ol li span em, .vtbegenerated ul li span strong, .vtbegenerated ol li span strong, .vtbegenerated strong, .vtbegenerated em, .vtbegenerated i, .vtbegenerated div, .vtbegenerated div strong, .vtbegenerated div span, .vtbegenerated div strong span, .vtbegenerated blockquote, .vtbegenerated blockquote span, .vtbegenerated blockquote span span, .staffInfoList .details p, .staffInfoList .details span, .staffInfoList .details span span, .staffInfoList .details em, .staffInfoList .details b, .staffInfoList .details strong
+.vtbegenerated span, .vtbegenerated div, .vtbegenerated table tbody, .vtbegenerated table tr, .vtbegenerated table td, .vtbegenerated table tr p, .vtbegenerated table td p, .vtbegenerated table td strong,  .vtbegenerated table td em, .vtbegenerated table td a, .vtbegenerated table td h1, .vtbegenerated table td h2, .vtbegenerated table td h3, .vtbegenerated table td h4, .vtbegenerated table td h5, .vtbegenerated div div h4, .vtbegenerated div div p, .vtbegenerated a, .vtbegenerated span, .vtbegenerated p, .vtbegenerated ul, .vtbegenerated ol, .vtbegenerated ol li,  .vtbegenerated ul li, div .vtbegenerated ul li span, .vtbegenerated ol li span, .vtbegenerated ul li span em, .vtbegenerated ol li span em, .vtbegenerated ul li span strong, .vtbegenerated ol li span strong, .vtbegenerated strong, .vtbegenerated em, .vtbegenerated i, .vtbegenerated div, .vtbegenerated div strong, .vtbegenerated div span, .vtbegenerated div strong span, .vtbegenerated blockquote, .vtbegenerated blockquote span, .vtbegenerated blockquote span span, .staffInfoList .details p, .staffInfoList .details span, .staffInfoList .details span span, .staffInfoList .details em, .staffInfoList .details b, .staffInfoList .details strong
 {
   font-size: unset !important;
   line-height: normal !important;
@@ -1469,7 +1469,7 @@ div.journalContainer .vtbegenerated {
 }
 
 div.journalContainer div.entryDate {
-  border-bottom: 1px solid #D92231;
+  border-bottom: 1px solid #B00C1D;
 }
 
 .gradingPanelHeader {

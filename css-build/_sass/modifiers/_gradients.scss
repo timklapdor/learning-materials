@@ -1,0 +1,11 @@
+// Material Colour to Colour Gradients
+
+@each $color, $value in $material-colors{
+  .csu-grad-#{$color}-blue {background: linear-gradient(45deg, $value, $blue) !important; color: $rev !important; }
+  .csu-grad-#{$color}-green {background: linear-gradient(45deg, $value, $green) !important; color: $rev !important; }
+  .csu-grad-#{$color}-grey {background: linear-gradient(45deg, $value, $grey) !important; color: $rev !important; }
+  .csu-grad-#{$color}-orange {background: linear-gradient(45deg, $value, $orange) !important; color: $rev !important; }
+  .csu-grad-#{$color}-purple {background: linear-gradient(45deg, $value, $purple) !important; color: $rev !important; }
+  .csu-grad-#{$color}-red {background: linear-gradient(45deg, $value, $red) !important; color: $rev !important; }
+  .csu-grad-#{$color}-ochre {background: linear-gradient(45deg, $value, $ochre) !important; color: $rev !important; }
+}

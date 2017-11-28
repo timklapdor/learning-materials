@@ -1,6 +1,8 @@
 /** Buttons **/
 
-p.csu-button, a.csu-button {
+
+
+p.csu-button, a.csu-button, button.csu-button{
   font-size: 80% !important;
   text-transform: uppercase;
   padding: .5em 2em !important;
@@ -8,33 +10,40 @@ p.csu-button, a.csu-button {
   color: $rev;
   cursor: pointer;
   border-radius: 2px;
+  border: none;
   text-align: center;
   margin: .5em 1em !important;
   display: table;
   transition: all 0.3s ease 0s;
 }
 
+button.csu-button {
+  font-size: 75% !important;
+  margin: 1em 1em !important;
+}
+
 .csu-button:hover, .csu-button:active {box-shadow: inset 0 0 10px 5px rgba(0,0,0,.2), $shadow-5; }
-a.csu-btn-wide, p.csu-btn-wide {padding: .5em 6em !important;}
-a.csu-btn-large, p.csu-btn-large {padding: 1em 3em !important;}
-a.csu-btn-full, p.csu-btn-full {display: block !important; min-width: 80%; max-width: 85% !important; margin-left: auto !important; margin-right: auto !important;}
+a.csu-btn-wide, p.csu-btn-wide, button.csu-btn-wide {padding: .5em 6em !important;}
+a.csu-btn-large, p.csu-btn-large, button.csu-btn-large {padding: 1em 3em !important;}
+a.csu-btn-full, p.csu-btn-full, button.csu-btn-full {display: block !important; min-width: 80%; max-width: 85% !important; margin-left: auto !important; margin-right: auto !important;}
 .csu-button a, .csu-btn-wide a, .csu-btn-large a, .csu-btn-full a {color: $rev; text-decoration: none;}
 .csu-button a:hover, .csu-btn-wide a:hover, .csu-btn-large a:hover, .csu-btn-full a:hover {color: $rev;}
 
 .button-group {
   display: flex;
+  margin: .5em ;
 }
 
-.button-group p:first-child {
+.button-group p:first-child, .button-group button:first-child{
   border-radius: .5em 0 0 .5em !important;
   border: 0;
 }
 
-.button-group p:last-child {
+.button-group p:last-child, .button-group button:last-child {
   border-radius: 0 .5em .5em 0 !important;
 }
 
-.button-group p:not(:last-child) {
+.button-group p:not(:last-child), .button-group button:not(:last-child) {
     border-right: none;
   }
 
@@ -45,6 +54,5 @@ a.csu-btn-full, p.csu-btn-full {display: block !important; min-width: 80%; max-w
 }
 
 .button-group > .csu-button img {max-height: 2em; vertical-align: middle; padding: 0 .25em}
-
 
 .button-group > .csu-button {margin: 0 !important;}
