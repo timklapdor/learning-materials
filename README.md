@@ -10,6 +10,7 @@ This work is centred on developing a flexible and reusable Style Guide for Learn
 
 - New elements demonstration - [Material Demonstration](https://uimagine.edu.au/interact2-theme/material-demo)
 - New style guide tool - [Style Guide](https://uimagine.edu.au/interact2-theme/guide)
+- New theme exaplanation slides - [Google Slides](https://docs.google.com/presentation/d/1UPZpZicGgi1clq2b-EK2tsg0dJE5rysVPLB340WUR8c/edit?usp=sharing)
 
 ## Influences on Style
 
