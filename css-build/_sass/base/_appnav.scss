@@ -439,6 +439,13 @@ table.bouncer td {
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(fonts/source-sans/SourceSansPro-Light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
   font-weight: 400;
   src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(fonts/source-sans/SourceSansPro-Regular.woff) format('woff');
 }
@@ -450,21 +457,6 @@ table.bouncer td {
   src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(fonts/source-sans/SourceSansPro-Bold.woff) format('woff');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-
-/*@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v10/ODelI1aHBYDBqgeIAH2zlJbPFduIYtoLzwST68uhz_Y.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v10/toadOcfmlt9b38dHJxOBGJkF8H8ye47wsfpWywda8og.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}*/
 
 /** HTML & Body Changes **/
 
@@ -1015,6 +1007,19 @@ div.newItemCount span.newItems {background: transparent  !important;}
     text-transform: uppercase;
 }
 
+.item-description .vtbegenerated p,  .item-description .vtbegenerated li, .item-description .vtbegenerated  {
+  font-size: 70% !important;
+  line-height: 1.2;
+}
+
+#actionbar.actionBar .secondaryButton {
+background: none;
+}
+
+span.unread-count {
+  background: #347EA4 !important;
+}
+
 /** Back Link **/
 
 .backLink a {
@@ -1129,8 +1134,8 @@ input[type="button"][disabled], input[type="button"][disabled]:hover {
 /** Dashboard Container **/
 
 .containerPortal {
-  background: linear-gradient(45deg, #318700 15%, rgba(0, 0, 0, 0) 15%), linear-gradient(80deg, #005900 15%, rgba(0, 0, 0, 0) 15%), linear-gradient(to right, rgba(0, 0, 0, .2), rgba(0, 0, 0, .3)), url(images/CSU-background-image.jpg) top left no-repeat, #000;
-  background-size: contain, contain, contain, 100% auto, cover;
+  background: linear-gradient(45deg, #318700 15%, rgba(0, 0, 0, 0) 15%), linear-gradient(80deg, #005900 15%, rgba(0, 0, 0, 0) 15%), linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(images/bb-bg-02.jpg) center center no-repeat, #000;
+  background-size: contain, contain, contain, cover, cover;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   min-height: 70vh;
   padding: 4px;
@@ -1143,6 +1148,16 @@ input[type="button"][disabled], input[type="button"][disabled]:hover {
 .mybb-div .stream_page_left {background: #fff !important; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;}
 .mybb-div .stream_right {box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
 .iframe-wrap {border: 0 !important; box-shadow: none;}
+
+.flyout-menu {background-color: #121214; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);} /*This is the sidebar, all the way*/
+.flyout-menu .mybb-tools {background-color: #121214 !important;} /*This is the sidebar, only the part with icons*/
+.flyout-menu a {color: #0088CC !important;} /*links*/
+.flyout-menu a:hover {color: #0099E6 !important;}
+.flyout-menu .accordion_toggle span {background-color: #FFFFFF;color: #333333 !important;} /*titles*/
+.flyout-menu .accordion_toggle:hover span {background-color: #FFFFFF;color: #333333 !important;}
+.accordion_content {background-color: #FFFFFF!important; -moz-box-shadow: none !important; -webkit-box-shadow: none !important; box-shadow: none!important;} /*content*/
+.accordion_content li a {color: #0088CC; font-size: 100%; text-decoration: none;}
+.bottom-buttons a:hover, .bottom-buttons a:focus  {background-color: #0088CC !important;} /*buttons to help and institution*/
 
 /** iFrame Hackery **/
 
@@ -1172,7 +1187,7 @@ padding: 5vw !important;
 #listContainer_datatable .vtbegenerated {font-size: 100% !important;}
 #listContainer_datatable .vtbegenerated p {margin: 0;}
 
-.item-description .vtbegenerated p {
+.item-description .vtbegenerated p .item-description .vtbegenerated li  {
   font-size: 70% !important;
   line-height: 1.2;
 }
@@ -1324,8 +1339,18 @@ font-style: italic;}
 
 /** Content Styles **/
 
+// Font Size
+
+$type-min: 16; // baseline
+$type-max: 24; //
+$type-large: 30; //at 2400px
+
+// Responsive
+
+$type-reponsive:calc(16px + (#{$type-max} - #{$type-min}) * ((100vw - 300px) / (1400 - 300))) !important;
+
 @media screen and (min-width: 300px) {
-  #containerdiv .vtbegenerated, .staffInfoList .details  {font-size: calc( 16px + (24 - 16) * ( (100vw - 300px) / ( 1400 - 300) )) !important;}
+  #containerdiv .vtbegenerated, .staffInfoList .details, #tinymce {font-size: $type-reponsive;}
   .vtbegenerated div.content, .vtbegenerated div.breakout  {width: 100% !important;}
 }
 
@@ -1334,7 +1359,7 @@ font-style: italic;}
 }
 
 @media (min-width:1000px) {
-#containerdiv .vtbegenerated {
+#containerdiv .vtbegenerated, #tinymce {
     max-width: 37em;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -1352,7 +1377,7 @@ div.vtbegenerated {overflow: visible;}
 }
 
 @media (min-width:1600px) {
-#containerdiv .vtbegenerated {
+#containerdiv .vtbegenerated, #tinymce{
     max-width: 45em;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -1394,6 +1419,7 @@ div.vtbegenerated {overflow: visible;}
     margin-left: auto;
     margin-right: auto;
 }
+
 
 #containerdiv .vtbegenerated, .staffInfoList .details  {font-size: 30px !important; }
 
@@ -1590,13 +1616,25 @@ box-shadow: none !important
 
 /** Heading Levels **/
 
-.vtbegenerated h1{font-size: 160%; padding: 0.4em; margin: .5vw 0 !important; font-weight: normal !important;}
+.vtbegenerated h1{font-size: 160%; padding: 0.4em; margin: .5vw 0 !important;}
 .vtbegenerated h2{font-size: 140%; padding: 0.4em; margin: .5vw 0 !important;}
-.vtbegenerated h3{font-size: 130%; padding: 0.4em; margin: .5vw 0 !important; font-weight: normal !important;}
+.vtbegenerated h3{font-size: 130%; padding: 0.4em; margin: .5vw 0 !important;}
 .vtbegenerated h4{font-size: 120%; padding: 0.4em; margin: .5vw 0 !important;}
-.vtbegenerated h5{font-size: 110%; padding: 0.4em; margin: .5vw 0 !important; font-weight: normal !important;}
+.vtbegenerated h5{font-size: 110%; padding: 0.4em; margin: .5vw 0 !important;}
 .vtbegenerated h6{font-size: 100%; padding: 0.4em; margin: .5vw 0 !important;}
 .vtbegenerated p {font-size: 100%; padding: 0.4em; margin: .5vw 0 !important;}
+
+/** Sub & Sup **/
+.vtbegenerated sub, .vtbegenerated sup {
+  font-size: 75% !important;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.vtbegenerated sup {top: -0.5em;}
+
+.vtbegenerated sub {bottom: -0.25em;}
 
 /** Lists **/
 

@@ -16,6 +16,8 @@
 .uppercase {text-transform: uppercase !important;}
 .capitalise {text-transform: capitalize !important;}
 .lowercase {text-transform: lowercase !important;}
+.caption {align-self: center; text-align: center; font-size: 60%; color: $grey-item; font-style: italic; padding: .25em}
+
 
 p, h1, h2, h3, h4, h5, h6, cite, span, div, .vtbegenerated {
   &.underline {padding: .4em .1em .1em .4em !important; border-bottom: 2px solid; width: 95%;}

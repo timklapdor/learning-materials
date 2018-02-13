@@ -2,10 +2,11 @@
 ---
 
 // Base files
-@import 'base/appnav';
 @import 'base/variables';
 @import 'base/color-palettes';
 @import 'base/color-build';
+@import 'base/appnav';
+@import "base/type-styles";
 @import 'base/buttons';
 @import 'base/tooltips';
 @import 'base/figures';

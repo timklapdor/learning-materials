@@ -8,6 +8,12 @@ figure {
   padding: .15em;
   box-shadow: $shadow-2;
 }
+
+figure.no-style  {
+  background: none !important;
+  box-shadow: none !important;
+}
+
 figure figcaption {align-self: center; text-align: center; font-size: 60%; color: $grey-item; font-style: italic; padding: .25em}
 
 figure img {max-width: 100%}
@@ -15,6 +21,8 @@ figure img {max-width: 100%}
 .video {position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;}
 .video iframe, .video object, .video embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 .featured {display: block; margin-left: auto; margin-right: auto;}
+
+iframe {border: none;}
 
 /** Sizing modifiers **/
 

@@ -1,0 +1,133 @@
+/*On Demand module*/
+
+.ondemand-module {
+	margin:  14px 3px;
+	position: relative;
+}
+
+.ondemand-module div {
+	margin-bottom: 12px;
+}
+
+.ondemand-module div a {
+	background: #00ADD0;
+	color:  #fff;
+	font-size: 120%;
+	font-weight: bold;
+	padding: 10px 12px 10px 4%;
+	display: block;
+	border-radius: 5px;
+}
+
+.ondemand-module div a:hover {
+	background: #00b3be;
+	box-shadow: 0 0 12px #2cb673;
+	text-decoration: none;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.4);
+}
+
+.ondemand-module div a > span {
+	font-size: 80%;
+	font-weight: normal;
+	display: block;
+	margin-bottom: 3px;
+}
+
+.ondemand-module  span.release {
+	background: #9DDDEA;
+	border-radius: 12px 12px 12px 12px;
+	color: #000000;
+	font-size: 85%;
+	padding: 3px 10px 3px 13px;
+	position: absolute;
+	right: -4px;
+	top: -7px;
+	border: 1px solid #00add0;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+}
+
+.ondemand-module p {
+	color: #666666;
+	margin: 0 13px;
+}
+
+//CSU WYSIWYG Preview Screen
+
+html {
+	background-color: #f2f2f2 !important;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(fonts/source-sans/SourceSansPro-Light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(fonts/source-sans/SourceSansPro-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(fonts/source-sans/SourceSansPro-Bold.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+* {
+   font-family:  'Source Sans Pro', 'Helvetica', 'Arial', serif !important;
+}
+// Font Size
+
+#tinymce, body.vtbegenerated {
+background: #ffffff !important;
+font-size: calc(16px - -8 * ((100vw - 300px)/1100)) !important;
+padding: 0 2em !important;
+}
+
+@media screen and (min-width: 1400px) {
+  #tinymce, body.vtbegenerated {font-size: 24px !important; }
+}
+
+@media (min-width:1000px) {
+#tinymce, body.vtbegenerated {
+    max-width: 37em;
+    }
+  }
+
+@media (min-width:1600px) {
+#tinymce, body.vtbegenerated {
+    max-width: 45em;
+    }
+	}
+
+
+.mceToolbar {
+	table [id*='fontselect'], table [id*='fontsize'] {
+  display: none !important; }
+}
+
+/** Font Issues **/
+
+.vtbegenerated span, .vtbegenerated div, .vtbegenerated table tbody, .vtbegenerated table tr, .vtbegenerated table td, .vtbegenerated table tr p, .vtbegenerated table td p, .vtbegenerated table td strong,  .vtbegenerated table td em, .vtbegenerated table td a, .vtbegenerated table td h1, .vtbegenerated table td h2, .vtbegenerated table td h3, .vtbegenerated table td h4, .vtbegenerated table td h5, .vtbegenerated div div h4, .vtbegenerated div div p, .vtbegenerated a, .vtbegenerated span, .vtbegenerated p, .vtbegenerated ul, .vtbegenerated ol, .vtbegenerated ol li,  .vtbegenerated ul li, div .vtbegenerated ul li span, .vtbegenerated ol li span, .vtbegenerated ul li span em, .vtbegenerated ol li span em, .vtbegenerated ul li span strong, .vtbegenerated ol li span strong, .vtbegenerated strong, .vtbegenerated em, .vtbegenerated i, .vtbegenerated div, .vtbegenerated div strong, .vtbegenerated div span, .vtbegenerated div strong span, .vtbegenerated blockquote, .vtbegenerated blockquote span, .vtbegenerated blockquote span span, .staffInfoList .details p, .staffInfoList .details span, .staffInfoList .details span span, .staffInfoList .details em, .staffInfoList .details b, .staffInfoList .details strong
+{
+  font-size: unset !important;
+  line-height: normal !important;
+	font-family: unset !important;
+}
+
+#tinymce, body.vtbegenerated {
+h1{font-size: 160%; padding: 0.4em; margin: .5vw 0 !important;}
+h2{font-size: 140%; padding: 0.4em; margin: .5vw 0 !important;}
+h3{font-size: 130%; padding: 0.4em; margin: .5vw 0 !important;}
+h4{font-size: 120%; padding: 0.4em; margin: .5vw 0 !important;}
+h5{font-size: 110%; padding: 0.4em; margin: .5vw 0 !important;}
+h6{font-size: 100%; padding: 0.4em; margin: .5vw 0 !important;}
+p {font-size: 100%; padding: 0.4em; margin: .5vw 0 !important;}
+}

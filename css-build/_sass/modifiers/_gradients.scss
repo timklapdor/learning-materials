@@ -9,3 +9,13 @@
   .csu-grad-#{$color}-red {background: linear-gradient(45deg, $value, $red) !important; color: $rev !important; }
   .csu-grad-#{$color}-ochre {background: linear-gradient(45deg, $value, $ochre) !important; color: $rev !important; }
 }
+
+
+// Brand Colour Gradients
+@each $color, $value in $brand-colors{
+  .csu-brand-grad-#{$color}-black {background: linear-gradient(45deg, $value, $brand-black) !important; color: $rev !important; }
+  .csu-brand-grad-#{$color}-red {background: linear-gradient(45deg, $value, $brand-red) !important; color: $rev !important; }
+  .csu-brand-grad-#{$color}-brown {background: linear-gradient(45deg, $value, $brand-brown) !important; color: $rev !important; }
+  .csu-brand-grad-#{$color}-orange {background: linear-gradient(45deg, $value, $brand-orange) !important; color: $rev !important; }
+  .csu-brand-grad-#{$color}-light {background: linear-gradient(45deg, $value, $brand-light) !important; color: $rev !important; }
+}

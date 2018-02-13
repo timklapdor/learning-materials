@@ -6,68 +6,9 @@ $type-large: 30; //at 2400px
 
 // Responsive
 
-$type-reponsive: calc( 16px + (#{$type-max} - #{$type-min}) * ( (100vw - 300px) / ( 1400 - 300) )) !important;
+$type-reponsive:calc(16px + (#{$type-max} - #{$type-min}) * ((100vw - 300px) / (1400 - 300))) !important;
 
-.responsive-type {font-size: $type-reponsive;}
-
-// Media Queriy Example for Using Media queries
-// @media screen and (min-width: 300px) {
-//   body {
-//   font-size: #{$type-reponsive};
-//
-// }
-// }
-//
-// @media screen and (min-width: 1400px) {
-//   body  {font-size: #{$type-max} !important;}
-// }
-//
-// @media screen and (min-width: 2200px) {
-//   body  {font-size: #{$type-large} !important;}
-// }
-
-/**  Base Sizes **/
-
-h1 {font-size: 200%; padding: 0.4em; margin: .5vw 0;}
-h2 {font-size: 180%; padding: 0.4em; margin: .5vw 0;}
-h3 {font-size: 150%; padding: 0.4em; margin: .5vw 0; font-weight: normal;}
-h4 {font-size: 130%; padding: 0.4em; margin: .5vw 0;}
-h5 {font-size: 120%; padding: 0.4em; margin: .5vw 0; font-weight: normal;}
-h6 {font-size: 110%; padding: 0.4em; margin: .5vw 0;}
-p {font-size: 100%; padding: 0.4em; margin: .5vw 0;}
-
-/** Base Styles **/
-
-code {font-size: 95%; color: $secondary; background: #f8f8f8; padding: 0.4em; margin: .5vw;}
-p code {padding: .125em; margin: 0;}
-
-a {text-decoration: none; color: $secondary;}
-
-blockquote {
-  border-left: 4px solid;
-  color: $grey-item;
-  font-style: italic;
-  margin: .5em 5vw !important;
-  padding: 1em;
-}
-
-cite {font-size: 80%;}
-cite:before {content: '\2014\00a0\00a0 '; margin-left: 1em;}
-
-hr {border-top: 2px solid; width: 98%}
-
-ol {padding-left: 2em !important;}
-ul {padding-left: 2em !important;}
-
-// .label {
-//   background: $grey-page;
-//   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-//   color: $grey-nav;
-//   font-size: 60%;
-//   font-weight: normal;
-//   margin: 4em 0 .5em -.3em;
-//   text-transform: uppercase;
-// }
+.responsive-type {font-size: $type-reponsive}
 
 /**  Sans Serif **/
 
@@ -76,3 +17,13 @@ $font-sans: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif !important;
 /**  Serif **/
 
 $font-serif: 'Source Serif Pro', Times, Georgia, serif !important;
+
+/**  Base Sizes **/
+
+h1 {font-size: 200%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
+h2 {font-size: 180%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
+h3 {font-size: 150%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
+h4 {font-size: 130%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
+h5 {font-size: 120%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
+h6 {font-size: 110%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
+p {font-size: 100%; padding: 0.4em; margin: .5vw 0; font-weight: 400;}

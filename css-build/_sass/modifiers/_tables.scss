@@ -2,6 +2,12 @@
 
 .table {width: 99%; border-collapse: collapse; margin: 2em 0; }
 .table th {font-weight: bold;}
+.table td {
+  p, h1, h2, h3, h4, li, ul, ol, a, b, span, span span, blockquote {
+    margin: 0;
+    padding: 0;
+  }
+}
 
 .table td, .table th {padding: 6px; text-align: left; }
 

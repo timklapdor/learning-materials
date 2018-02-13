@@ -1,0 +1,29 @@
+// Font Size
+
+$type-min: 16; // baseline
+$type-max: 24; //
+$type-large: 30; //at 2400px
+
+/** Responsive Type **/
+
+$type-reponsive: calc( 16px + (#{$type-max} - #{$type-min}) * ( (100vw - 300px) / ( 1400 - 300) )) !important;
+
+.type-responsive {font-size: $type-reponsive;}
+
+/**  Base Sizes **/
+
+.type-sizes{
+h1 {font-size: 200%; padding: 0.4em; margin: .5vw 0;}
+h2 {font-size: 180%; padding: 0.4em; margin: .5vw 0;}
+h3 {font-size: 150%; padding: 0.4em; margin: .5vw 0;}
+h4 {font-size: 130%; padding: 0.4em; margin: .5vw 0;}
+h5 {font-size: 120%; padding: 0.4em; margin: .5vw 0;}
+h6 {font-size: 110%; padding: 0.4em; margin: .5vw 0;}
+p {font-size: 100%; padding: 0.4em; margin: .5vw 0;}
+}
+
+/**  Font Choice **/
+
+$font-sans: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif !important;
+
+.type-font {font-family: $font-sans}

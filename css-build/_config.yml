@@ -1,0 +1,11 @@
+# Site settings
+title: CSU Learning Materials Styles
+email: tklapdor@csu.edu.au
+author: Tim Klapdor
+description: "Developed and Maintained by Charles Sturt University's u!magine"
+
+#Timezone
+timezone: Australia/Sydney
+
+# Build settings
+markdown: kramdown
