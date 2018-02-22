@@ -1,0 +1,43 @@
+.vtbegenerated {
+
+  span, p, p span, table, tbody, tr, td, ul, ol, li, h3, h4, h5, h6, strong, b, em, i, blockquote, div , a {
+
+&[style*="8px;"],
+&[style*="9px;"],
+&[style*="10px;"],
+&[style*="11px;"],
+&[style*="12px;"],
+&[style*="13px;"],
+&[style*="14px;"],
+&[style*="15px;"],
+&[style*="16px;"],
+&[style*="17px;"],
+&[style*="18px;"],
+&[style*="8pt;"],
+&[style*="8.0pt;"],
+&[style*="9pt;"],
+&[style*="9.0pt;"],
+&[style*="10pt;"],
+&[style*="10.0pt;"],
+&[style*="11pt;"],
+&[style*="11.0pt;"],
+&[style*="12pt;"],
+&[style*="12.0pt;"],
+&[style*="13pt;"],
+&[style*="13.0pt;"],
+&[style*="14pt;"],
+&[style*="14.0pt;"],
+&[style*="medium"],
+&[style*="xx-small;"],
+&[style*="x-small;"],
+&[style*="small;"],
+&[style*="large;"],
+&[style*="x-large;"],
+&[style*="xx-large;"],
+
+
+ {
+  font-size: unset !important;
+}
+}
+}

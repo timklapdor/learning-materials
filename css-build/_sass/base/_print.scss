@@ -1,3 +1,12 @@
+@page {
+  size: A4;
+  margin: 1cm;
+
+  @bottom-right {
+    content: "Page " counter(page) " of " counter(pages);
+  }
+}
+
 @media print {
 
 /*!
@@ -30,7 +39,9 @@ html {
      * Remove the margin in all browsers (opinionated).
      */
 body {
-  margin: 0; }
+  margin: 0;
+  padding: 0;
+}
 
 /**
      * Add the correct display in IE 9-.
@@ -433,7 +444,7 @@ template {
   text-shadow: none !important; }
 
 html {
-  font-size: 16px;
+  font-size: 12pt;
   margin: 0;
   padding: 0; }
 
@@ -443,7 +454,7 @@ body {
   background: #fff !important;
   color: #000 !important;
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 12pt;
   line-height: 1.5;
   margin: 0 auto;
   text-rendering: optimizeLegibility; }
@@ -497,7 +508,9 @@ a, a:visited {
   word-wrap: break-word; }
 
 table {
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  width: 100%;
+}
 
 thead {
   display: table-header-group; }
@@ -581,7 +594,6 @@ acronym[title] {
   border: 0;
   text-decoration: none; }
 
-table,
 blockquote,
 pre,
 code,
@@ -599,8 +611,8 @@ h3,
 h4,
 p,
 a {
-  orphans: 3;
-  widows: 3; }
+  orphans: 1;
+  widows: 2; }
 
 h1,
 h2,
@@ -624,12 +636,6 @@ img {
 pre {
   white-space: pre-wrap !important;
   word-wrap: break-word; }
-
-body {
-  padding-bottom: 2.54cm;
-  padding-left: 1.8cm;
-  padding-right: 1.8cm;
-  padding-top: 2.54cm; }
 
 a[href^='http://']:after, a[href^='https://']:after, a[href^='ftp://']:after {
   content: " (" attr(href) ")";
@@ -661,12 +667,17 @@ acronym[title].no-reformat:after {
 .no-reformat a:after {
   content: ''; }
 
-#global-nav-bar-wrap, #globalNavPageNavArea, #global-nav, #breadcrumbs, #pageBanner, #pageTitleDiv, .swatch, .swatch-half, #copyright
-{display: none;}
+
+#global-nav-bar-wrap, #globalNavPageNavArea, #global-nav, #breadcrumbs, #pageBanner, #pageTitleDiv, .swatch, .swatch-half, #copyright, #tocCart, .global-nav-bar-wrap,
+.actionBar, .alignPanel, .moduleSample, #quick_links_wrap {
+  display: none;
+}
 
 html, #contentPanel {background: white; box-shadow: 0 !important;}
 
-body, .vtbegenerated {font-size: 22px !important;}
+body, .vtbegenerated {
+  font-size: 11pt !important;
+}
 #content, container, .vtbegenerated {width: 99%; box-shadow: none !important; }
 #contentPanel {margin: 0;}
   .flex-column {flex: 1;}
@@ -678,11 +689,35 @@ body, .vtbegenerated {font-size: 22px !important;}
   ._3up {flex: .3 1 28%;}
   ._4up {flex: .25 1 23%;}
   ._5up {flex: .2 1 18%;}
+
+.contentPane div.container, #containerdiv .vtbegenerated, #tinymce {
+  width: 100%;
+  max-width: 100%;
+  }
+
 body {
   -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;}
+  print-color-adjust: exact;
+}
+
 ul, .chat p {color: #000 !important;}
-.checklist li:before, .number-list li:before, .chat p {
+  .checklist li:before, .number-list li:before, .chat p {
   background-color: transparent !important;
 }
+
+.video:before {
+ content: 'Media cannot be printed.';
+ text-align: center;
+}
+
+ .video {
+   width: 100% !important;
+   height: 3em !important;
+   padding: 3em;
+}
+
+ iframe {
+   opacity: 0;
+ }
+
 }

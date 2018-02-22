@@ -629,7 +629,6 @@ body {
 
 .courseMenu li:hover, .submenu li:hover,  #courseMenuPalette div.navPaletteContent ul li a span:hover{
   color: #1a1a1a !important;
-  background-position: -28px -142px !important;
   background-color: #E0E0E0 !important;
 }
 
@@ -662,6 +661,11 @@ body {
   margin: 0 !important;
   padding: 0 !important;
 }
+
+.listCm .courseMenu a.cmimg:hover, .portlet a.cmimg:hover, .listCm .courseMenu a.cmimg:focus, .portlet a.cmimg:focus, .buttonCm .courseMenu a.cmimg:hover, .buttonCm .courseMenu a.cmimg:focus, .cmimg-small:focus, .cmimg-small:hover {
+  transition: none;
+}
+
 /** Menu Section Headers **/
 
 #controlPanelPalette_link, #navPaletteTitle, #courseMenuPalette h3 a {
@@ -958,11 +962,20 @@ div.newItemCount span.newItems {background: transparent  !important;}
     color: #414141 !important;
 }
 
+ul.selectList li.sub ul li.current a, ul.selectList li.sub ul li.current a:hover, .nav .sub .current a, .nav .sub .current a:hover, .nav .sub .current.favorite a, .nav .sub .current.favorite a:hover {
+background-repeat: no-repeat !important;
+background-position: 2px  center !important;
+}
+
 /** My Grades **/
 
 .gradeTableNew .cell, .gradeTableNew .grades_header .cell.grade {
   font-size: 120% !important;
   line-height: 1.5;
+}
+
+.gradeTableNew .grades_header {
+top: unset;
 }
 
 /** Discussion Forum **/
@@ -1020,6 +1033,12 @@ span.unread-count {
   background: #347EA4 !important;
 }
 
+.inventory > tbody tr th + td {
+    min-width: 20%;
+    max-width: 30em;
+    white-space: normal !important;
+}
+
 /** Back Link **/
 
 .backLink a {
@@ -1037,6 +1056,8 @@ span.unread-count {
 }
 
 /** Button Hover **/
+
+
 
 .mainButton a, .actionBarMicro .mainButton a, .rumble .mainButton > a, .button-1, .button-1, .button-1-img, input.submit[type="submit"] {
   background: #B00C1D;
@@ -1056,6 +1077,10 @@ span.unread-count {
   background: #ad1b27 !important;
   color: #ffffff !important;
   text-transform: uppercase;
+}
+
+#bcMenu ul li a:focus {
+  color: $primary !important;
 }
 
 input[type="button"], input[type="submit"], button {
@@ -1086,6 +1111,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23) !important;
   color: #414141 !important;
   background: #e0e0e0 !important;
   box-shadow: none;
+  margin: .5em 0;
 }
 
 
@@ -1114,12 +1140,10 @@ input[type="button"][disabled], input[type="button"][disabled]:hover {
 
 .contentList, .buildList, .announcementList {
 	background: #ffffff;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .contentList>li, .buildList>li, .contentListPlain>li, .announcementList>li, .contentPageItem {
   background: #ffffff;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .read .item, .announcementList-read .item {font-size: 130% !important;}
@@ -1130,6 +1154,43 @@ input[type="button"][disabled], input[type="button"][disabled]:hover {
   background: #FFDC0B;
 }
 
+/** Announcement Display for Mobile **/
+
+#announcementList .buildList li .contextMenuContainer a, .item .contextMenuContainer a, .listCm .courseMenu a.cmimg {
+  margin: 0 .5em;
+  vertical-align: middle;
+  }
+
+@media screen and (max-width: 800px) {
+
+.announcementList h3.item {
+  padding: 0 !important;
+  margin: 3em 0 2em 0 !important;
+}
+
+#announcementList .item {
+  padding: 0;
+}
+
+div.announcementInfo {
+  width: 90%;
+  border: none;
+  position: relative;
+}
+
+.announcementList .details, #announcementList .details {
+  margin: 0;
+  }
+
+#announcementList .item .contextMenuContainer {
+  float: right;
+  padding: 0 1em;
+}
+
+.item h3 {
+  padding: 1em 0;
+}
+}
 
 /** Dashboard Container **/
 
@@ -1173,7 +1234,7 @@ div.dropzone {
 border: 2px dashed;
 background: #f8f8f8;
 border-color: #e6e6e6;
-padding: 5vw !important;
+padding: 3em !important;
 }
 
 /** Logo Z Position **/
@@ -1342,88 +1403,40 @@ font-style: italic;}
 // Font Size
 
 $type-min: 16; // baseline
-$type-max: 24; //
-$type-large: 30; //at 2400px
+$type-max: 22; //
+$small-screen: 600;
+$large-screen: 2000;
 
 // Responsive
 
-$type-reponsive:calc(16px + (#{$type-max} - #{$type-min}) * ((100vw - 300px) / (1400 - 300))) !important;
+$type-reponsive: calc(16px + (#{$type-max} - #{$type-min}) * ((100vw - #{$small-screen}px) / (#{$large-screen} - #{$small-screen}) )) !important;
 
 @media screen and (min-width: 300px) {
-  #containerdiv .vtbegenerated, .staffInfoList .details, #tinymce {font-size: $type-reponsive;}
-  .vtbegenerated div.content, .vtbegenerated div.breakout  {width: 100% !important;}
-}
-
-@media screen and (min-width: 1400px) {
-  #containerdiv .vtbegenerated, .staffInfoList .details  {font-size: 24px !important; }
+  #containerdiv .vtbegenerated, .staffInfoList .details, #tinymce {
+    font-size: $type-reponsive;
+  }
 }
 
 @media (min-width:1000px) {
-#containerdiv .vtbegenerated, #tinymce {
-    max-width: 37em;
+  #containerdiv .vtbegenerated, #tinymce {
+    width: 90%;
+    max-width: 55em;
     margin-left: auto !important;
     margin-right: auto !important;
     }
+
+  div.vtbegenerated {
+    overflow: visible;
   }
-
-@media (min-width:1400px) {
-.vtbegenerated div.content, .vtbegenerated div.breakout {
-          width: 110% !important;
-          max-width: 75em !important;
-          margin-left: -5% !important;
-          margin-right: -5% !important;
-    }
-div.vtbegenerated {overflow: visible;}
-}
-
-@media (min-width:1600px) {
-#containerdiv .vtbegenerated, #tinymce{
-    max-width: 45em;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    }
-
-div.vtbegenerated {overflow: visible;}
-
-.contentPane div.container {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.vtbegenerated div.content, .vtbegenerated div.breakout {
-      width: 105% !important;
-      max-width: 75em !important;
-      margin-left: -2.5% !important;
-      margin-right: -2.5% !important;
-}
 }
 
 @media (min-width:2000px) {
-.vtbegenerated div.content, .vtbegenerated div.breakout {
-      width: 130% !important;
-      margin-left: -15% !important;
-      margin-right: -15% !important;
+  #containerdiv .vtbegenerated, #tinymce {
+    max-width: 70em;
 }
 }
 
-@media (min-width:2400px) {
-  .contentPane div.container {
-    width: 80%;
-    margin-left: 2em;
-    margin-right: auto;
-}
-
-.contentPaneWide .container {
-    width: 97% !important;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-#containerdiv .vtbegenerated, .staffInfoList .details  {font-size: 30px !important; }
-
-}
+/** End of Resopnsive Settings **/
 
 #containerdiv .vtbegenerated > * {
   max-width: 100%;
@@ -1435,11 +1448,6 @@ div.vtbegenerated {overflow: visible;}
   min-width: 50% !important;
   border-collapse: collapse;
 }
-
-#containerdiv .vtbegenerated td {
-  border: 0;
-}
-
 
 .brandingImgWrap a:after {
     content: 'Interact 2';
@@ -1461,11 +1469,11 @@ top: 40px;
 
 /** Font Issues **/
 
-.vtbegenerated span, .vtbegenerated div, .vtbegenerated table tbody, .vtbegenerated table tr, .vtbegenerated table td, .vtbegenerated table tr p, .vtbegenerated table td p, .vtbegenerated table td strong,  .vtbegenerated table td em, .vtbegenerated table td a, .vtbegenerated table td h1, .vtbegenerated table td h2, .vtbegenerated table td h3, .vtbegenerated table td h4, .vtbegenerated table td h5, .vtbegenerated div div h4, .vtbegenerated div div p, .vtbegenerated a, .vtbegenerated span, .vtbegenerated p, .vtbegenerated ul, .vtbegenerated ol, .vtbegenerated ol li,  .vtbegenerated ul li, div .vtbegenerated ul li span, .vtbegenerated ol li span, .vtbegenerated ul li span em, .vtbegenerated ol li span em, .vtbegenerated ul li span strong, .vtbegenerated ol li span strong, .vtbegenerated strong, .vtbegenerated em, .vtbegenerated i, .vtbegenerated div, .vtbegenerated div strong, .vtbegenerated div span, .vtbegenerated div strong span, .vtbegenerated blockquote, .vtbegenerated blockquote span, .vtbegenerated blockquote span span, .staffInfoList .details p, .staffInfoList .details span, .staffInfoList .details span span, .staffInfoList .details em, .staffInfoList .details b, .staffInfoList .details strong
-{
-  font-size: unset !important;
-  line-height: normal !important;
-}
+// .vtbegenerated span, .vtbegenerated div, .vtbegenerated table tbody, .vtbegenerated table tr, .vtbegenerated table td, .vtbegenerated table tr p, .vtbegenerated table td p, .vtbegenerated table td strong,  .vtbegenerated table td em, .vtbegenerated table td a, .vtbegenerated table td h1, .vtbegenerated table td h2, .vtbegenerated table td h3, .vtbegenerated table td h4, .vtbegenerated table td h5, .vtbegenerated div div h4, .vtbegenerated div div p, .vtbegenerated a, .vtbegenerated span, .vtbegenerated p, .vtbegenerated ul, .vtbegenerated ol, .vtbegenerated ol li,  .vtbegenerated ul li, div .vtbegenerated ul li span, .vtbegenerated ol li span, .vtbegenerated ul li span em, .vtbegenerated ol li span em, .vtbegenerated ul li span strong, .vtbegenerated ol li span strong, .vtbegenerated strong, .vtbegenerated em, .vtbegenerated i, .vtbegenerated div, .vtbegenerated div strong, .vtbegenerated div span, .vtbegenerated div strong span, .vtbegenerated blockquote, .vtbegenerated blockquote span, .vtbegenerated blockquote span span, .staffInfoList .details p, .staffInfoList .details span, .staffInfoList .details span span, .staffInfoList .details em, .staffInfoList .details b, .staffInfoList .details strong
+// {
+//   font-size: unset !important;
+//   line-height: normal !important;
+// }
 
 /** Wiki/Blog/Journal Styles **/
 
@@ -1591,11 +1599,17 @@ box-shadow: none !important
   padding-bottom: 16px;
 }
 
-#dataCollectionContainer input[type="checkbox"]{margin-top: .85em !important;}
-#dataCollectionContainer input[type="radio"] {margin-top: 0.9em;}
-#dataCollectionContainer p input[type="radio"] {margin-top: 0.2em;}
-#dataCollectionContainer p label {margin-top: 0.75em;}
-#dataCollectionContainer fieldset input[type="radio"] {margin-top: 0;}
+// #dataCollectionContainer input[type="radio"] {margin-top: 0.9em;}
+// #dataCollectionContainer p input[type="radio"] {margin-top: 0.2em;}
+// #dataCollectionContainer p label {margin-top: 0.75em;}
+// #dataCollectionContainer fieldset input[type="radio"] {margin-top: 0;}
+
+
+/** Feedback receipt date and time **/
+
+ul#content_listContainer.contentListPlain {
+  margin: 0 0 2em;
+}
 
 /** Contacts **/
 
@@ -1616,13 +1630,16 @@ box-shadow: none !important
 
 /** Heading Levels **/
 
-.vtbegenerated h1{font-size: 160%; padding: 0.4em; margin: .5vw 0 !important;}
-.vtbegenerated h2{font-size: 140%; padding: 0.4em; margin: .5vw 0 !important;}
-.vtbegenerated h3{font-size: 130%; padding: 0.4em; margin: .5vw 0 !important;}
-.vtbegenerated h4{font-size: 120%; padding: 0.4em; margin: .5vw 0 !important;}
-.vtbegenerated h5{font-size: 110%; padding: 0.4em; margin: .5vw 0 !important;}
-.vtbegenerated h6{font-size: 100%; padding: 0.4em; margin: .5vw 0 !important;}
-.vtbegenerated p {font-size: 100%; padding: 0.4em; margin: .5vw 0 !important;}
+.vtbegenerated {
+h1 {font-size: 200%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
+h2 {font-size: 180%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
+h3 {font-size: 160%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
+h4 {font-size: 140%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
+h5 {font-size: 120%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
+h6 {font-size: 110%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
+p {font-size: 100%; padding: 0.4em; margin: .5vw 0; font-weight: 400; line-height: 1.4;}
+}
+
 
 /** Sub & Sup **/
 .vtbegenerated sub, .vtbegenerated sup {
@@ -1696,20 +1713,6 @@ code {font-size: 95%; color: #347EA4; background: #f2f2f2; padding: .1em; font-f
   font-family: "Times New Roman", Georgia, Serif !important;
   font-size: 125%; }
 
-/** Label **/
-
-.vtbegenerated .label {
-  font-size: 60% !important;
-  text-transform: uppercase;
-  margin: 2em 0 .3em .3em !important;
-  font-weight: normal;
-  color: #989898;
-  background: #f2f2f2;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  display: inline-block;
-  padding: .5em;
-}
-
 
 /** Quotes **/
 
@@ -1728,7 +1731,21 @@ code {font-size: 95%; color: #347EA4; background: #f2f2f2; padding: .1em; font-f
 
 #containerdiv .vtbegenerated br + table, #containerdiv .vtbegenerated table + table {margin-top: -1em !important;}
 
-/** **/
+/** Images in Tables  **/
+
+@media (min-width: 300px) {
+.vtbegenerated td img {
+  min-width: 5vw;
+  max-width: 10vw;
+  }
+}
+
+@media (min-width: 1000px) {
+.vtbegenerated td img {
+  max-width: unset;
+  padding: 1vw;
+  }
+}
 
 /** **/
 

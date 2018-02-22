@@ -1,0 +1,88 @@
+@media screen and (min-width: 300px) {
+  #containerdiv .vtbegenerated, .staffInfoList .details, #tinymce {
+    font-size: $type-reponsive;
+  }
+
+  .vtbegenerated div.content, .vtbegenerated div.breakout  {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #containerdiv .vtbegenerated, .staffInfoList .details {
+    font-size: 24px !important;
+  }
+}
+
+@media (min-width:1000px) {
+  #containerdiv .vtbegenerated, #tinymce {
+    max-width: 40em;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    }
+  }
+
+@media (min-width:1400px) {
+  .vtbegenerated div.content, .vtbegenerated div.breakout {
+    width: 110% !important;
+    max-width: 75em !important;
+    margin-left: -5% !important;
+    margin-right: -5% !important;
+    }
+
+  div.vtbegenerated {
+    overflow: visible;
+  }
+
+  .contentPane div.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+@media (min-width:1650px) {
+  #containerdiv .vtbegenerated, #tinymce {
+    max-width: 45em;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    }
+
+  div.vtbegenerated {
+    overflow: visible;
+  }
+
+  .contentPane div.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  .vtbegenerated div.content, .vtbegenerated div.breakout {
+    width: 105% !important;
+    max-width: 75em !important;
+    margin-left: -2.5% !important;
+    margin-right: -2.5% !important;
+  }
+}
+
+@media (min-width:2000px) {
+  .vtbegenerated div.content, .vtbegenerated div.breakout {
+    width: 130% !important;
+    margin-left: -15% !important;
+    margin-right: -15% !important;
+  }
+}
+
+@media (min-width:2400px) {
+  .contentPane div.container {
+    width: 80%;
+    margin-left: 2em;
+    margin-right: auto;
+}
+
+  .contentPaneWide .container {
+    width: 97% !important;
+    margin-left: auto;
+    margin-right: auto;
+}

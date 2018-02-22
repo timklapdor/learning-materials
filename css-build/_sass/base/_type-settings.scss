@@ -3,10 +3,12 @@
 $type-min: 16; // baseline
 $type-max: 24; //
 $type-large: 30; //at 2400px
+$small-screen: 300;
+$large-screen: 1600;
 
 // Responsive
 
-$type-reponsive:calc(16px + (#{$type-max} - #{$type-min}) * ((100vw - 300px) / (1400 - 300))) !important;
+$type-reponsive: calc(16px + (#{$type-max} - #{$type-min}) * ((100vw - 300px) / 1300 )) !important;
 
 .responsive-type {font-size: $type-reponsive}
 
@@ -22,8 +24,8 @@ $font-serif: 'Source Serif Pro', Times, Georgia, serif !important;
 
 h1 {font-size: 200%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
 h2 {font-size: 180%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
-h3 {font-size: 150%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
-h4 {font-size: 130%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
+h3 {font-size: 160%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
+h4 {font-size: 140%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
 h5 {font-size: 120%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
 h6 {font-size: 110%; padding: 0.4em; margin: .5vw 0; font-weight: 700;}
-p {font-size: 100%; padding: 0.4em; margin: .5vw 0; font-weight: 400;}
+p {font-size: 100%; padding: 0.4em; margin: .5vw 0; font-weight: 400; line-height: 1.4;}
