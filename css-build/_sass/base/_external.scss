@@ -115,12 +115,12 @@ padding: 0 2em !important;
 
 /** Font Issues **/
 
-// .vtbegenerated span, .vtbegenerated div, .vtbegenerated table tbody, .vtbegenerated table tr, .vtbegenerated table td, .vtbegenerated table tr p, .vtbegenerated table td p, .vtbegenerated table td strong,  .vtbegenerated table td em, .vtbegenerated table td a, .vtbegenerated table td h1, .vtbegenerated table td h2, .vtbegenerated table td h3, .vtbegenerated table td h4, .vtbegenerated table td h5, .vtbegenerated div div h4, .vtbegenerated div div p, .vtbegenerated a, .vtbegenerated span, .vtbegenerated p, .vtbegenerated ul, .vtbegenerated ol, .vtbegenerated ol li,  .vtbegenerated ul li, div .vtbegenerated ul li span, .vtbegenerated ol li span, .vtbegenerated ul li span em, .vtbegenerated ol li span em, .vtbegenerated ul li span strong, .vtbegenerated ol li span strong, .vtbegenerated strong, .vtbegenerated em, .vtbegenerated i, .vtbegenerated div, .vtbegenerated div strong, .vtbegenerated div span, .vtbegenerated div strong span, .vtbegenerated blockquote, .vtbegenerated blockquote span, .vtbegenerated blockquote span span, .staffInfoList .details p, .staffInfoList .details span, .staffInfoList .details span span, .staffInfoList .details em, .staffInfoList .details b, .staffInfoList .details strong
-// {
-//   font-size: unset !important;
-//   line-height: normal !important;
-// 	font-family: unset !important;
-// }
+.vtbegenerated span, .vtbegenerated div, .vtbegenerated table tbody, .vtbegenerated table tr, .vtbegenerated table td, .vtbegenerated table tr p, .vtbegenerated table td p, .vtbegenerated table td strong,  .vtbegenerated table td em, .vtbegenerated table td a, .vtbegenerated table td h1, .vtbegenerated table td h2, .vtbegenerated table td h3, .vtbegenerated table td h4, .vtbegenerated table td h5, .vtbegenerated div div h4, .vtbegenerated div div p, .vtbegenerated a, .vtbegenerated span, .vtbegenerated p, .vtbegenerated ul, .vtbegenerated ol, .vtbegenerated ol li,  .vtbegenerated ul li, div .vtbegenerated ul li span, .vtbegenerated ol li span, .vtbegenerated ul li span em, .vtbegenerated ol li span em, .vtbegenerated ul li span strong, .vtbegenerated ol li span strong, .vtbegenerated strong, .vtbegenerated em, .vtbegenerated i, .vtbegenerated div, .vtbegenerated div strong, .vtbegenerated div span, .vtbegenerated div strong span, .vtbegenerated blockquote, .vtbegenerated blockquote span, .vtbegenerated blockquote span span, .staffInfoList .details p, .staffInfoList .details span, .staffInfoList .details span span, .staffInfoList .details em, .staffInfoList .details b, .staffInfoList .details strong
+{
+  font-size: unset !important;
+  line-height: normal !important;
+	font-family: unset !important;
+}
 
 #tinymce, body.vtbegenerated {
 h1{font-size: 200%; padding: 0.4em; margin: .5vw 0;}

@@ -975,7 +975,7 @@ background-position: 2px  center !important;
 }
 
 .gradeTableNew .grades_header {
-top: unset;
+  top: unset !important;
 }
 
 /** Discussion Forum **/
@@ -1021,7 +1021,7 @@ top: unset;
 }
 
 .item-description .vtbegenerated p,  .item-description .vtbegenerated li, .item-description .vtbegenerated  {
-  font-size: 70% !important;
+  font-size: 90% !important;
   line-height: 1.2;
 }
 
@@ -1074,13 +1074,14 @@ span.unread-count {
   background: #ffffff !important;
 }
 .mainButton a:hover, .mainButton a:focus, .actionBarMicro .mainButton a:hover, .actionBarMicro .mainButton a:focus, .rumble_top .mainButton > a:focus, .rumble .mainButton > a:hover, .rumble_top .mainButton > a:focus, .rumble .mainButton > a:hover, .rumble_top .mainButton > a:focus, .button-1:hover, .button-1-img:hover, .button-1:focus, .button-1-img:focus, input.submit[type="submit"]:hover, input.submit[type="submit"]:focus {
-  background: #ad1b27 !important;
+  background: $primary !important;
   color: #ffffff !important;
   text-transform: uppercase;
 }
 
-#bcMenu ul li a:focus {
-  color: $primary !important;
+#crMenu ul li a:focus, #evaMenu ul li a:focus, #aitMenu ul li a:focus, #bcMenu ul li a:focus, li.actionMenuItem a:focus {
+  color: #B00C1D !important;
+  background: transparent !important;
 }
 
 input[type="button"], input[type="submit"], button {
@@ -1187,7 +1188,7 @@ div.announcementInfo {
   padding: 0 1em;
 }
 
-.item h3 {
+#announcementList .item h3 {
   padding: 1em 0;
 }
 }
@@ -1450,14 +1451,15 @@ $type-reponsive: calc(16px + (#{$type-max} - #{$type-min}) * ((100vw - #{$small-
 }
 
 .brandingImgWrap a:after {
-    content: 'Interact 2';
-    color: #414141;
-    font-size: 150%;
-    padding-left: 0.1em;
-    top: 59px;
-    left: 180px;
-    position: relative;
-font-weight: bold;
+  color: #414141;
+  content: 'Interact 2';
+  font-size: 150%;
+  padding-left: 0.1em;
+  top: 59px;
+  left: 180px;
+  position: relative;
+  font-weight: bold;
+  cursor: default;
 }
 
 
@@ -1467,12 +1469,11 @@ top: 40px;
 }
 }
 
-/** Font Issues **/
-
+// /** Font Issues **/
+//
 // .vtbegenerated span, .vtbegenerated div, .vtbegenerated table tbody, .vtbegenerated table tr, .vtbegenerated table td, .vtbegenerated table tr p, .vtbegenerated table td p, .vtbegenerated table td strong,  .vtbegenerated table td em, .vtbegenerated table td a, .vtbegenerated table td h1, .vtbegenerated table td h2, .vtbegenerated table td h3, .vtbegenerated table td h4, .vtbegenerated table td h5, .vtbegenerated div div h4, .vtbegenerated div div p, .vtbegenerated a, .vtbegenerated span, .vtbegenerated p, .vtbegenerated ul, .vtbegenerated ol, .vtbegenerated ol li,  .vtbegenerated ul li, div .vtbegenerated ul li span, .vtbegenerated ol li span, .vtbegenerated ul li span em, .vtbegenerated ol li span em, .vtbegenerated ul li span strong, .vtbegenerated ol li span strong, .vtbegenerated strong, .vtbegenerated em, .vtbegenerated i, .vtbegenerated div, .vtbegenerated div strong, .vtbegenerated div span, .vtbegenerated div strong span, .vtbegenerated blockquote, .vtbegenerated blockquote span, .vtbegenerated blockquote span span, .staffInfoList .details p, .staffInfoList .details span, .staffInfoList .details span span, .staffInfoList .details em, .staffInfoList .details b, .staffInfoList .details strong
 // {
-//   font-size: unset !important;
-//   line-height: normal !important;
+//   font-size: unset;
 // }
 
 /** Wiki/Blog/Journal Styles **/
@@ -1597,6 +1598,16 @@ box-shadow: none !important
 
 #dataCollectionContainer .stepcontent li {
   padding-bottom: 16px;
+}
+
+#addBeforeAfter.quickAddPal {
+  background: #ffffff;
+}
+
+/** Maths Editor Hidden **/
+
+div.wrs_toolbar {
+  display: block !important;
 }
 
 // #dataCollectionContainer input[type="radio"] {margin-top: 0.9em;}
@@ -1747,10 +1758,17 @@ code {font-size: 95%; color: #347EA4; background: #f2f2f2; padding: .1em; font-f
   }
 }
 
-/** **/
+/** Add content popup **/
 
-/** **/
 
+.quickAddPal ol {
+  padding: 1em;
+}
+/** Cut off buttons **/
+
+.fileInputWrapper {
+  overflow: visible;
+}
 /** **/
 
 /** **/

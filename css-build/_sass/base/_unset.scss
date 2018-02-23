@@ -1,43 +1,6 @@
-.vtbegenerated {
+/** Font Issues **/
 
-  span, p, p span, table, tbody, tr, td, ul, ol, li, h3, h4, h5, h6, strong, b, em, i, blockquote, div , a {
-
-&[style*="8px;"],
-&[style*="9px;"],
-&[style*="10px;"],
-&[style*="11px;"],
-&[style*="12px;"],
-&[style*="13px;"],
-&[style*="14px;"],
-&[style*="15px;"],
-&[style*="16px;"],
-&[style*="17px;"],
-&[style*="18px;"],
-&[style*="8pt;"],
-&[style*="8.0pt;"],
-&[style*="9pt;"],
-&[style*="9.0pt;"],
-&[style*="10pt;"],
-&[style*="10.0pt;"],
-&[style*="11pt;"],
-&[style*="11.0pt;"],
-&[style*="12pt;"],
-&[style*="12.0pt;"],
-&[style*="13pt;"],
-&[style*="13.0pt;"],
-&[style*="14pt;"],
-&[style*="14.0pt;"],
-&[style*="medium"],
-&[style*="xx-small;"],
-&[style*="x-small;"],
-&[style*="small;"],
-&[style*="large;"],
-&[style*="x-large;"],
-&[style*="xx-large;"],
-
-
- {
+.vtbegenerated span, .vtbegenerated div, .vtbegenerated table tbody, .vtbegenerated table tr, .vtbegenerated table td, .vtbegenerated table tr p, .vtbegenerated table td p, .vtbegenerated table td strong,  .vtbegenerated table td em, .vtbegenerated table td a, .vtbegenerated table td h1, .vtbegenerated table td h2, .vtbegenerated table td h3, .vtbegenerated table td h4, .vtbegenerated table td h5, .vtbegenerated div div h4, .vtbegenerated div div p, .vtbegenerated a, .vtbegenerated span, .vtbegenerated p, .vtbegenerated ul, .vtbegenerated ol, .vtbegenerated ol li,  .vtbegenerated ul li, div .vtbegenerated ul li span, .vtbegenerated ol li span, .vtbegenerated ul li span em, .vtbegenerated ol li span em, .vtbegenerated ul li span strong, .vtbegenerated ol li span strong, .vtbegenerated strong, .vtbegenerated em, .vtbegenerated i, .vtbegenerated div, .vtbegenerated div strong, .vtbegenerated div span, .vtbegenerated div strong span, .vtbegenerated blockquote, .vtbegenerated blockquote span, .vtbegenerated blockquote span span, .staffInfoList .details p, .staffInfoList .details span, .staffInfoList .details span span, .staffInfoList .details em, .staffInfoList .details b, .staffInfoList .details strong
+{
   font-size: unset !important;
-}
-}
 }

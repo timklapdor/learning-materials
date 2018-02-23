@@ -604,7 +604,7 @@ ul,
 ol,
 a,
 tr {
-  page-break-inside: avoid; }
+  page-break-inside: auto; }
 
 h2,
 h3,
@@ -669,7 +669,7 @@ acronym[title].no-reformat:after {
 
 
 #global-nav-bar-wrap, #globalNavPageNavArea, #global-nav, #breadcrumbs, #pageBanner, #pageTitleDiv, .swatch, .swatch-half, #copyright, #tocCart, .global-nav-bar-wrap,
-.actionBar, .alignPanel, .moduleSample, #quick_links_wrap {
+.actionBar, .alignPanel, .moduleSample, #quick_links_wrap, .item .reorder, #pageListReorderControl, form#removecontent, span.reorder {
   display: none;
 }
 
@@ -719,5 +719,10 @@ ul, .chat p {color: #000 !important;}
  iframe {
    opacity: 0;
  }
+
+#containerdiv, .container, li.liItem, .sideTOC_panel, .contentList .details {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
 }
