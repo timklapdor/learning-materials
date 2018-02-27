@@ -1558,6 +1558,12 @@ div.blogContainer h3.blogHead {
 
 .vtbegenerated table {font-size: 100% !important; max-width: 99% !important;}
 
+/** Date Picker Artefact **/
+a:focus {
+  outline: 1px solid transparent;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
 
 /** Heading Levels **/
 
