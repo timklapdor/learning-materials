@@ -1701,4 +1701,11 @@ code {font-size: 95%; color: #347EA4; background: #f2f2f2; padding: .1em; font-f
 }
 /** **/
 
+.mapTabs {
+padding-bottom: 2em;
+}
+
+.mapTabs a:hover {
+    color: $primary;
+}
 /** **/
