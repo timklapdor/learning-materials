@@ -978,6 +978,10 @@ background-position: 2px  center !important;
   top: unset !important;
 }
 
+.gbtable tbody tr td, .gbtable tbody tr th, .gbtable_header th, .gbtable thead th {
+    padding: 3px !important;
+}
+
 /** Discussion Forum **/
 
 .container>form {
