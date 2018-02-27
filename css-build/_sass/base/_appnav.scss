@@ -1542,86 +1542,6 @@ div.blogContainer h3.blogHead {
   padding-top: 1em !important;
 }
 
-/** Test Tweaks **/
-
-.stepcontent td {
-  vertical-align: middle;
-}
-
-.stepcontent th {
-  padding: 8px !important;
-}
-
-.stepcontent .vtbegenerated * {
-  margin: 0 !important;
-}
-
-.stepcontent .vtbegenerated p {
-  font-size: 70% !important;
-  margin: 0 !important;
-}
-
-.key-valueTable td {
-  padding: 8px !important;
-}
-
-.key-valueTable th {
-  padding: 8px !important;
-}
-
-.takeQuestionDiv .vtbegenerated {
-box-shadow: none !important
-}
-
-.takeQuestionDiv .vtbegenerated p {
-  margin: .5em 0 !important;
-  line-height: 1.2;
-}
-
-.questionShell .vtbegenerated {
-  box-shadow: none !important
-}
-
-.questionShell .vtbegenerated p {
-  margin: .5em 0 !important;
-  font-size: 70% !important;
-}
-
-.legend-visible {
-  font-size: 120%;
-  font-weight: 600;
-}
-
-#dataCollectionContainer .label {
-  font-weight: bold;
-}
-
-#dataCollectionContainer .stepcontent li {
-  padding-bottom: 16px;
-}
-
-#addBeforeAfter.quickAddPal {
-  background: #ffffff;
-}
-
-/** Maths Editor Hidden **/
-
-div.wrs_toolbar {
-  display: block !important;
-}
-
-// #dataCollectionContainer input[type="radio"] {margin-top: 0.9em;}
-// #dataCollectionContainer p input[type="radio"] {margin-top: 0.2em;}
-// #dataCollectionContainer p label {margin-top: 0.75em;}
-// #dataCollectionContainer fieldset input[type="radio"] {margin-top: 0;}
-
-
-/** Feedback receipt date and time **/
-
-ul#content_listContainer.contentListPlain {
-  margin: 0 0 2em;
-}
-
 /** Contacts **/
 
 .staffInfoList .details {
@@ -1637,6 +1557,13 @@ ul#content_listContainer.contentListPlain {
 /** Reset Font Sizes **/
 
 .vtbegenerated table {font-size: 100% !important; max-width: 99% !important;}
+
+
+/** Date Picker Artefact **/
+a:focus {
+  outline: 1px solid transparent;
+  outline: -webkit-focus-ring-color auto 5px;
+}
 
 
 /** Heading Levels **/
