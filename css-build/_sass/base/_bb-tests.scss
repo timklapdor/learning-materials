@@ -102,3 +102,13 @@ color: unset ;
     color:  #000;
     padding: 1em !Important;
 }
+
+input.answerSavingButton {
+    background-image: none !important;
+    background-repeat: no-repeat;
+}
+
+input.answerSavingButton:active, input.answerSavingButton:focus, input.answerSavingButton:hover  {
+    background-image: none !important;
+    background-repeat: no-repeat;
+}
