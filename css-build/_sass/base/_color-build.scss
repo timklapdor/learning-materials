@@ -43,6 +43,7 @@ rev-blk: $rev-blk,
 /** Brand Palette **/
 @each $color, $value in $brand-colors{
   .csu-brand-#{$color} {background-color: $value !important; color: $rev !important; }
+  .csu-#{$color} a {color: $rev !important; }
   .csu-brand-#{$color}-text {color: $value !important;}
   .csu-brand-#{$color}-line {border-color: $value !important;}
   .csu-brand-#{$color}-fade {background: rgba( $value, .1 ) !important; color: $rev-blk !important;}
@@ -62,6 +63,7 @@ rev-blk: $rev-blk,
 /** UI Palette **/
 @each $color, $value in $ui-colors{
   .csu-#{$color} {background-color: $value !important; color: $rev !important; }
+  .csu-#{$color} a {color: $rev !important; }
   .csu-#{$color}-text {color: $value !important;}
   .csu-#{$color}-line {border-color: $value !important;}
   .csu-#{$color}-fade {background: rgba( $value, .1 ) !important; color: $rev-blk !important;}
@@ -81,6 +83,7 @@ rev-blk: $rev-blk,
 /** Material Palette **/
 @each $color, $value in $material-colors{
   .csu-#{$color} {background-color: $value !important; color: $rev !important; }
+  .csu-#{$color} a {color: $rev !important; }
   .csu-#{$color}-text {color: $value !important;}
   .csu-#{$color}-line {border-color: $value !important;}
   .csu-#{$color}-fade {background: rgba( $value, .1 ) !important; color: $rev-blk !important;}
@@ -100,6 +103,7 @@ rev-blk: $rev-blk,
 /** Faculty Palette **/
 @each $color, $value in $faculty-colors{
   .csu-#{$color} {background-color: $value !important; color: $rev !important; }
+  .csu-#{$color} a {color: $rev !important; }  
   .csu-#{$color}-text {color: $value !important;}
   .csu-#{$color}-line {border-color: $value !important;}
   .csu-#{$color}-fade {background: rgba( $value, .1 ) !important; color: $rev-blk !important;}

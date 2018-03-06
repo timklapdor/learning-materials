@@ -88,9 +88,9 @@ html {
 //update equation for font-size: calc(16px + (22 - 16) * ((100vw - 600px) / (2000 - 600) )) !important; } !important;
 
 #tinymce, body.vtbegenerated {
-background: #ffffff !important;
-font-size: calc(16px - -6 * ((100vw - 600px)/1400)) !important;
-padding: 0 2em !important;
+	background: #ffffff !important;
+	font-size: calc(16px - -6 * ((100vw - 600px)/1400)) !important;
+	padding: 0 2em !important;
 }
 
 

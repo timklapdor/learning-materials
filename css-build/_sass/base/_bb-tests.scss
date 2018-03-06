@@ -1,6 +1,19 @@
 
 /** Test Tweaks **/
 
+form#bb-take-assessment .vtbegenerated {
+	font-size: calc(16px - -6 * ((100vw - 600px)/1400)) !important;
+}
+
+
+table.key-valueTable tbody th {
+  font-weight: bold;
+}
+
+table.key-valueTable tbody th + td {
+  font-size: calc(16px - -6 * ((100vw - 600px)/1400)) !important
+}
+
 .stepcontent td {
   vertical-align: middle;
 }
@@ -10,11 +23,6 @@
 }
 
 .stepcontent .vtbegenerated * {
-  margin: 0 !important;
-}
-
-.stepcontent .vtbegenerated p {
-  font-size: 70% !important;
   margin: 0 !important;
 }
 
@@ -46,7 +54,6 @@ box-shadow: none !important
 
 .legend-visible {
   font-size: 120%;
-  font-weight: 600;
 }
 
 #dataCollectionContainer .label {
@@ -80,35 +87,69 @@ ul#content_listContainer.contentListPlain {
 }
 
 
-#bb-take-assessment .stepcontent fieldset .vtbegenerated {
+#bb-take-assessment .stepcontent fieldset .vtbegenerated,
+#bb-assessment-canvas fieldset .vtbegenerated {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
 
-#bb-take-assessment .stepcontent table td {
+#bb-take-assessment table td,
+#bb-assessment-canvas table td {
 vertical-align: middle !important;}
 
-#bb-take-assessment .stepcontent div.field em {
+#bb-take-assessment div.field em,
+#bb-assessment-canvas div.field em {
 display: inline;
 color: unset ;
 }
 
-#bb-take-assessment .stepcontent fieldset div.vtbegenerated  {
+#bb-take-assessment fieldset div.vtbegenerated,
+#bb-assessment-canvas fieldset div.vtbegenerated  {
     width: 100%;
 }
 
-#bb-take-assessment .stepcontent fieldset legend > * {
+#bb-take-assessment fieldset legend > *,
+#bb-assessment-canvas fieldset legend > * {
     font-size: 130% !important;
     color:  #000;
     padding: 1em !Important;
 }
 
+#bb-take-assessment p.answer-label,
+#bb-assessment-canvas p.answer-label {
+  font-weight: bold;
+  margin-top: .8em;
+}
+
+#bb-take-assessment .vtbegenerated div.apa,
+#bb-assessment-canvas .vtbegenerated div.apa {
+  padding-left: 2em !important;
+}
+
+#bb-take-assessment div.field, div.noLabelField,
+#bb-assessment-canvas div.field, div.noLabelField {
+  width: 100%;
+}
+
 input.answerSavingButton {
-    background-image: none !important;
-    background-repeat: no-repeat;
+  background-image: none !important;
+  background-repeat: no-repeat;
 }
 
 input.answerSavingButton:active, input.answerSavingButton:focus, input.answerSavingButton:hover  {
-    background-image: none !important;
-    background-repeat: no-repeat;
+  background-image: none !important;
+  background-repeat: no-repeat;
+}
+
+table.questionShell td {
+ padding-bottom: .75em !important;
+}
+
+.questionShell .field img:first-child {
+  top: 1em;
+  left: -.5em;
+}
+
+.takeQuestionDiv {
+  padding: 3vh 3vw;
 }
