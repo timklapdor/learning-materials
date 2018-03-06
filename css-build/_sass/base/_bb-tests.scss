@@ -1,7 +1,7 @@
 
 /** Test Tweaks **/
 
-form#bb-take-assessment .vtbegenerated {
+form#bb-take-assessment .vtbegenerated, form#bb-take-assessment .field label {
 	font-size: calc(16px - -6 * ((100vw - 600px)/1400)) !important;
 }
 
@@ -152,4 +152,21 @@ table.questionShell td {
 
 .takeQuestionDiv {
   padding: 3vh 3vw;
+}
+
+/** Review Answers **/
+
+.reviewQuestionsAnswerDiv {
+    display: inline;
+}
+
+.reviewQuestionsAnswerDiv > span {
+    vertical-align: center;
+    float: left;
+}
+
+.reviewQuestionsAnswerDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
