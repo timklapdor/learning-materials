@@ -5,6 +5,9 @@ form#bb-take-assessment .vtbegenerated, form#bb-take-assessment .field label {
 	font-size: calc(16px - -6 * ((100vw - 600px)/1400)) !important;
 }
 
+form#bb-take-assessment .field label{
+  font-size: 90%;
+}
 
 table.key-valueTable tbody th {
   font-weight: bold;
@@ -130,6 +133,12 @@ color: unset ;
 #bb-assessment-canvas div.field, div.noLabelField {
   width: 100%;
 }
+
+#bb-take-assessment td,
+#bb-assessment-canvas td {
+  padding: 0 .15em;
+}
+
 
 input.answerSavingButton {
   background-image: none !important;

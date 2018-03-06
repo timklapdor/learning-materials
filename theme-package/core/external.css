@@ -1626,8 +1626,11 @@ figure._60 {
   margin: 1vw 2.25vw !important; }
 
 /** Test Tweaks **/
-form#bb-take-assessment .vtbegenerated {
+form#bb-take-assessment .vtbegenerated, form#bb-take-assessment .field label {
   font-size: calc(16px - -6 * ((100vw - 600px)/1400)) !important; }
+
+form#bb-take-assessment .field label {
+  font-size: 90%; }
 
 table.key-valueTable tbody th {
   font-weight: bold; }
@@ -1721,6 +1724,10 @@ ul#content_listContainer.contentListPlain {
 #bb-assessment-canvas div.field, div.noLabelField {
   width: 100%; }
 
+#bb-take-assessment td,
+#bb-assessment-canvas td {
+  padding: 0 .15em; }
+
 input.answerSavingButton {
   background-image: none !important;
   background-repeat: no-repeat; }
@@ -1738,6 +1745,19 @@ table.questionShell td {
 
 .takeQuestionDiv {
   padding: 3vh 3vw; }
+
+/** Review Answers **/
+.reviewQuestionsAnswerDiv {
+  display: inline; }
+
+.reviewQuestionsAnswerDiv > span {
+  vertical-align: center;
+  float: left; }
+
+.reviewQuestionsAnswerDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
 
 /** APA Referencing **/
 .apa, .apa ul, .apa ol, .apa dl {
